@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Department handler</title>
+  <link rel="stylesheet" href="../../department-app/static/style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img src="../../department-app/static/logo.png" alt="" class="logo">
+      <div class="title"><b>DEPARTMENT HANDLER</b></div>
+      <ul class="menu">
+        <li class="current"><a href="#"></a>Departments</li>
+        <li><a href="employees.html"></a>Employees</li>
+      </ul>
+    </header>
+    <div class="content">
+      <div class="list_title"><b>Employee</b></div>
+      <form class="form" action="index.html" method="post">
+        <label for="name_input">Name: </label>
+        <input type="text" name="" id="name_input" value="" maxlength="45">
+        <br>
+        <label for="department_input">Department: </label>
+        <select class="departments_list" id="department_input" name="" size="1">
+        </select>
+        <br>
+        <label for="birthday_input">Date of birthday: </label>
+        <input type="date" name="" id="birthday_input" value="" maxlength="5">
+        <br>
+        <input type="submit" class="button save_button" name="save_button" value="SAVE">
+        <div class="button"><a href="employees.html">CANCEL</a></div>
+      </form>
+    </div>
+    <footer>
+      <span>&copy;Special for Epam</span>
+    </footer>
+  </div>
+</body>
+</html>

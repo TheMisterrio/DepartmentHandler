@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,500,700|Roboto:400,500,700,700i,900&display=swap');
+/*All pages*/
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-color: #f8f8f8;
+}
+.container{
+  width: 1500px;
+  margin: 0 auto;
+}
+header{
+  height: 130px;
+  background-color: #AFAFAF;
+}
+.content{
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  overflow: hidden;
+}
+.menu{
+  list-style-type: none;
+  margin-top: 10px;
+  margin-left: 528px;;
+  float: left;
+}
+.menu li{
+  height: 30px;
+  width: 220px;
+  border: 1px solid black;
+  text-align: center;
+  line-height: 30px;
+  float: right;
+  background-color: #333333;
+  color: #FFFFFF;
+  font-size: 20px;
+  font-family:'Raleway', sans-serif;
+  position: relative;
+}
+.menu li a{
+    text-decoration: none;
+    display: block;
+    position: absolute;
+    line-height: 30px;
+    width: 220px;
+    height: 100%;
+    font-weight:900;
+}
+
+.menu li:hover{
+  background-color: #FFA511;
+  font-size: 25px;
+}
+
+header .logo{
+  width: 35px;
+  height: 35px;
+  float: left;
+  margin-left: 528px;
+  margin-top: 30px;
+}
+header .title{
+  float: left;
+  padding-top: 20px;
+  font-size: 36px;
+  font-family:'Roboto', sans-serif;
+}
+.content .list_title{
+  text-align: center;
+  font-size: 24px;
+  font-family:'Roboto', sans-serif;
+  margin-bottom: 10px;
+}
+.content .row{
+  height: auto;
+  font-size: 20px;
+  font-family:'Roboto', sans-serif;
+}
+.content .row .block{
+  float: left;
+  padding: 0px 10px 0px 10px;
+  text-align: center;
+  border: 1px solid black;
+}
+.content .row .title{
+  font-weight: 500;
+}
+.content .add_button{
+  width: 100px;
+  margin-left: 15px;
+  position: relative;
+  background-color: #333333;
+  height: 24px;
+  text-align: center;
+  border: 1px solid black;
+  padding: 0px;
+  float: left;
+}
+.content .add_button a{
+  text-decoration: none;
+  display: block;
+  position: absolute;
+  width: 100px;
+  height: 26px;
+  font-weight:900;
+  color: #FFFFFF;
+}
+.content .add_button:hover{
+  background-color: #FFA511;
+}
+/*Departments page*/
+.content .department_number{
+  width: 300px;
+}
+.content .employees{
+  width: 800px;
+}
+.content .average_salary{
+  width: 200px;
+}
+/*Employees page*/
+.content .date{
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 18px;
+  font-family:'Roboto', sans-serif;
+  float: right;
+}
+.content .date input:hover{
+  border-color: orange;
+}
+.content .refresh_button{
+  width:30px;
+  height: 30px;
+  margin-left: 10px;
+  float: right;
+  margin-right: 528px;
+  border-radius: 5px;
+  background-color: #FAFAFA;
+  border: 1px solid #333333;
+}
+.content .refresh_button img{
+  width: 25px;
+}
+.content .refresh_button:hover{
+  background-color: #FFA511;
+  cursor: pointer;
+}
+.content .refresh_button:focus{
+  outline:none;
+}
+.content .refresh_button:active{
+  box-shadow: 1px 1px #333333;
+}
+.content .name{
+  width: 400px;
+  clear: both;
+}
+.content .department{
+  width: 220px;
+}
+.content .birthday{
+  width: 350px;
+}
+.content .salary{
+  width: 300px;
+}
+/*Department + Employee*/
+.content .form{
+  margin-left: 528px;
+  font-size: 18px;
+  font-family:'Raleway', sans-serif;
+  font-weight: 500;
+  line-height: 40px;
+}
+.content .form input{
+  padding-left: 5px;
+  padding-right: 5px;
+  font-size: 18px;
+  font-family:'Roboto', sans-serif;
+}
+.content .form #number_input{
+    width: 90px;
+}
+.content .form #department_input{
+  padding-left: 5px;
+  padding-right: 5px;
+  font-size: 18px;
+  font-family:'Roboto', sans-serif;
+}
+.content .form .button{
+  height: 30px;
+  width: 80px;
+  border: none;
+  text-align: center;
+  line-height: 30px;
+  float: left;
+  background-color: #333333;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-family:'Raleway', sans-serif;
+  position: relative;
+  cursor: pointer;
+  margin-top: 20px;
+  font-weight:800;
+}
+.content .form .button a{
+    color: #FFFFFF;
+    text-decoration: none;
+    display: block;
+    position: absolute;
+    line-height: 30px;
+    width: 80px;
+    height: 100%;
+    font-weight:800;
+}
+
+.content .form .button:hover{
+  background-color: #FFA511;
+  font-size: 18px;
+}
+.content .form .save_button{
+  margin-left: 130px;
+  margin-right: 20px;
+}
