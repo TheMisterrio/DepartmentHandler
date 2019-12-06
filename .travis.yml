@@ -1,0 +1,16 @@
+language: python
+
+python:
+    - 3.8
+
+install:
+  -pip install -r requirements/dev.txt
+
+script:
+  - python -m department-app/tests discover
+  - coverage erase
+  - coverage run department-app/app.py && coverage html
+  - pylint --output-format=text department-app/app.py
+
+after_success:
+  - codecov

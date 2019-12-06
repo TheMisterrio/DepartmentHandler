@@ -10,5 +10,6 @@ setup(
     packages=['department-app'],
     include_package_data=True,
     zip_safe=False,
-    install_requires=['Flask', 'flask-sqlalchemy', 'mysql-connector']
+    install_requires=['Flask', 'flask-sqlalchemy', 'mysql-connector',
+    'pylint', 'coverage']
 )

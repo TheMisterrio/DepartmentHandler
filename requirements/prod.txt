@@ -1,0 +1,9 @@
+# Flask
+Flask==1.1.1
+
+#DB
+Flask-SQLAlchemy==2.4.1
+mysql-connector==2.2.9
+
+# Deployment
+gunicorn==19.7.1
