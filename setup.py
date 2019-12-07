@@ -11,5 +11,5 @@ setup(
     include_package_data=True,
     zip_safe=False,
     install_requires=['Flask', 'flask-sqlalchemy', 'mysql-connector',
-    'pylint', 'coverage']
+    'pylint', 'coverage', 'flask-migrate', 'flask-script']
 )

@@ -8,5 +8,5 @@ class Employee(db.Model):
     date_of_birthday = db.Column(db.Date)
     salary = db.Column(db.DECIMAL)
 
-    def __init__(self, *args, **kwargs):
-        super(Employee, self).__init__(*args, **kwargs)
+    def __repr__(self):
+        return f'<Employee name={self.name}>'
