@@ -9,8 +9,8 @@ install:
 script:
   - python -m department-app/tests discover
   - coverage erase
-  - coverage run department-app/app.py && coverage html
-  - pylint --output-format=text department-app/app.py
+  - coverage run department-app/wsgi.py && coverage html
+  - pylint --output-format=text department-app/wsgi.py
 
 after_success:
   - codecov
