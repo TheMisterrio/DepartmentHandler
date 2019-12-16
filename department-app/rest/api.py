@@ -222,9 +222,8 @@ class Employee(Resource):
         :rtype: JSON
         """
         from service import crud
-        employee = crud.Employees.get(employee_id)
         try:
-            employee.id
+            employee = crud.Employees.get(employee_id)
         except AttributeError:
             logger.debug(f'GET method (/api/employee/{employee_id}) was not successful (404)')
             return {'error': 'employee not found'}, 404

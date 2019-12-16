@@ -12,5 +12,5 @@ setup(
     zip_safe=False,
     install_requires=['Flask', 'flask-sqlalchemy', 'mysql-connector',
     'pylint', 'coverage', 'flask-migrate', 'flask-script', 'flask-restful',
-    'gunicorn']
+    'gunicorn', 'requests']
 )
