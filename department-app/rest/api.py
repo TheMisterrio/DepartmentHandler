@@ -1,4 +1,5 @@
 import logging
+from datetime import date
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 from config import ApiConfiguration
@@ -17,6 +18,9 @@ parser_for_employee.add_argument('name')
 parser_for_employee.add_argument('department_id')
 parser_for_employee.add_argument('date_of_birthday')
 parser_for_employee.add_argument('salary')
+parser_for_employees = reqparse.RequestParser()
+parser_for_employees.add_argument('date_from')
+parser_for_employees.add_argument('date_by')
 # Logging
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.DEBUG)
@@ -41,17 +45,40 @@ class Departments(Resource):
         :rtype: JSON
         """
         from service import crud
-        departments = crud.Departments.get_all()
+        data = crud.Departments.get_all()
+        departments = data[0]
+        avg = data[1]
         ids = []
         employees = []
-        for department in departments:
-            ids.append(department.id)
+        salaries = []
+        for i in range(0, len(departments)):
+            ids.append(departments[i].id)
             employees_list = []
-            for employee in department.employees:
+            for employee in departments[i].employees:
                 employees_list.append(employee.name)
             employees.append(employees_list)
+            salaries.append(str(avg[i][0])[:-2])
         logger.debug('GET method (/api/departments) was successful')
-        return {'ids': ids, 'employees': employees}
+        return {'ids': ids, 'employees': employees, 'salaries': salaries}
+
+
+class DepartmentsIds(Resource):
+    """Class for GET method that is used to get list of departments` ids (/api/departments-ids)"""
+    def get(self):
+        """
+        GET method which returns list of departments` ids
+        :return: department`s ids` list
+        :rtype: JSON
+        """
+        from service import crud
+        departments = crud.Departments.get_all()[0]
+        ids = []
+        logger.error(departments)
+        for department in departments:
+            logger.warning(department)
+            ids.append(department.id)
+        logger.debug('GET method (/api/departments-ids) was successful')
+        return {'ids': ids}
 
 
 class Department(Resource):
@@ -141,17 +168,47 @@ class Employees(Resource):
         """
         from service import crud
         employees = crud.Employees.get_all()
+        ids = []
         names = []
         departments = []
         dates_of_birthday = []
         salaries = []
         for employee in employees:
+            ids.append(employee.id)
             names.append(employee.name)
             departments.append(employee.department_id)
             dates_of_birthday.append(str(employee.date_of_birthday))
             salaries.append(str(employee.salary))
         logger.debug(f'GET method (/api/employees) was successful')
-        return {'names': names, 'departments': departments, 'dates_of_birthday': dates_of_birthday,
+        return {'ids': ids, 'names': names, 'departments': departments, 'dates_of_birthday': dates_of_birthday,
+                'salaries': salaries}
+
+    def post(self):
+        """
+        POST method that returns filtered list of all employees by dates of birthday
+        :return: list of information about all employees (names, departments, dates of birthday, salaries)
+        :rtype: JSON
+        """
+        from service import crud
+        data = parser_for_employees.parse_args()
+        if data['date_by'] is None:
+            data['date_by'] = date.today()
+        if data['date_from'] is None:
+            data['date_from'] = ''
+        employees = crud.Employees.get_by_date(data['date_from'], data['date_by'])
+        ids = []
+        names = []
+        departments = []
+        dates_of_birthday = []
+        salaries = []
+        for employee in employees:
+            ids.append(employee.id)
+            names.append(employee.name)
+            departments.append(employee.department_id)
+            dates_of_birthday.append(str(employee.date_of_birthday))
+            salaries.append(str(employee.salary))
+        logger.debug(f'POST method (/api/employees) was successful')
+        return {'ids': ids, 'names': names, 'departments': departments, 'dates_of_birthday': dates_of_birthday,
                 'salaries': salaries}
 
 
@@ -172,7 +229,7 @@ class Employee(Resource):
             logger.debug(f'GET method (/api/employee/{employee_id}) was not successful (404)')
             return {'error': 'employee not found'}, 404
         logger.debug(f'GET method (/api/employee/{employee_id}) was successful')
-        return {'name': employee.name, 'department_id': employee.department_id,
+        return {'id': employee.id, 'name': employee.name, 'department_id': employee.department_id,
                 'date_of_birthday': str(employee.date_of_birthday), 'salary': str(employee.salary)}
 
     def put(self, employee_id):
@@ -213,7 +270,7 @@ class Employee(Resource):
 
 
 class AddEmployee(Resource):
-    """Class for POST method that adds new employee (api/department)"""
+    """Class for POST method that adds new employee (api/employee)"""
     def post(self):
         """
         POST method that receives data and adds new employee
@@ -235,6 +292,7 @@ class AddEmployee(Resource):
 
 
 api.add_resource(Departments, '/api/departments')
+api.add_resource(DepartmentsIds, '/api/departments-ids')
 api.add_resource(Department, '/api/department/<dep_id>')
 api.add_resource(AddDepartment, '/api/department')
 api.add_resource(Employees, '/api/employees')

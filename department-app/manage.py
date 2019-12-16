@@ -1,4 +1,4 @@
-from app import manager
+from migrations.migration import manager
 
 
 if __name__ == '__main__':

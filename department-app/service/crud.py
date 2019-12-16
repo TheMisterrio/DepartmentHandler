@@ -1,4 +1,5 @@
 import logging
+from sqlalchemy import func
 from models.department import Department, db
 from models.employee import Employee
 
@@ -22,13 +23,15 @@ class Departments:
     @staticmethod
     def get_all():
         """
-        Gets list of departments
+        Gets list of departments and average salaries
 
-        :return: List of departments
-        :rtype: list
+        :return: List of departments and average salaries
+        :rtype: tuple (list<departments>, list<tuple(salary)>
         """
+        departments = Department.query.all()
+        salaries = db.session.query(func.avg(Employee.salary).label('average')).group_by(Employee.department_id).all()
         logger.debug('List of department was returned')
-        return Department.query.all()
+        return departments, salaries
 
     @staticmethod
     def get(dep_id):
@@ -99,6 +102,8 @@ class Departments:
         if department is None:
             logger.debug(f'Department {dep_id} is not exist, it can`t be deleted')
             raise AttributeError
+        for employee in department.employees:
+            db.session.delete(employee)
         db.session.delete(department)
         db.session.commit()
         logger.debug(f'Department {dep_id} was deleted')
@@ -116,6 +121,18 @@ class Employees:
         """
         logger.debug('List of employees was returned')
         return Employee.query.all()
+
+    @staticmethod
+    def get_by_date(date_from, date_by):
+        """
+        Gets list of employees who were born on a certain date or in the period between dates
+        :param date date_from: from date for filter
+        :param date date_by: by date for filter
+        :return: filtered list of employees
+        :rtype: list
+        """
+        logger.debug('Filtered by dates list of employees was returned')
+        return Employee.query.filter(date_from <= Employee.date_of_birthday, Employee.date_of_birthday <= date_by).all()
 
     @staticmethod
     def get(employee_id):

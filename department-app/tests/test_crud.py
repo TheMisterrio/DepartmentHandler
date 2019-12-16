@@ -10,11 +10,12 @@ from .base import BaseTestCase
 class TestDepartments(BaseTestCase):
     """Tests for Departments class from service.crud"""
     def test_get_all(self):
-        self.assertEqual(crud.Departments.get_all(), [Department(id=10001, employees=[
+
+        self.assertEqual(crud.Departments.get_all(), ([Department(id=10001, employees=[
             Employee(id=1, name='Steven Gray', department_id=10001, date_of_birthday=date(1997, 10, 1),
                      salary=Decimal(1000)),
             Employee(id=2, name='John Spins', department_id=10001, date_of_birthday=date(1997, 5, 11),
-                     salary=Decimal(3000))])])
+                     salary=Decimal(3000))])], [(Decimal(2000),)]))
 
     def test_get(self):
         self.assertEqual(crud.Departments.get(10001), Department(id=10001, employees=[
@@ -42,6 +43,17 @@ class TestEmployees(BaseTestCase):
     """Tests for Employees class from service.crud"""
     def test_get_all(self):
         self.assertEqual(crud.Employees.get_all(), [
+            Employee(id=1, name='Steven Gray', department_id=10001, date_of_birthday=date(1997, 10, 1),
+                     salary=Decimal(1000)),
+            Employee(id=2, name='John Spins', department_id=10001, date_of_birthday=date(1997, 5, 11),
+                     salary=Decimal(3000))
+            ])
+
+    def test_get_by_date(self):
+        self.assertEqual(crud.Employees.get_by_date(date(1997, 6, 1), date(2000, 1, 1)), [
+            Employee(id=1, name='Steven Gray', department_id=10001, date_of_birthday=date(1997, 10, 1),
+                     salary=Decimal(1000))])
+        self.assertEqual(crud.Employees.get_by_date('', date(2000, 1, 1)), [
             Employee(id=1, name='Steven Gray', department_id=10001, date_of_birthday=date(1997, 10, 1),
                      salary=Decimal(1000)),
             Employee(id=2, name='John Spins', department_id=10001, date_of_birthday=date(1997, 5, 11),

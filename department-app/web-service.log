@@ -118,3 +118,2358 @@
 2019-12-13 21:59:39,499 - rest.api - INFO - Web-service started
 2019-12-13 22:01:29,089 - rest.api - INFO - Web-service started
 2019-12-13 22:01:30,149 - rest.api - INFO - Web-service started
+2019-12-14 17:26:34,968 - rest.api - INFO - Web-service started
+2019-12-14 17:30:28,278 - rest.api - INFO - Web-service started
+2019-12-14 17:38:35,997 - rest.api - INFO - Web-service started
+2019-12-14 17:41:47,291 - service.crud - DEBUG - List of department was returned
+2019-12-14 17:41:50,351 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-14 17:48:30,043 - service.crud - DEBUG - List of department was returned
+2019-12-14 17:48:30,079 - rest.api - ERROR - Exception on /api/departments [GET]
+Traceback (most recent call last):
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1173, in _execute_context
+    context = constructor(dialect, self, conn, *args)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\default.py", line 768, in _init_compiled
+    self.cursor = self.create_cursor()
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\default.py", line 1122, in create_cursor
+    return self._dbapi_connection.cursor()
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\pool\base.py", line 965, in cursor
+    return self.connection.cursor(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\mysql\connector\connection.py", line 809, in cursor
+    raise errors.OperationalError("MySQL Connection not available.")
+mysql.connector.errors.OperationalError: MySQL Connection not available.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "E:\GraduationWork\DepartmentHandler\department-app\rest\api.py", line 44, in get
+    departments = crud.Departments.get_all()
+  File "E:\GraduationWork\DepartmentHandler\department-app\service\crud.py", line 31, in get_all
+    return Department.query.all()
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\query.py", line 3211, in all
+    return list(self)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\query.py", line 3367, in __iter__
+    return self._execute_and_instances(context)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\query.py", line 3392, in _execute_and_instances
+    result = conn.execute(querycontext.statement, self._params)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 982, in execute
+    return meth(self, multiparams, params)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\sql\elements.py", line 287, in _execute_on_connection
+    return connection._execute_clauseelement(self, multiparams, params)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1095, in _execute_clauseelement
+    ret = self._execute_context(
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1175, in _execute_context
+    self._handle_dbapi_exception(
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1476, in _handle_dbapi_exception
+    util.raise_from_cause(sqlalchemy_exception, exc_info)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\util\compat.py", line 398, in raise_from_cause
+    reraise(type(exception), exception, tb=exc_tb, cause=cause)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\util\compat.py", line 152, in reraise
+    raise value.with_traceback(tb)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1173, in _execute_context
+    context = constructor(dialect, self, conn, *args)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\default.py", line 768, in _init_compiled
+    self.cursor = self.create_cursor()
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\default.py", line 1122, in create_cursor
+    return self._dbapi_connection.cursor()
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\pool\base.py", line 965, in cursor
+    return self.connection.cursor(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\mysql\connector\connection.py", line 809, in cursor
+    raise errors.OperationalError("MySQL Connection not available.")
+sqlalchemy.exc.OperationalError: (mysql.connector.errors.OperationalError) MySQL Connection not available.
+[SQL: SELECT department.id AS department_id 
+FROM department]
+[parameters: [immutabledict({})]]
+(Background on this error at: http://sqlalche.me/e/e3q8)
+2019-12-14 17:48:55,527 - rest.api - INFO - Web-service started
+2019-12-14 17:49:05,395 - service.crud - DEBUG - List of department was returned
+2019-12-14 17:49:08,295 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-14 17:49:52,226 - service.crud - DEBUG - List of department was returned
+2019-12-14 17:49:53,348 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-14 17:53:37,862 - service.crud - DEBUG - List of department was returned
+2019-12-14 17:53:39,041 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-14 17:55:15,869 - rest.api - INFO - Web-service started
+2019-12-14 18:02:01,934 - service.crud - DEBUG - List of department was returned
+2019-12-14 18:02:05,008 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-14 18:02:23,867 - service.crud - DEBUG - List of department was returned
+2019-12-14 18:02:25,009 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-14 18:02:53,182 - service.crud - DEBUG - List of department was returned
+2019-12-14 18:02:54,319 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-14 18:05:26,259 - service.crud - DEBUG - List of department was returned
+2019-12-14 18:05:27,660 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-14 18:10:15,001 - service.crud - DEBUG - List of department was returned
+2019-12-14 18:10:16,152 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-14 18:10:46,000 - service.crud - DEBUG - List of department was returned
+2019-12-14 18:10:47,154 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-14 18:16:22,105 - service.crud - DEBUG - List of department was returned
+2019-12-14 18:16:22,113 - rest.api - ERROR - Exception on /api/departments [GET]
+Traceback (most recent call last):
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1173, in _execute_context
+    context = constructor(dialect, self, conn, *args)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\default.py", line 768, in _init_compiled
+    self.cursor = self.create_cursor()
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\default.py", line 1122, in create_cursor
+    return self._dbapi_connection.cursor()
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\pool\base.py", line 965, in cursor
+    return self.connection.cursor(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\mysql\connector\connection.py", line 809, in cursor
+    raise errors.OperationalError("MySQL Connection not available.")
+mysql.connector.errors.OperationalError: MySQL Connection not available.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "E:\GraduationWork\DepartmentHandler\department-app\rest\api.py", line 44, in get
+    departments = crud.Departments.get_all()
+  File "E:\GraduationWork\DepartmentHandler\department-app\service\crud.py", line 31, in get_all
+    return Department.query.all()
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\query.py", line 3211, in all
+    return list(self)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\query.py", line 3367, in __iter__
+    return self._execute_and_instances(context)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\query.py", line 3392, in _execute_and_instances
+    result = conn.execute(querycontext.statement, self._params)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 982, in execute
+    return meth(self, multiparams, params)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\sql\elements.py", line 287, in _execute_on_connection
+    return connection._execute_clauseelement(self, multiparams, params)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1095, in _execute_clauseelement
+    ret = self._execute_context(
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1175, in _execute_context
+    self._handle_dbapi_exception(
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1476, in _handle_dbapi_exception
+    util.raise_from_cause(sqlalchemy_exception, exc_info)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\util\compat.py", line 398, in raise_from_cause
+    reraise(type(exception), exception, tb=exc_tb, cause=cause)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\util\compat.py", line 152, in reraise
+    raise value.with_traceback(tb)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1173, in _execute_context
+    context = constructor(dialect, self, conn, *args)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\default.py", line 768, in _init_compiled
+    self.cursor = self.create_cursor()
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\default.py", line 1122, in create_cursor
+    return self._dbapi_connection.cursor()
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\pool\base.py", line 965, in cursor
+    return self.connection.cursor(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\mysql\connector\connection.py", line 809, in cursor
+    raise errors.OperationalError("MySQL Connection not available.")
+sqlalchemy.exc.OperationalError: (mysql.connector.errors.OperationalError) MySQL Connection not available.
+[SQL: SELECT department.id AS department_id 
+FROM department]
+[parameters: [immutabledict({})]]
+(Background on this error at: http://sqlalche.me/e/e3q8)
+2019-12-14 18:16:27,914 - service.crud - DEBUG - List of department was returned
+2019-12-14 18:16:29,432 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-14 18:16:51,325 - service.crud - DEBUG - List of department was returned
+2019-12-14 18:16:52,487 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-14 18:16:54,736 - service.crud - DEBUG - List of department was returned
+2019-12-14 18:16:55,892 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-14 18:17:59,543 - service.crud - DEBUG - List of department was returned
+2019-12-14 18:18:00,712 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-14 18:18:43,605 - service.crud - DEBUG - List of department was returned
+2019-12-14 18:18:44,794 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-14 18:19:07,666 - service.crud - DEBUG - List of department was returned
+2019-12-14 18:19:08,833 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-14 18:20:31,010 - service.crud - DEBUG - List of department was returned
+2019-12-14 18:20:32,152 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-14 18:21:43,022 - service.crud - DEBUG - List of department was returned
+2019-12-14 18:21:44,225 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-14 18:23:26,000 - service.crud - DEBUG - List of department was returned
+2019-12-14 18:23:27,156 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-14 18:24:39,536 - service.crud - DEBUG - List of department was returned
+2019-12-14 18:24:40,696 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-14 18:26:06,753 - service.crud - DEBUG - List of department was returned
+2019-12-14 18:26:07,942 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-14 18:27:22,034 - service.crud - DEBUG - List of department was returned
+2019-12-14 18:27:23,203 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-14 18:32:33,272 - service.crud - DEBUG - List of department was returned
+2019-12-14 18:32:33,280 - rest.api - ERROR - Exception on /api/departments [GET]
+Traceback (most recent call last):
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1173, in _execute_context
+    context = constructor(dialect, self, conn, *args)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\default.py", line 768, in _init_compiled
+    self.cursor = self.create_cursor()
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\default.py", line 1122, in create_cursor
+    return self._dbapi_connection.cursor()
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\pool\base.py", line 965, in cursor
+    return self.connection.cursor(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\mysql\connector\connection.py", line 809, in cursor
+    raise errors.OperationalError("MySQL Connection not available.")
+mysql.connector.errors.OperationalError: MySQL Connection not available.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "E:\GraduationWork\DepartmentHandler\department-app\rest\api.py", line 44, in get
+    departments = crud.Departments.get_all()
+  File "E:\GraduationWork\DepartmentHandler\department-app\service\crud.py", line 31, in get_all
+    return Department.query.all()
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\query.py", line 3211, in all
+    return list(self)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\query.py", line 3367, in __iter__
+    return self._execute_and_instances(context)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\query.py", line 3392, in _execute_and_instances
+    result = conn.execute(querycontext.statement, self._params)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 982, in execute
+    return meth(self, multiparams, params)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\sql\elements.py", line 287, in _execute_on_connection
+    return connection._execute_clauseelement(self, multiparams, params)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1095, in _execute_clauseelement
+    ret = self._execute_context(
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1175, in _execute_context
+    self._handle_dbapi_exception(
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1476, in _handle_dbapi_exception
+    util.raise_from_cause(sqlalchemy_exception, exc_info)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\util\compat.py", line 398, in raise_from_cause
+    reraise(type(exception), exception, tb=exc_tb, cause=cause)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\util\compat.py", line 152, in reraise
+    raise value.with_traceback(tb)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1173, in _execute_context
+    context = constructor(dialect, self, conn, *args)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\default.py", line 768, in _init_compiled
+    self.cursor = self.create_cursor()
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\default.py", line 1122, in create_cursor
+    return self._dbapi_connection.cursor()
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\pool\base.py", line 965, in cursor
+    return self.connection.cursor(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\mysql\connector\connection.py", line 809, in cursor
+    raise errors.OperationalError("MySQL Connection not available.")
+sqlalchemy.exc.OperationalError: (mysql.connector.errors.OperationalError) MySQL Connection not available.
+[SQL: SELECT department.id AS department_id 
+FROM department]
+[parameters: [immutabledict({})]]
+(Background on this error at: http://sqlalche.me/e/e3q8)
+2019-12-14 18:32:36,318 - service.crud - DEBUG - List of department was returned
+2019-12-14 18:32:37,819 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-14 18:34:51,721 - service.crud - DEBUG - List of department was returned
+2019-12-14 18:34:52,885 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-14 18:53:29,974 - service.crud - DEBUG - List of department was returned
+2019-12-14 18:53:29,978 - rest.api - ERROR - Exception on /api/departments [GET]
+Traceback (most recent call last):
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1173, in _execute_context
+    context = constructor(dialect, self, conn, *args)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\default.py", line 768, in _init_compiled
+    self.cursor = self.create_cursor()
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\default.py", line 1122, in create_cursor
+    return self._dbapi_connection.cursor()
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\pool\base.py", line 965, in cursor
+    return self.connection.cursor(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\mysql\connector\connection.py", line 809, in cursor
+    raise errors.OperationalError("MySQL Connection not available.")
+mysql.connector.errors.OperationalError: MySQL Connection not available.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "E:\GraduationWork\DepartmentHandler\department-app\rest\api.py", line 44, in get
+    departments = crud.Departments.get_all()
+  File "E:\GraduationWork\DepartmentHandler\department-app\service\crud.py", line 31, in get_all
+    return Department.query.all()
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\query.py", line 3211, in all
+    return list(self)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\query.py", line 3367, in __iter__
+    return self._execute_and_instances(context)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\query.py", line 3392, in _execute_and_instances
+    result = conn.execute(querycontext.statement, self._params)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 982, in execute
+    return meth(self, multiparams, params)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\sql\elements.py", line 287, in _execute_on_connection
+    return connection._execute_clauseelement(self, multiparams, params)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1095, in _execute_clauseelement
+    ret = self._execute_context(
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1175, in _execute_context
+    self._handle_dbapi_exception(
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1476, in _handle_dbapi_exception
+    util.raise_from_cause(sqlalchemy_exception, exc_info)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\util\compat.py", line 398, in raise_from_cause
+    reraise(type(exception), exception, tb=exc_tb, cause=cause)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\util\compat.py", line 152, in reraise
+    raise value.with_traceback(tb)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1173, in _execute_context
+    context = constructor(dialect, self, conn, *args)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\default.py", line 768, in _init_compiled
+    self.cursor = self.create_cursor()
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\default.py", line 1122, in create_cursor
+    return self._dbapi_connection.cursor()
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\pool\base.py", line 965, in cursor
+    return self.connection.cursor(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\mysql\connector\connection.py", line 809, in cursor
+    raise errors.OperationalError("MySQL Connection not available.")
+sqlalchemy.exc.OperationalError: (mysql.connector.errors.OperationalError) MySQL Connection not available.
+[SQL: SELECT department.id AS department_id 
+FROM department]
+[parameters: [immutabledict({})]]
+(Background on this error at: http://sqlalche.me/e/e3q8)
+2019-12-14 18:53:33,154 - service.crud - DEBUG - List of department was returned
+2019-12-14 18:53:34,606 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-14 18:54:21,928 - service.crud - DEBUG - List of department was returned
+2019-12-14 18:54:23,081 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-14 18:54:27,484 - service.crud - DEBUG - List of department was returned
+2019-12-14 18:54:28,620 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-14 18:55:23,469 - service.crud - DEBUG - List of department was returned
+2019-12-14 18:55:24,624 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-14 18:56:25,194 - service.crud - DEBUG - List of department was returned
+2019-12-14 18:56:26,377 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-14 18:57:27,486 - service.crud - DEBUG - List of department was returned
+2019-12-14 18:57:28,610 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-14 18:58:24,301 - service.crud - DEBUG - List of department was returned
+2019-12-14 18:58:25,425 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-14 19:03:54,482 - service.crud - DEBUG - List of department was returned
+2019-12-14 19:03:54,486 - rest.api - ERROR - Exception on /api/departments [GET]
+Traceback (most recent call last):
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1173, in _execute_context
+    context = constructor(dialect, self, conn, *args)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\default.py", line 768, in _init_compiled
+    self.cursor = self.create_cursor()
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\default.py", line 1122, in create_cursor
+    return self._dbapi_connection.cursor()
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\pool\base.py", line 965, in cursor
+    return self.connection.cursor(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\mysql\connector\connection.py", line 809, in cursor
+    raise errors.OperationalError("MySQL Connection not available.")
+mysql.connector.errors.OperationalError: MySQL Connection not available.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "E:\GraduationWork\DepartmentHandler\department-app\rest\api.py", line 44, in get
+    departments = crud.Departments.get_all()
+  File "E:\GraduationWork\DepartmentHandler\department-app\service\crud.py", line 31, in get_all
+    return Department.query.all()
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\query.py", line 3211, in all
+    return list(self)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\query.py", line 3367, in __iter__
+    return self._execute_and_instances(context)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\query.py", line 3392, in _execute_and_instances
+    result = conn.execute(querycontext.statement, self._params)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 982, in execute
+    return meth(self, multiparams, params)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\sql\elements.py", line 287, in _execute_on_connection
+    return connection._execute_clauseelement(self, multiparams, params)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1095, in _execute_clauseelement
+    ret = self._execute_context(
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1175, in _execute_context
+    self._handle_dbapi_exception(
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1476, in _handle_dbapi_exception
+    util.raise_from_cause(sqlalchemy_exception, exc_info)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\util\compat.py", line 398, in raise_from_cause
+    reraise(type(exception), exception, tb=exc_tb, cause=cause)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\util\compat.py", line 152, in reraise
+    raise value.with_traceback(tb)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1173, in _execute_context
+    context = constructor(dialect, self, conn, *args)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\default.py", line 768, in _init_compiled
+    self.cursor = self.create_cursor()
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\default.py", line 1122, in create_cursor
+    return self._dbapi_connection.cursor()
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\pool\base.py", line 965, in cursor
+    return self.connection.cursor(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\mysql\connector\connection.py", line 809, in cursor
+    raise errors.OperationalError("MySQL Connection not available.")
+sqlalchemy.exc.OperationalError: (mysql.connector.errors.OperationalError) MySQL Connection not available.
+[SQL: SELECT department.id AS department_id 
+FROM department]
+[parameters: [immutabledict({})]]
+(Background on this error at: http://sqlalche.me/e/e3q8)
+2019-12-14 19:05:52,916 - service.crud - DEBUG - List of department was returned
+2019-12-14 19:05:54,349 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-14 19:06:04,329 - service.crud - DEBUG - List of department was returned
+2019-12-14 19:06:05,452 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-14 19:08:20,936 - service.crud - DEBUG - List of department was returned
+2019-12-14 19:08:22,098 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-14 19:08:47,905 - service.crud - DEBUG - List of department was returned
+2019-12-14 19:08:49,058 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-14 19:09:34,163 - service.crud - DEBUG - List of department was returned
+2019-12-14 19:09:35,330 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-14 19:11:00,548 - service.crud - DEBUG - List of department was returned
+2019-12-14 19:11:01,676 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-14 19:12:25,011 - service.crud - DEBUG - List of department was returned
+2019-12-14 19:12:26,167 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-14 19:13:04,511 - service.crud - DEBUG - List of department was returned
+2019-12-14 19:13:05,642 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-14 19:13:42,765 - service.crud - DEBUG - List of department was returned
+2019-12-14 19:13:43,900 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-14 19:15:29,524 - service.crud - DEBUG - List of department was returned
+2019-12-14 19:15:30,654 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-14 19:15:49,098 - service.crud - DEBUG - List of department was returned
+2019-12-14 19:15:50,227 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-14 19:17:00,464 - service.crud - DEBUG - List of department was returned
+2019-12-14 19:17:01,602 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-14 19:17:27,090 - service.crud - DEBUG - List of department was returned
+2019-12-14 19:17:28,202 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-14 19:19:26,612 - service.crud - DEBUG - List of department was returned
+2019-12-14 19:19:27,773 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-14 19:20:48,399 - service.crud - DEBUG - List of department was returned
+2019-12-14 19:20:49,527 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-14 19:21:15,125 - service.crud - DEBUG - List of department was returned
+2019-12-14 19:21:16,273 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-14 19:21:37,319 - service.crud - DEBUG - List of department was returned
+2019-12-14 19:21:38,477 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-14 19:23:34,375 - service.crud - DEBUG - List of department was returned
+2019-12-14 19:23:35,494 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-14 19:26:28,958 - service.crud - DEBUG - List of department was returned
+2019-12-14 19:26:30,099 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-14 19:26:37,040 - service.crud - DEBUG - List of department was returned
+2019-12-14 19:26:38,181 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-14 19:29:58,006 - service.crud - DEBUG - List of department was returned
+2019-12-14 19:29:59,164 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-14 19:47:39,080 - rest.api - INFO - Web-service started
+2019-12-14 19:47:42,550 - service.crud - DEBUG - List of employees was returned
+2019-12-14 19:47:42,712 - rest.api - DEBUG - GET method (/api/employees) was successful
+2019-12-14 19:48:55,422 - service.crud - DEBUG - List of employees was returned
+2019-12-14 19:48:55,426 - rest.api - ERROR - Exception on /api/employees [GET]
+Traceback (most recent call last):
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1173, in _execute_context
+    context = constructor(dialect, self, conn, *args)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\default.py", line 768, in _init_compiled
+    self.cursor = self.create_cursor()
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\default.py", line 1122, in create_cursor
+    return self._dbapi_connection.cursor()
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\pool\base.py", line 965, in cursor
+    return self.connection.cursor(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\mysql\connector\connection.py", line 809, in cursor
+    raise errors.OperationalError("MySQL Connection not available.")
+mysql.connector.errors.OperationalError: MySQL Connection not available.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "E:\GraduationWork\DepartmentHandler\department-app\rest\api.py", line 143, in get
+    employees = crud.Employees.get_all()
+  File "E:\GraduationWork\DepartmentHandler\department-app\service\crud.py", line 118, in get_all
+    return Employee.query.all()
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\query.py", line 3211, in all
+    return list(self)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\query.py", line 3367, in __iter__
+    return self._execute_and_instances(context)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\query.py", line 3392, in _execute_and_instances
+    result = conn.execute(querycontext.statement, self._params)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 982, in execute
+    return meth(self, multiparams, params)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\sql\elements.py", line 287, in _execute_on_connection
+    return connection._execute_clauseelement(self, multiparams, params)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1095, in _execute_clauseelement
+    ret = self._execute_context(
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1175, in _execute_context
+    self._handle_dbapi_exception(
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1476, in _handle_dbapi_exception
+    util.raise_from_cause(sqlalchemy_exception, exc_info)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\util\compat.py", line 398, in raise_from_cause
+    reraise(type(exception), exception, tb=exc_tb, cause=cause)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\util\compat.py", line 152, in reraise
+    raise value.with_traceback(tb)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1173, in _execute_context
+    context = constructor(dialect, self, conn, *args)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\default.py", line 768, in _init_compiled
+    self.cursor = self.create_cursor()
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\default.py", line 1122, in create_cursor
+    return self._dbapi_connection.cursor()
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\pool\base.py", line 965, in cursor
+    return self.connection.cursor(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\mysql\connector\connection.py", line 809, in cursor
+    raise errors.OperationalError("MySQL Connection not available.")
+sqlalchemy.exc.OperationalError: (mysql.connector.errors.OperationalError) MySQL Connection not available.
+[SQL: SELECT employee.id AS employee_id, employee.name AS employee_name, employee.department_id AS employee_department_id, employee.date_of_birthday AS employee_date_of_birthday, employee.salary AS employee_salary 
+FROM employee]
+[parameters: [immutabledict({})]]
+(Background on this error at: http://sqlalche.me/e/e3q8)
+2019-12-14 19:49:30,117 - service.crud - DEBUG - List of employees was returned
+2019-12-14 19:49:30,615 - rest.api - DEBUG - GET method (/api/employees) was successful
+2019-12-14 19:50:09,648 - service.crud - DEBUG - List of employees was returned
+2019-12-14 19:50:09,812 - rest.api - DEBUG - GET method (/api/employees) was successful
+2019-12-14 19:50:40,411 - service.crud - DEBUG - List of employees was returned
+2019-12-14 19:50:40,594 - rest.api - DEBUG - GET method (/api/employees) was successful
+2019-12-14 19:50:47,355 - service.crud - DEBUG - List of employees was returned
+2019-12-14 19:50:47,548 - rest.api - DEBUG - GET method (/api/employees) was successful
+2019-12-14 19:51:10,826 - rest.api - INFO - Web-service started
+2019-12-14 19:51:16,956 - service.crud - DEBUG - List of employees was returned
+2019-12-14 19:51:19,169 - rest.api - DEBUG - GET method (/api/employees) was successful
+2019-12-14 19:51:53,219 - service.crud - DEBUG - List of department was returned
+2019-12-14 19:51:54,462 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-14 19:51:59,407 - service.crud - DEBUG - List of employees was returned
+2019-12-14 19:51:59,590 - rest.api - DEBUG - GET method (/api/employees) was successful
+2019-12-14 20:17:18,552 - service.crud - DEBUG - List of department was returned
+2019-12-14 20:17:18,564 - rest.api - ERROR - Exception on /api/departments [GET]
+Traceback (most recent call last):
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1173, in _execute_context
+    context = constructor(dialect, self, conn, *args)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\default.py", line 768, in _init_compiled
+    self.cursor = self.create_cursor()
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\default.py", line 1122, in create_cursor
+    return self._dbapi_connection.cursor()
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\pool\base.py", line 965, in cursor
+    return self.connection.cursor(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\mysql\connector\connection.py", line 809, in cursor
+    raise errors.OperationalError("MySQL Connection not available.")
+mysql.connector.errors.OperationalError: MySQL Connection not available.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "E:\GraduationWork\DepartmentHandler\department-app\rest\api.py", line 44, in get
+    departments = crud.Departments.get_all()
+  File "E:\GraduationWork\DepartmentHandler\department-app\service\crud.py", line 31, in get_all
+    return Department.query.all()
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\query.py", line 3211, in all
+    return list(self)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\query.py", line 3367, in __iter__
+    return self._execute_and_instances(context)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\query.py", line 3392, in _execute_and_instances
+    result = conn.execute(querycontext.statement, self._params)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 982, in execute
+    return meth(self, multiparams, params)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\sql\elements.py", line 287, in _execute_on_connection
+    return connection._execute_clauseelement(self, multiparams, params)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1095, in _execute_clauseelement
+    ret = self._execute_context(
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1175, in _execute_context
+    self._handle_dbapi_exception(
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1476, in _handle_dbapi_exception
+    util.raise_from_cause(sqlalchemy_exception, exc_info)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\util\compat.py", line 398, in raise_from_cause
+    reraise(type(exception), exception, tb=exc_tb, cause=cause)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\util\compat.py", line 152, in reraise
+    raise value.with_traceback(tb)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1173, in _execute_context
+    context = constructor(dialect, self, conn, *args)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\default.py", line 768, in _init_compiled
+    self.cursor = self.create_cursor()
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\default.py", line 1122, in create_cursor
+    return self._dbapi_connection.cursor()
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\pool\base.py", line 965, in cursor
+    return self.connection.cursor(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\mysql\connector\connection.py", line 809, in cursor
+    raise errors.OperationalError("MySQL Connection not available.")
+sqlalchemy.exc.OperationalError: (mysql.connector.errors.OperationalError) MySQL Connection not available.
+[SQL: SELECT department.id AS department_id 
+FROM department]
+[parameters: [immutabledict({})]]
+(Background on this error at: http://sqlalche.me/e/e3q8)
+2019-12-14 20:17:21,274 - service.crud - DEBUG - List of department was returned
+2019-12-14 20:17:23,839 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-14 20:17:26,161 - service.crud - DEBUG - List of department was returned
+2019-12-14 20:17:27,324 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-14 20:17:34,747 - service.crud - DEBUG - List of employees was returned
+2019-12-14 20:17:34,900 - rest.api - DEBUG - GET method (/api/employees) was successful
+2019-12-14 20:22:48,964 - service.crud - DEBUG - List of employees was returned
+2019-12-14 20:22:48,966 - rest.api - ERROR - Exception on /api/employees [GET]
+Traceback (most recent call last):
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1173, in _execute_context
+    context = constructor(dialect, self, conn, *args)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\default.py", line 768, in _init_compiled
+    self.cursor = self.create_cursor()
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\default.py", line 1122, in create_cursor
+    return self._dbapi_connection.cursor()
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\pool\base.py", line 965, in cursor
+    return self.connection.cursor(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\mysql\connector\connection.py", line 809, in cursor
+    raise errors.OperationalError("MySQL Connection not available.")
+mysql.connector.errors.OperationalError: MySQL Connection not available.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "E:\GraduationWork\DepartmentHandler\department-app\rest\api.py", line 143, in get
+    employees = crud.Employees.get_all()
+  File "E:\GraduationWork\DepartmentHandler\department-app\service\crud.py", line 118, in get_all
+    return Employee.query.all()
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\query.py", line 3211, in all
+    return list(self)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\query.py", line 3367, in __iter__
+    return self._execute_and_instances(context)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\query.py", line 3392, in _execute_and_instances
+    result = conn.execute(querycontext.statement, self._params)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 982, in execute
+    return meth(self, multiparams, params)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\sql\elements.py", line 287, in _execute_on_connection
+    return connection._execute_clauseelement(self, multiparams, params)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1095, in _execute_clauseelement
+    ret = self._execute_context(
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1175, in _execute_context
+    self._handle_dbapi_exception(
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1476, in _handle_dbapi_exception
+    util.raise_from_cause(sqlalchemy_exception, exc_info)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\util\compat.py", line 398, in raise_from_cause
+    reraise(type(exception), exception, tb=exc_tb, cause=cause)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\util\compat.py", line 152, in reraise
+    raise value.with_traceback(tb)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1173, in _execute_context
+    context = constructor(dialect, self, conn, *args)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\default.py", line 768, in _init_compiled
+    self.cursor = self.create_cursor()
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\default.py", line 1122, in create_cursor
+    return self._dbapi_connection.cursor()
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\pool\base.py", line 965, in cursor
+    return self.connection.cursor(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\mysql\connector\connection.py", line 809, in cursor
+    raise errors.OperationalError("MySQL Connection not available.")
+sqlalchemy.exc.OperationalError: (mysql.connector.errors.OperationalError) MySQL Connection not available.
+[SQL: SELECT employee.id AS employee_id, employee.name AS employee_name, employee.department_id AS employee_department_id, employee.date_of_birthday AS employee_date_of_birthday, employee.salary AS employee_salary 
+FROM employee]
+[parameters: [immutabledict({})]]
+(Background on this error at: http://sqlalche.me/e/e3q8)
+2019-12-14 20:22:51,183 - service.crud - DEBUG - List of employees was returned
+2019-12-14 20:22:51,705 - rest.api - DEBUG - GET method (/api/employees) was successful
+2019-12-14 20:23:22,723 - service.crud - DEBUG - Employee <employee_id> is not exist
+2019-12-14 20:23:22,724 - rest.api - ERROR - Exception on /api/employee/<employee_id> [GET]
+Traceback (most recent call last):
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "E:\GraduationWork\DepartmentHandler\department-app\rest\api.py", line 170, in get
+    employee = crud.Employees.get(employee_id)
+  File "E:\GraduationWork\DepartmentHandler\department-app\service\crud.py", line 132, in get
+    raise AttributeError
+AttributeError
+2019-12-14 20:26:24,647 - service.crud - DEBUG - Employee <employee_id> is not exist
+2019-12-14 20:26:24,648 - rest.api - ERROR - Exception on /api/employee/<employee_id> [GET]
+Traceback (most recent call last):
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "E:\GraduationWork\DepartmentHandler\department-app\rest\api.py", line 170, in get
+    employee = crud.Employees.get(employee_id)
+  File "E:\GraduationWork\DepartmentHandler\department-app\service\crud.py", line 132, in get
+    raise AttributeError
+AttributeError
+2019-12-14 20:26:29,127 - service.crud - DEBUG - Employee <employee_id> is not exist
+2019-12-14 20:26:29,128 - rest.api - ERROR - Exception on /api/employee/<employee_id> [GET]
+Traceback (most recent call last):
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "E:\GraduationWork\DepartmentHandler\department-app\rest\api.py", line 170, in get
+    employee = crud.Employees.get(employee_id)
+  File "E:\GraduationWork\DepartmentHandler\department-app\service\crud.py", line 132, in get
+    raise AttributeError
+AttributeError
+2019-12-14 20:27:04,706 - service.crud - DEBUG - Employee <employee_id> is not exist
+2019-12-14 20:27:04,707 - rest.api - ERROR - Exception on /api/employee/<employee_id> [GET]
+Traceback (most recent call last):
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "E:\GraduationWork\DepartmentHandler\department-app\rest\api.py", line 170, in get
+    employee = crud.Employees.get(employee_id)
+  File "E:\GraduationWork\DepartmentHandler\department-app\service\crud.py", line 132, in get
+    raise AttributeError
+AttributeError
+2019-12-14 20:27:06,501 - service.crud - DEBUG - List of employees was returned
+2019-12-14 20:27:06,675 - rest.api - DEBUG - GET method (/api/employees) was successful
+2019-12-14 20:27:09,788 - service.crud - DEBUG - Employee <employee_id> is not exist
+2019-12-14 20:27:09,788 - rest.api - ERROR - Exception on /api/employee/<employee_id> [GET]
+Traceback (most recent call last):
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "E:\GraduationWork\DepartmentHandler\department-app\rest\api.py", line 170, in get
+    employee = crud.Employees.get(employee_id)
+  File "E:\GraduationWork\DepartmentHandler\department-app\service\crud.py", line 132, in get
+    raise AttributeError
+AttributeError
+2019-12-14 20:27:48,900 - service.crud - DEBUG - Employee <employee_id> is not exist
+2019-12-14 20:27:48,901 - rest.api - ERROR - Exception on /api/employee/<employee_id> [GET]
+Traceback (most recent call last):
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "E:\GraduationWork\DepartmentHandler\department-app\rest\api.py", line 170, in get
+    employee = crud.Employees.get(employee_id)
+  File "E:\GraduationWork\DepartmentHandler\department-app\service\crud.py", line 132, in get
+    raise AttributeError
+AttributeError
+2019-12-14 20:27:51,871 - service.crud - DEBUG - List of employees was returned
+2019-12-14 20:27:52,037 - rest.api - DEBUG - GET method (/api/employees) was successful
+2019-12-14 20:27:53,815 - service.crud - DEBUG - Employee <employee_id> is not exist
+2019-12-14 20:27:53,816 - rest.api - ERROR - Exception on /api/employee/<employee_id> [GET]
+Traceback (most recent call last):
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "E:\GraduationWork\DepartmentHandler\department-app\rest\api.py", line 170, in get
+    employee = crud.Employees.get(employee_id)
+  File "E:\GraduationWork\DepartmentHandler\department-app\service\crud.py", line 132, in get
+    raise AttributeError
+AttributeError
+2019-12-14 20:29:25,893 - service.crud - DEBUG - Employee 1 was returned
+2019-12-14 20:29:25,894 - rest.api - DEBUG - GET method (/api/employee/1) was successful
+2019-12-14 20:29:42,807 - service.crud - DEBUG - List of employees was returned
+2019-12-14 20:29:42,963 - rest.api - DEBUG - GET method (/api/employees) was successful
+2019-12-14 20:29:45,643 - service.crud - DEBUG - Employee 5 was returned
+2019-12-14 20:29:45,644 - rest.api - DEBUG - GET method (/api/employee/5) was successful
+2019-12-14 20:29:51,700 - service.crud - DEBUG - List of employees was returned
+2019-12-14 20:29:51,860 - rest.api - DEBUG - GET method (/api/employees) was successful
+2019-12-14 20:30:24,711 - service.crud - DEBUG - List of department was returned
+2019-12-14 20:30:25,840 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-14 20:32:13,127 - service.crud - DEBUG - List of employees was returned
+2019-12-14 20:32:13,336 - rest.api - DEBUG - GET method (/api/employees) was successful
+2019-12-14 20:34:20,142 - service.crud - DEBUG - List of employees was returned
+2019-12-14 20:34:20,315 - rest.api - DEBUG - GET method (/api/employees) was successful
+2019-12-14 20:39:02,083 - service.crud - DEBUG - List of employees was returned
+2019-12-14 20:39:02,255 - rest.api - DEBUG - GET method (/api/employees) was successful
+2019-12-14 20:39:04,741 - service.crud - DEBUG - List of department was returned
+2019-12-14 20:39:05,921 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-14 20:39:10,923 - service.crud - DEBUG - List of employees was returned
+2019-12-14 20:39:11,092 - rest.api - DEBUG - GET method (/api/employees) was successful
+2019-12-14 20:39:14,738 - service.crud - DEBUG - List of employees was returned
+2019-12-14 20:39:14,904 - rest.api - DEBUG - GET method (/api/employees) was successful
+2019-12-14 20:39:16,787 - service.crud - DEBUG - Employee 2 was returned
+2019-12-14 20:39:16,790 - rest.api - DEBUG - GET method (/api/employee/2) was successful
+2019-12-14 20:39:25,159 - service.crud - DEBUG - List of employees was returned
+2019-12-14 20:39:25,320 - rest.api - DEBUG - GET method (/api/employees) was successful
+2019-12-14 20:39:41,365 - service.crud - DEBUG - Employee 2 was returned
+2019-12-14 20:39:41,366 - rest.api - DEBUG - GET method (/api/employee/2) was successful
+2019-12-14 20:39:43,947 - service.crud - DEBUG - List of employees was returned
+2019-12-14 20:39:44,116 - rest.api - DEBUG - GET method (/api/employees) was successful
+2019-12-14 20:39:45,471 - service.crud - DEBUG - List of department was returned
+2019-12-14 20:39:46,607 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-14 20:39:50,699 - service.crud - DEBUG - List of department was returned
+2019-12-14 20:39:51,843 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-14 20:39:58,380 - service.crud - DEBUG - List of employees was returned
+2019-12-14 20:39:58,545 - rest.api - DEBUG - GET method (/api/employees) was successful
+2019-12-14 20:45:39,965 - service.crud - DEBUG - List of employees was returned
+2019-12-14 20:45:39,969 - rest.api - ERROR - Exception on /api/employees [GET]
+Traceback (most recent call last):
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1173, in _execute_context
+    context = constructor(dialect, self, conn, *args)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\default.py", line 768, in _init_compiled
+    self.cursor = self.create_cursor()
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\default.py", line 1122, in create_cursor
+    return self._dbapi_connection.cursor()
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\pool\base.py", line 965, in cursor
+    return self.connection.cursor(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\mysql\connector\connection.py", line 809, in cursor
+    raise errors.OperationalError("MySQL Connection not available.")
+mysql.connector.errors.OperationalError: MySQL Connection not available.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "E:\GraduationWork\DepartmentHandler\department-app\rest\api.py", line 143, in get
+    employees = crud.Employees.get_all()
+  File "E:\GraduationWork\DepartmentHandler\department-app\service\crud.py", line 118, in get_all
+    return Employee.query.all()
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\query.py", line 3211, in all
+    return list(self)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\query.py", line 3367, in __iter__
+    return self._execute_and_instances(context)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\query.py", line 3392, in _execute_and_instances
+    result = conn.execute(querycontext.statement, self._params)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 982, in execute
+    return meth(self, multiparams, params)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\sql\elements.py", line 287, in _execute_on_connection
+    return connection._execute_clauseelement(self, multiparams, params)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1095, in _execute_clauseelement
+    ret = self._execute_context(
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1175, in _execute_context
+    self._handle_dbapi_exception(
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1476, in _handle_dbapi_exception
+    util.raise_from_cause(sqlalchemy_exception, exc_info)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\util\compat.py", line 398, in raise_from_cause
+    reraise(type(exception), exception, tb=exc_tb, cause=cause)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\util\compat.py", line 152, in reraise
+    raise value.with_traceback(tb)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1173, in _execute_context
+    context = constructor(dialect, self, conn, *args)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\default.py", line 768, in _init_compiled
+    self.cursor = self.create_cursor()
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\default.py", line 1122, in create_cursor
+    return self._dbapi_connection.cursor()
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\pool\base.py", line 965, in cursor
+    return self.connection.cursor(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\mysql\connector\connection.py", line 809, in cursor
+    raise errors.OperationalError("MySQL Connection not available.")
+sqlalchemy.exc.OperationalError: (mysql.connector.errors.OperationalError) MySQL Connection not available.
+[SQL: SELECT employee.id AS employee_id, employee.name AS employee_name, employee.department_id AS employee_department_id, employee.date_of_birthday AS employee_date_of_birthday, employee.salary AS employee_salary 
+FROM employee]
+[parameters: [immutabledict({})]]
+(Background on this error at: http://sqlalche.me/e/e3q8)
+2019-12-14 20:45:41,782 - service.crud - DEBUG - List of department was returned
+2019-12-14 20:45:45,621 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-14 20:45:45,997 - service.crud - DEBUG - List of employees was returned
+2019-12-14 20:45:46,165 - rest.api - DEBUG - GET method (/api/employees) was successful
+2019-12-14 20:45:50,478 - service.crud - DEBUG - Employee 1 was returned
+2019-12-14 20:45:50,478 - rest.api - DEBUG - GET method (/api/employee/1) was successful
+2019-12-14 20:45:50,544 - service.crud - DEBUG - List of department was returned
+2019-12-14 20:45:51,667 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-14 20:45:58,640 - service.crud - DEBUG - List of employees was returned
+2019-12-14 20:45:58,812 - rest.api - DEBUG - GET method (/api/employees) was successful
+2019-12-14 20:46:01,467 - service.crud - DEBUG - Employee 5 was returned
+2019-12-14 20:46:01,467 - rest.api - DEBUG - GET method (/api/employee/5) was successful
+2019-12-14 20:46:01,533 - service.crud - DEBUG - List of department was returned
+2019-12-14 20:46:02,670 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-14 20:46:08,207 - service.crud - DEBUG - List of employees was returned
+2019-12-14 20:46:08,368 - rest.api - DEBUG - GET method (/api/employees) was successful
+2019-12-14 20:46:10,975 - service.crud - DEBUG - Employee 9 was returned
+2019-12-14 20:46:10,976 - rest.api - DEBUG - GET method (/api/employee/9) was successful
+2019-12-14 20:46:11,042 - service.crud - DEBUG - List of department was returned
+2019-12-14 20:46:12,211 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-14 20:53:41,347 - rest.api - INFO - Web-service started
+2019-12-14 20:53:44,918 - service.crud - DEBUG - List of department was returned
+2019-12-14 20:53:45,086 - rest.api - DEBUG - GET method (/api/departments-ids) was successful
+2019-12-14 20:54:52,350 - rest.api - INFO - Web-service started
+2019-12-14 20:54:54,364 - service.crud - DEBUG - List of employees was returned
+2019-12-14 20:54:56,162 - rest.api - DEBUG - GET method (/api/employees) was successful
+2019-12-14 20:55:00,898 - service.crud - DEBUG - Employee 1 was returned
+2019-12-14 20:55:00,899 - rest.api - DEBUG - GET method (/api/employee/1) was successful
+2019-12-14 20:55:00,964 - service.crud - DEBUG - List of department was returned
+2019-12-14 20:55:01,123 - rest.api - DEBUG - GET method (/api/departments-ids) was successful
+2019-12-14 20:55:04,214 - service.crud - DEBUG - List of employees was returned
+2019-12-14 20:55:04,402 - rest.api - DEBUG - GET method (/api/employees) was successful
+2019-12-14 20:55:07,391 - service.crud - DEBUG - Employee 7 was returned
+2019-12-14 20:55:07,392 - rest.api - DEBUG - GET method (/api/employee/7) was successful
+2019-12-14 20:55:07,460 - service.crud - DEBUG - List of department was returned
+2019-12-14 20:55:07,658 - rest.api - DEBUG - GET method (/api/departments-ids) was successful
+2019-12-14 20:55:11,277 - service.crud - DEBUG - List of employees was returned
+2019-12-14 20:55:11,441 - rest.api - DEBUG - GET method (/api/employees) was successful
+2019-12-14 20:59:46,151 - service.crud - DEBUG - List of employees was returned
+2019-12-14 20:59:46,320 - rest.api - DEBUG - GET method (/api/employees) was successful
+2019-12-14 20:59:49,099 - service.crud - DEBUG - Employee 1 was returned
+2019-12-14 20:59:49,099 - rest.api - DEBUG - GET method (/api/employee/1) was successful
+2019-12-14 20:59:49,176 - service.crud - DEBUG - List of department was returned
+2019-12-14 20:59:49,335 - rest.api - DEBUG - GET method (/api/departments-ids) was successful
+2019-12-14 21:00:02,681 - service.crud - DEBUG - Employee 1 was returned
+2019-12-14 21:00:02,683 - rest.api - DEBUG - GET method (/api/employee/1) was successful
+2019-12-14 21:00:02,765 - service.crud - DEBUG - List of department was returned
+2019-12-14 21:00:02,941 - rest.api - DEBUG - GET method (/api/departments-ids) was successful
+2019-12-14 21:00:09,855 - service.crud - DEBUG - Employee 11 was returned
+2019-12-14 21:00:09,855 - rest.api - DEBUG - GET method (/api/employee/11) was successful
+2019-12-14 21:00:09,921 - service.crud - DEBUG - List of department was returned
+2019-12-14 21:00:10,114 - rest.api - DEBUG - GET method (/api/departments-ids) was successful
+2019-12-14 21:00:16,905 - service.crud - DEBUG - Employee 20 was returned
+2019-12-14 21:00:16,906 - rest.api - DEBUG - GET method (/api/employee/20) was successful
+2019-12-14 21:00:16,973 - service.crud - DEBUG - List of department was returned
+2019-12-14 21:00:17,172 - rest.api - DEBUG - GET method (/api/departments-ids) was successful
+2019-12-14 21:00:59,503 - service.crud - DEBUG - Employee 14 was returned
+2019-12-14 21:00:59,504 - rest.api - DEBUG - GET method (/api/employee/14) was successful
+2019-12-14 21:00:59,570 - service.crud - DEBUG - List of department was returned
+2019-12-14 21:00:59,749 - rest.api - DEBUG - GET method (/api/departments-ids) was successful
+2019-12-14 21:04:45,044 - service.crud - DEBUG - Employee 14 was returned
+2019-12-14 21:04:45,046 - rest.api - DEBUG - GET method (/api/employee/14) was successful
+2019-12-14 21:04:45,131 - service.crud - DEBUG - List of department was returned
+2019-12-14 21:04:45,300 - rest.api - DEBUG - GET method (/api/departments-ids) was successful
+2019-12-14 21:05:33,156 - service.crud - DEBUG - Employee 14 was returned
+2019-12-14 21:05:33,157 - rest.api - DEBUG - GET method (/api/employee/14) was successful
+2019-12-14 21:05:33,237 - service.crud - DEBUG - List of department was returned
+2019-12-14 21:05:33,419 - rest.api - DEBUG - GET method (/api/departments-ids) was successful
+2019-12-14 21:05:36,022 - service.crud - DEBUG - List of employees was returned
+2019-12-14 21:05:36,185 - rest.api - DEBUG - GET method (/api/employees) was successful
+2019-12-14 21:05:40,407 - service.crud - DEBUG - Employee 19 was returned
+2019-12-14 21:05:40,408 - rest.api - DEBUG - GET method (/api/employee/19) was successful
+2019-12-14 21:05:40,472 - service.crud - DEBUG - List of department was returned
+2019-12-14 21:05:40,655 - rest.api - DEBUG - GET method (/api/departments-ids) was successful
+2019-12-14 21:05:52,723 - service.crud - DEBUG - Employee 19 was returned
+2019-12-14 21:05:52,724 - rest.api - DEBUG - GET method (/api/employee/19) was successful
+2019-12-14 21:05:52,797 - service.crud - DEBUG - List of department was returned
+2019-12-14 21:05:52,959 - rest.api - DEBUG - GET method (/api/departments-ids) was successful
+2019-12-14 21:05:54,681 - service.crud - DEBUG - List of employees was returned
+2019-12-14 21:05:54,848 - rest.api - DEBUG - GET method (/api/employees) was successful
+2019-12-14 21:05:56,959 - service.crud - DEBUG - Employee 7 was returned
+2019-12-14 21:05:56,960 - rest.api - DEBUG - GET method (/api/employee/7) was successful
+2019-12-14 21:05:57,029 - service.crud - DEBUG - List of department was returned
+2019-12-14 21:05:57,221 - rest.api - DEBUG - GET method (/api/departments-ids) was successful
+2019-12-14 21:06:03,052 - service.crud - DEBUG - Employee 18 was returned
+2019-12-14 21:06:03,052 - rest.api - DEBUG - GET method (/api/employee/18) was successful
+2019-12-14 21:06:03,122 - service.crud - DEBUG - List of department was returned
+2019-12-14 21:06:03,293 - rest.api - DEBUG - GET method (/api/departments-ids) was successful
+2019-12-14 21:07:46,712 - service.crud - DEBUG - Employee 18 was returned
+2019-12-14 21:07:46,713 - rest.api - DEBUG - GET method (/api/employee/18) was successful
+2019-12-14 21:07:46,782 - service.crud - DEBUG - List of department was returned
+2019-12-14 21:07:46,968 - rest.api - DEBUG - GET method (/api/departments-ids) was successful
+2019-12-14 21:07:51,644 - service.crud - DEBUG - List of employees was returned
+2019-12-14 21:07:51,810 - rest.api - DEBUG - GET method (/api/employees) was successful
+2019-12-14 21:07:54,915 - service.crud - DEBUG - Employee 18 was returned
+2019-12-14 21:07:54,917 - rest.api - DEBUG - GET method (/api/employee/18) was successful
+2019-12-14 21:07:54,991 - service.crud - DEBUG - List of department was returned
+2019-12-14 21:07:55,160 - rest.api - DEBUG - GET method (/api/departments-ids) was successful
+2019-12-14 21:08:00,596 - service.crud - DEBUG - List of employees was returned
+2019-12-14 21:08:00,784 - rest.api - DEBUG - GET method (/api/employees) was successful
+2019-12-14 21:08:04,543 - service.crud - DEBUG - List of department was returned
+2019-12-14 21:08:05,716 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-14 21:08:32,926 - service.crud - DEBUG - List of employees was returned
+2019-12-14 21:08:33,113 - rest.api - DEBUG - GET method (/api/employees) was successful
+2019-12-14 21:08:40,161 - service.crud - DEBUG - Employee 11 was returned
+2019-12-14 21:08:40,162 - rest.api - DEBUG - GET method (/api/employee/11) was successful
+2019-12-14 21:08:40,241 - service.crud - DEBUG - List of department was returned
+2019-12-14 21:08:40,408 - rest.api - DEBUG - GET method (/api/departments-ids) was successful
+2019-12-14 21:10:01,372 - service.crud - DEBUG - List of employees was returned
+2019-12-14 21:10:01,553 - rest.api - DEBUG - GET method (/api/employees) was successful
+2019-12-14 21:10:11,083 - service.crud - DEBUG - Employee 4 was returned
+2019-12-14 21:10:11,084 - rest.api - DEBUG - GET method (/api/employee/4) was successful
+2019-12-14 21:10:11,148 - service.crud - DEBUG - List of department was returned
+2019-12-14 21:10:11,308 - rest.api - DEBUG - GET method (/api/departments-ids) was successful
+2019-12-14 21:10:25,856 - service.crud - DEBUG - List of department was returned
+2019-12-14 21:10:27,008 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-14 21:10:35,411 - service.crud - DEBUG - List of employees was returned
+2019-12-14 21:10:35,565 - rest.api - DEBUG - GET method (/api/employees) was successful
+2019-12-14 21:12:09,414 - service.crud - DEBUG - List of employees was returned
+2019-12-14 21:12:09,577 - rest.api - DEBUG - GET method (/api/employees) was successful
+2019-12-14 21:12:21,255 - service.crud - DEBUG - Employee 21 was returned
+2019-12-14 21:12:21,255 - rest.api - DEBUG - GET method (/api/employee/21) was successful
+2019-12-14 21:12:21,322 - service.crud - DEBUG - List of department was returned
+2019-12-14 21:12:21,484 - rest.api - DEBUG - GET method (/api/departments-ids) was successful
+2019-12-14 21:12:37,562 - service.crud - DEBUG - List of department was returned
+2019-12-14 21:12:38,691 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-14 21:15:54,443 - service.crud - DEBUG - List of department was returned
+2019-12-14 21:15:55,588 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-14 21:16:00,005 - service.crud - DEBUG - List of department was returned
+2019-12-14 21:16:01,139 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-14 21:16:14,155 - service.crud - DEBUG - List of department was returned
+2019-12-14 21:16:15,273 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-14 21:16:17,242 - service.crud - DEBUG - List of employees was returned
+2019-12-14 21:16:17,411 - rest.api - DEBUG - GET method (/api/employees) was successful
+2019-12-14 21:16:19,548 - service.crud - DEBUG - Employee 3 was returned
+2019-12-14 21:16:19,549 - rest.api - DEBUG - GET method (/api/employee/3) was successful
+2019-12-14 21:16:19,612 - service.crud - DEBUG - List of department was returned
+2019-12-14 21:16:19,771 - rest.api - DEBUG - GET method (/api/departments-ids) was successful
+2019-12-14 21:16:21,676 - service.crud - DEBUG - List of employees was returned
+2019-12-14 21:16:21,842 - rest.api - DEBUG - GET method (/api/employees) was successful
+2019-12-14 22:04:45,451 - rest.api - INFO - Web-service started
+2019-12-14 22:04:55,963 - service.crud - DEBUG - List of department was returned
+2019-12-14 22:04:58,789 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-14 22:08:42,946 - service.crud - DEBUG - List of department was returned
+2019-12-14 22:08:44,119 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-14 22:11:16,313 - service.crud - DEBUG - List of department was returned
+2019-12-14 22:11:17,497 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-14 22:13:46,975 - service.crud - DEBUG - List of employees was returned
+2019-12-14 22:13:47,160 - rest.api - DEBUG - GET method (/api/employees) was successful
+2019-12-14 22:13:48,922 - service.crud - DEBUG - List of department was returned
+2019-12-14 22:13:50,065 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-14 22:14:11,700 - service.crud - DEBUG - List of department was returned
+2019-12-14 22:14:12,850 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-14 22:14:18,717 - rest.api - DEBUG - POST method (/api/department) was not successful (400)
+2019-12-14 22:14:18,825 - service.crud - DEBUG - List of department was returned
+2019-12-14 22:14:19,966 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-14 22:14:23,578 - service.crud - DEBUG - List of department was returned
+2019-12-14 22:14:24,730 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-14 22:14:27,078 - service.crud - DEBUG - List of department was returned
+2019-12-14 22:14:28,222 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-14 22:15:18,904 - service.crud - DEBUG - List of department was returned
+2019-12-14 22:15:20,066 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-14 22:16:24,384 - service.crud - DEBUG - List of department was returned
+2019-12-14 22:16:25,530 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-14 22:16:32,412 - rest.api - DEBUG - POST method (/api/department) was not successful (400)
+2019-12-14 22:16:32,503 - service.crud - DEBUG - List of department was returned
+2019-12-14 22:16:33,686 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-14 22:18:16,840 - service.crud - DEBUG - List of department was returned
+2019-12-14 22:18:17,992 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-14 22:18:25,682 - rest.api - DEBUG - POST method (/api/department) was not successful (400)
+2019-12-14 22:18:25,778 - service.crud - DEBUG - List of department was returned
+2019-12-14 22:18:26,907 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-14 22:20:25,022 - service.crud - DEBUG - List of department was returned
+2019-12-14 22:20:26,179 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-14 22:20:32,806 - rest.api - DEBUG - POST method (/api/department) was not successful (400)
+2019-12-14 22:20:32,902 - service.crud - DEBUG - List of department was returned
+2019-12-14 22:20:34,075 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-14 22:22:16,120 - service.crud - DEBUG - List of department was returned
+2019-12-14 22:22:17,264 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-14 22:22:23,717 - service.crud - DEBUG - Department 10007 was added
+2019-12-14 22:22:23,721 - rest.api - DEBUG - POST method (/api/department) was successful
+2019-12-14 22:22:23,757 - service.crud - DEBUG - List of department was returned
+2019-12-14 22:22:25,096 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-14 22:39:09,594 - service.crud - DEBUG - List of employees was returned
+2019-12-14 22:39:09,598 - rest.api - ERROR - Exception on /api/employees [GET]
+Traceback (most recent call last):
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1173, in _execute_context
+    context = constructor(dialect, self, conn, *args)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\default.py", line 768, in _init_compiled
+    self.cursor = self.create_cursor()
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\default.py", line 1122, in create_cursor
+    return self._dbapi_connection.cursor()
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\pool\base.py", line 965, in cursor
+    return self.connection.cursor(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\mysql\connector\connection.py", line 809, in cursor
+    raise errors.OperationalError("MySQL Connection not available.")
+mysql.connector.errors.OperationalError: MySQL Connection not available.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "E:\GraduationWork\DepartmentHandler\department-app\rest\api.py", line 160, in get
+    employees = crud.Employees.get_all()
+  File "E:\GraduationWork\DepartmentHandler\department-app\service\crud.py", line 118, in get_all
+    return Employee.query.all()
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\query.py", line 3211, in all
+    return list(self)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\query.py", line 3367, in __iter__
+    return self._execute_and_instances(context)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\query.py", line 3392, in _execute_and_instances
+    result = conn.execute(querycontext.statement, self._params)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 982, in execute
+    return meth(self, multiparams, params)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\sql\elements.py", line 287, in _execute_on_connection
+    return connection._execute_clauseelement(self, multiparams, params)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1095, in _execute_clauseelement
+    ret = self._execute_context(
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1175, in _execute_context
+    self._handle_dbapi_exception(
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1476, in _handle_dbapi_exception
+    util.raise_from_cause(sqlalchemy_exception, exc_info)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\util\compat.py", line 398, in raise_from_cause
+    reraise(type(exception), exception, tb=exc_tb, cause=cause)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\util\compat.py", line 152, in reraise
+    raise value.with_traceback(tb)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1173, in _execute_context
+    context = constructor(dialect, self, conn, *args)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\default.py", line 768, in _init_compiled
+    self.cursor = self.create_cursor()
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\default.py", line 1122, in create_cursor
+    return self._dbapi_connection.cursor()
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\pool\base.py", line 965, in cursor
+    return self.connection.cursor(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\mysql\connector\connection.py", line 809, in cursor
+    raise errors.OperationalError("MySQL Connection not available.")
+sqlalchemy.exc.OperationalError: (mysql.connector.errors.OperationalError) MySQL Connection not available.
+[SQL: SELECT employee.id AS employee_id, employee.name AS employee_name, employee.department_id AS employee_department_id, employee.date_of_birthday AS employee_date_of_birthday, employee.salary AS employee_salary 
+FROM employee]
+[parameters: [immutabledict({})]]
+(Background on this error at: http://sqlalche.me/e/e3q8)
+2019-12-14 22:39:13,712 - service.crud - DEBUG - List of employees was returned
+2019-12-14 22:39:14,180 - rest.api - DEBUG - GET method (/api/employees) was successful
+2019-12-14 22:40:25,155 - service.crud - DEBUG - List of department was returned
+2019-12-14 22:40:26,530 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-14 22:45:34,835 - service.crud - DEBUG - List of department was returned
+2019-12-14 22:45:34,839 - rest.api - ERROR - Exception on /api/departments [GET]
+Traceback (most recent call last):
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1173, in _execute_context
+    context = constructor(dialect, self, conn, *args)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\default.py", line 768, in _init_compiled
+    self.cursor = self.create_cursor()
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\default.py", line 1122, in create_cursor
+    return self._dbapi_connection.cursor()
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\pool\base.py", line 965, in cursor
+    return self.connection.cursor(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\mysql\connector\connection.py", line 809, in cursor
+    raise errors.OperationalError("MySQL Connection not available.")
+mysql.connector.errors.OperationalError: MySQL Connection not available.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "E:\GraduationWork\DepartmentHandler\department-app\rest\api.py", line 44, in get
+    departments = crud.Departments.get_all()
+  File "E:\GraduationWork\DepartmentHandler\department-app\service\crud.py", line 31, in get_all
+    return Department.query.all()
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\query.py", line 3211, in all
+    return list(self)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\query.py", line 3367, in __iter__
+    return self._execute_and_instances(context)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\query.py", line 3392, in _execute_and_instances
+    result = conn.execute(querycontext.statement, self._params)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 982, in execute
+    return meth(self, multiparams, params)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\sql\elements.py", line 287, in _execute_on_connection
+    return connection._execute_clauseelement(self, multiparams, params)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1095, in _execute_clauseelement
+    ret = self._execute_context(
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1175, in _execute_context
+    self._handle_dbapi_exception(
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1476, in _handle_dbapi_exception
+    util.raise_from_cause(sqlalchemy_exception, exc_info)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\util\compat.py", line 398, in raise_from_cause
+    reraise(type(exception), exception, tb=exc_tb, cause=cause)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\util\compat.py", line 152, in reraise
+    raise value.with_traceback(tb)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1173, in _execute_context
+    context = constructor(dialect, self, conn, *args)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\default.py", line 768, in _init_compiled
+    self.cursor = self.create_cursor()
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\default.py", line 1122, in create_cursor
+    return self._dbapi_connection.cursor()
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\pool\base.py", line 965, in cursor
+    return self.connection.cursor(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\mysql\connector\connection.py", line 809, in cursor
+    raise errors.OperationalError("MySQL Connection not available.")
+sqlalchemy.exc.OperationalError: (mysql.connector.errors.OperationalError) MySQL Connection not available.
+[SQL: SELECT department.id AS department_id 
+FROM department]
+[parameters: [immutabledict({})]]
+(Background on this error at: http://sqlalche.me/e/e3q8)
+2019-12-14 22:45:37,148 - service.crud - DEBUG - List of department was returned
+2019-12-14 22:45:38,796 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-14 22:46:52,778 - service.crud - DEBUG - List of department was returned
+2019-12-14 22:46:54,132 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-14 22:51:28,167 - rest.api - INFO - Web-service started
+2019-12-14 22:51:31,859 - service.crud - DEBUG - Department 10001 was updated
+2019-12-14 22:51:32,153 - rest.api - DEBUG - PUT method (/api/department/10001) was successful
+2019-12-14 22:51:58,774 - service.crud - DEBUG - List of department was returned
+2019-12-14 22:51:58,777 - rest.api - ERROR - Exception on /api/departments [GET]
+Traceback (most recent call last):
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1173, in _execute_context
+    context = constructor(dialect, self, conn, *args)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\default.py", line 768, in _init_compiled
+    self.cursor = self.create_cursor()
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\default.py", line 1122, in create_cursor
+    return self._dbapi_connection.cursor()
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\pool\base.py", line 965, in cursor
+    return self.connection.cursor(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\mysql\connector\connection.py", line 809, in cursor
+    raise errors.OperationalError("MySQL Connection not available.")
+mysql.connector.errors.OperationalError: MySQL Connection not available.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "E:\GraduationWork\DepartmentHandler\department-app\rest\api.py", line 44, in get
+    departments = crud.Departments.get_all()
+  File "E:\GraduationWork\DepartmentHandler\department-app\service\crud.py", line 31, in get_all
+    return Department.query.all()
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\query.py", line 3211, in all
+    return list(self)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\query.py", line 3367, in __iter__
+    return self._execute_and_instances(context)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\query.py", line 3392, in _execute_and_instances
+    result = conn.execute(querycontext.statement, self._params)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 982, in execute
+    return meth(self, multiparams, params)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\sql\elements.py", line 287, in _execute_on_connection
+    return connection._execute_clauseelement(self, multiparams, params)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1095, in _execute_clauseelement
+    ret = self._execute_context(
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1175, in _execute_context
+    self._handle_dbapi_exception(
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1476, in _handle_dbapi_exception
+    util.raise_from_cause(sqlalchemy_exception, exc_info)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\util\compat.py", line 398, in raise_from_cause
+    reraise(type(exception), exception, tb=exc_tb, cause=cause)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\util\compat.py", line 152, in reraise
+    raise value.with_traceback(tb)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1173, in _execute_context
+    context = constructor(dialect, self, conn, *args)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\default.py", line 768, in _init_compiled
+    self.cursor = self.create_cursor()
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\default.py", line 1122, in create_cursor
+    return self._dbapi_connection.cursor()
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\pool\base.py", line 965, in cursor
+    return self.connection.cursor(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\mysql\connector\connection.py", line 809, in cursor
+    raise errors.OperationalError("MySQL Connection not available.")
+sqlalchemy.exc.OperationalError: (mysql.connector.errors.OperationalError) MySQL Connection not available.
+[SQL: SELECT department.id AS department_id 
+FROM department]
+[parameters: [immutabledict({})]]
+(Background on this error at: http://sqlalche.me/e/e3q8)
+2019-12-14 22:52:00,666 - service.crud - DEBUG - List of department was returned
+2019-12-14 22:52:02,261 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-14 22:54:01,017 - rest.api - INFO - Web-service started
+2019-12-14 22:54:11,818 - service.crud - DEBUG - List of department was returned
+2019-12-14 22:54:14,749 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-14 22:54:24,738 - service.crud - DEBUG - List of department was returned
+2019-12-14 22:54:26,036 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-14 22:55:41,278 - rest.api - INFO - Web-service started
+2019-12-14 22:55:59,490 - service.crud - DEBUG - List of department was returned
+2019-12-14 22:56:02,481 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-14 22:57:15,891 - rest.api - INFO - Web-service started
+2019-12-14 22:57:24,563 - service.crud - DEBUG - List of department was returned
+2019-12-14 22:57:27,659 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-14 22:58:41,825 - service.crud - DEBUG - Department 10008 is not exist, it can`t be updated
+2019-12-14 22:58:41,827 - rest.api - DEBUG - PUT method (/api/department/10008) was not successful (404)
+2019-12-14 22:58:41,920 - service.crud - DEBUG - List of department was returned
+2019-12-14 22:58:43,227 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-14 22:58:44,988 - service.crud - DEBUG - List of department was returned
+2019-12-14 22:58:46,283 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-14 23:00:56,717 - rest.api - INFO - Web-service started
+2019-12-14 23:01:13,212 - service.crud - DEBUG - Incorrect data. Department 10008 can`t be updated
+2019-12-14 23:01:13,212 - rest.api - DEBUG - PUT method (/api/department/10008) was not successful (400)
+2019-12-14 23:01:13,292 - service.crud - DEBUG - List of department was returned
+2019-12-14 23:01:14,662 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-14 23:01:16,508 - service.crud - DEBUG - List of department was returned
+2019-12-14 23:01:17,869 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-14 23:02:14,829 - rest.api - INFO - Web-service started
+2019-12-14 23:02:25,864 - service.crud - DEBUG - Incorrect data. Department 10008 can`t be updated
+2019-12-14 23:02:25,866 - rest.api - DEBUG - PUT method (/api/department/10008) was not successful (400)
+2019-12-14 23:02:25,952 - service.crud - DEBUG - List of department was returned
+2019-12-14 23:02:27,262 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-14 23:02:29,377 - service.crud - DEBUG - List of department was returned
+2019-12-14 23:02:30,664 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-14 23:04:22,007 - rest.api - INFO - Web-service started
+2019-12-14 23:04:25,748 - service.crud - DEBUG - Department 10001 is exist, it can`t be updated
+2019-12-14 23:04:25,748 - rest.api - DEBUG - PUT method (/api/department/10001) was not successful (404)
+2019-12-14 23:08:18,187 - rest.api - INFO - Web-service started
+2019-12-14 23:08:38,957 - service.crud - DEBUG - Department 10008 is not exist, it can`t be updated
+2019-12-14 23:08:38,964 - rest.api - DEBUG - PUT method (/api/department/10008) was not successful (404)
+2019-12-14 23:08:39,041 - service.crud - DEBUG - List of department was returned
+2019-12-14 23:08:40,360 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-14 23:11:18,697 - service.crud - DEBUG - List of department was returned
+2019-12-14 23:11:20,032 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-14 23:11:26,865 - service.crud - DEBUG - Department 10007 was updated
+2019-12-14 23:11:27,162 - rest.api - DEBUG - PUT method (/api/department/10007) was successful
+2019-12-14 23:11:27,179 - service.crud - DEBUG - List of department was returned
+2019-12-14 23:11:28,476 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-14 23:11:44,385 - service.crud - DEBUG - Department 10006 was updated
+2019-12-14 23:11:44,675 - rest.api - DEBUG - PUT method (/api/department/10006) was successful
+2019-12-14 23:11:44,703 - service.crud - DEBUG - List of department was returned
+2019-12-14 23:11:46,034 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-14 23:11:48,612 - service.crud - DEBUG - List of employees was returned
+2019-12-14 23:11:48,777 - rest.api - DEBUG - GET method (/api/employees) was successful
+2019-12-14 23:11:56,613 - service.crud - DEBUG - List of department was returned
+2019-12-14 23:11:57,919 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-14 23:12:04,967 - service.crud - DEBUG - Department 10007 was updated
+2019-12-14 23:12:05,255 - rest.api - DEBUG - PUT method (/api/department/10007) was successful
+2019-12-14 23:12:05,266 - service.crud - DEBUG - List of department was returned
+2019-12-14 23:12:06,569 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-14 23:15:48,988 - rest.api - INFO - Web-service started
+2019-12-14 23:16:03,037 - rest.api - INFO - Web-service started
+2019-12-14 23:16:21,956 - rest.api - INFO - Web-service started
+2019-12-14 23:16:35,646 - rest.api - INFO - Web-service started
+2019-12-14 23:16:55,324 - service.crud - DEBUG - Department 10006 was updated
+2019-12-14 23:16:55,631 - rest.api - DEBUG - PUT method (/api/department/10006) was successful
+2019-12-14 23:16:55,644 - service.crud - DEBUG - List of department was returned
+2019-12-14 23:16:56,953 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-14 23:16:59,876 - service.crud - DEBUG - List of employees was returned
+2019-12-14 23:17:00,039 - rest.api - DEBUG - GET method (/api/employees) was successful
+2019-12-14 23:17:04,612 - service.crud - DEBUG - List of department was returned
+2019-12-14 23:17:05,917 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-14 23:17:12,486 - service.crud - DEBUG - Department 10007 was updated
+2019-12-14 23:17:12,804 - rest.api - DEBUG - PUT method (/api/department/10007) was successful
+2019-12-14 23:17:12,845 - service.crud - DEBUG - List of department was returned
+2019-12-14 23:17:14,171 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-14 23:30:25,646 - rest.api - INFO - Web-service started
+2019-12-14 23:30:47,256 - service.crud - DEBUG - List of department was returned
+2019-12-14 23:30:50,150 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-14 23:30:55,662 - service.crud - DEBUG - Department 10006 was updated
+2019-12-14 23:30:55,971 - rest.api - DEBUG - PUT method (/api/department/10006) was successful
+2019-12-14 23:30:56,008 - service.crud - DEBUG - List of department was returned
+2019-12-14 23:30:57,374 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-14 23:31:04,365 - service.crud - DEBUG - Department 10007 was updated
+2019-12-14 23:31:04,661 - rest.api - DEBUG - PUT method (/api/department/10007) was successful
+2019-12-14 23:31:04,680 - service.crud - DEBUG - List of department was returned
+2019-12-14 23:31:06,008 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-14 23:50:32,990 - rest.api - INFO - Web-service started
+2019-12-14 23:50:39,653 - service.crud - DEBUG - List of department was returned
+2019-12-14 23:50:42,535 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-14 23:50:45,562 - service.crud - DEBUG - List of employees was returned
+2019-12-14 23:50:45,731 - rest.api - DEBUG - GET method (/api/employees) was successful
+2019-12-14 23:50:48,676 - service.crud - DEBUG - Employee 1 was returned
+2019-12-14 23:50:48,677 - rest.api - DEBUG - GET method (/api/employee/1) was successful
+2019-12-14 23:50:48,744 - service.crud - DEBUG - List of department was returned
+2019-12-14 23:50:48,904 - rest.api - DEBUG - GET method (/api/departments-ids) was successful
+2019-12-14 23:51:06,081 - service.crud - DEBUG - Employee 1 was returned
+2019-12-14 23:51:06,082 - rest.api - DEBUG - GET method (/api/employee/1) was successful
+2019-12-14 23:51:06,150 - service.crud - DEBUG - List of department was returned
+2019-12-14 23:51:06,314 - rest.api - DEBUG - GET method (/api/departments-ids) was successful
+2019-12-14 23:52:37,301 - service.crud - DEBUG - Employee 1 was returned
+2019-12-14 23:52:37,303 - rest.api - DEBUG - GET method (/api/employee/1) was successful
+2019-12-14 23:52:37,377 - service.crud - DEBUG - List of department was returned
+2019-12-14 23:52:37,559 - rest.api - DEBUG - GET method (/api/departments-ids) was successful
+2019-12-14 23:53:30,085 - service.crud - DEBUG - Employee 1 was returned
+2019-12-14 23:53:30,086 - rest.api - DEBUG - GET method (/api/employee/1) was successful
+2019-12-14 23:53:30,152 - service.crud - DEBUG - List of department was returned
+2019-12-14 23:53:30,325 - rest.api - DEBUG - GET method (/api/departments-ids) was successful
+2019-12-14 23:55:11,390 - service.crud - DEBUG - Employee 1 was returned
+2019-12-14 23:55:11,391 - rest.api - DEBUG - GET method (/api/employee/1) was successful
+2019-12-14 23:55:11,466 - service.crud - DEBUG - List of department was returned
+2019-12-14 23:55:11,628 - rest.api - DEBUG - GET method (/api/departments-ids) was successful
+2019-12-14 23:57:31,463 - rest.api - INFO - Web-service started
+2019-12-14 23:57:35,403 - service.crud - DEBUG - Employee 1 was returned
+2019-12-14 23:57:35,404 - rest.api - DEBUG - GET method (/api/employee/1) was successful
+2019-12-14 23:58:08,949 - rest.api - INFO - Web-service started
+2019-12-14 23:58:12,698 - service.crud - DEBUG - Employee 1 was returned
+2019-12-14 23:58:12,699 - rest.api - DEBUG - GET method (/api/employee/1) was successful
+2019-12-14 23:58:27,419 - rest.api - INFO - Web-service started
+2019-12-14 23:58:39,906 - service.crud - DEBUG - Employee 1 was returned
+2019-12-14 23:58:39,906 - rest.api - DEBUG - GET method (/api/employee/1) was successful
+2019-12-14 23:58:39,973 - service.crud - DEBUG - List of department was returned
+2019-12-14 23:58:40,137 - rest.api - DEBUG - GET method (/api/departments-ids) was successful
+2019-12-14 23:58:41,231 - service.crud - DEBUG - List of employees was returned
+2019-12-14 23:58:41,388 - rest.api - DEBUG - GET method (/api/employees) was successful
+2019-12-15 00:03:40,665 - service.crud - DEBUG - List of department was returned
+2019-12-15 00:03:42,007 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-15 00:03:45,194 - service.crud - DEBUG - List of employees was returned
+2019-12-15 00:03:45,355 - rest.api - DEBUG - GET method (/api/employees) was successful
+2019-12-15 00:03:48,201 - service.crud - DEBUG - Employee 1 was returned
+2019-12-15 00:03:48,202 - rest.api - DEBUG - GET method (/api/employee/1) was successful
+2019-12-15 00:03:48,285 - service.crud - DEBUG - List of department was returned
+2019-12-15 00:03:48,450 - rest.api - DEBUG - GET method (/api/departments-ids) was successful
+2019-12-15 00:03:49,705 - service.crud - DEBUG - List of employees was returned
+2019-12-15 00:03:49,869 - rest.api - DEBUG - GET method (/api/employees) was successful
+2019-12-15 00:04:39,380 - service.crud - DEBUG - List of employees was returned
+2019-12-15 00:04:39,567 - rest.api - DEBUG - GET method (/api/employees) was successful
+2019-12-15 00:04:45,336 - service.crud - DEBUG - Employee 1 was returned
+2019-12-15 00:04:45,337 - rest.api - DEBUG - GET method (/api/employee/1) was successful
+2019-12-15 00:04:45,401 - service.crud - DEBUG - List of department was returned
+2019-12-15 00:04:45,574 - rest.api - DEBUG - GET method (/api/departments-ids) was successful
+2019-12-15 00:04:49,163 - service.crud - DEBUG - List of employees was returned
+2019-12-15 00:04:49,331 - rest.api - DEBUG - GET method (/api/employees) was successful
+2019-12-15 00:08:14,166 - service.crud - DEBUG - Employee 1 was returned
+2019-12-15 00:08:14,167 - rest.api - DEBUG - GET method (/api/employee/1) was successful
+2019-12-15 00:08:14,234 - service.crud - DEBUG - List of department was returned
+2019-12-15 00:08:14,398 - rest.api - DEBUG - GET method (/api/departments-ids) was successful
+2019-12-15 00:08:16,076 - service.crud - DEBUG - List of employees was returned
+2019-12-15 00:08:16,282 - rest.api - DEBUG - GET method (/api/employees) was successful
+2019-12-15 00:09:03,972 - service.crud - DEBUG - Employee 1 was returned
+2019-12-15 00:09:03,972 - rest.api - DEBUG - GET method (/api/employee/1) was successful
+2019-12-15 00:09:04,045 - service.crud - DEBUG - List of department was returned
+2019-12-15 00:09:04,208 - rest.api - DEBUG - GET method (/api/departments-ids) was successful
+2019-12-15 00:09:05,632 - service.crud - DEBUG - List of employees was returned
+2019-12-15 00:09:05,804 - rest.api - DEBUG - GET method (/api/employees) was successful
+2019-12-15 00:10:33,964 - service.crud - DEBUG - List of department was returned
+2019-12-15 00:10:35,271 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-15 00:10:42,077 - service.crud - DEBUG - Department 10005 was updated
+2019-12-15 00:10:42,373 - rest.api - DEBUG - PUT method (/api/department/10005) was successful
+2019-12-15 00:10:42,396 - service.crud - DEBUG - List of department was returned
+2019-12-15 00:10:43,728 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-15 00:13:08,205 - service.crud - DEBUG - List of employees was returned
+2019-12-15 00:13:08,366 - rest.api - DEBUG - GET method (/api/employees) was successful
+2019-12-15 00:13:12,779 - service.crud - DEBUG - Employee 27 was returned
+2019-12-15 00:13:12,779 - rest.api - DEBUG - GET method (/api/employee/27) was successful
+2019-12-15 00:13:12,844 - service.crud - DEBUG - List of department was returned
+2019-12-15 00:13:13,010 - rest.api - DEBUG - GET method (/api/departments-ids) was successful
+2019-12-15 00:13:14,875 - service.crud - DEBUG - List of employees was returned
+2019-12-15 00:13:15,032 - rest.api - DEBUG - GET method (/api/employees) was successful
+2019-12-15 00:13:43,896 - service.crud - DEBUG - List of department was returned
+2019-12-15 00:13:45,226 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-15 00:13:51,028 - service.crud - DEBUG - Department 10009 was updated
+2019-12-15 00:13:51,332 - rest.api - DEBUG - PUT method (/api/department/10009) was successful
+2019-12-15 00:13:51,345 - service.crud - DEBUG - List of department was returned
+2019-12-15 00:13:52,662 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-15 00:14:20,445 - service.crud - DEBUG - List of employees was returned
+2019-12-15 00:14:20,640 - rest.api - DEBUG - GET method (/api/employees) was successful
+2019-12-15 00:14:22,217 - service.crud - DEBUG - Employee 1 was returned
+2019-12-15 00:14:22,217 - rest.api - DEBUG - GET method (/api/employee/1) was successful
+2019-12-15 00:14:22,281 - service.crud - DEBUG - List of department was returned
+2019-12-15 00:14:22,442 - rest.api - DEBUG - GET method (/api/departments-ids) was successful
+2019-12-15 00:15:48,230 - service.crud - DEBUG - Employee 1 was returned
+2019-12-15 00:15:48,230 - rest.api - DEBUG - GET method (/api/employee/1) was successful
+2019-12-15 00:15:48,297 - service.crud - DEBUG - List of department was returned
+2019-12-15 00:15:48,459 - rest.api - DEBUG - GET method (/api/departments-ids) was successful
+2019-12-15 00:16:04,948 - service.crud - DEBUG - List of employees was returned
+2019-12-15 00:16:05,098 - rest.api - DEBUG - GET method (/api/employees) was successful
+2019-12-15 00:19:01,137 - service.crud - DEBUG - List of employees was returned
+2019-12-15 00:19:01,305 - rest.api - DEBUG - GET method (/api/employees) was successful
+2019-12-15 00:19:06,528 - service.crud - DEBUG - Employee 27 was returned
+2019-12-15 00:19:06,529 - rest.api - DEBUG - GET method (/api/employee/27) was successful
+2019-12-15 00:19:06,595 - service.crud - DEBUG - List of department was returned
+2019-12-15 00:19:06,761 - rest.api - DEBUG - GET method (/api/departments-ids) was successful
+2019-12-15 00:19:15,553 - service.crud - DEBUG - Incorrect data. Employee can`t be updated
+2019-12-15 00:19:15,553 - rest.api - DEBUG - PUT method (/api/employee/27) was not successful (400)
+2019-12-15 00:19:15,901 - service.crud - DEBUG - List of employees was returned
+2019-12-15 00:19:16,064 - rest.api - DEBUG - GET method (/api/employees) was successful
+2019-12-15 00:19:19,478 - service.crud - DEBUG - List of employees was returned
+2019-12-15 00:19:19,663 - rest.api - DEBUG - GET method (/api/employees) was successful
+2019-12-15 00:19:21,938 - service.crud - DEBUG - List of employees was returned
+2019-12-15 00:19:22,115 - rest.api - DEBUG - GET method (/api/employees) was successful
+2019-12-15 00:21:32,507 - service.crud - DEBUG - Employee 27 was returned
+2019-12-15 00:21:32,508 - rest.api - DEBUG - GET method (/api/employee/27) was successful
+2019-12-15 00:21:32,577 - service.crud - DEBUG - List of department was returned
+2019-12-15 00:21:32,747 - rest.api - DEBUG - GET method (/api/departments-ids) was successful
+2019-12-15 00:21:35,056 - service.crud - DEBUG - Incorrect data. Employee can`t be updated
+2019-12-15 00:21:35,057 - rest.api - DEBUG - PUT method (/api/employee/27) was not successful (400)
+2019-12-15 00:21:35,126 - service.crud - DEBUG - List of employees was returned
+2019-12-15 00:21:35,299 - rest.api - DEBUG - GET method (/api/employees) was successful
+2019-12-15 00:22:52,052 - service.crud - DEBUG - Employee 27 was returned
+2019-12-15 00:22:52,052 - rest.api - DEBUG - GET method (/api/employee/27) was successful
+2019-12-15 00:22:52,124 - service.crud - DEBUG - List of department was returned
+2019-12-15 00:22:52,291 - rest.api - DEBUG - GET method (/api/departments-ids) was successful
+2019-12-15 00:26:27,304 - service.crud - DEBUG - Employee 27 was returned
+2019-12-15 00:26:27,304 - rest.api - DEBUG - GET method (/api/employee/27) was successful
+2019-12-15 00:26:27,376 - service.crud - DEBUG - List of department was returned
+2019-12-15 00:26:27,538 - rest.api - DEBUG - GET method (/api/departments-ids) was successful
+2019-12-15 00:27:28,880 - service.crud - DEBUG - Employee 27 was returned
+2019-12-15 00:27:28,881 - rest.api - DEBUG - GET method (/api/employee/27) was successful
+2019-12-15 00:27:28,946 - service.crud - DEBUG - List of department was returned
+2019-12-15 00:27:29,125 - rest.api - DEBUG - GET method (/api/departments-ids) was successful
+2019-12-15 00:27:40,910 - service.crud - DEBUG - Employee 27 was returned
+2019-12-15 00:27:40,911 - rest.api - DEBUG - GET method (/api/employee/27) was successful
+2019-12-15 00:27:40,983 - service.crud - DEBUG - List of department was returned
+2019-12-15 00:27:41,158 - rest.api - DEBUG - GET method (/api/departments-ids) was successful
+2019-12-15 00:27:46,716 - service.crud - DEBUG - Employee was updated
+2019-12-15 00:27:46,717 - rest.api - DEBUG - PUT method (/api/employee/27) was successful
+2019-12-15 00:27:46,734 - service.crud - DEBUG - List of employees was returned
+2019-12-15 00:27:46,899 - rest.api - DEBUG - GET method (/api/employees) was successful
+2019-12-15 00:27:52,685 - service.crud - DEBUG - Employee 27 was returned
+2019-12-15 00:27:52,686 - rest.api - DEBUG - GET method (/api/employee/27) was successful
+2019-12-15 00:27:52,759 - service.crud - DEBUG - List of department was returned
+2019-12-15 00:27:52,923 - rest.api - DEBUG - GET method (/api/departments-ids) was successful
+2019-12-15 00:27:59,233 - service.crud - DEBUG - Employee was updated
+2019-12-15 00:27:59,234 - rest.api - DEBUG - PUT method (/api/employee/27) was successful
+2019-12-15 00:27:59,253 - service.crud - DEBUG - List of employees was returned
+2019-12-15 00:27:59,423 - rest.api - DEBUG - GET method (/api/employees) was successful
+2019-12-15 00:33:37,984 - service.crud - DEBUG - List of employees was returned
+2019-12-15 00:33:37,993 - rest.api - ERROR - Exception on /api/employees [GET]
+Traceback (most recent call last):
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1173, in _execute_context
+    context = constructor(dialect, self, conn, *args)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\default.py", line 768, in _init_compiled
+    self.cursor = self.create_cursor()
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\default.py", line 1122, in create_cursor
+    return self._dbapi_connection.cursor()
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\pool\base.py", line 965, in cursor
+    return self.connection.cursor(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\mysql\connector\connection.py", line 809, in cursor
+    raise errors.OperationalError("MySQL Connection not available.")
+mysql.connector.errors.OperationalError: MySQL Connection not available.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "E:\GraduationWork\DepartmentHandler\department-app\rest\api.py", line 160, in get
+    employees = crud.Employees.get_all()
+  File "E:\GraduationWork\DepartmentHandler\department-app\service\crud.py", line 118, in get_all
+    return Employee.query.all()
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\query.py", line 3211, in all
+    return list(self)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\query.py", line 3367, in __iter__
+    return self._execute_and_instances(context)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\query.py", line 3392, in _execute_and_instances
+    result = conn.execute(querycontext.statement, self._params)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 982, in execute
+    return meth(self, multiparams, params)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\sql\elements.py", line 287, in _execute_on_connection
+    return connection._execute_clauseelement(self, multiparams, params)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1095, in _execute_clauseelement
+    ret = self._execute_context(
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1175, in _execute_context
+    self._handle_dbapi_exception(
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1476, in _handle_dbapi_exception
+    util.raise_from_cause(sqlalchemy_exception, exc_info)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\util\compat.py", line 398, in raise_from_cause
+    reraise(type(exception), exception, tb=exc_tb, cause=cause)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\util\compat.py", line 152, in reraise
+    raise value.with_traceback(tb)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1173, in _execute_context
+    context = constructor(dialect, self, conn, *args)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\default.py", line 768, in _init_compiled
+    self.cursor = self.create_cursor()
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\default.py", line 1122, in create_cursor
+    return self._dbapi_connection.cursor()
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\pool\base.py", line 965, in cursor
+    return self.connection.cursor(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\mysql\connector\connection.py", line 809, in cursor
+    raise errors.OperationalError("MySQL Connection not available.")
+sqlalchemy.exc.OperationalError: (mysql.connector.errors.OperationalError) MySQL Connection not available.
+[SQL: SELECT employee.id AS employee_id, employee.name AS employee_name, employee.department_id AS employee_department_id, employee.date_of_birthday AS employee_date_of_birthday, employee.salary AS employee_salary 
+FROM employee]
+[parameters: [immutabledict({})]]
+(Background on this error at: http://sqlalche.me/e/e3q8)
+2019-12-15 00:33:40,756 - service.crud - DEBUG - List of employees was returned
+2019-12-15 00:33:41,255 - rest.api - DEBUG - GET method (/api/employees) was successful
+2019-12-15 00:33:42,249 - service.crud - DEBUG - List of department was returned
+2019-12-15 00:33:42,420 - rest.api - DEBUG - GET method (/api/departments-ids) was successful
+2019-12-15 00:38:56,355 - service.crud - DEBUG - List of employees was returned
+2019-12-15 00:38:56,358 - rest.api - ERROR - Exception on /api/employees [GET]
+Traceback (most recent call last):
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1173, in _execute_context
+    context = constructor(dialect, self, conn, *args)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\default.py", line 768, in _init_compiled
+    self.cursor = self.create_cursor()
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\default.py", line 1122, in create_cursor
+    return self._dbapi_connection.cursor()
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\pool\base.py", line 965, in cursor
+    return self.connection.cursor(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\mysql\connector\connection.py", line 809, in cursor
+    raise errors.OperationalError("MySQL Connection not available.")
+mysql.connector.errors.OperationalError: MySQL Connection not available.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "E:\GraduationWork\DepartmentHandler\department-app\rest\api.py", line 160, in get
+    employees = crud.Employees.get_all()
+  File "E:\GraduationWork\DepartmentHandler\department-app\service\crud.py", line 118, in get_all
+    return Employee.query.all()
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\query.py", line 3211, in all
+    return list(self)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\query.py", line 3367, in __iter__
+    return self._execute_and_instances(context)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\query.py", line 3392, in _execute_and_instances
+    result = conn.execute(querycontext.statement, self._params)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 982, in execute
+    return meth(self, multiparams, params)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\sql\elements.py", line 287, in _execute_on_connection
+    return connection._execute_clauseelement(self, multiparams, params)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1095, in _execute_clauseelement
+    ret = self._execute_context(
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1175, in _execute_context
+    self._handle_dbapi_exception(
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1476, in _handle_dbapi_exception
+    util.raise_from_cause(sqlalchemy_exception, exc_info)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\util\compat.py", line 398, in raise_from_cause
+    reraise(type(exception), exception, tb=exc_tb, cause=cause)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\util\compat.py", line 152, in reraise
+    raise value.with_traceback(tb)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1173, in _execute_context
+    context = constructor(dialect, self, conn, *args)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\default.py", line 768, in _init_compiled
+    self.cursor = self.create_cursor()
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\default.py", line 1122, in create_cursor
+    return self._dbapi_connection.cursor()
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\pool\base.py", line 965, in cursor
+    return self.connection.cursor(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\mysql\connector\connection.py", line 809, in cursor
+    raise errors.OperationalError("MySQL Connection not available.")
+sqlalchemy.exc.OperationalError: (mysql.connector.errors.OperationalError) MySQL Connection not available.
+[SQL: SELECT employee.id AS employee_id, employee.name AS employee_name, employee.department_id AS employee_department_id, employee.date_of_birthday AS employee_date_of_birthday, employee.salary AS employee_salary 
+FROM employee]
+[parameters: [immutabledict({})]]
+(Background on this error at: http://sqlalche.me/e/e3q8)
+2019-12-15 00:38:59,627 - service.crud - DEBUG - List of employees was returned
+2019-12-15 00:39:00,115 - rest.api - DEBUG - GET method (/api/employees) was successful
+2019-12-15 00:39:05,618 - service.crud - DEBUG - List of department was returned
+2019-12-15 00:39:05,798 - rest.api - DEBUG - GET method (/api/departments-ids) was successful
+2019-12-15 00:39:23,658 - service.crud - DEBUG - List of employees was returned
+2019-12-15 00:39:23,819 - rest.api - DEBUG - GET method (/api/employees) was successful
+2019-12-15 00:41:25,235 - service.crud - DEBUG - List of employees was returned
+2019-12-15 00:41:25,407 - rest.api - DEBUG - GET method (/api/employees) was successful
+2019-12-15 00:41:27,756 - service.crud - DEBUG - List of department was returned
+2019-12-15 00:41:27,923 - rest.api - DEBUG - GET method (/api/departments-ids) was successful
+2019-12-15 00:41:45,625 - service.crud - DEBUG - Employee was added
+2019-12-15 00:41:45,790 - rest.api - DEBUG - POST method (/api/employee) was successful
+2019-12-15 00:41:45,860 - service.crud - DEBUG - List of employees was returned
+2019-12-15 00:41:46,021 - rest.api - DEBUG - GET method (/api/employees) was successful
+2019-12-15 18:14:34,956 - rest.api - INFO - Web-service started
+2019-12-15 18:17:32,343 - rest.api - INFO - Web-service started
+2019-12-15 18:27:33,563 - rest.api - INFO - Web-service started
+2019-12-15 18:28:15,053 - rest.api - INFO - Web-service started
+2019-12-15 18:28:49,940 - rest.api - INFO - Web-service started
+2019-12-15 18:30:29,843 - rest.api - INFO - Web-service started
+2019-12-15 18:32:11,836 - rest.api - INFO - Web-service started
+2019-12-15 18:35:28,200 - rest.api - INFO - Web-service started
+2019-12-15 18:35:43,918 - rest.api - INFO - Web-service started
+2019-12-15 18:35:53,145 - service.crud - DEBUG - List of department was returned
+2019-12-15 18:35:56,010 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-15 18:36:03,433 - service.crud - DEBUG - List of employees was returned
+2019-12-15 18:36:03,622 - rest.api - DEBUG - GET method (/api/employees) was successful
+2019-12-15 18:36:05,949 - service.crud - DEBUG - List of department was returned
+2019-12-15 18:36:06,994 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-15 18:36:16,696 - service.crud - DEBUG - Department 10005 was updated
+2019-12-15 18:36:17,016 - rest.api - DEBUG - PUT method (/api/department/10005) was successful
+2019-12-15 18:36:17,048 - service.crud - DEBUG - List of department was returned
+2019-12-15 18:36:18,119 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-15 18:36:20,707 - service.crud - DEBUG - List of employees was returned
+2019-12-15 18:36:20,889 - rest.api - DEBUG - GET method (/api/employees) was successful
+2019-12-15 18:45:12,283 - service.crud - DEBUG - List of department was returned
+2019-12-15 18:45:12,314 - service.crud - DEBUG - List of department was returned
+2019-12-15 18:45:12,299 - rest.api - ERROR - Exception on /api/departments [GET]
+Traceback (most recent call last):
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1173, in _execute_context
+    context = constructor(dialect, self, conn, *args)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\default.py", line 768, in _init_compiled
+    self.cursor = self.create_cursor()
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\default.py", line 1122, in create_cursor
+    return self._dbapi_connection.cursor()
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\pool\base.py", line 965, in cursor
+    return self.connection.cursor(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\mysql\connector\connection.py", line 809, in cursor
+    raise errors.OperationalError("MySQL Connection not available.")
+mysql.connector.errors.OperationalError: MySQL Connection not available.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "E:\GraduationWork\DepartmentHandler\department-app\rest\api.py", line 44, in get
+    departments = crud.Departments.get_all()
+  File "E:\GraduationWork\DepartmentHandler\department-app\service\crud.py", line 31, in get_all
+    return Department.query.all()
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\query.py", line 3211, in all
+    return list(self)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\query.py", line 3367, in __iter__
+    return self._execute_and_instances(context)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\query.py", line 3392, in _execute_and_instances
+    result = conn.execute(querycontext.statement, self._params)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 982, in execute
+    return meth(self, multiparams, params)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\sql\elements.py", line 287, in _execute_on_connection
+    return connection._execute_clauseelement(self, multiparams, params)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1095, in _execute_clauseelement
+    ret = self._execute_context(
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1175, in _execute_context
+    self._handle_dbapi_exception(
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1476, in _handle_dbapi_exception
+    util.raise_from_cause(sqlalchemy_exception, exc_info)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\util\compat.py", line 398, in raise_from_cause
+    reraise(type(exception), exception, tb=exc_tb, cause=cause)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\util\compat.py", line 152, in reraise
+    raise value.with_traceback(tb)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1173, in _execute_context
+    context = constructor(dialect, self, conn, *args)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\default.py", line 768, in _init_compiled
+    self.cursor = self.create_cursor()
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\default.py", line 1122, in create_cursor
+    return self._dbapi_connection.cursor()
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\pool\base.py", line 965, in cursor
+    return self.connection.cursor(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\mysql\connector\connection.py", line 809, in cursor
+    raise errors.OperationalError("MySQL Connection not available.")
+sqlalchemy.exc.OperationalError: (mysql.connector.errors.OperationalError) MySQL Connection not available.
+[SQL: SELECT department.id AS department_id 
+FROM department]
+[parameters: [immutabledict({})]]
+(Background on this error at: http://sqlalche.me/e/e3q8)
+2019-12-15 18:45:12,630 - service.crud - DEBUG - List of department was returned
+2019-12-15 18:45:13,659 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-15 18:45:13,960 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-15 18:45:21,290 - service.crud - DEBUG - List of employees was returned
+2019-12-15 18:45:21,469 - rest.api - DEBUG - GET method (/api/employees) was successful
+2019-12-15 18:48:23,485 - service.crud - DEBUG - List of employees was returned
+2019-12-15 18:48:23,671 - rest.api - DEBUG - GET method (/api/employees) was successful
+2019-12-15 18:48:25,919 - service.crud - DEBUG - List of department was returned
+2019-12-15 18:48:27,016 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-15 18:48:32,025 - service.crud - DEBUG - Department 10007 was deleted
+2019-12-15 18:48:32,025 - rest.api - DEBUG - DELETE method (/api/department/10007) was successful
+2019-12-15 18:48:32,061 - service.crud - DEBUG - List of department was returned
+2019-12-15 18:48:33,000 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-15 18:48:35,652 - service.crud - DEBUG - List of employees was returned
+2019-12-15 18:48:35,837 - rest.api - DEBUG - GET method (/api/employees) was successful
+2019-12-15 18:49:09,279 - service.crud - DEBUG - List of employees was returned
+2019-12-15 18:49:09,459 - rest.api - DEBUG - GET method (/api/employees) was successful
+2019-12-15 18:52:19,826 - rest.api - INFO - Web-service started
+2019-12-15 18:52:24,810 - service.crud - DEBUG - Department 10001 was deleted
+2019-12-15 18:52:24,999 - service.crud - DEBUG - Department 10001 is not exist
+2019-12-15 18:53:04,553 - rest.api - INFO - Web-service started
+2019-12-15 18:53:32,619 - service.crud - DEBUG - List of employees was returned
+2019-12-15 18:53:34,517 - rest.api - DEBUG - GET method (/api/employees) was successful
+2019-12-15 18:53:39,509 - service.crud - DEBUG - List of department was returned
+2019-12-15 18:53:40,390 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-15 18:53:48,655 - service.crud - DEBUG - Department 10005 was added
+2019-12-15 18:53:48,659 - rest.api - DEBUG - POST method (/api/department) was successful
+2019-12-15 18:53:48,721 - service.crud - DEBUG - List of department was returned
+2019-12-15 18:53:49,785 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-15 18:53:51,752 - service.crud - DEBUG - List of employees was returned
+2019-12-15 18:53:51,938 - rest.api - DEBUG - GET method (/api/employees) was successful
+2019-12-15 18:53:56,045 - service.crud - DEBUG - Employee 21 was returned
+2019-12-15 18:53:56,049 - rest.api - DEBUG - GET method (/api/employee/21) was successful
+2019-12-15 18:53:56,146 - service.crud - DEBUG - List of department was returned
+2019-12-15 18:53:56,334 - rest.api - DEBUG - GET method (/api/departments-ids) was successful
+2019-12-15 18:54:01,533 - service.crud - DEBUG - Employee was updated
+2019-12-15 18:54:01,533 - rest.api - DEBUG - PUT method (/api/employee/21) was successful
+2019-12-15 18:54:01,581 - service.crud - DEBUG - List of employees was returned
+2019-12-15 18:54:01,786 - rest.api - DEBUG - GET method (/api/employees) was successful
+2019-12-15 18:54:04,953 - service.crud - DEBUG - List of department was returned
+2019-12-15 18:54:06,025 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-15 18:54:09,873 - service.crud - DEBUG - Department 10005 was deleted
+2019-12-15 18:54:09,873 - rest.api - DEBUG - DELETE method (/api/department/10005) was successful
+2019-12-15 18:54:10,031 - service.crud - DEBUG - List of department was returned
+2019-12-15 18:54:10,924 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-15 18:54:13,017 - service.crud - DEBUG - List of employees was returned
+2019-12-15 18:54:13,199 - rest.api - DEBUG - GET method (/api/employees) was successful
+2019-12-15 18:54:31,919 - service.crud - DEBUG - Department 20 is not exist, it can`t be deleted
+2019-12-15 18:54:31,919 - rest.api - DEBUG - DELETE method (/api/department/20) was not successful (404)
+2019-12-15 18:54:32,026 - service.crud - DEBUG - List of department was returned
+2019-12-15 18:54:32,921 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-15 18:54:36,582 - service.crud - DEBUG - List of employees was returned
+2019-12-15 18:54:36,769 - rest.api - DEBUG - GET method (/api/employees) was successful
+2019-12-15 18:54:45,539 - service.crud - DEBUG - Department 20 is not exist, it can`t be deleted
+2019-12-15 18:54:45,539 - rest.api - DEBUG - DELETE method (/api/department/20) was not successful (404)
+2019-12-15 18:54:45,675 - service.crud - DEBUG - List of department was returned
+2019-12-15 18:54:46,591 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-15 18:54:49,427 - service.crud - DEBUG - List of employees was returned
+2019-12-15 18:54:49,606 - rest.api - DEBUG - GET method (/api/employees) was successful
+2019-12-15 18:55:40,679 - service.crud - DEBUG - List of employees was returned
+2019-12-15 18:55:40,859 - rest.api - DEBUG - GET method (/api/employees) was successful
+2019-12-15 18:55:45,167 - service.crud - DEBUG - Department 20 is not exist, it can`t be deleted
+2019-12-15 18:55:45,171 - rest.api - DEBUG - DELETE method (/api/department/20) was not successful (404)
+2019-12-15 18:55:45,247 - service.crud - DEBUG - List of department was returned
+2019-12-15 18:55:46,124 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-15 18:56:53,957 - service.crud - DEBUG - List of department was returned
+2019-12-15 18:56:54,840 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-15 18:56:56,515 - service.crud - DEBUG - List of employees was returned
+2019-12-15 18:56:56,695 - rest.api - DEBUG - GET method (/api/employees) was successful
+2019-12-15 18:57:03,502 - service.crud - DEBUG - Department 20 is not exist, it can`t be deleted
+2019-12-15 18:57:03,506 - rest.api - DEBUG - DELETE method (/api/department/20) was not successful (404)
+2019-12-15 18:57:03,630 - service.crud - DEBUG - List of department was returned
+2019-12-15 18:57:04,534 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-15 18:58:06,963 - service.crud - DEBUG - List of employees was returned
+2019-12-15 18:58:07,151 - rest.api - DEBUG - GET method (/api/employees) was successful
+2019-12-15 18:58:10,393 - service.crud - DEBUG - Department 20 is not exist, it can`t be deleted
+2019-12-15 18:58:10,393 - rest.api - DEBUG - DELETE method (/api/department/20) was not successful (404)
+2019-12-15 18:58:10,493 - service.crud - DEBUG - List of department was returned
+2019-12-15 18:58:11,365 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-15 18:58:35,575 - service.crud - DEBUG - List of employees was returned
+2019-12-15 18:58:35,761 - rest.api - DEBUG - GET method (/api/employees) was successful
+2019-12-15 18:59:03,771 - service.crud - DEBUG - List of employees was returned
+2019-12-15 18:59:03,951 - rest.api - DEBUG - GET method (/api/employees) was successful
+2019-12-15 18:59:08,111 - rest.api - DEBUG - DELETE method (/api/employee/20) was successful
+2019-12-15 18:59:08,187 - service.crud - DEBUG - List of employees was returned
+2019-12-15 18:59:08,375 - rest.api - DEBUG - GET method (/api/employees) was successful
+2019-12-15 18:59:12,157 - service.crud - DEBUG - List of department was returned
+2019-12-15 18:59:13,065 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-15 18:59:16,006 - service.crud - DEBUG - List of employees was returned
+2019-12-15 18:59:16,194 - rest.api - DEBUG - GET method (/api/employees) was successful
+2019-12-15 19:23:35,180 - rest.api - INFO - Web-service started
+2019-12-15 19:25:11,551 - rest.api - INFO - Web-service started
+2019-12-15 19:25:15,592 - service.crud - DEBUG - Department 10001 was returned
+2019-12-15 19:28:40,567 - rest.api - INFO - Web-service started
+2019-12-15 19:28:44,643 - service.crud - DEBUG - Department 10001 was returned
+2019-12-15 19:29:29,914 - rest.api - INFO - Web-service started
+2019-12-15 19:29:34,024 - service.crud - DEBUG - Department 10001 was returned
+2019-12-15 19:30:08,010 - rest.api - INFO - Web-service started
+2019-12-15 19:30:12,304 - service.crud - DEBUG - Department 10001 was returned
+2019-12-15 19:30:44,808 - rest.api - INFO - Web-service started
+2019-12-15 19:30:48,981 - service.crud - DEBUG - Department 10001 was returned
+2019-12-15 19:31:21,964 - rest.api - INFO - Web-service started
+2019-12-15 19:31:26,142 - service.crud - DEBUG - Department 10001 was returned
+2019-12-15 19:32:22,465 - rest.api - INFO - Web-service started
+2019-12-15 19:32:26,648 - service.crud - DEBUG - Department 10001 was returned
+2019-12-15 19:33:54,386 - rest.api - INFO - Web-service started
+2019-12-15 19:33:58,706 - service.crud - DEBUG - Department 10001 was returned
+2019-12-15 19:42:22,061 - rest.api - INFO - Web-service started
+2019-12-15 19:43:50,647 - rest.api - INFO - Web-service started
+2019-12-15 19:44:20,059 - rest.api - INFO - Web-service started
+2019-12-15 19:47:17,759 - rest.api - INFO - Web-service started
+2019-12-15 19:48:17,486 - rest.api - INFO - Web-service started
+2019-12-15 19:49:01,575 - rest.api - INFO - Web-service started
+2019-12-15 19:50:39,284 - rest.api - INFO - Web-service started
+2019-12-15 20:06:19,867 - rest.api - INFO - Web-service started
+2019-12-15 20:08:13,125 - rest.api - INFO - Web-service started
+2019-12-15 20:08:16,863 - service.crud - DEBUG - Filtered by dates list of employees was returned
+2019-12-15 20:08:17,046 - rest.api - DEBUG - POST method (/api/employees) was successful
+2019-12-15 20:08:59,920 - rest.api - INFO - Web-service started
+2019-12-15 20:09:03,889 - service.crud - DEBUG - Filtered by dates list of employees was returned
+2019-12-15 20:09:04,056 - rest.api - DEBUG - POST method (/api/employees) was successful
+2019-12-15 20:10:17,278 - rest.api - INFO - Web-service started
+2019-12-15 20:10:21,002 - service.crud - DEBUG - Filtered by dates list of employees was returned
+2019-12-15 20:10:21,182 - rest.api - DEBUG - POST method (/api/employees) was successful
+2019-12-15 20:10:21,249 - service.crud - DEBUG - Filtered by dates list of employees was returned
+2019-12-15 20:10:21,422 - rest.api - DEBUG - POST method (/api/employees) was successful
+2019-12-15 20:11:15,888 - rest.api - INFO - Web-service started
+2019-12-15 20:11:19,490 - service.crud - DEBUG - Filtered by dates list of employees was returned
+2019-12-15 20:11:19,684 - rest.api - DEBUG - POST method (/api/employees) was successful
+2019-12-15 20:11:19,758 - service.crud - DEBUG - Filtered by dates list of employees was returned
+2019-12-15 20:11:19,936 - rest.api - DEBUG - POST method (/api/employees) was successful
+2019-12-15 20:11:19,998 - service.crud - DEBUG - Filtered by dates list of employees was returned
+2019-12-15 20:13:26,954 - rest.api - INFO - Web-service started
+2019-12-15 20:13:30,715 - service.crud - DEBUG - Filtered by dates list of employees was returned
+2019-12-15 20:13:30,888 - rest.api - DEBUG - POST method (/api/employees) was successful
+2019-12-15 20:13:30,955 - service.crud - DEBUG - Filtered by dates list of employees was returned
+2019-12-15 20:13:31,130 - rest.api - DEBUG - POST method (/api/employees) was successful
+2019-12-15 20:13:31,193 - service.crud - DEBUG - Filtered by dates list of employees was returned
+2019-12-15 20:13:31,364 - rest.api - DEBUG - POST method (/api/employees) was successful
+2019-12-15 20:15:27,953 - rest.api - INFO - Web-service started
+2019-12-15 20:15:31,659 - service.crud - DEBUG - Filtered by dates list of employees was returned
+2019-12-15 20:15:31,836 - rest.api - DEBUG - POST method (/api/employees) was successful
+2019-12-15 20:15:31,899 - service.crud - DEBUG - Filtered by dates list of employees was returned
+2019-12-15 20:15:32,075 - rest.api - DEBUG - POST method (/api/employees) was successful
+2019-12-15 20:15:32,142 - service.crud - DEBUG - Filtered by dates list of employees was returned
+2019-12-15 20:15:32,312 - rest.api - DEBUG - POST method (/api/employees) was successful
+2019-12-15 20:18:02,023 - rest.api - INFO - Web-service started
+2019-12-15 20:18:05,908 - service.crud - DEBUG - List of department was returned
+2019-12-15 20:21:22,406 - rest.api - INFO - Web-service started
+2019-12-15 20:21:26,357 - service.crud - DEBUG - Department 10001 was returned
+2019-12-15 20:23:47,142 - rest.api - INFO - Web-service started
+2019-12-15 20:23:51,150 - service.crud - DEBUG - List of department was returned
+2019-12-15 20:24:14,986 - rest.api - INFO - Web-service started
+2019-12-15 20:24:18,954 - service.crud - DEBUG - List of department was returned
+2019-12-15 20:28:19,919 - rest.api - INFO - Web-service started
+2019-12-15 20:28:24,045 - service.crud - DEBUG - List of department was returned
+2019-12-15 20:28:55,607 - rest.api - INFO - Web-service started
+2019-12-15 20:28:59,638 - service.crud - DEBUG - List of department was returned
+2019-12-15 20:30:02,655 - rest.api - INFO - Web-service started
+2019-12-15 20:30:55,936 - rest.api - INFO - Web-service started
+2019-12-15 20:32:00,200 - rest.api - INFO - Web-service started
+2019-12-15 20:32:04,266 - service.crud - WARNING - [(Decimal('2000.0000'),)]
+2019-12-15 20:32:04,267 - service.crud - DEBUG - List of department was returned
+2019-12-15 20:52:48,322 - rest.api - INFO - Web-service started
+2019-12-15 20:52:53,292 - service.crud - WARNING - (Decimal('2000.0000'),)
+2019-12-15 20:52:53,292 - service.crud - DEBUG - List of department was returned
+2019-12-15 20:54:00,814 - rest.api - INFO - Web-service started
+2019-12-15 20:54:05,432 - service.crud - WARNING - (Decimal('2000.0000'),)
+2019-12-15 20:54:05,442 - service.crud - DEBUG - List of department was returned
+2019-12-15 20:54:26,292 - rest.api - INFO - Web-service started
+2019-12-15 20:54:30,841 - service.crud - WARNING - [(Decimal('2000.0000'),)]
+2019-12-15 20:54:30,841 - service.crud - DEBUG - List of department was returned
+2019-12-15 20:55:08,322 - rest.api - INFO - Web-service started
+2019-12-15 20:55:12,982 - service.crud - WARNING - [(Decimal('2000.0000'),)]
+2019-12-15 20:55:12,982 - service.crud - DEBUG - List of department was returned
+2019-12-15 20:55:54,641 - rest.api - INFO - Web-service started
+2019-12-15 20:55:58,992 - service.crud - WARNING - [(Decimal('2000.0000'),)]
+2019-12-15 20:55:58,992 - service.crud - WARNING - [<Department id=10001>, <Department id=10002>]
+2019-12-15 20:55:58,992 - service.crud - DEBUG - List of department was returned
+2019-12-15 20:58:47,091 - rest.api - INFO - Web-service started
+2019-12-15 20:58:51,622 - service.crud - WARNING - [(Decimal('2000.0000'),), (Decimal('2000.0000'),)]
+2019-12-15 20:58:51,622 - service.crud - WARNING - [<Department id=10001>, <Department id=10002>]
+2019-12-15 20:58:51,622 - service.crud - DEBUG - List of department was returned
+2019-12-15 21:01:30,101 - rest.api - INFO - Web-service started
+2019-12-15 21:01:34,131 - service.crud - WARNING - [(Decimal('2000.0000'),)]
+2019-12-15 21:01:34,131 - service.crud - WARNING - [<Department id=10001>]
+2019-12-15 21:01:34,131 - service.crud - DEBUG - List of department was returned
+2019-12-15 21:27:37,099 - rest.api - INFO - Web-service started
+2019-12-15 21:27:44,410 - service.crud - DEBUG - List of department was returned
+2019-12-15 21:28:35,209 - rest.api - INFO - Web-service started
+2019-12-15 21:28:41,370 - service.crud - DEBUG - List of department was returned
+2019-12-15 21:28:41,564 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-15 21:31:22,449 - rest.api - INFO - Web-service started
+2019-12-15 21:31:26,519 - service.crud - DEBUG - List of department was returned
+2019-12-15 21:32:17,439 - rest.api - INFO - Web-service started
+2019-12-15 21:32:21,681 - service.crud - DEBUG - List of department was returned
+2019-12-15 21:33:06,992 - rest.api - INFO - Web-service started
+2019-12-15 21:33:11,149 - service.crud - DEBUG - List of department was returned
+2019-12-15 21:33:11,340 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-15 21:33:49,979 - rest.api - INFO - Web-service started
+2019-12-15 21:33:54,009 - service.crud - DEBUG - List of department was returned
+2019-12-15 21:33:54,189 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-15 21:37:27,916 - rest.api - INFO - Web-service started
+2019-12-15 21:37:31,984 - service.crud - DEBUG - List of department was returned
+2019-12-15 21:37:32,166 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-15 21:39:03,009 - rest.api - INFO - Web-service started
+2019-12-15 21:39:16,517 - service.crud - DEBUG - List of employees was returned
+2019-12-15 21:39:18,410 - rest.api - DEBUG - GET method (/api/employees) was successful
+2019-12-15 21:39:19,814 - service.crud - DEBUG - List of department was returned
+2019-12-15 21:39:20,510 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-15 21:39:30,952 - service.crud - DEBUG - List of department was returned
+2019-12-15 21:39:31,657 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-15 21:39:32,085 - service.crud - DEBUG - List of department was returned
+2019-12-15 21:39:32,781 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-15 21:39:48,390 - service.crud - DEBUG - List of employees was returned
+2019-12-15 21:39:48,576 - rest.api - DEBUG - GET method (/api/employees) was successful
+2019-12-15 21:44:21,322 - rest.api - INFO - Web-service started
+2019-12-15 21:44:25,238 - service.crud - DEBUG - Filtered by dates list of employees was returned
+2019-12-15 21:44:25,422 - service.crud - DEBUG - Filtered by dates list of employees was returned
+2019-12-15 21:53:06,483 - service.crud - DEBUG - List of employees was returned
+2019-12-15 21:53:06,496 - rest.api - ERROR - Exception on /api/employees [GET]
+Traceback (most recent call last):
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1173, in _execute_context
+    context = constructor(dialect, self, conn, *args)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\default.py", line 768, in _init_compiled
+    self.cursor = self.create_cursor()
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\default.py", line 1122, in create_cursor
+    return self._dbapi_connection.cursor()
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\pool\base.py", line 965, in cursor
+    return self.connection.cursor(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\mysql\connector\connection.py", line 809, in cursor
+    raise errors.OperationalError("MySQL Connection not available.")
+mysql.connector.errors.OperationalError: MySQL Connection not available.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "E:\GraduationWork\DepartmentHandler\department-app\rest\api.py", line 168, in get
+    employees = crud.Employees.get_all()
+  File "E:\GraduationWork\DepartmentHandler\department-app\service\crud.py", line 123, in get_all
+    return Employee.query.all()
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\query.py", line 3211, in all
+    return list(self)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\query.py", line 3367, in __iter__
+    return self._execute_and_instances(context)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\query.py", line 3392, in _execute_and_instances
+    result = conn.execute(querycontext.statement, self._params)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 982, in execute
+    return meth(self, multiparams, params)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\sql\elements.py", line 287, in _execute_on_connection
+    return connection._execute_clauseelement(self, multiparams, params)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1095, in _execute_clauseelement
+    ret = self._execute_context(
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1175, in _execute_context
+    self._handle_dbapi_exception(
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1476, in _handle_dbapi_exception
+    util.raise_from_cause(sqlalchemy_exception, exc_info)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\util\compat.py", line 398, in raise_from_cause
+    reraise(type(exception), exception, tb=exc_tb, cause=cause)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\util\compat.py", line 152, in reraise
+    raise value.with_traceback(tb)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1173, in _execute_context
+    context = constructor(dialect, self, conn, *args)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\default.py", line 768, in _init_compiled
+    self.cursor = self.create_cursor()
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\default.py", line 1122, in create_cursor
+    return self._dbapi_connection.cursor()
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\pool\base.py", line 965, in cursor
+    return self.connection.cursor(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\mysql\connector\connection.py", line 809, in cursor
+    raise errors.OperationalError("MySQL Connection not available.")
+sqlalchemy.exc.OperationalError: (mysql.connector.errors.OperationalError) MySQL Connection not available.
+[SQL: SELECT employee.id AS employee_id, employee.name AS employee_name, employee.department_id AS employee_department_id, employee.date_of_birthday AS employee_date_of_birthday, employee.salary AS employee_salary 
+FROM employee]
+[parameters: [immutabledict({})]]
+(Background on this error at: http://sqlalche.me/e/e3q8)
+2019-12-15 21:54:23,130 - service.crud - DEBUG - List of employees was returned
+2019-12-15 21:54:23,639 - rest.api - DEBUG - GET method (/api/employees) was successful
+2019-12-15 21:54:39,912 - service.crud - DEBUG - List of employees was returned
+2019-12-15 21:54:40,381 - rest.api - DEBUG - GET method (/api/employees) was successful
+2019-12-15 21:55:13,464 - service.crud - DEBUG - List of employees was returned
+2019-12-15 21:55:13,638 - rest.api - DEBUG - GET method (/api/employees) was successful
+2019-12-15 21:56:56,334 - service.crud - DEBUG - List of employees was returned
+2019-12-15 21:56:56,517 - rest.api - DEBUG - GET method (/api/employees) was successful
+2019-12-15 22:00:50,577 - service.crud - DEBUG - List of employees was returned
+2019-12-15 22:00:50,583 - rest.api - ERROR - Exception on /api/employees [GET]
+Traceback (most recent call last):
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1173, in _execute_context
+    context = constructor(dialect, self, conn, *args)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\default.py", line 768, in _init_compiled
+    self.cursor = self.create_cursor()
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\default.py", line 1122, in create_cursor
+    return self._dbapi_connection.cursor()
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\pool\base.py", line 965, in cursor
+    return self.connection.cursor(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\mysql\connector\connection.py", line 809, in cursor
+    raise errors.OperationalError("MySQL Connection not available.")
+mysql.connector.errors.OperationalError: MySQL Connection not available.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "E:\GraduationWork\DepartmentHandler\department-app\rest\api.py", line 168, in get
+    employees = crud.Employees.get_all()
+  File "E:\GraduationWork\DepartmentHandler\department-app\service\crud.py", line 123, in get_all
+    return Employee.query.all()
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\query.py", line 3211, in all
+    return list(self)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\query.py", line 3367, in __iter__
+    return self._execute_and_instances(context)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\query.py", line 3392, in _execute_and_instances
+    result = conn.execute(querycontext.statement, self._params)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 982, in execute
+    return meth(self, multiparams, params)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\sql\elements.py", line 287, in _execute_on_connection
+    return connection._execute_clauseelement(self, multiparams, params)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1095, in _execute_clauseelement
+    ret = self._execute_context(
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1175, in _execute_context
+    self._handle_dbapi_exception(
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1476, in _handle_dbapi_exception
+    util.raise_from_cause(sqlalchemy_exception, exc_info)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\util\compat.py", line 398, in raise_from_cause
+    reraise(type(exception), exception, tb=exc_tb, cause=cause)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\util\compat.py", line 152, in reraise
+    raise value.with_traceback(tb)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1173, in _execute_context
+    context = constructor(dialect, self, conn, *args)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\default.py", line 768, in _init_compiled
+    self.cursor = self.create_cursor()
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\default.py", line 1122, in create_cursor
+    return self._dbapi_connection.cursor()
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\pool\base.py", line 965, in cursor
+    return self.connection.cursor(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\mysql\connector\connection.py", line 809, in cursor
+    raise errors.OperationalError("MySQL Connection not available.")
+sqlalchemy.exc.OperationalError: (mysql.connector.errors.OperationalError) MySQL Connection not available.
+[SQL: SELECT employee.id AS employee_id, employee.name AS employee_name, employee.department_id AS employee_department_id, employee.date_of_birthday AS employee_date_of_birthday, employee.salary AS employee_salary 
+FROM employee]
+[parameters: [immutabledict({})]]
+(Background on this error at: http://sqlalche.me/e/e3q8)
+2019-12-15 22:00:52,806 - service.crud - DEBUG - List of employees was returned
+2019-12-15 22:00:53,320 - rest.api - DEBUG - GET method (/api/employees) was successful
+2019-12-15 22:01:04,658 - service.crud - DEBUG - List of employees was returned
+2019-12-15 22:01:05,127 - rest.api - DEBUG - GET method (/api/employees) was successful
+2019-12-15 22:01:07,815 - service.crud - DEBUG - List of employees was returned
+2019-12-15 22:01:07,994 - rest.api - DEBUG - GET method (/api/employees) was successful
+2019-12-15 22:01:10,619 - service.crud - DEBUG - List of employees was returned
+2019-12-15 22:01:10,802 - rest.api - DEBUG - GET method (/api/employees) was successful
+2019-12-15 22:01:40,231 - service.crud - DEBUG - List of employees was returned
+2019-12-15 22:01:40,415 - rest.api - DEBUG - GET method (/api/employees) was successful
+2019-12-15 22:01:48,558 - service.crud - DEBUG - List of employees was returned
+2019-12-15 22:01:48,730 - rest.api - DEBUG - GET method (/api/employees) was successful
+2019-12-15 22:02:27,447 - service.crud - DEBUG - List of employees was returned
+2019-12-15 22:02:27,620 - rest.api - DEBUG - GET method (/api/employees) was successful
+2019-12-15 22:02:34,201 - service.crud - DEBUG - List of employees was returned
+2019-12-15 22:02:34,378 - rest.api - DEBUG - GET method (/api/employees) was successful
+2019-12-15 22:04:52,997 - service.crud - DEBUG - List of employees was returned
+2019-12-15 22:04:53,172 - rest.api - DEBUG - GET method (/api/employees) was successful
+2019-12-15 22:04:57,318 - service.crud - DEBUG - Filtered by dates list of employees was returned
+2019-12-15 22:04:57,500 - rest.api - DEBUG - POST method (/api/employees) was successful
+2019-12-15 22:06:18,149 - service.crud - DEBUG - List of employees was returned
+2019-12-15 22:06:18,327 - rest.api - DEBUG - GET method (/api/employees) was successful
+2019-12-15 22:06:24,015 - service.crud - DEBUG - Filtered by dates list of employees was returned
+2019-12-15 22:06:24,191 - rest.api - DEBUG - POST method (/api/employees) was successful
+2019-12-15 22:07:39,633 - service.crud - DEBUG - Filtered by dates list of employees was returned
+2019-12-15 22:07:39,807 - rest.api - DEBUG - POST method (/api/employees) was successful
+2019-12-15 22:07:42,252 - service.crud - DEBUG - Filtered by dates list of employees was returned
+2019-12-15 22:07:42,422 - rest.api - DEBUG - POST method (/api/employees) was successful
+2019-12-15 22:07:46,050 - service.crud - DEBUG - Filtered by dates list of employees was returned
+2019-12-15 22:07:46,223 - rest.api - DEBUG - POST method (/api/employees) was successful
+2019-12-15 22:08:13,560 - service.crud - DEBUG - Filtered by dates list of employees was returned
+2019-12-15 22:08:13,755 - rest.api - DEBUG - POST method (/api/employees) was successful
+2019-12-15 22:08:15,182 - service.crud - DEBUG - List of employees was returned
+2019-12-15 22:08:15,337 - rest.api - DEBUG - GET method (/api/employees) was successful
+2019-12-15 22:08:30,317 - service.crud - DEBUG - Filtered by dates list of employees was returned
+2019-12-15 22:08:30,496 - rest.api - DEBUG - POST method (/api/employees) was successful
+2019-12-15 22:08:35,030 - service.crud - DEBUG - Filtered by dates list of employees was returned
+2019-12-15 22:08:35,208 - rest.api - DEBUG - POST method (/api/employees) was successful
+2019-12-15 22:08:36,448 - service.crud - DEBUG - List of employees was returned
+2019-12-15 22:08:36,621 - rest.api - DEBUG - GET method (/api/employees) was successful
+2019-12-15 22:08:47,054 - service.crud - DEBUG - Filtered by dates list of employees was returned
+2019-12-15 22:08:47,229 - rest.api - DEBUG - POST method (/api/employees) was successful
+2019-12-15 22:09:07,045 - service.crud - DEBUG - Filtered by dates list of employees was returned
+2019-12-15 22:09:07,215 - rest.api - DEBUG - POST method (/api/employees) was successful
+2019-12-15 22:09:09,002 - service.crud - DEBUG - List of employees was returned
+2019-12-15 22:09:09,181 - rest.api - DEBUG - GET method (/api/employees) was successful
+2019-12-15 22:09:38,221 - service.crud - DEBUG - Filtered by dates list of employees was returned
+2019-12-15 22:09:38,398 - rest.api - DEBUG - POST method (/api/employees) was successful
+2019-12-15 22:11:46,891 - service.crud - DEBUG - Filtered by dates list of employees was returned
+2019-12-15 22:11:47,062 - rest.api - DEBUG - POST method (/api/employees) was successful
+2019-12-15 22:11:50,337 - service.crud - DEBUG - List of employees was returned
+2019-12-15 22:11:50,509 - rest.api - DEBUG - GET method (/api/employees) was successful
+2019-12-15 22:12:25,783 - service.crud - DEBUG - Filtered by dates list of employees was returned
+2019-12-15 22:12:25,959 - rest.api - DEBUG - POST method (/api/employees) was successful
+2019-12-15 22:12:39,449 - service.crud - DEBUG - List of employees was returned
+2019-12-15 22:12:39,646 - rest.api - DEBUG - GET method (/api/employees) was successful
+2019-12-16 22:16:55,252 - rest.api - INFO - Web-service started
+2019-12-16 22:17:04,023 - service.crud - DEBUG - List of department was returned
+2019-12-16 22:17:04,729 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-16 22:17:10,304 - service.crud - DEBUG - List of employees was returned
+2019-12-16 22:17:10,480 - rest.api - DEBUG - GET method (/api/employees) was successful
+2019-12-16 22:17:41,260 - service.crud - DEBUG - Filtered by dates list of employees was returned
+2019-12-16 22:17:41,436 - rest.api - DEBUG - POST method (/api/employees) was successful
+2019-12-16 22:17:50,618 - rest.api - DEBUG - DELETE method (/api/employee/19) was successful
+2019-12-16 22:17:50,630 - service.crud - DEBUG - List of employees was returned
+2019-12-16 22:17:50,806 - rest.api - DEBUG - GET method (/api/employees) was successful
+2019-12-16 22:21:25,956 - service.crud - DEBUG - Filtered by dates list of employees was returned
+2019-12-16 22:21:26,141 - rest.api - DEBUG - POST method (/api/employees) was successful
+2019-12-16 22:21:30,856 - service.crud - DEBUG - Employee 18 was returned
+2019-12-16 22:21:30,858 - rest.api - DEBUG - GET method (/api/employee/18) was successful
+2019-12-16 22:21:31,299 - service.crud - DEBUG - List of department was returned
+2019-12-16 22:21:31,301 - rest.api - ERROR - Exception on /api/departments-ids [GET]
+Traceback (most recent call last):
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "E:\GraduationWork\DepartmentHandler\department-app\rest\api.py", line 77, in get
+    ids.append(department.id)
+AttributeError: 'list' object has no attribute 'id'
+2019-12-16 22:22:21,645 - service.crud - DEBUG - Employee 17 was returned
+2019-12-16 22:22:21,646 - rest.api - DEBUG - GET method (/api/employee/17) was successful
+2019-12-16 22:22:22,063 - service.crud - DEBUG - List of department was returned
+2019-12-16 22:22:22,064 - rest.api - ERROR - Exception on /api/departments-ids [GET]
+Traceback (most recent call last):
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "E:\GraduationWork\DepartmentHandler\department-app\rest\api.py", line 77, in get
+    ids.append(department.id)
+AttributeError: 'list' object has no attribute 'id'
+2019-12-16 22:22:38,872 - service.crud - DEBUG - List of employees was returned
+2019-12-16 22:22:39,045 - rest.api - DEBUG - GET method (/api/employees) was successful
+2019-12-16 22:22:40,889 - service.crud - DEBUG - Employee 1 was returned
+2019-12-16 22:22:40,890 - rest.api - DEBUG - GET method (/api/employee/1) was successful
+2019-12-16 22:22:41,334 - service.crud - DEBUG - List of department was returned
+2019-12-16 22:22:41,335 - rest.api - ERROR - Exception on /api/departments-ids [GET]
+Traceback (most recent call last):
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "E:\GraduationWork\DepartmentHandler\department-app\rest\api.py", line 77, in get
+    ids.append(department.id)
+AttributeError: 'list' object has no attribute 'id'
+2019-12-16 22:22:52,111 - service.crud - DEBUG - Employee 3 was returned
+2019-12-16 22:22:52,111 - rest.api - DEBUG - GET method (/api/employee/3) was successful
+2019-12-16 22:22:52,531 - service.crud - DEBUG - List of department was returned
+2019-12-16 22:22:52,533 - rest.api - ERROR - Exception on /api/departments-ids [GET]
+Traceback (most recent call last):
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "E:\GraduationWork\DepartmentHandler\department-app\rest\api.py", line 77, in get
+    ids.append(department.id)
+AttributeError: 'list' object has no attribute 'id'
+2019-12-16 22:25:38,371 - service.crud - DEBUG - List of department was returned
+2019-12-16 22:25:39,083 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-16 22:25:41,830 - service.crud - DEBUG - List of employees was returned
+2019-12-16 22:25:42,005 - rest.api - DEBUG - GET method (/api/employees) was successful
+2019-12-16 22:25:44,186 - service.crud - DEBUG - Employee 1 was returned
+2019-12-16 22:25:44,187 - rest.api - DEBUG - GET method (/api/employee/1) was successful
+2019-12-16 22:25:44,605 - service.crud - DEBUG - List of department was returned
+2019-12-16 22:25:44,606 - rest.api - ERROR - Exception on /api/departments-ids [GET]
+Traceback (most recent call last):
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "E:\GraduationWork\DepartmentHandler\department-app\rest\api.py", line 77, in get
+    ids.append(department.id)
+AttributeError: 'list' object has no attribute 'id'
+2019-12-16 22:26:38,138 - rest.api - INFO - Web-service started
+2019-12-16 22:26:47,952 - service.crud - DEBUG - Employee 1 was returned
+2019-12-16 22:26:47,953 - rest.api - DEBUG - GET method (/api/employee/1) was successful
+2019-12-16 22:26:48,395 - service.crud - DEBUG - List of department was returned
+2019-12-16 22:26:48,395 - rest.api - ERROR - ([<Department id=10001>, <Department id=10002>, <Department id=10003>, <Department id=10004>], [(Decimal('1800.0000'),), (Decimal('5000.0000'),), (Decimal('13500.0000'),), (Decimal('483.0000'),)])
+2019-12-16 22:26:48,398 - rest.api - WARNING - [<Department id=10001>, <Department id=10002>, <Department id=10003>, <Department id=10004>]
+2019-12-16 22:26:48,401 - rest.api - ERROR - Exception on /api/departments-ids [GET]
+Traceback (most recent call last):
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "E:\GraduationWork\DepartmentHandler\department-app\rest\api.py", line 79, in get
+    ids.append(department.id)
+AttributeError: 'list' object has no attribute 'id'
+2019-12-16 22:27:54,776 - rest.api - INFO - Web-service started
+2019-12-16 22:28:01,158 - service.crud - DEBUG - List of employees was returned
+2019-12-16 22:28:03,043 - rest.api - DEBUG - GET method (/api/employees) was successful
+2019-12-16 22:28:04,878 - service.crud - DEBUG - Employee 1 was returned
+2019-12-16 22:28:04,879 - rest.api - DEBUG - GET method (/api/employee/1) was successful
+2019-12-16 22:28:05,324 - service.crud - DEBUG - List of department was returned
+2019-12-16 22:28:05,324 - rest.api - ERROR - [<Department id=10001>, <Department id=10002>, <Department id=10003>, <Department id=10004>]
+2019-12-16 22:28:05,326 - rest.api - WARNING - <Department id=10001>
+2019-12-16 22:28:05,330 - rest.api - WARNING - <Department id=10002>
+2019-12-16 22:28:05,331 - rest.api - WARNING - <Department id=10003>
+2019-12-16 22:28:05,332 - rest.api - WARNING - <Department id=10004>
+2019-12-16 22:28:05,333 - rest.api - DEBUG - GET method (/api/departments-ids) was successful
+2019-12-16 22:28:07,375 - service.crud - DEBUG - List of employees was returned
+2019-12-16 22:28:07,548 - rest.api - DEBUG - GET method (/api/employees) was successful
+2019-12-16 22:28:24,703 - service.crud - DEBUG - Filtered by dates list of employees was returned
+2019-12-16 22:28:24,869 - rest.api - DEBUG - POST method (/api/employees) was successful
+2019-12-16 22:28:27,359 - service.crud - DEBUG - Employee 18 was returned
+2019-12-16 22:28:27,360 - rest.api - DEBUG - GET method (/api/employee/18) was successful
+2019-12-16 22:28:27,782 - service.crud - DEBUG - List of department was returned
+2019-12-16 22:28:27,783 - rest.api - ERROR - [<Department id=10001>, <Department id=10002>, <Department id=10003>, <Department id=10004>]
+2019-12-16 22:28:27,785 - rest.api - WARNING - <Department id=10001>
+2019-12-16 22:28:27,787 - rest.api - WARNING - <Department id=10002>
+2019-12-16 22:28:27,788 - rest.api - WARNING - <Department id=10003>
+2019-12-16 22:28:27,788 - rest.api - WARNING - <Department id=10004>
+2019-12-16 22:28:27,789 - rest.api - DEBUG - GET method (/api/departments-ids) was successful
+2019-12-16 22:28:32,175 - service.crud - DEBUG - Employee was updated
+2019-12-16 22:28:32,176 - rest.api - DEBUG - PUT method (/api/employee/18) was successful
+2019-12-16 22:28:32,193 - service.crud - DEBUG - List of employees was returned
+2019-12-16 22:28:32,365 - rest.api - DEBUG - GET method (/api/employees) was successful
+2019-12-16 22:28:43,088 - service.crud - DEBUG - List of department was returned
+2019-12-16 22:28:43,792 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-16 22:28:54,094 - service.crud - DEBUG - List of employees was returned
+2019-12-16 22:28:54,270 - rest.api - DEBUG - GET method (/api/employees) was successful

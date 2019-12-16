@@ -1,5 +1,5 @@
 class ApiConfiguration:
-    SQLALCHEMY_DATABASE_URI = 'mysql+mysqlconnector://BwvKSyqOJr:pHUzJxlULe@remotemysql.com:3306/BwvKSyqOJr'
+    SQLALCHEMY_DATABASE_URI = 'mysql+mysqlconnector://LiJZRTlglU:joXboKoL07@remotemysql.com:3306/LiJZRTlglU'
     SQLALCHEMY_TRACK_MODIFICATIONS = False
 
 

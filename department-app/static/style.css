@@ -17,7 +17,6 @@ header{
 }
 .content{
   border-bottom: 1px solid black;
-  border-top: 1px solid black;
   padding-top: 10px;
   padding-bottom: 10px;
   overflow: hidden;
@@ -76,20 +75,25 @@ header .title{
   margin-bottom: 10px;
 }
 .content .row{
+  float: left;
   height: auto;
   font-size: 20px;
   font-family:'Roboto', sans-serif;
+  border: 1px solid black;
 }
 .content .row .block{
   float: left;
   padding: 0px 10px 0px 10px;
   text-align: center;
-  border: 1px solid black;
+  border-right: 1px solid black;
+  border-left: 1px solid black;
 }
 .content .row .title{
   font-weight: 500;
 }
 .content .add_button{
+  font-size: 20px;
+  font-family:'Roboto', sans-serif;
   width: 100px;
   margin-left: 15px;
   position: relative;
@@ -112,8 +116,33 @@ header .title{
 .content .add_button:hover{
   background-color: #FFA511;
 }
+.content .edit_button, .content .delete_button{
+  width: 25px;
+  height: 25px;
+  margin-left: 15px;
+  position: relative;
+  background-color: #FFFFFF;
+  text-align: center;
+  border: 1px solid black;
+  float: left;
+}
+.content .edit_button img, .content .delete_button img{
+  display: block;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+}
+.content .edit_button a, .content .delete_button a{
+  display: block;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+}
+.content .edit_button:hover, .content .delete_button:hover{
+  background: #FFA511;
+}
 /*Departments page*/
-.content .department_number{
+.content .department_number {
   width: 300px;
 }
 .content .employees{
