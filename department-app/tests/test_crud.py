@@ -18,7 +18,7 @@ class TestDepartments(BaseTestCase):
                      salary=Decimal(1000)),
             Employee(id=2, name='John Spins', department_id=10001,
                      date_of_birthday=date(1997, 5, 11),
-                     salary=Decimal(3000))])], [(Decimal(2000),)]))
+                     salary=Decimal(3000))])], [(Decimal(2000), 10001)]))
 
     def test_get(self):
         self.assertEqual(crud.Departments.get(10001), Department(id=10001, employees=[

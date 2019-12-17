@@ -30,7 +30,8 @@ class Departments:
         :rtype: tuple (list<departments>, list<tuple(salary)>
         """
         departments = Department.query.all()
-        salaries = db.session.query(func.avg(Employee.salary).label('average')).group_by(Employee.department_id).all()
+        salaries = db.session.query(func.avg(Employee.salary).label('average'),
+                                    Employee.department_id).group_by(Employee.department_id).all()
         logger.debug('List of department was returned')
         return departments, salaries
 

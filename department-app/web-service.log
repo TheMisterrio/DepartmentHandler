@@ -2876,3 +2876,778 @@ AttributeError: 'list' object has no attribute 'id'
 2019-12-17 15:54:12,317 - service.crud - DEBUG - Filtered by dates list of employees was returned
 2019-12-17 15:54:12,495 - service.crud - DEBUG - Filtered by dates list of employees was returned
 2019-12-17 15:54:16,269 - service.crud - DEBUG - Employee was updated
+2019-12-17 18:58:18,413 - rest.api - INFO - Web-service started
+2019-12-17 19:17:46,481 - rest.api - INFO - Web-service started
+2019-12-17 19:18:13,487 - service.crud - DEBUG - List of department was returned
+2019-12-17 19:18:14,198 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-17 19:18:14,741 - service.crud - DEBUG - List of department was returned
+2019-12-17 19:18:15,451 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-17 19:18:21,750 - service.crud - DEBUG - List of department was returned
+2019-12-17 19:18:22,487 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-17 19:18:28,511 - service.crud - DEBUG - List of department was returned
+2019-12-17 19:18:29,260 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-17 19:18:39,101 - service.crud - DEBUG - Department 10004 was updated
+2019-12-17 19:18:39,435 - rest.api - DEBUG - PUT method (/api/department/10004) was successful
+2019-12-17 19:18:39,827 - service.crud - DEBUG - List of department was returned
+2019-12-17 19:18:40,544 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-17 19:18:44,176 - service.crud - DEBUG - List of employees was returned
+2019-12-17 19:18:44,356 - rest.api - DEBUG - GET method (/api/employees) was successful
+2019-12-17 19:18:48,529 - service.crud - DEBUG - List of department was returned
+2019-12-17 19:18:49,249 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-17 19:18:52,683 - service.crud - DEBUG - List of employees was returned
+2019-12-17 19:18:52,864 - rest.api - DEBUG - GET method (/api/employees) was successful
+2019-12-17 19:18:56,673 - service.crud - DEBUG - List of department was returned
+2019-12-17 19:18:57,384 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-17 19:19:07,318 - service.crud - DEBUG - Department 10003 was updated
+2019-12-17 19:19:07,619 - rest.api - DEBUG - PUT method (/api/department/10003) was successful
+2019-12-17 19:19:08,011 - service.crud - DEBUG - List of department was returned
+2019-12-17 19:19:08,726 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-17 19:19:10,645 - service.crud - DEBUG - List of employees was returned
+2019-12-17 19:19:10,866 - rest.api - DEBUG - GET method (/api/employees) was successful
+2019-12-17 19:19:14,388 - service.crud - DEBUG - List of employees was returned
+2019-12-17 19:19:14,573 - rest.api - DEBUG - GET method (/api/employees) was successful
+2019-12-17 19:19:21,054 - service.crud - DEBUG - List of department was returned
+2019-12-17 19:19:21,819 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-17 19:19:24,282 - service.crud - DEBUG - List of employees was returned
+2019-12-17 19:19:24,461 - rest.api - DEBUG - GET method (/api/employees) was successful
+2019-12-17 19:19:28,625 - service.crud - DEBUG - List of department was returned
+2019-12-17 19:19:29,382 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-17 19:19:36,767 - service.crud - DEBUG - Department 10004 was added
+2019-12-17 19:19:36,767 - rest.api - DEBUG - POST method (/api/department) was successful
+2019-12-17 19:19:37,160 - service.crud - DEBUG - List of department was returned
+2019-12-17 19:19:38,046 - rest.api - ERROR - Exception on /api/departments [GET]
+Traceback (most recent call last):
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "E:\GraduationWork\DepartmentHandler\department-app\rest\api.py", line 61, in get
+    salaries.append(str(avg[i][0])[:-2])
+IndexError: list index out of range
+2019-12-17 19:19:41,081 - service.crud - DEBUG - List of department was returned
+2019-12-17 19:19:42,055 - rest.api - ERROR - Exception on /api/departments [GET]
+Traceback (most recent call last):
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "E:\GraduationWork\DepartmentHandler\department-app\rest\api.py", line 61, in get
+    salaries.append(str(avg[i][0])[:-2])
+IndexError: list index out of range
+2019-12-17 19:19:44,283 - service.crud - DEBUG - List of department was returned
+2019-12-17 19:19:45,156 - rest.api - ERROR - Exception on /api/departments [GET]
+Traceback (most recent call last):
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "E:\GraduationWork\DepartmentHandler\department-app\rest\api.py", line 61, in get
+    salaries.append(str(avg[i][0])[:-2])
+IndexError: list index out of range
+2019-12-17 19:19:46,551 - service.crud - DEBUG - List of employees was returned
+2019-12-17 19:19:46,724 - rest.api - DEBUG - GET method (/api/employees) was successful
+2019-12-17 19:19:48,511 - service.crud - DEBUG - List of department was returned
+2019-12-17 19:19:49,381 - rest.api - ERROR - Exception on /api/departments [GET]
+Traceback (most recent call last):
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "E:\GraduationWork\DepartmentHandler\department-app\rest\api.py", line 61, in get
+    salaries.append(str(avg[i][0])[:-2])
+IndexError: list index out of range
+2019-12-17 19:19:54,239 - service.crud - DEBUG - List of department was returned
+2019-12-17 19:19:55,126 - rest.api - ERROR - Exception on /api/departments [GET]
+Traceback (most recent call last):
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "E:\GraduationWork\DepartmentHandler\department-app\rest\api.py", line 61, in get
+    salaries.append(str(avg[i][0])[:-2])
+IndexError: list index out of range
+2019-12-17 19:19:56,923 - service.crud - DEBUG - List of employees was returned
+2019-12-17 19:19:57,103 - rest.api - DEBUG - GET method (/api/employees) was successful
+2019-12-17 19:20:15,965 - service.crud - DEBUG - List of department was returned
+2019-12-17 19:20:16,864 - rest.api - ERROR - Exception on /api/departments [GET]
+Traceback (most recent call last):
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "E:\GraduationWork\DepartmentHandler\department-app\rest\api.py", line 61, in get
+    salaries.append(str(avg[i][0])[:-2])
+IndexError: list index out of range
+2019-12-17 19:22:26,231 - rest.api - INFO - Web-service started
+2019-12-17 19:22:34,817 - service.crud - DEBUG - List of department was returned
+2019-12-17 19:22:35,719 - rest.api - ERROR - Exception on /api/departments [GET]
+Traceback (most recent call last):
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "E:\GraduationWork\DepartmentHandler\department-app\rest\api.py", line 61, in get
+    salaries.append(str(avg[i][0]))
+IndexError: list index out of range
+2019-12-17 19:22:38,065 - service.crud - DEBUG - List of department was returned
+2019-12-17 19:22:39,834 - rest.api - ERROR - Exception on /api/departments [GET]
+Traceback (most recent call last):
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "E:\GraduationWork\DepartmentHandler\department-app\rest\api.py", line 61, in get
+    salaries.append(str(avg[i][0]))
+IndexError: list index out of range
+2019-12-17 19:24:37,281 - rest.api - INFO - Web-service started
+2019-12-17 19:24:44,287 - service.crud - DEBUG - List of department was returned
+2019-12-17 19:24:44,287 - rest.api - WARNING - []
+2019-12-17 19:24:44,287 - rest.api - WARNING - []
+2019-12-17 19:24:44,467 - rest.api - ERROR - Exception on /api/departments [GET]
+Traceback (most recent call last):
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "E:\GraduationWork\DepartmentHandler\department-app\rest\api.py", line 63, in get
+    salaries.append(str(avg[i][0][:-2]))
+TypeError: 'decimal.Decimal' object is not subscriptable
+2019-12-17 19:26:27,337 - rest.api - INFO - Web-service started
+2019-12-17 19:26:31,259 - service.crud - DEBUG - List of department was returned
+2019-12-17 19:26:31,259 - rest.api - WARNING - [<Department id=1000>, <Department id=10001>, <Department id=10002>, <Department id=10003>, <Department id=10004>]
+2019-12-17 19:26:31,263 - rest.api - WARNING - [(Decimal('483.5000'),), (Decimal('1810.0000'),), (Decimal('5000.0000'),), (Decimal('13500.0000'),)]
+2019-12-17 19:26:31,452 - rest.api - ERROR - Exception on /api/departments [GET]
+Traceback (most recent call last):
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "E:\GraduationWork\DepartmentHandler\department-app\rest\api.py", line 63, in get
+    salaries.append(str(avg[i][0][:-2]))
+TypeError: 'decimal.Decimal' object is not subscriptable
+2019-12-17 19:28:46,019 - service.crud - DEBUG - List of department was returned
+2019-12-17 19:28:46,019 - rest.api - WARNING - [<Department id=10001>, <Department id=10002>, <Department id=10003>, <Department id=10004>]
+2019-12-17 19:28:46,024 - rest.api - WARNING - [(Decimal('1810.0000'),), (Decimal('5000.0000'),), (Decimal('13500.0000'),)]
+2019-12-17 19:28:46,204 - rest.api - ERROR - Exception on /api/departments [GET]
+Traceback (most recent call last):
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "E:\GraduationWork\DepartmentHandler\department-app\rest\api.py", line 63, in get
+    salaries.append(str(avg[i][0][:-2]))
+TypeError: 'decimal.Decimal' object is not subscriptable
+2019-12-17 19:29:53,255 - service.crud - DEBUG - List of department was returned
+2019-12-17 19:29:53,255 - rest.api - WARNING - [<Department id=10001>, <Department id=10002>, <Department id=10003>]
+2019-12-17 19:29:53,255 - rest.api - WARNING - [(Decimal('1810.0000'),), (Decimal('5000.0000'),), (Decimal('13500.0000'),)]
+2019-12-17 19:29:53,439 - rest.api - ERROR - Exception on /api/departments [GET]
+Traceback (most recent call last):
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "E:\GraduationWork\DepartmentHandler\department-app\rest\api.py", line 63, in get
+    salaries.append(str(avg[i][0][:-2]))
+TypeError: 'decimal.Decimal' object is not subscriptable
+2019-12-17 19:30:52,001 - rest.api - INFO - Web-service started
+2019-12-17 19:30:58,344 - service.crud - DEBUG - List of department was returned
+2019-12-17 19:30:58,348 - rest.api - WARNING - [<Department id=10001>, <Department id=10002>, <Department id=10003>]
+2019-12-17 19:30:58,348 - rest.api - WARNING - [(Decimal('1810.0000'),), (Decimal('5000.0000'),), (Decimal('13500.0000'),)]
+2019-12-17 19:30:58,984 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-17 19:32:50,391 - rest.api - INFO - Web-service started
+2019-12-17 19:32:59,073 - service.crud - DEBUG - List of department was returned
+2019-12-17 19:32:59,073 - rest.api - WARNING - [<Department id=10001>, <Department id=10002>, <Department id=10003>]
+2019-12-17 19:32:59,073 - rest.api - WARNING - [(Decimal('1810.0000'),), (Decimal('5000.0000'),), (Decimal('13500.0000'),)]
+2019-12-17 19:32:59,628 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-17 19:33:07,643 - service.crud - DEBUG - Department 100 was added
+2019-12-17 19:33:07,648 - rest.api - DEBUG - POST method (/api/department) was successful
+2019-12-17 19:33:08,050 - service.crud - DEBUG - List of department was returned
+2019-12-17 19:33:08,054 - rest.api - WARNING - [<Department id=100>, <Department id=10001>, <Department id=10002>, <Department id=10003>]
+2019-12-17 19:33:08,054 - rest.api - WARNING - [(Decimal('1810.0000'),), (Decimal('5000.0000'),), (Decimal('13500.0000'),)]
+2019-12-17 19:33:08,759 - rest.api - ERROR - Exception on /api/departments [GET]
+Traceback (most recent call last):
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "E:\GraduationWork\DepartmentHandler\department-app\rest\api.py", line 63, in get
+    salaries.append(str(avg[i][0])[:-2])
+IndexError: list index out of range
+2019-12-17 19:39:11,291 - rest.api - INFO - Web-service started
+2019-12-17 19:39:19,213 - service.crud - DEBUG - List of department was returned
+2019-12-17 19:39:19,213 - rest.api - WARNING - [<Department id=100>, <Department id=10001>, <Department id=10002>, <Department id=10003>]
+2019-12-17 19:39:19,217 - rest.api - WARNING - [(Decimal('1810.0000'),), (Decimal('5000.0000'),), (Decimal('13500.0000'),)]
+2019-12-17 19:39:19,217 - rest.api - ERROR - Exception on /api/departments [GET]
+Traceback (most recent call last):
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "E:\GraduationWork\DepartmentHandler\department-app\rest\api.py", line 63, in get
+    salaries.append(str(avg[i][0])[:-2])
+IndexError: list index out of range
+2019-12-17 19:40:01,133 - rest.api - INFO - Web-service started
+2019-12-17 19:40:06,850 - service.crud - WARNING - NONEEEE100
+2019-12-17 19:40:07,564 - service.crud - DEBUG - List of department was returned
+2019-12-17 19:40:07,564 - rest.api - WARNING - [<Department id=100>, <Department id=10001>, <Department id=10002>, <Department id=10003>]
+2019-12-17 19:40:07,564 - rest.api - WARNING - [(Decimal('1810.0000'),), (Decimal('5000.0000'),), (Decimal('13500.0000'),)]
+2019-12-17 19:40:07,568 - rest.api - ERROR - Exception on /api/departments [GET]
+Traceback (most recent call last):
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "E:\GraduationWork\DepartmentHandler\department-app\rest\api.py", line 63, in get
+    salaries.append(str(avg[i][0])[:-2])
+IndexError: list index out of range
+2019-12-17 19:42:40,741 - rest.api - INFO - Web-service started
+2019-12-17 19:42:51,928 - rest.api - ERROR - Exception on /api/departments [GET]
+Traceback (most recent call last):
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1245, in _execute_context
+    self.dialect.do_execute(
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\default.py", line 581, in do_execute
+    cursor.execute(statement, parameters)
+  File "E:\GraduationWork\ENV\lib\site-packages\mysql\connector\cursor.py", line 551, in execute
+    self._handle_result(self._connection.cmd_query(stmt))
+  File "E:\GraduationWork\ENV\lib\site-packages\mysql\connector\connection.py", line 490, in cmd_query
+    result = self._handle_result(self._send_cmd(ServerCmd.QUERY, query))
+  File "E:\GraduationWork\ENV\lib\site-packages\mysql\connector\connection.py", line 395, in _handle_result
+    raise errors.get_exception(packet)
+mysql.connector.errors.ProgrammingError: 1055 (42000): Expression #2 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'LiJZRTlglU.department.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "E:\GraduationWork\DepartmentHandler\department-app\rest\api.py", line 49, in get
+    data = crud.Departments.get_all()
+  File "E:\GraduationWork\DepartmentHandler\department-app\service\crud.py", line 33, in get_all
+    salaries = db.session.query(func.avg(Employee.salary).label('average'),
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\query.py", line 3211, in all
+    return list(self)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\query.py", line 3367, in __iter__
+    return self._execute_and_instances(context)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\query.py", line 3392, in _execute_and_instances
+    result = conn.execute(querycontext.statement, self._params)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 982, in execute
+    return meth(self, multiparams, params)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\sql\elements.py", line 287, in _execute_on_connection
+    return connection._execute_clauseelement(self, multiparams, params)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1095, in _execute_clauseelement
+    ret = self._execute_context(
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1249, in _execute_context
+    self._handle_dbapi_exception(
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1476, in _handle_dbapi_exception
+    util.raise_from_cause(sqlalchemy_exception, exc_info)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\util\compat.py", line 398, in raise_from_cause
+    reraise(type(exception), exception, tb=exc_tb, cause=cause)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\util\compat.py", line 152, in reraise
+    raise value.with_traceback(tb)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1245, in _execute_context
+    self.dialect.do_execute(
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\default.py", line 581, in do_execute
+    cursor.execute(statement, parameters)
+  File "E:\GraduationWork\ENV\lib\site-packages\mysql\connector\cursor.py", line 551, in execute
+    self._handle_result(self._connection.cmd_query(stmt))
+  File "E:\GraduationWork\ENV\lib\site-packages\mysql\connector\connection.py", line 490, in cmd_query
+    result = self._handle_result(self._send_cmd(ServerCmd.QUERY, query))
+  File "E:\GraduationWork\ENV\lib\site-packages\mysql\connector\connection.py", line 395, in _handle_result
+    raise errors.get_exception(packet)
+sqlalchemy.exc.ProgrammingError: (mysql.connector.errors.ProgrammingError) 1055 (42000): Expression #2 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'LiJZRTlglU.department.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+[SQL: SELECT avg(employee.salary) AS average, department.id AS department_id 
+FROM employee, department GROUP BY employee.department_id]
+(Background on this error at: http://sqlalche.me/e/f405)
+2019-12-17 19:43:46,974 - rest.api - INFO - Web-service started
+2019-12-17 19:43:53,274 - service.crud - DEBUG - List of department was returned
+2019-12-17 19:43:53,278 - rest.api - WARNING - [<Department id=100>, <Department id=10001>, <Department id=10002>, <Department id=10003>]
+2019-12-17 19:43:53,278 - rest.api - WARNING - [(Decimal('1810.0000'), 10001), (Decimal('5000.0000'), 10002), (Decimal('13500.0000'), 10003)]
+2019-12-17 19:43:54,024 - rest.api - ERROR - Exception on /api/departments [GET]
+Traceback (most recent call last):
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "E:\GraduationWork\DepartmentHandler\department-app\rest\api.py", line 63, in get
+    salaries.append(str(avg[i][0])[:-2])
+IndexError: list index out of range
+2019-12-17 19:48:33,450 - rest.api - INFO - Web-service started
+2019-12-17 19:48:51,422 - service.crud - DEBUG - List of department was returned
+2019-12-17 19:48:51,422 - rest.api - WARNING - [<Department id=100>, <Department id=10001>, <Department id=10002>, <Department id=10003>]
+2019-12-17 19:48:51,426 - rest.api - WARNING - [(Decimal('1810.0000'), 10001), (Decimal('5000.0000'), 10002), (Decimal('13500.0000'), 10003)]
+2019-12-17 19:48:51,426 - service.crud - DEBUG - List of department was returned
+2019-12-17 19:48:51,434 - rest.api - WARNING - [<Department id=100>, <Department id=10001>, <Department id=10002>, <Department id=10003>]
+2019-12-17 19:48:51,434 - rest.api - WARNING - [(Decimal('1810.0000'), 10001), (Decimal('5000.0000'), 10002), (Decimal('13500.0000'), 10003)]
+2019-12-17 19:48:56,544 - rest.api - ERROR - Exception on /api/departments [GET]
+Traceback (most recent call last):
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "E:\GraduationWork\DepartmentHandler\department-app\rest\api.py", line 64, in get
+    if departments[i].id == avg[i][1]:
+IndexError: list index out of range
+2019-12-17 19:48:56,544 - rest.api - ERROR - Exception on /api/departments [GET]
+Traceback (most recent call last):
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "E:\GraduationWork\DepartmentHandler\department-app\rest\api.py", line 64, in get
+    if departments[i].id == avg[i][1]:
+IndexError: list index out of range
+2019-12-17 19:55:30,953 - rest.api - INFO - Web-service started
+2019-12-17 19:56:01,898 - service.crud - DEBUG - List of department was returned
+2019-12-17 19:56:01,898 - rest.api - WARNING - [<Department id=100>, <Department id=10001>, <Department id=10002>, <Department id=10003>]
+2019-12-17 19:56:01,902 - rest.api - WARNING - [(Decimal('1810.0000'), 10001), (Decimal('5000.0000'), 10002), (Decimal('13500.0000'), 10003)]
+2019-12-17 19:56:07,297 - rest.api - ERROR - Exception on /api/departments [GET]
+Traceback (most recent call last):
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "E:\GraduationWork\DepartmentHandler\department-app\rest\api.py", line 66, in get
+    salaries.append(str(avg_salaries[i][0])[:-2])
+IndexError: list index out of range
+2019-12-17 19:56:07,349 - service.crud - DEBUG - List of department was returned
+2019-12-17 19:56:07,349 - rest.api - WARNING - [<Department id=100>, <Department id=10001>, <Department id=10002>, <Department id=10003>]
+2019-12-17 19:56:07,349 - rest.api - WARNING - [(Decimal('1810.0000'), 10001), (Decimal('5000.0000'), 10002), (Decimal('13500.0000'), 10003)]
+2019-12-17 19:56:21,857 - rest.api - ERROR - Exception on /api/departments [GET]
+Traceback (most recent call last):
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "E:\GraduationWork\DepartmentHandler\department-app\rest\api.py", line 66, in get
+    salaries.append(str(avg_salaries[i][0])[:-2])
+IndexError: list index out of range
+2019-12-17 19:57:37,109 - rest.api - INFO - Web-service started
+2019-12-17 19:57:50,993 - service.crud - DEBUG - List of department was returned
+2019-12-17 19:57:50,993 - rest.api - WARNING - [<Department id=100>, <Department id=10001>, <Department id=10002>, <Department id=10003>]
+2019-12-17 19:57:50,994 - rest.api - WARNING - [(Decimal('1810.0000'), 10001), (Decimal('5000.0000'), 10002), (Decimal('13500.0000'), 10003)]
+2019-12-17 19:57:51,714 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-17 20:03:02,862 - rest.api - INFO - Web-service started
+2019-12-17 20:03:12,813 - service.crud - DEBUG - List of department was returned
+2019-12-17 20:03:12,814 - rest.api - WARNING - [<Department id=100>, <Department id=10001>, <Department id=10002>, <Department id=10003>]
+2019-12-17 20:03:12,814 - rest.api - WARNING - [(Decimal('1810.0000'), 10001), (Decimal('5000.0000'), 10002), (Decimal('13500.0000'), 10003)]
+2019-12-17 20:03:13,547 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-17 20:04:29,010 - service.crud - DEBUG - Department 100 was deleted
+2019-12-17 20:04:29,011 - rest.api - DEBUG - DELETE method (/api/department/100) was successful
+2019-12-17 20:04:29,426 - service.crud - DEBUG - List of department was returned
+2019-12-17 20:04:29,427 - rest.api - WARNING - [<Department id=10001>, <Department id=10002>, <Department id=10003>]
+2019-12-17 20:04:29,427 - rest.api - WARNING - [(Decimal('1810.0000'), 10001), (Decimal('5000.0000'), 10002), (Decimal('13500.0000'), 10003)]
+2019-12-17 20:04:29,977 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-17 20:04:37,171 - service.crud - DEBUG - Department 100 was added
+2019-12-17 20:04:37,171 - rest.api - DEBUG - POST method (/api/department) was successful
+2019-12-17 20:04:37,590 - service.crud - DEBUG - List of department was returned
+2019-12-17 20:04:37,591 - rest.api - WARNING - [<Department id=100>, <Department id=10001>, <Department id=10002>, <Department id=10003>]
+2019-12-17 20:04:37,592 - rest.api - WARNING - [(Decimal('1810.0000'), 10001), (Decimal('5000.0000'), 10002), (Decimal('13500.0000'), 10003)]
+2019-12-17 20:04:38,335 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-17 20:05:25,743 - service.crud - DEBUG - List of department was returned
+2019-12-17 20:05:25,744 - rest.api - WARNING - [<Department id=100>, <Department id=10001>, <Department id=10002>, <Department id=10003>]
+2019-12-17 20:05:25,744 - rest.api - WARNING - [(Decimal('1810.0000'), 10001), (Decimal('5000.0000'), 10002), (Decimal('13500.0000'), 10003)]
+2019-12-17 20:05:26,481 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-17 20:05:28,938 - service.crud - DEBUG - Department 100 was deleted
+2019-12-17 20:05:28,939 - rest.api - DEBUG - DELETE method (/api/department/100) was successful
+2019-12-17 20:05:29,333 - service.crud - DEBUG - List of department was returned
+2019-12-17 20:05:29,334 - rest.api - WARNING - [<Department id=10001>, <Department id=10002>, <Department id=10003>]
+2019-12-17 20:05:29,334 - rest.api - WARNING - [(Decimal('1810.0000'), 10001), (Decimal('5000.0000'), 10002), (Decimal('13500.0000'), 10003)]
+2019-12-17 20:05:29,904 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-17 20:05:35,702 - service.crud - DEBUG - Department 100 was added
+2019-12-17 20:05:35,703 - rest.api - DEBUG - POST method (/api/department) was successful
+2019-12-17 20:05:36,124 - service.crud - DEBUG - List of department was returned
+2019-12-17 20:05:36,125 - rest.api - WARNING - [<Department id=100>, <Department id=10001>, <Department id=10002>, <Department id=10003>]
+2019-12-17 20:05:36,126 - rest.api - WARNING - [(Decimal('1810.0000'), 10001), (Decimal('5000.0000'), 10002), (Decimal('13500.0000'), 10003)]
+2019-12-17 20:05:36,848 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-17 20:07:29,604 - service.crud - DEBUG - List of department was returned
+2019-12-17 20:07:29,605 - rest.api - WARNING - [<Department id=100>, <Department id=10001>, <Department id=10002>, <Department id=10003>]
+2019-12-17 20:07:29,605 - rest.api - WARNING - [(Decimal('1810.0000'), 10001), (Decimal('5000.0000'), 10002), (Decimal('13500.0000'), 10003)]
+2019-12-17 20:07:30,332 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-17 20:07:43,889 - service.crud - DEBUG - List of department was returned
+2019-12-17 20:07:43,890 - rest.api - WARNING - [<Department id=100>, <Department id=10001>, <Department id=10002>, <Department id=10003>]
+2019-12-17 20:07:43,890 - rest.api - WARNING - [(Decimal('1810.0000'), 10001), (Decimal('5000.0000'), 10002), (Decimal('13500.0000'), 10003)]
+2019-12-17 20:07:44,615 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-17 20:07:51,590 - service.crud - DEBUG - Department 100 was deleted
+2019-12-17 20:07:51,591 - rest.api - DEBUG - DELETE method (/api/department/100) was successful
+2019-12-17 20:07:51,989 - service.crud - DEBUG - List of department was returned
+2019-12-17 20:07:51,990 - rest.api - WARNING - [<Department id=10001>, <Department id=10002>, <Department id=10003>]
+2019-12-17 20:07:51,991 - rest.api - WARNING - [(Decimal('1810.0000'), 10001), (Decimal('5000.0000'), 10002), (Decimal('13500.0000'), 10003)]
+2019-12-17 20:07:52,537 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-17 20:07:54,757 - service.crud - DEBUG - List of department was returned
+2019-12-17 20:07:54,758 - rest.api - WARNING - [<Department id=10001>, <Department id=10002>, <Department id=10003>]
+2019-12-17 20:07:54,758 - rest.api - WARNING - [(Decimal('1810.0000'), 10001), (Decimal('5000.0000'), 10002), (Decimal('13500.0000'), 10003)]
+2019-12-17 20:07:55,298 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-17 20:08:01,938 - rest.api - DEBUG - POST method (/api/department) was not successful (400)
+2019-12-17 20:08:02,413 - service.crud - DEBUG - List of department was returned
+2019-12-17 20:08:02,413 - rest.api - WARNING - [<Department id=10001>, <Department id=10002>, <Department id=10003>]
+2019-12-17 20:08:02,414 - rest.api - WARNING - [(Decimal('1810.0000'), 10001), (Decimal('5000.0000'), 10002), (Decimal('13500.0000'), 10003)]
+2019-12-17 20:08:03,005 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-17 20:13:49,665 - rest.api - ERROR - Exception on /api/departments [GET]
+Traceback (most recent call last):
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1173, in _execute_context
+    context = constructor(dialect, self, conn, *args)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\default.py", line 768, in _init_compiled
+    self.cursor = self.create_cursor()
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\default.py", line 1122, in create_cursor
+    return self._dbapi_connection.cursor()
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\pool\base.py", line 965, in cursor
+    return self.connection.cursor(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\mysql\connector\connection.py", line 809, in cursor
+    raise errors.OperationalError("MySQL Connection not available.")
+mysql.connector.errors.OperationalError: MySQL Connection not available.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "E:\GraduationWork\DepartmentHandler\department-app\rest\api.py", line 49, in get
+    data = crud.Departments.get_all()
+  File "E:\GraduationWork\DepartmentHandler\department-app\service\crud.py", line 32, in get_all
+    departments = Department.query.all()
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\query.py", line 3211, in all
+    return list(self)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\query.py", line 3367, in __iter__
+    return self._execute_and_instances(context)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\query.py", line 3392, in _execute_and_instances
+    result = conn.execute(querycontext.statement, self._params)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 982, in execute
+    return meth(self, multiparams, params)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\sql\elements.py", line 287, in _execute_on_connection
+    return connection._execute_clauseelement(self, multiparams, params)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1095, in _execute_clauseelement
+    ret = self._execute_context(
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1175, in _execute_context
+    self._handle_dbapi_exception(
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1476, in _handle_dbapi_exception
+    util.raise_from_cause(sqlalchemy_exception, exc_info)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\util\compat.py", line 398, in raise_from_cause
+    reraise(type(exception), exception, tb=exc_tb, cause=cause)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\util\compat.py", line 152, in reraise
+    raise value.with_traceback(tb)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1173, in _execute_context
+    context = constructor(dialect, self, conn, *args)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\default.py", line 768, in _init_compiled
+    self.cursor = self.create_cursor()
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\default.py", line 1122, in create_cursor
+    return self._dbapi_connection.cursor()
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\pool\base.py", line 965, in cursor
+    return self.connection.cursor(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\mysql\connector\connection.py", line 809, in cursor
+    raise errors.OperationalError("MySQL Connection not available.")
+sqlalchemy.exc.OperationalError: (mysql.connector.errors.OperationalError) MySQL Connection not available.
+[SQL: SELECT department.id AS department_id 
+FROM department]
+[parameters: [immutabledict({})]]
+(Background on this error at: http://sqlalche.me/e/e3q8)
+2019-12-17 20:13:51,148 - service.crud - DEBUG - List of department was returned
+2019-12-17 20:13:51,148 - rest.api - WARNING - [<Department id=10001>, <Department id=10002>, <Department id=10003>]
+2019-12-17 20:13:51,149 - rest.api - WARNING - [(Decimal('1810.0000'), 10001), (Decimal('5000.0000'), 10002), (Decimal('13500.0000'), 10003)]
+2019-12-17 20:13:51,675 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-17 20:14:09,150 - service.crud - DEBUG - List of department was returned
+2019-12-17 20:14:09,151 - rest.api - WARNING - [<Department id=10001>, <Department id=10002>, <Department id=10003>]
+2019-12-17 20:14:09,151 - rest.api - WARNING - [(Decimal('1810.0000'), 10001), (Decimal('5000.0000'), 10002), (Decimal('13500.0000'), 10003)]
+2019-12-17 20:14:09,669 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-17 20:14:23,792 - service.crud - DEBUG - Department 10004 was added
+2019-12-17 20:14:23,793 - rest.api - DEBUG - POST method (/api/department) was successful
+2019-12-17 20:14:24,177 - service.crud - DEBUG - List of department was returned
+2019-12-17 20:14:24,178 - rest.api - WARNING - [<Department id=10001>, <Department id=10002>, <Department id=10003>, <Department id=10004>]
+2019-12-17 20:14:24,178 - rest.api - WARNING - [(Decimal('1810.0000'), 10001), (Decimal('5000.0000'), 10002), (Decimal('13500.0000'), 10003)]
+2019-12-17 20:14:24,893 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-17 20:14:26,947 - service.crud - DEBUG - List of employees was returned
+2019-12-17 20:14:27,121 - rest.api - DEBUG - GET method (/api/employees) was successful
+2019-12-17 20:14:53,607 - service.crud - DEBUG - List of department was returned
+2019-12-17 20:14:53,607 - rest.api - ERROR - [<Department id=10001>, <Department id=10002>, <Department id=10003>, <Department id=10004>]
+2019-12-17 20:14:53,608 - rest.api - WARNING - <Department id=10001>
+2019-12-17 20:14:53,608 - rest.api - WARNING - <Department id=10002>
+2019-12-17 20:14:53,608 - rest.api - WARNING - <Department id=10003>
+2019-12-17 20:14:53,609 - rest.api - WARNING - <Department id=10004>
+2019-12-17 20:14:53,609 - rest.api - DEBUG - GET method (/api/departments-ids) was successful
+2019-12-17 20:15:10,932 - service.crud - DEBUG - Employee was added
+2019-12-17 20:15:11,112 - rest.api - DEBUG - POST method (/api/employee) was successful
+2019-12-17 20:15:11,217 - service.crud - DEBUG - List of employees was returned
+2019-12-17 20:15:11,405 - rest.api - DEBUG - GET method (/api/employees) was successful
+2019-12-17 20:15:14,391 - service.crud - DEBUG - List of department was returned
+2019-12-17 20:15:14,392 - rest.api - WARNING - [<Department id=10001>, <Department id=10002>, <Department id=10003>, <Department id=10004>]
+2019-12-17 20:15:14,392 - rest.api - WARNING - [(Decimal('1810.0000'), 10001), (Decimal('5000.0000'), 10002), (Decimal('13500.0000'), 10003), (Decimal('2222.0000'), 10004)]
+2019-12-17 20:15:15,109 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-17 20:15:18,944 - service.crud - DEBUG - Department 10004 was deleted
+2019-12-17 20:15:18,945 - rest.api - DEBUG - DELETE method (/api/department/10004) was successful
+2019-12-17 20:15:19,338 - service.crud - DEBUG - List of department was returned
+2019-12-17 20:15:19,339 - rest.api - WARNING - [<Department id=10001>, <Department id=10002>, <Department id=10003>]
+2019-12-17 20:15:19,339 - rest.api - WARNING - [(Decimal('1810.0000'), 10001), (Decimal('5000.0000'), 10002), (Decimal('13500.0000'), 10003)]
+2019-12-17 20:15:19,881 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-17 20:15:21,552 - service.crud - DEBUG - List of employees was returned
+2019-12-17 20:15:21,731 - rest.api - DEBUG - GET method (/api/employees) was successful
+2019-12-17 20:15:30,083 - service.crud - DEBUG - Employee 16 was returned
+2019-12-17 20:15:30,084 - rest.api - DEBUG - GET method (/api/employee/16) was successful
+2019-12-17 20:15:30,523 - service.crud - DEBUG - List of department was returned
+2019-12-17 20:15:30,523 - rest.api - ERROR - [<Department id=10001>, <Department id=10002>, <Department id=10003>]
+2019-12-17 20:15:30,523 - rest.api - WARNING - <Department id=10001>
+2019-12-17 20:15:30,524 - rest.api - WARNING - <Department id=10002>
+2019-12-17 20:15:30,524 - rest.api - WARNING - <Department id=10003>
+2019-12-17 20:15:30,524 - rest.api - DEBUG - GET method (/api/departments-ids) was successful
+2019-12-17 20:18:01,783 - rest.api - INFO - Web-service started
+2019-12-17 20:18:06,233 - service.crud - DEBUG - Department 10002 was added
+2019-12-17 20:18:06,233 - rest.api - DEBUG - POST method (/api/department) was successful
+2019-12-17 20:18:09,573 - rest.api - DEBUG - POST method (/api/department) was not successful (400)
+2019-12-17 20:18:09,893 - rest.api - DEBUG - POST method (/api/department) was not successful (400)
+2019-12-17 20:18:13,753 - service.crud - DEBUG - Employee was added
+2019-12-17 20:18:13,942 - rest.api - DEBUG - POST method (/api/employee) was successful
+2019-12-17 20:18:17,433 - service.crud - DEBUG - Department isn`t exist. Employee can`t be added
+2019-12-17 20:18:17,433 - rest.api - DEBUG - POST method (/api/employee) was not successful (400)
+2019-12-17 20:18:21,703 - service.crud - DEBUG - Department 10001 was deleted
+2019-12-17 20:18:21,703 - rest.api - DEBUG - DELETE method (/api/department/10001) was successful
+2019-12-17 20:18:24,963 - service.crud - DEBUG - Department 10005 is not exist, it can`t be deleted
+2019-12-17 20:18:24,963 - rest.api - DEBUG - DELETE method (/api/department/10005) was not successful (404)
+2019-12-17 20:18:28,534 - service.crud - DEBUG - Department 10001 was returned
+2019-12-17 20:18:28,713 - rest.api - DEBUG - GET method (/api/department/10001) was successful
+2019-12-17 20:18:32,183 - service.crud - DEBUG - Department 10005 is not exist
+2019-12-17 20:18:32,183 - rest.api - DEBUG - GET method (/api/department/10005) was not successful (404)
+2019-12-17 20:18:35,543 - service.crud - DEBUG - Department 10001 was updated
+2019-12-17 20:18:35,873 - rest.api - DEBUG - PUT method (/api/department/10001) was successful
+2019-12-17 20:18:39,263 - service.crud - DEBUG - Department 10005 is not exist, it can`t be updated
+2019-12-17 20:18:39,263 - rest.api - DEBUG - PUT method (/api/department/10005) was not successful (404)
+2019-12-17 20:18:42,993 - service.crud - DEBUG - List of department was returned
+2019-12-17 20:18:43,173 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-17 20:18:46,813 - service.crud - DEBUG - List of department was returned
+2019-12-17 20:18:46,813 - rest.api - ERROR - [<Department id=10001>]
+2019-12-17 20:18:46,823 - rest.api - WARNING - <Department id=10001>
+2019-12-17 20:18:46,823 - rest.api - DEBUG - GET method (/api/departments-ids) was successful
+2019-12-17 20:18:50,634 - rest.api - DEBUG - DELETE method (/api/employee/1) was successful
+2019-12-17 20:18:54,018 - service.crud - DEBUG - Employee isn`t exist. It can`t be deleted
+2019-12-17 20:18:54,018 - rest.api - DEBUG - DELETE method (/api/employee/5) was not successful (404)
+2019-12-17 20:18:57,628 - service.crud - DEBUG - Employee 1 was returned
+2019-12-17 20:18:57,633 - rest.api - DEBUG - GET method (/api/employee/1) was successful
+2019-12-17 20:19:01,003 - service.crud - DEBUG - Employee 3 is not exist
+2019-12-17 20:19:01,003 - rest.api - DEBUG - GET method (/api/employee/3) was not successful (404)
+2019-12-17 20:19:04,753 - service.crud - DEBUG - Employee was updated
+2019-12-17 20:19:04,753 - rest.api - DEBUG - PUT method (/api/employee/1) was successful
+2019-12-17 20:19:08,763 - service.crud - DEBUG - Incorrect data. Employee can`t be updated
+2019-12-17 20:19:08,763 - rest.api - DEBUG - PUT method (/api/employee/1) was not successful (400)
+2019-12-17 20:19:09,018 - service.crud - DEBUG - Employee isn`t exist
+2019-12-17 20:19:09,018 - rest.api - DEBUG - PUT method (/api/employee/5) was not successful (404)
+2019-12-17 20:19:12,393 - service.crud - DEBUG - List of employees was returned
+2019-12-17 20:19:12,563 - rest.api - DEBUG - GET method (/api/employees) was successful
+2019-12-17 20:19:16,136 - service.crud - DEBUG - Filtered by dates list of employees was returned
+2019-12-17 20:19:16,308 - rest.api - DEBUG - POST method (/api/employees) was successful
+2019-12-17 20:19:16,373 - service.crud - DEBUG - Filtered by dates list of employees was returned
+2019-12-17 20:19:16,553 - rest.api - DEBUG - POST method (/api/employees) was successful
+2019-12-17 20:19:16,623 - service.crud - DEBUG - Filtered by dates list of employees was returned
+2019-12-17 20:19:16,803 - rest.api - DEBUG - POST method (/api/employees) was successful
+2019-12-17 20:19:20,433 - service.crud - DEBUG - Department 10002 was added
+2019-12-17 20:19:24,973 - service.crud - DEBUG - Department 10001 was deleted
+2019-12-17 20:19:25,160 - service.crud - DEBUG - Department 10001 is not exist
+2019-12-17 20:19:28,553 - service.crud - DEBUG - Department 10001 was returned
+2019-12-17 20:19:32,643 - service.crud - DEBUG - List of department was returned
+2019-12-17 20:19:36,293 - service.crud - DEBUG - Department 10001 was updated
+2019-12-17 20:19:40,643 - service.crud - DEBUG - Employee was added
+2019-12-17 20:19:44,723 - service.crud - DEBUG - Employee 1 is not exist
+2019-12-17 20:19:48,288 - service.crud - DEBUG - Employee 1 was returned
+2019-12-17 20:19:51,613 - service.crud - DEBUG - List of employees was returned
+2019-12-17 20:19:55,053 - service.crud - DEBUG - Filtered by dates list of employees was returned
+2019-12-17 20:19:55,233 - service.crud - DEBUG - Filtered by dates list of employees was returned
+2019-12-17 20:19:59,233 - service.crud - DEBUG - Employee was updated
+2019-12-17 20:23:28,903 - rest.api - INFO - Web-service started
+2019-12-17 20:23:33,233 - service.crud - DEBUG - List of department was returned
+2019-12-17 20:24:39,943 - rest.api - INFO - Web-service started
+2019-12-17 20:24:44,273 - service.crud - DEBUG - List of department was returned
+2019-12-17 20:25:00,573 - rest.api - INFO - Web-service started
+2019-12-17 20:25:04,804 - service.crud - DEBUG - List of department was returned
+2019-12-17 20:25:15,163 - rest.api - INFO - Web-service started
+2019-12-17 20:25:19,294 - service.crud - DEBUG - Department 10002 was added
+2019-12-17 20:25:19,294 - rest.api - DEBUG - POST method (/api/department) was successful
+2019-12-17 20:25:22,674 - rest.api - DEBUG - POST method (/api/department) was not successful (400)
+2019-12-17 20:25:22,984 - rest.api - DEBUG - POST method (/api/department) was not successful (400)
+2019-12-17 20:25:26,663 - service.crud - DEBUG - Employee was added
+2019-12-17 20:25:26,834 - rest.api - DEBUG - POST method (/api/employee) was successful
+2019-12-17 20:25:30,194 - service.crud - DEBUG - Department isn`t exist. Employee can`t be added
+2019-12-17 20:25:30,194 - rest.api - DEBUG - POST method (/api/employee) was not successful (400)
+2019-12-17 20:25:34,439 - service.crud - DEBUG - Department 10001 was deleted
+2019-12-17 20:25:34,439 - rest.api - DEBUG - DELETE method (/api/department/10001) was successful
+2019-12-17 20:25:38,103 - service.crud - DEBUG - Department 10005 is not exist, it can`t be deleted
+2019-12-17 20:25:38,103 - rest.api - DEBUG - DELETE method (/api/department/10005) was not successful (404)
+2019-12-17 20:25:41,603 - service.crud - DEBUG - Department 10001 was returned
+2019-12-17 20:25:41,793 - rest.api - DEBUG - GET method (/api/department/10001) was successful
+2019-12-17 20:25:45,234 - service.crud - DEBUG - Department 10005 is not exist
+2019-12-17 20:25:45,234 - rest.api - DEBUG - GET method (/api/department/10005) was not successful (404)
+2019-12-17 20:25:48,583 - service.crud - DEBUG - Department 10001 was updated
+2019-12-17 20:25:48,893 - rest.api - DEBUG - PUT method (/api/department/10001) was successful
+2019-12-17 20:25:52,144 - service.crud - DEBUG - Department 10005 is not exist, it can`t be updated
+2019-12-17 20:25:52,144 - rest.api - DEBUG - PUT method (/api/department/10005) was not successful (404)
+2019-12-17 20:25:55,773 - service.crud - DEBUG - List of department was returned
+2019-12-17 20:25:55,944 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-17 20:25:59,493 - service.crud - DEBUG - List of department was returned
+2019-12-17 20:25:59,493 - rest.api - ERROR - [<Department id=10001>]
+2019-12-17 20:25:59,493 - rest.api - WARNING - <Department id=10001>
+2019-12-17 20:25:59,493 - rest.api - DEBUG - GET method (/api/departments-ids) was successful
+2019-12-17 20:26:03,223 - rest.api - DEBUG - DELETE method (/api/employee/1) was successful
+2019-12-17 20:26:06,533 - service.crud - DEBUG - Employee isn`t exist. It can`t be deleted
+2019-12-17 20:26:06,533 - rest.api - DEBUG - DELETE method (/api/employee/5) was not successful (404)
+2019-12-17 20:26:09,874 - service.crud - DEBUG - Employee 1 was returned
+2019-12-17 20:26:09,874 - rest.api - DEBUG - GET method (/api/employee/1) was successful
+2019-12-17 20:26:13,244 - service.crud - DEBUG - Employee 3 is not exist
+2019-12-17 20:26:13,244 - rest.api - DEBUG - GET method (/api/employee/3) was not successful (404)
+2019-12-17 20:26:16,933 - service.crud - DEBUG - Employee was updated
+2019-12-17 20:26:16,933 - rest.api - DEBUG - PUT method (/api/employee/1) was successful
+2019-12-17 20:26:20,424 - service.crud - DEBUG - Incorrect data. Employee can`t be updated
+2019-12-17 20:26:20,424 - rest.api - DEBUG - PUT method (/api/employee/1) was not successful (400)
+2019-12-17 20:26:20,679 - service.crud - DEBUG - Employee isn`t exist
+2019-12-17 20:26:20,679 - rest.api - DEBUG - PUT method (/api/employee/5) was not successful (404)
+2019-12-17 20:26:24,063 - service.crud - DEBUG - List of employees was returned
+2019-12-17 20:26:24,243 - rest.api - DEBUG - GET method (/api/employees) was successful
+2019-12-17 20:26:27,583 - service.crud - DEBUG - Filtered by dates list of employees was returned
+2019-12-17 20:26:27,803 - rest.api - DEBUG - POST method (/api/employees) was successful
+2019-12-17 20:26:27,885 - service.crud - DEBUG - Filtered by dates list of employees was returned
+2019-12-17 20:26:28,086 - rest.api - DEBUG - POST method (/api/employees) was successful
+2019-12-17 20:26:28,153 - service.crud - DEBUG - Filtered by dates list of employees was returned
+2019-12-17 20:26:28,334 - rest.api - DEBUG - POST method (/api/employees) was successful
+2019-12-17 20:26:31,998 - service.crud - DEBUG - Department 10002 was added
+2019-12-17 20:26:36,594 - service.crud - DEBUG - Department 10001 was deleted
+2019-12-17 20:26:36,774 - service.crud - DEBUG - Department 10001 is not exist
+2019-12-17 20:26:40,303 - service.crud - DEBUG - Department 10001 was returned
+2019-12-17 20:26:43,984 - service.crud - DEBUG - List of department was returned
+2019-12-17 20:26:47,613 - service.crud - DEBUG - Department 10001 was updated
+2019-12-17 20:26:52,144 - service.crud - DEBUG - Employee was added
+2019-12-17 20:26:56,283 - service.crud - DEBUG - Employee 1 is not exist
+2019-12-17 20:26:59,784 - service.crud - DEBUG - Employee 1 was returned
+2019-12-17 20:27:03,193 - service.crud - DEBUG - List of employees was returned
+2019-12-17 20:27:06,563 - service.crud - DEBUG - Filtered by dates list of employees was returned
+2019-12-17 20:27:06,734 - service.crud - DEBUG - Filtered by dates list of employees was returned
+2019-12-17 20:27:10,793 - service.crud - DEBUG - Employee was updated

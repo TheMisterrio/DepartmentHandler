@@ -48,7 +48,7 @@ class Departments(Resource):
         from service import crud
         data = crud.Departments.get_all()
         departments = data[0]
-        avg = data[1]
+        avg_salaries = data[1]
         ids = []
         employees = []
         salaries = []
@@ -58,7 +58,14 @@ class Departments(Resource):
             for employee in departments[i].employees:
                 employees_list.append(employee.name)
             employees.append(employees_list)
-            salaries.append(str(avg[i][0])[:-2])
+            for salary in avg_salaries:
+                # salary relates department
+                if departments[i].id == salary[1]:
+                    salaries.append(str(salary[0])[:-2])
+                    avg_salaries.remove(salary)
+                    break
+            else:
+                salaries.append('...')
         logger.debug('GET method (/api/departments) was successful')
         return {'ids': ids, 'employees': employees, 'salaries': salaries}
 
