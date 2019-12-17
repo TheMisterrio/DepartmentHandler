@@ -1,3 +1,4 @@
+"""Module for work with database"""
 import logging
 from sqlalchemy import func
 from models.department import Department, db

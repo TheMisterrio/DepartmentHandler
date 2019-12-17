@@ -1,3 +1,4 @@
+"""Tests work with database (service.crud)"""
 import unittest
 from datetime import date
 from decimal import Decimal
@@ -12,16 +13,20 @@ class TestDepartments(BaseTestCase):
     def test_get_all(self):
 
         self.assertEqual(crud.Departments.get_all(), ([Department(id=10001, employees=[
-            Employee(id=1, name='Steven Gray', department_id=10001, date_of_birthday=date(1997, 10, 1),
+            Employee(id=1, name='Steven Gray', department_id=10001,
+                     date_of_birthday=date(1997, 10, 1),
                      salary=Decimal(1000)),
-            Employee(id=2, name='John Spins', department_id=10001, date_of_birthday=date(1997, 5, 11),
+            Employee(id=2, name='John Spins', department_id=10001,
+                     date_of_birthday=date(1997, 5, 11),
                      salary=Decimal(3000))])], [(Decimal(2000),)]))
 
     def test_get(self):
         self.assertEqual(crud.Departments.get(10001), Department(id=10001, employees=[
-            Employee(id=1, name='Steven Gray', department_id=10001, date_of_birthday=date(1997, 10, 1),
+            Employee(id=1, name='Steven Gray', department_id=10001,
+                     date_of_birthday=date(1997, 10, 1),
                      salary=Decimal(1000)),
-            Employee(id=2, name='John Spins', department_id=10001, date_of_birthday=date(1997, 5, 11),
+            Employee(id=2, name='John Spins', department_id=10001,
+                     date_of_birthday=date(1997, 5, 11),
                      salary=Decimal(3000))]))
 
     def test_add(self):
@@ -29,9 +34,11 @@ class TestDepartments(BaseTestCase):
 
     def test_update(self):
         self.assertEqual(crud.Departments.update(10001, 10002), Department(id=10002, employees=[
-            Employee(id=1, name='Steven Gray', department_id=10002, date_of_birthday=date(1997, 10, 1),
+            Employee(id=1, name='Steven Gray', department_id=10002,
+                     date_of_birthday=date(1997, 10, 1),
                      salary=Decimal(1000)),
-            Employee(id=2, name='John Spins', department_id=10002, date_of_birthday=date(1997, 5, 11),
+            Employee(id=2, name='John Spins', department_id=10002,
+                     date_of_birthday=date(1997, 5, 11),
                      salary=Decimal(3000))]))
 
     def test_delete(self):
@@ -43,35 +50,44 @@ class TestEmployees(BaseTestCase):
     """Tests for Employees class from service.crud"""
     def test_get_all(self):
         self.assertEqual(crud.Employees.get_all(), [
-            Employee(id=1, name='Steven Gray', department_id=10001, date_of_birthday=date(1997, 10, 1),
+            Employee(id=1, name='Steven Gray', department_id=10001,
+                     date_of_birthday=date(1997, 10, 1),
                      salary=Decimal(1000)),
-            Employee(id=2, name='John Spins', department_id=10001, date_of_birthday=date(1997, 5, 11),
+            Employee(id=2, name='John Spins', department_id=10001,
+                     date_of_birthday=date(1997, 5, 11),
                      salary=Decimal(3000))
             ])
 
     def test_get_by_date(self):
         self.assertEqual(crud.Employees.get_by_date(date(1997, 6, 1), date(2000, 1, 1)), [
-            Employee(id=1, name='Steven Gray', department_id=10001, date_of_birthday=date(1997, 10, 1),
+            Employee(id=1, name='Steven Gray', department_id=10001,
+                     date_of_birthday=date(1997, 10, 1),
                      salary=Decimal(1000))])
         self.assertEqual(crud.Employees.get_by_date('', date(2000, 1, 1)), [
-            Employee(id=1, name='Steven Gray', department_id=10001, date_of_birthday=date(1997, 10, 1),
+            Employee(id=1, name='Steven Gray', department_id=10001,
+                     date_of_birthday=date(1997, 10, 1),
                      salary=Decimal(1000)),
-            Employee(id=2, name='John Spins', department_id=10001, date_of_birthday=date(1997, 5, 11),
+            Employee(id=2, name='John Spins', department_id=10001,
+                     date_of_birthday=date(1997, 5, 11),
                      salary=Decimal(3000))
             ])
 
     def test_get(self):
-        self.assertEqual(crud.Employees.get(1), Employee(id=1, name='Steven Gray', department_id=10001,
-                                                         date_of_birthday=date(1997, 10, 1), salary=Decimal(1000)))
+        self.assertEqual(crud.Employees.get(1), Employee(id=1, name='Steven Gray',
+                                                         department_id=10001,
+                                                         date_of_birthday=date(1997, 10, 1),
+                                                         salary=Decimal(1000)))
 
     def test_add(self):
         self.assertEqual(crud.Employees.add('Chris Smith', 10001, date(1999, 1, 1), Decimal(5000)),
-                         Employee(id=3, name='Chris Smith', department_id=10001, date_of_birthday=date(1999, 1, 1),
+                         Employee(id=3, name='Chris Smith', department_id=10001,
+                                  date_of_birthday=date(1999, 1, 1),
                                   salary=Decimal(5000)))
 
     def test_update(self):
         self.assertEqual(crud.Employees.update(2, 'John Color', 10001, date(1999, 10, 1), Decimal(6000)),
-                         Employee(id=2, name='John Color', department_id=10001, date_of_birthday=date(1999, 10, 1),
+                         Employee(id=2, name='John Color', department_id=10001,
+                                  date_of_birthday=date(1999, 10, 1),
                                   salary=Decimal(6000)))
 
     def test_delete(self):

@@ -1,3 +1,4 @@
+"""Tests server (rest.api)"""
 import unittest
 from .base import BaseTestCase
 
@@ -63,14 +64,16 @@ class TestDepartment(BaseTestCase):
 class TestEmployees(BaseTestCase):
     def test_get(self):
         request = self.app.get('/api/employees')
-        self.assertEqual(request.json, {'ids': [1, 2], 'names': ['Steven Gray', 'John Spins'], 'departments': [10001, 10001],
+        self.assertEqual(request.json, {'ids': [1, 2], 'names': ['Steven Gray', 'John Spins'],
+                                        'departments': [10001, 10001],
                                         'dates_of_birthday': ['1997-10-01', '1997-05-11'],
                                         'salaries': ['1000', '3000']})
         self.assertEqual(request.status_code, 200)
 
     def test_post(self):
         # both dates
-        request = self.app.post('/api/employees', data={'date_from': '1997-06-01', 'date_by': '1997-07-01'})
+        request = self.app.post('/api/employees',
+                                data={'date_from': '1997-06-01', 'date_by': '1997-07-01'})
         self.assertEqual(request.json, {'ids': [], 'names': [], 'departments': [],
                                         'dates_of_birthday': [], 'salaries': []})
         # without data_by
@@ -79,7 +82,8 @@ class TestEmployees(BaseTestCase):
                                         'dates_of_birthday': ['1997-10-01'], 'salaries': ['1000']})
         # without dates
         request = self.app.post('/api/employees', data={})
-        self.assertEqual(request.json, {'ids': [1, 2], 'names': ['Steven Gray', 'John Spins'], 'departments': [10001, 10001],
+        self.assertEqual(request.json, {'ids': [1, 2], 'names': ['Steven Gray', 'John Spins'],
+                                        'departments': [10001, 10001],
                                         'dates_of_birthday': ['1997-10-01', '1997-05-11'],
                                         'salaries': ['1000', '3000']})
 
@@ -87,13 +91,15 @@ class TestEmployees(BaseTestCase):
 class TestAddEmployee(BaseTestCase):
     def test_post_correct(self):
         request = self.app.post('/api/employee', data={'name': 'Sam Polo', 'department_id': 10001,
-                                                       'date_of_birthday': '1998-01-01', 'salary': 2000})
+                                                       'date_of_birthday': '1998-01-01',
+                                                       'salary': 2000})
         self.assertEqual(request.json, {'id': 3})
         self.assertEqual(request.status_code, 201)
 
     def test_post_incorrect(self):
         request = self.app.post('/api/employee', data={'name': 'Sam Polo', 'department_id': 10002,
-                                                       'date_of_birthday': '1998-01-01', 'salary': 2000})
+                                                       'date_of_birthday': '1998-01-01',
+                                                       'salary': 2000})
         self.assertEqual(request.status_code, 400)
 
 
@@ -117,11 +123,13 @@ class TestEmployee(BaseTestCase):
     def test_put_incorrect(self):
         # department not found
         request = self.app.put('api/employee/1', data={'name': 'Sam Polo', 'department_id': 10004,
-                                                       'date_of_birthday': '1998-01-01', 'salary': 2000})
+                                                       'date_of_birthday': '1998-01-01',
+                                                       'salary': 2000})
         self.assertEqual(request.status_code, 400)
         # employee not found
         request = self.app.put('api/employee/5', data={'name': 'Sam Polo', 'department_id': 10001,
-                                                       'date_of_birthday': '1998-01-01', 'salary': 2000})
+                                                       'date_of_birthday': '1998-01-01',
+                                                       'salary': 2000})
         self.assertEqual(request.status_code, 404)
 
     def test_delete_correct(self):

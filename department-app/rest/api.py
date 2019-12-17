@@ -1,3 +1,4 @@
+"""Realisation web server with REST API"""
 import logging
 from datetime import date
 from flask import Flask
@@ -82,7 +83,9 @@ class DepartmentsIds(Resource):
 
 
 class Department(Resource):
-    """Class for GET, PUT, DELETE method which is used for one department (/api/department/<dep_id>)"""
+    """
+    Class for GET, PUT, DELETE method which is used for one department (/api/department/<dep_id>)
+    """
     def get(self, dep_id):
         """
         GET method that returns the department that is found with department`s id
@@ -163,7 +166,8 @@ class Employees(Resource):
     def get(self):
         """
         GET method that returns list of all employees
-        :return: list of information about all employees (names, departments, dates of birthday, salaries)
+        :return: list of information about all employees (names, departments, dates of birthday,
+        salaries)
         :rtype: JSON
         """
         from service import crud
@@ -180,13 +184,14 @@ class Employees(Resource):
             dates_of_birthday.append(str(employee.date_of_birthday))
             salaries.append(str(employee.salary))
         logger.debug(f'GET method (/api/employees) was successful')
-        return {'ids': ids, 'names': names, 'departments': departments, 'dates_of_birthday': dates_of_birthday,
-                'salaries': salaries}
+        return {'ids': ids, 'names': names, 'departments': departments,
+                'dates_of_birthday': dates_of_birthday, 'salaries': salaries}
 
     def post(self):
         """
         POST method that returns filtered list of all employees by dates of birthday
-        :return: list of information about all employees (names, departments, dates of birthday, salaries)
+        :return: list of information about all employees (names, departments, dates of birthday,
+        salaries)
         :rtype: JSON
         """
         from service import crud
@@ -208,12 +213,14 @@ class Employees(Resource):
             dates_of_birthday.append(str(employee.date_of_birthday))
             salaries.append(str(employee.salary))
         logger.debug(f'POST method (/api/employees) was successful')
-        return {'ids': ids, 'names': names, 'departments': departments, 'dates_of_birthday': dates_of_birthday,
-                'salaries': salaries}
+        return {'ids': ids, 'names': names, 'departments': departments,
+                'dates_of_birthday': dates_of_birthday, 'salaries': salaries}
 
 
 class Employee(Resource):
-    """Class for GET, PUT, DELETE method which is used for one employee (/api/employee/<employee_id>)"""
+    """
+    Class for GET, PUT, DELETE method which is used for one employee (/api/employee/<employee_id>)
+    """
     def get(self, employee_id):
         """
         GET method that finds and returns employee

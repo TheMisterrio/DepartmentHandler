@@ -309,3 +309,21 @@
 2019-12-16 22:28:24,694 - app - WARNING - 1996-01-01
 2019-12-16 22:28:24,695 - app - WARNING - 1997-01-01
 2019-12-16 22:28:27,854 - app - DEBUG - {'id': 18, 'name': 'Mike Tester 2', 'department_id': 10004, 'date_of_birthday': '1996-04-05', 'salary': '644'}
+2019-12-17 15:50:21,646 - app - INFO - Web-app started
+2019-12-17 15:50:22,680 - app - INFO - Web-app started
+2019-12-17 15:50:32,699 - app - DEBUG - Departments page was displayed with list of departments
+2019-12-17 15:50:33,889 - app - DEBUG - Departments page was displayed with list of departments
+2019-12-17 15:50:41,120 - app - DEBUG - Departments page was displayed with list of departments
+2019-12-17 15:50:42,532 - app - DEBUG - Employees page was displayed
+2019-12-17 15:50:50,292 - app - DEBUG - {'id': 18, 'name': 'Mike Tester 2', 'department_id': 10004, 'date_of_birthday': '1996-04-05', 'salary': '645'}
+2019-12-17 15:50:50,293 - app - DEBUG - Employee page was displayed
+2019-12-17 15:51:12,963 - app - DEBUG - Employees page was displayed
+2019-12-17 15:51:19,212 - app - DEBUG - Departments page was displayed with list of departments
+2019-12-17 15:51:20,383 - app - DEBUG - Departments page was displayed with list of departments
+2019-12-17 15:51:23,931 - app - DEBUG - Employees page was displayed
+2019-12-17 15:51:28,467 - app - DEBUG - {'id': 1, 'name': 'Nik Tester 1', 'department_id': 10001, 'date_of_birthday': '1997-01-01', 'salary': '600'}
+2019-12-17 15:51:28,467 - app - DEBUG - Employee page was displayed
+2019-12-17 15:51:36,835 - app - DEBUG - Employee`s data was sent to server (update)
+2019-12-17 15:51:37,099 - app - DEBUG - Employees page was displayed
+2019-12-17 15:51:42,830 - app - DEBUG - Departments page was displayed with list of departments
+2019-12-17 15:51:44,083 - app - DEBUG - Employees page was displayed

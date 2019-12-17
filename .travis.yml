@@ -8,10 +8,12 @@ install:
 
 script:
   - cd department-app
-  - python -m unittest
+  - python -m unittest test_crud
+  - python -m unittest test_api
   - coverage erase
-  - coverage run wsgi.py && coverage html
-  - pylint --output-format=text wsgi.py
+  - coverage run -m unittest && coverage html
+  - cd ..
+  - pylint --output-format=text department-app
 
 after_success:
   - codecov

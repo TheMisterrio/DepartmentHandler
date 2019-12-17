@@ -1,3 +1,4 @@
+"""Starts web app"""
 from app import app
 import views.view
 

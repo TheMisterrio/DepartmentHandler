@@ -1,3 +1,4 @@
+"""Settings for tests"""
 import unittest
 from datetime import date
 from decimal import Decimal
@@ -14,9 +15,11 @@ class BaseTestCase(unittest.TestCase):
         db.create_all()
         db.session.add(Department(id=10001))
         db.session.add(
-            Employee(name='Steven Gray', department_id=10001, date_of_birthday=date(1997, 10, 1), salary=Decimal(1000)))
+            Employee(name='Steven Gray', department_id=10001, date_of_birthday=date(1997, 10, 1),
+                     salary=Decimal(1000)))
         db.session.add(
-            Employee(name='John Spins', department_id=10001, date_of_birthday=date(1997, 5, 11), salary=Decimal(3000)))
+            Employee(name='John Spins', department_id=10001, date_of_birthday=date(1997, 5, 11),
+                     salary=Decimal(3000)))
         db.session.commit()
 
     def tearDown(self):

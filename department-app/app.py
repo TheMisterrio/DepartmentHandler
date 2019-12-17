@@ -1,3 +1,4 @@
+"""Creates Flask app and initializes logger"""
 import logging
 from flask import Flask
 

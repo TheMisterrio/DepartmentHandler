@@ -1,3 +1,4 @@
+"""Starts web server"""
 from rest.api import app
 
 

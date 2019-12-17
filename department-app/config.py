@@ -1,3 +1,6 @@
+"""Settings database for server and tests"""
+
+
 class ApiConfiguration:
     SQLALCHEMY_DATABASE_URI = 'mysql+mysqlconnector://LiJZRTlglU:joXboKoL07@remotemysql.com:3306/LiJZRTlglU'
     SQLALCHEMY_TRACK_MODIFICATIONS = False

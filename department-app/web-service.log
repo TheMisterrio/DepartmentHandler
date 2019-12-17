@@ -2540,3 +2540,339 @@ AttributeError: 'list' object has no attribute 'id'
 2019-12-16 23:26:42,323 - rest.api - INFO - Web-service started
 2019-12-16 23:26:46,584 - service.crud - DEBUG - Employee 3 is not exist
 2019-12-16 23:26:46,584 - rest.api - DEBUG - GET method (/api/employee/3) was not successful (404)
+2019-12-16 23:41:36,804 - rest.api - INFO - Web-service started
+2019-12-16 23:41:42,531 - rest.api - DEBUG - POST method (/api/department) was not successful (400)
+2019-12-16 23:41:42,843 - rest.api - DEBUG - POST method (/api/department) was not successful (400)
+2019-12-16 23:41:47,602 - service.crud - DEBUG - Employee was added
+2019-12-16 23:41:47,782 - rest.api - DEBUG - POST method (/api/employee) was successful
+2019-12-16 23:41:51,888 - service.crud - DEBUG - Department isn`t exist. Employee can`t be added
+2019-12-16 23:41:51,900 - rest.api - DEBUG - POST method (/api/employee) was not successful (400)
+2019-12-16 23:41:56,369 - service.crud - DEBUG - Department 10001 was deleted
+2019-12-16 23:41:56,369 - rest.api - DEBUG - DELETE method (/api/department/10001) was successful
+2019-12-16 23:41:59,813 - service.crud - DEBUG - Department 10005 is not exist, it can`t be deleted
+2019-12-16 23:41:59,813 - rest.api - DEBUG - DELETE method (/api/department/10005) was not successful (404)
+2019-12-16 23:42:03,354 - service.crud - DEBUG - Department 10001 was returned
+2019-12-16 23:42:03,522 - rest.api - DEBUG - GET method (/api/department/10001) was successful
+2019-12-16 23:42:07,095 - service.crud - DEBUG - Department 10005 is not exist
+2019-12-16 23:42:07,095 - rest.api - DEBUG - GET method (/api/department/10005) was not successful (404)
+2019-12-16 23:42:10,428 - service.crud - DEBUG - Department 10001 was updated
+2019-12-16 23:42:10,746 - rest.api - DEBUG - PUT method (/api/department/10001) was successful
+2019-12-16 23:42:14,323 - service.crud - DEBUG - Department 10005 is not exist, it can`t be updated
+2019-12-16 23:42:14,323 - rest.api - DEBUG - PUT method (/api/department/10005) was not successful (404)
+2019-12-16 23:42:18,205 - service.crud - DEBUG - List of department was returned
+2019-12-16 23:42:18,373 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-16 23:42:22,102 - service.crud - DEBUG - List of department was returned
+2019-12-16 23:42:22,102 - rest.api - ERROR - [<Department id=10001>]
+2019-12-16 23:42:22,108 - rest.api - WARNING - <Department id=10001>
+2019-12-16 23:42:22,112 - rest.api - DEBUG - GET method (/api/departments-ids) was successful
+2019-12-16 23:42:26,019 - rest.api - DEBUG - DELETE method (/api/employee/1) was successful
+2019-12-16 23:42:29,454 - service.crud - DEBUG - Employee isn`t exist. It can`t be deleted
+2019-12-16 23:42:29,458 - rest.api - DEBUG - DELETE method (/api/employee/5) was not successful (404)
+2019-12-16 23:42:32,845 - service.crud - DEBUG - Employee 1 was returned
+2019-12-16 23:42:32,845 - rest.api - DEBUG - GET method (/api/employee/1) was successful
+2019-12-16 23:42:36,229 - service.crud - DEBUG - Employee 3 is not exist
+2019-12-16 23:42:36,233 - rest.api - DEBUG - GET method (/api/employee/3) was not successful (404)
+2019-12-16 23:42:39,956 - service.crud - DEBUG - Employee was updated
+2019-12-16 23:42:39,960 - rest.api - DEBUG - PUT method (/api/employee/1) was successful
+2019-12-16 23:42:43,649 - service.crud - DEBUG - Incorrect data. Employee can`t be updated
+2019-12-16 23:42:43,649 - rest.api - DEBUG - PUT method (/api/employee/1) was not successful (400)
+2019-12-16 23:42:43,895 - service.crud - DEBUG - Employee isn`t exist
+2019-12-16 23:42:43,899 - rest.api - DEBUG - PUT method (/api/employee/5) was not successful (404)
+2019-12-16 23:42:48,223 - service.crud - DEBUG - List of employees was returned
+2019-12-16 23:42:48,403 - rest.api - DEBUG - GET method (/api/employees) was successful
+2019-12-16 23:42:51,727 - service.crud - DEBUG - Filtered by dates list of employees was returned
+2019-12-16 23:42:51,916 - rest.api - DEBUG - POST method (/api/employees) was successful
+2019-12-16 23:42:51,984 - service.crud - DEBUG - Filtered by dates list of employees was returned
+2019-12-16 23:42:52,168 - rest.api - DEBUG - POST method (/api/employees) was successful
+2019-12-16 23:42:52,236 - service.crud - DEBUG - Filtered by dates list of employees was returned
+2019-12-16 23:42:52,412 - rest.api - DEBUG - POST method (/api/employees) was successful
+2019-12-16 23:42:56,083 - service.crud - DEBUG - Department 10002 was added
+2019-12-16 23:43:00,710 - service.crud - DEBUG - Department 10001 was deleted
+2019-12-16 23:43:00,895 - service.crud - DEBUG - Department 10001 is not exist
+2019-12-16 23:43:04,924 - service.crud - DEBUG - Department 10001 was returned
+2019-12-16 23:43:08,731 - service.crud - DEBUG - List of department was returned
+2019-12-16 23:43:12,434 - service.crud - DEBUG - Department 10001 was updated
+2019-12-16 23:43:16,904 - service.crud - DEBUG - Employee was added
+2019-12-16 23:43:21,298 - service.crud - DEBUG - Employee 1 is not exist
+2019-12-16 23:43:24,797 - service.crud - DEBUG - Employee 1 was returned
+2019-12-16 23:43:28,277 - service.crud - DEBUG - List of employees was returned
+2019-12-16 23:43:31,859 - service.crud - DEBUG - Filtered by dates list of employees was returned
+2019-12-16 23:43:32,046 - service.crud - DEBUG - Filtered by dates list of employees was returned
+2019-12-16 23:43:35,839 - service.crud - DEBUG - Employee was updated
+2019-12-16 23:45:21,515 - rest.api - INFO - Web-service started
+2019-12-16 23:45:25,585 - service.crud - DEBUG - Department 10002 was added
+2019-12-16 23:45:25,595 - rest.api - DEBUG - POST method (/api/department) was successful
+2019-12-16 23:45:29,351 - rest.api - DEBUG - POST method (/api/department) was not successful (400)
+2019-12-16 23:45:29,655 - rest.api - DEBUG - POST method (/api/department) was not successful (400)
+2019-12-16 23:45:33,805 - service.crud - DEBUG - Employee was added
+2019-12-16 23:45:33,985 - rest.api - DEBUG - POST method (/api/employee) was successful
+2019-12-16 23:45:37,545 - service.crud - DEBUG - Department isn`t exist. Employee can`t be added
+2019-12-16 23:45:37,545 - rest.api - DEBUG - POST method (/api/employee) was not successful (400)
+2019-12-16 23:45:42,115 - service.crud - DEBUG - Department 10001 was deleted
+2019-12-16 23:45:42,118 - rest.api - DEBUG - DELETE method (/api/department/10001) was successful
+2019-12-16 23:45:45,785 - service.crud - DEBUG - Department 10005 is not exist, it can`t be deleted
+2019-12-16 23:45:45,785 - rest.api - DEBUG - DELETE method (/api/department/10005) was not successful (404)
+2019-12-16 23:45:49,380 - service.crud - DEBUG - Department 10001 was returned
+2019-12-16 23:45:49,555 - rest.api - DEBUG - GET method (/api/department/10001) was successful
+2019-12-16 23:45:53,355 - service.crud - DEBUG - Department 10005 is not exist
+2019-12-16 23:45:53,355 - rest.api - DEBUG - GET method (/api/department/10005) was not successful (404)
+2019-12-16 23:45:57,010 - service.crud - DEBUG - Department 10001 was updated
+2019-12-16 23:45:57,334 - rest.api - DEBUG - PUT method (/api/department/10001) was successful
+2019-12-16 23:46:00,707 - service.crud - DEBUG - Department 10005 is not exist, it can`t be updated
+2019-12-16 23:46:00,707 - rest.api - DEBUG - PUT method (/api/department/10005) was not successful (404)
+2019-12-16 23:46:04,730 - service.crud - DEBUG - List of department was returned
+2019-12-16 23:46:04,900 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-16 23:46:08,865 - service.crud - DEBUG - List of department was returned
+2019-12-16 23:46:08,875 - rest.api - ERROR - [<Department id=10001>]
+2019-12-16 23:46:08,875 - rest.api - WARNING - <Department id=10001>
+2019-12-16 23:46:08,875 - rest.api - DEBUG - GET method (/api/departments-ids) was successful
+2019-12-16 23:46:12,925 - rest.api - DEBUG - DELETE method (/api/employee/1) was successful
+2019-12-16 23:46:16,676 - service.crud - DEBUG - Employee isn`t exist. It can`t be deleted
+2019-12-16 23:46:16,685 - rest.api - DEBUG - DELETE method (/api/employee/5) was not successful (404)
+2019-12-16 23:46:20,375 - service.crud - DEBUG - Employee 1 was returned
+2019-12-16 23:46:20,375 - rest.api - DEBUG - GET method (/api/employee/1) was successful
+2019-12-16 23:46:23,785 - service.crud - DEBUG - Employee 3 is not exist
+2019-12-16 23:46:23,785 - rest.api - DEBUG - GET method (/api/employee/3) was not successful (404)
+2019-12-16 23:46:27,805 - service.crud - DEBUG - Employee was updated
+2019-12-16 23:46:27,805 - rest.api - DEBUG - PUT method (/api/employee/1) was successful
+2019-12-16 23:46:31,465 - service.crud - DEBUG - Incorrect data. Employee can`t be updated
+2019-12-16 23:46:31,465 - rest.api - DEBUG - PUT method (/api/employee/1) was not successful (400)
+2019-12-16 23:46:31,715 - service.crud - DEBUG - Employee isn`t exist
+2019-12-16 23:46:31,715 - rest.api - DEBUG - PUT method (/api/employee/5) was not successful (404)
+2019-12-16 23:46:35,665 - service.crud - DEBUG - List of employees was returned
+2019-12-16 23:46:35,845 - rest.api - DEBUG - GET method (/api/employees) was successful
+2019-12-16 23:46:39,243 - service.crud - DEBUG - Filtered by dates list of employees was returned
+2019-12-16 23:46:39,416 - rest.api - DEBUG - POST method (/api/employees) was successful
+2019-12-16 23:46:39,485 - service.crud - DEBUG - Filtered by dates list of employees was returned
+2019-12-16 23:46:39,675 - rest.api - DEBUG - POST method (/api/employees) was successful
+2019-12-16 23:46:39,736 - service.crud - DEBUG - Filtered by dates list of employees was returned
+2019-12-16 23:46:39,915 - rest.api - DEBUG - POST method (/api/employees) was successful
+2019-12-16 23:46:43,446 - service.crud - DEBUG - Department 10002 was added
+2019-12-16 23:46:48,146 - service.crud - DEBUG - Department 10001 was deleted
+2019-12-16 23:46:48,327 - service.crud - DEBUG - Department 10001 is not exist
+2019-12-16 23:46:51,595 - service.crud - DEBUG - Department 10001 was returned
+2019-12-16 23:46:55,456 - service.crud - DEBUG - List of department was returned
+2019-12-16 23:46:59,174 - service.crud - DEBUG - Department 10001 was updated
+2019-12-16 23:47:03,929 - service.crud - DEBUG - Employee was added
+2019-12-16 23:47:08,189 - service.crud - DEBUG - Employee 1 is not exist
+2019-12-16 23:47:11,725 - service.crud - DEBUG - Employee 1 was returned
+2019-12-16 23:47:15,015 - service.crud - DEBUG - List of employees was returned
+2019-12-16 23:47:18,633 - service.crud - DEBUG - Filtered by dates list of employees was returned
+2019-12-16 23:47:18,805 - service.crud - DEBUG - Filtered by dates list of employees was returned
+2019-12-16 23:47:22,786 - service.crud - DEBUG - Employee was updated
+2019-12-17 14:20:23,771 - rest.api - INFO - Web-service started
+2019-12-17 14:20:28,646 - service.crud - DEBUG - Department 10002 was added
+2019-12-17 14:20:28,656 - rest.api - DEBUG - POST method (/api/department) was successful
+2019-12-17 14:20:32,306 - rest.api - DEBUG - POST method (/api/department) was not successful (400)
+2019-12-17 14:20:32,656 - rest.api - DEBUG - POST method (/api/department) was not successful (400)
+2019-12-17 14:20:36,486 - service.crud - DEBUG - Employee was added
+2019-12-17 14:20:36,726 - rest.api - DEBUG - POST method (/api/employee) was successful
+2019-12-17 14:20:40,491 - service.crud - DEBUG - Department isn`t exist. Employee can`t be added
+2019-12-17 14:20:40,491 - rest.api - DEBUG - POST method (/api/employee) was not successful (400)
+2019-12-17 14:20:44,741 - service.crud - DEBUG - Department 10001 was deleted
+2019-12-17 14:20:44,746 - rest.api - DEBUG - DELETE method (/api/department/10001) was successful
+2019-12-17 14:20:48,696 - service.crud - DEBUG - Department 10005 is not exist, it can`t be deleted
+2019-12-17 14:20:48,697 - rest.api - DEBUG - DELETE method (/api/department/10005) was not successful (404)
+2019-12-17 14:20:52,031 - service.crud - DEBUG - Department 10001 was returned
+2019-12-17 14:20:52,232 - rest.api - DEBUG - GET method (/api/department/10001) was successful
+2019-12-17 14:20:55,626 - service.crud - DEBUG - Department 10005 is not exist
+2019-12-17 14:20:55,628 - rest.api - DEBUG - GET method (/api/department/10005) was not successful (404)
+2019-12-17 14:20:59,016 - service.crud - DEBUG - Department 10001 was updated
+2019-12-17 14:20:59,376 - rest.api - DEBUG - PUT method (/api/department/10001) was successful
+2019-12-17 14:21:02,776 - service.crud - DEBUG - Department 10005 is not exist, it can`t be updated
+2019-12-17 14:21:02,776 - rest.api - DEBUG - PUT method (/api/department/10005) was not successful (404)
+2019-12-17 14:21:06,456 - service.crud - DEBUG - List of department was returned
+2019-12-17 14:21:06,656 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-17 14:21:10,415 - service.crud - DEBUG - List of department was returned
+2019-12-17 14:21:10,415 - rest.api - ERROR - [<Department id=10001>]
+2019-12-17 14:21:10,426 - rest.api - WARNING - <Department id=10001>
+2019-12-17 14:21:10,426 - rest.api - DEBUG - GET method (/api/departments-ids) was successful
+2019-12-17 14:21:14,216 - rest.api - DEBUG - DELETE method (/api/employee/1) was successful
+2019-12-17 14:21:17,576 - service.crud - DEBUG - Employee isn`t exist. It can`t be deleted
+2019-12-17 14:21:17,576 - rest.api - DEBUG - DELETE method (/api/employee/5) was not successful (404)
+2019-12-17 14:21:21,046 - service.crud - DEBUG - Employee 1 was returned
+2019-12-17 14:21:21,046 - rest.api - DEBUG - GET method (/api/employee/1) was successful
+2019-12-17 14:21:24,516 - service.crud - DEBUG - Employee 3 is not exist
+2019-12-17 14:21:24,525 - rest.api - DEBUG - GET method (/api/employee/3) was not successful (404)
+2019-12-17 14:21:28,406 - service.crud - DEBUG - Employee was updated
+2019-12-17 14:21:28,406 - rest.api - DEBUG - PUT method (/api/employee/1) was successful
+2019-12-17 14:21:32,076 - service.crud - DEBUG - Incorrect data. Employee can`t be updated
+2019-12-17 14:21:32,086 - rest.api - DEBUG - PUT method (/api/employee/1) was not successful (400)
+2019-12-17 14:21:32,366 - service.crud - DEBUG - Employee isn`t exist
+2019-12-17 14:21:32,366 - rest.api - DEBUG - PUT method (/api/employee/5) was not successful (404)
+2019-12-17 14:21:35,613 - service.crud - DEBUG - List of employees was returned
+2019-12-17 14:21:35,812 - rest.api - DEBUG - GET method (/api/employees) was successful
+2019-12-17 14:21:39,158 - service.crud - DEBUG - Filtered by dates list of employees was returned
+2019-12-17 14:21:39,356 - rest.api - DEBUG - POST method (/api/employees) was successful
+2019-12-17 14:21:39,444 - service.crud - DEBUG - Filtered by dates list of employees was returned
+2019-12-17 14:21:39,639 - rest.api - DEBUG - POST method (/api/employees) was successful
+2019-12-17 14:21:39,716 - service.crud - DEBUG - Filtered by dates list of employees was returned
+2019-12-17 14:21:39,916 - rest.api - DEBUG - POST method (/api/employees) was successful
+2019-12-17 14:21:43,552 - service.crud - DEBUG - Department 10002 was added
+2019-12-17 14:21:48,276 - service.crud - DEBUG - Department 10001 was deleted
+2019-12-17 14:21:48,496 - service.crud - DEBUG - Department 10001 is not exist
+2019-12-17 14:21:51,961 - service.crud - DEBUG - Department 10001 was returned
+2019-12-17 14:21:56,426 - service.crud - DEBUG - List of department was returned
+2019-12-17 14:22:00,096 - service.crud - DEBUG - Department 10001 was updated
+2019-12-17 14:22:04,656 - service.crud - DEBUG - Employee was added
+2019-12-17 14:22:08,976 - service.crud - DEBUG - Employee 1 is not exist
+2019-12-17 14:22:12,441 - service.crud - DEBUG - Employee 1 was returned
+2019-12-17 14:22:15,925 - service.crud - DEBUG - List of employees was returned
+2019-12-17 14:22:19,568 - service.crud - DEBUG - Filtered by dates list of employees was returned
+2019-12-17 14:22:19,770 - service.crud - DEBUG - Filtered by dates list of employees was returned
+2019-12-17 14:22:23,946 - service.crud - DEBUG - Employee was updated
+2019-12-17 15:03:53,347 - rest.api - INFO - Web-service started
+2019-12-17 15:03:57,487 - service.crud - DEBUG - Department 10002 was added
+2019-12-17 15:03:57,487 - rest.api - DEBUG - POST method (/api/department) was successful
+2019-12-17 15:04:00,917 - rest.api - DEBUG - POST method (/api/department) was not successful (400)
+2019-12-17 15:04:01,217 - rest.api - DEBUG - POST method (/api/department) was not successful (400)
+2019-12-17 15:04:05,247 - service.crud - DEBUG - Employee was added
+2019-12-17 15:04:05,418 - rest.api - DEBUG - POST method (/api/employee) was successful
+2019-12-17 15:04:08,777 - service.crud - DEBUG - Department isn`t exist. Employee can`t be added
+2019-12-17 15:04:08,787 - rest.api - DEBUG - POST method (/api/employee) was not successful (400)
+2019-12-17 15:04:12,848 - service.crud - DEBUG - Department 10001 was deleted
+2019-12-17 15:04:12,848 - rest.api - DEBUG - DELETE method (/api/department/10001) was successful
+2019-12-17 15:04:16,048 - service.crud - DEBUG - Department 10005 is not exist, it can`t be deleted
+2019-12-17 15:04:16,048 - rest.api - DEBUG - DELETE method (/api/department/10005) was not successful (404)
+2019-12-17 15:04:19,372 - service.crud - DEBUG - Department 10001 was returned
+2019-12-17 15:04:19,548 - rest.api - DEBUG - GET method (/api/department/10001) was successful
+2019-12-17 15:04:22,828 - service.crud - DEBUG - Department 10005 is not exist
+2019-12-17 15:04:22,828 - rest.api - DEBUG - GET method (/api/department/10005) was not successful (404)
+2019-12-17 15:04:26,288 - service.crud - DEBUG - Department 10001 was updated
+2019-12-17 15:04:26,593 - rest.api - DEBUG - PUT method (/api/department/10001) was successful
+2019-12-17 15:04:29,818 - service.crud - DEBUG - Department 10005 is not exist, it can`t be updated
+2019-12-17 15:04:29,818 - rest.api - DEBUG - PUT method (/api/department/10005) was not successful (404)
+2019-12-17 15:04:33,308 - service.crud - DEBUG - List of department was returned
+2019-12-17 15:04:33,481 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-17 15:04:37,113 - service.crud - DEBUG - List of department was returned
+2019-12-17 15:04:37,113 - rest.api - ERROR - [<Department id=10001>]
+2019-12-17 15:04:37,113 - rest.api - WARNING - <Department id=10001>
+2019-12-17 15:04:37,113 - rest.api - DEBUG - GET method (/api/departments-ids) was successful
+2019-12-17 15:04:40,700 - rest.api - DEBUG - DELETE method (/api/employee/1) was successful
+2019-12-17 15:04:43,847 - service.crud - DEBUG - Employee isn`t exist. It can`t be deleted
+2019-12-17 15:04:43,847 - rest.api - DEBUG - DELETE method (/api/employee/5) was not successful (404)
+2019-12-17 15:04:47,267 - service.crud - DEBUG - Employee 1 was returned
+2019-12-17 15:04:47,267 - rest.api - DEBUG - GET method (/api/employee/1) was successful
+2019-12-17 15:04:50,557 - service.crud - DEBUG - Employee 3 is not exist
+2019-12-17 15:04:50,557 - rest.api - DEBUG - GET method (/api/employee/3) was not successful (404)
+2019-12-17 15:04:54,167 - service.crud - DEBUG - Employee was updated
+2019-12-17 15:04:54,167 - rest.api - DEBUG - PUT method (/api/employee/1) was successful
+2019-12-17 15:04:57,708 - service.crud - DEBUG - Incorrect data. Employee can`t be updated
+2019-12-17 15:04:57,708 - rest.api - DEBUG - PUT method (/api/employee/1) was not successful (400)
+2019-12-17 15:04:57,952 - service.crud - DEBUG - Employee isn`t exist
+2019-12-17 15:04:57,952 - rest.api - DEBUG - PUT method (/api/employee/5) was not successful (404)
+2019-12-17 15:05:00,978 - service.crud - DEBUG - List of employees was returned
+2019-12-17 15:05:01,147 - rest.api - DEBUG - GET method (/api/employees) was successful
+2019-12-17 15:05:04,357 - service.crud - DEBUG - Filtered by dates list of employees was returned
+2019-12-17 15:05:04,527 - rest.api - DEBUG - POST method (/api/employees) was successful
+2019-12-17 15:05:04,592 - service.crud - DEBUG - Filtered by dates list of employees was returned
+2019-12-17 15:05:04,757 - rest.api - DEBUG - POST method (/api/employees) was successful
+2019-12-17 15:05:04,832 - service.crud - DEBUG - Filtered by dates list of employees was returned
+2019-12-17 15:05:05,007 - rest.api - DEBUG - POST method (/api/employees) was successful
+2019-12-17 15:17:04,537 - rest.api - INFO - Web-service started
+2019-12-17 15:17:20,168 - rest.api - INFO - Web-service started
+2019-12-17 15:17:50,958 - rest.api - INFO - Web-service started
+2019-12-17 15:49:58,781 - rest.api - INFO - Web-service started
+2019-12-17 15:50:31,897 - service.crud - DEBUG - List of department was returned
+2019-12-17 15:50:32,627 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-17 15:50:33,115 - service.crud - DEBUG - List of department was returned
+2019-12-17 15:50:33,819 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-17 15:50:40,321 - service.crud - DEBUG - List of department was returned
+2019-12-17 15:50:41,051 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-17 15:50:42,289 - service.crud - DEBUG - List of employees was returned
+2019-12-17 15:50:42,466 - rest.api - DEBUG - GET method (/api/employees) was successful
+2019-12-17 15:50:49,808 - service.crud - DEBUG - Employee 18 was returned
+2019-12-17 15:50:49,809 - rest.api - DEBUG - GET method (/api/employee/18) was successful
+2019-12-17 15:50:50,223 - service.crud - DEBUG - List of department was returned
+2019-12-17 15:50:50,223 - rest.api - ERROR - [<Department id=10001>, <Department id=10002>, <Department id=10003>, <Department id=10004>]
+2019-12-17 15:50:50,224 - rest.api - WARNING - <Department id=10001>
+2019-12-17 15:50:50,224 - rest.api - WARNING - <Department id=10002>
+2019-12-17 15:50:50,225 - rest.api - WARNING - <Department id=10003>
+2019-12-17 15:50:50,225 - rest.api - WARNING - <Department id=10004>
+2019-12-17 15:50:50,226 - rest.api - DEBUG - GET method (/api/departments-ids) was successful
+2019-12-17 15:51:12,721 - service.crud - DEBUG - List of employees was returned
+2019-12-17 15:51:12,895 - rest.api - DEBUG - GET method (/api/employees) was successful
+2019-12-17 15:51:18,383 - service.crud - DEBUG - List of department was returned
+2019-12-17 15:51:19,142 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-17 15:51:19,594 - service.crud - DEBUG - List of department was returned
+2019-12-17 15:51:20,310 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-17 15:51:23,690 - service.crud - DEBUG - List of employees was returned
+2019-12-17 15:51:23,863 - rest.api - DEBUG - GET method (/api/employees) was successful
+2019-12-17 15:51:27,938 - service.crud - DEBUG - Employee 1 was returned
+2019-12-17 15:51:27,938 - rest.api - DEBUG - GET method (/api/employee/1) was successful
+2019-12-17 15:51:28,393 - service.crud - DEBUG - List of department was returned
+2019-12-17 15:51:28,394 - rest.api - ERROR - [<Department id=10001>, <Department id=10002>, <Department id=10003>, <Department id=10004>]
+2019-12-17 15:51:28,395 - rest.api - WARNING - <Department id=10001>
+2019-12-17 15:51:28,398 - rest.api - WARNING - <Department id=10002>
+2019-12-17 15:51:28,399 - rest.api - WARNING - <Department id=10003>
+2019-12-17 15:51:28,400 - rest.api - WARNING - <Department id=10004>
+2019-12-17 15:51:28,401 - rest.api - DEBUG - GET method (/api/departments-ids) was successful
+2019-12-17 15:51:36,821 - service.crud - DEBUG - Employee was updated
+2019-12-17 15:51:36,823 - rest.api - DEBUG - PUT method (/api/employee/1) was successful
+2019-12-17 15:51:36,851 - service.crud - DEBUG - List of employees was returned
+2019-12-17 15:51:37,026 - rest.api - DEBUG - GET method (/api/employees) was successful
+2019-12-17 15:51:42,057 - service.crud - DEBUG - List of department was returned
+2019-12-17 15:51:42,763 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-17 15:51:43,829 - service.crud - DEBUG - List of employees was returned
+2019-12-17 15:51:44,017 - rest.api - DEBUG - GET method (/api/employees) was successful
+2019-12-17 15:52:22,039 - rest.api - INFO - Web-service started
+2019-12-17 15:52:26,377 - service.crud - DEBUG - Department 10002 was added
+2019-12-17 15:52:26,379 - rest.api - DEBUG - POST method (/api/department) was successful
+2019-12-17 15:52:29,709 - rest.api - DEBUG - POST method (/api/department) was not successful (400)
+2019-12-17 15:52:30,009 - rest.api - DEBUG - POST method (/api/department) was not successful (400)
+2019-12-17 15:52:33,520 - service.crud - DEBUG - Employee was added
+2019-12-17 15:52:33,699 - rest.api - DEBUG - POST method (/api/employee) was successful
+2019-12-17 15:52:38,513 - service.crud - DEBUG - Department isn`t exist. Employee can`t be added
+2019-12-17 15:52:38,514 - rest.api - DEBUG - POST method (/api/employee) was not successful (400)
+2019-12-17 15:52:42,609 - service.crud - DEBUG - Department 10001 was deleted
+2019-12-17 15:52:42,610 - rest.api - DEBUG - DELETE method (/api/department/10001) was successful
+2019-12-17 15:52:45,898 - service.crud - DEBUG - Department 10005 is not exist, it can`t be deleted
+2019-12-17 15:52:45,900 - rest.api - DEBUG - DELETE method (/api/department/10005) was not successful (404)
+2019-12-17 15:52:49,154 - service.crud - DEBUG - Department 10001 was returned
+2019-12-17 15:52:49,331 - rest.api - DEBUG - GET method (/api/department/10001) was successful
+2019-12-17 15:52:52,620 - service.crud - DEBUG - Department 10005 is not exist
+2019-12-17 15:52:52,620 - rest.api - DEBUG - GET method (/api/department/10005) was not successful (404)
+2019-12-17 15:52:55,889 - service.crud - DEBUG - Department 10001 was updated
+2019-12-17 15:52:56,201 - rest.api - DEBUG - PUT method (/api/department/10001) was successful
+2019-12-17 15:52:59,354 - service.crud - DEBUG - Department 10005 is not exist, it can`t be updated
+2019-12-17 15:52:59,355 - rest.api - DEBUG - PUT method (/api/department/10005) was not successful (404)
+2019-12-17 15:53:02,795 - service.crud - DEBUG - List of department was returned
+2019-12-17 15:53:02,975 - rest.api - DEBUG - GET method (/api/departments) was successful
+2019-12-17 15:53:06,383 - service.crud - DEBUG - List of department was returned
+2019-12-17 15:53:06,384 - rest.api - ERROR - [<Department id=10001>]
+2019-12-17 15:53:06,387 - rest.api - WARNING - <Department id=10001>
+2019-12-17 15:53:06,390 - rest.api - DEBUG - GET method (/api/departments-ids) was successful
+2019-12-17 15:53:09,943 - rest.api - DEBUG - DELETE method (/api/employee/1) was successful
+2019-12-17 15:53:13,165 - service.crud - DEBUG - Employee isn`t exist. It can`t be deleted
+2019-12-17 15:53:13,165 - rest.api - DEBUG - DELETE method (/api/employee/5) was not successful (404)
+2019-12-17 15:53:17,275 - service.crud - DEBUG - Employee 1 was returned
+2019-12-17 15:53:17,276 - rest.api - DEBUG - GET method (/api/employee/1) was successful
+2019-12-17 15:53:20,553 - service.crud - DEBUG - Employee 3 is not exist
+2019-12-17 15:53:20,553 - rest.api - DEBUG - GET method (/api/employee/3) was not successful (404)
+2019-12-17 15:53:24,421 - service.crud - DEBUG - Employee was updated
+2019-12-17 15:53:24,422 - rest.api - DEBUG - PUT method (/api/employee/1) was successful
+2019-12-17 15:53:27,934 - service.crud - DEBUG - Incorrect data. Employee can`t be updated
+2019-12-17 15:53:27,935 - rest.api - DEBUG - PUT method (/api/employee/1) was not successful (400)
+2019-12-17 15:53:28,178 - service.crud - DEBUG - Employee isn`t exist
+2019-12-17 15:53:28,179 - rest.api - DEBUG - PUT method (/api/employee/5) was not successful (404)
+2019-12-17 15:53:31,318 - service.crud - DEBUG - List of employees was returned
+2019-12-17 15:53:31,495 - rest.api - DEBUG - GET method (/api/employees) was successful
+2019-12-17 15:53:34,559 - service.crud - DEBUG - Filtered by dates list of employees was returned
+2019-12-17 15:53:34,739 - rest.api - DEBUG - POST method (/api/employees) was successful
+2019-12-17 15:53:34,806 - service.crud - DEBUG - Filtered by dates list of employees was returned
+2019-12-17 15:53:34,986 - rest.api - DEBUG - POST method (/api/employees) was successful
+2019-12-17 15:53:35,039 - service.crud - DEBUG - Filtered by dates list of employees was returned
+2019-12-17 15:53:35,217 - rest.api - DEBUG - POST method (/api/employees) was successful
+2019-12-17 15:53:38,665 - service.crud - DEBUG - Department 10002 was added
+2019-12-17 15:53:42,989 - service.crud - DEBUG - Department 10001 was deleted
+2019-12-17 15:53:43,163 - service.crud - DEBUG - Department 10001 is not exist
+2019-12-17 15:53:46,444 - service.crud - DEBUG - Department 10001 was returned
+2019-12-17 15:53:50,245 - service.crud - DEBUG - List of department was returned
+2019-12-17 15:53:53,730 - service.crud - DEBUG - Department 10001 was updated
+2019-12-17 15:53:57,953 - service.crud - DEBUG - Employee was added
+2019-12-17 15:54:01,937 - service.crud - DEBUG - Employee 1 is not exist
+2019-12-17 15:54:05,179 - service.crud - DEBUG - Employee 1 was returned
+2019-12-17 15:54:08,469 - service.crud - DEBUG - List of employees was returned
+2019-12-17 15:54:12,317 - service.crud - DEBUG - Filtered by dates list of employees was returned
+2019-12-17 15:54:12,495 - service.crud - DEBUG - Filtered by dates list of employees was returned
+2019-12-17 15:54:16,269 - service.crud - DEBUG - Employee was updated
