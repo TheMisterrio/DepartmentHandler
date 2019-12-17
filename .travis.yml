@@ -8,8 +8,8 @@ install:
 
 script:
   - cd department-app
-  - python -m unittest test_crud
-  - python -m unittest test_api
+  - python -m unittest tests.test_crud
+  - python -m unittest tests.test_api
   - coverage erase
   - coverage run -m unittest && coverage html
   - cd ..
