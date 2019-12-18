@@ -81,9 +81,7 @@ class DepartmentsIds(Resource):
         from service import crud
         departments = crud.Departments.get_all()[0]
         ids = []
-        logger.error(departments)
         for department in departments:
-            logger.warning(department)
             ids.append(department.id)
         logger.debug('GET method (/api/departments-ids) was successful')
         return {'ids': ids}
@@ -203,9 +201,9 @@ class Employees(Resource):
         """
         from service import crud
         data = parser_for_employees.parse_args()
-        if data['date_by'] is None:
+        if data['date_by'] is None or data['date_by'] == '':
             data['date_by'] = date.today()
-        if data['date_from'] is None:
+        if data['date_from'] is None or data['date_by'] == '':
             data['date_from'] = ''
         employees = crud.Employees.get_by_date(data['date_from'], data['date_by'])
         ids = []
