@@ -1,0 +1,21 @@
+body{
+    background-color: #f8f8f8;
+}
+
+.container-fluid header{
+    background-color: #5a6268;
+}
+
+.container-fluid header h3{
+    color: #FFFFFF;
+    margin-top: 10px;
+}
+
+.container-fluid header .btn-group{
+    margin-bottom: 15px;
+    margin-top: 5px;
+}
+
+.departments_table_body td{
+    word-wrap:break-word;
+}

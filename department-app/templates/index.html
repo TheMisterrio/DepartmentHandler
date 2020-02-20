@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../static/css/bootstrap.css">
+    <link rel="stylesheet" href="../static/style2.css">
+
+    <title>Department Handler</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <header class="row text-center">
+        <h3 class="col-md-12">DEPARTMENT HANDLER</h3>
+        <div class="col-md-12">
+        <div class="btn-group">
+          <a class="btn btn-warning" href="{{url_for('departments')}}">Departments</a>
+          <a  class="btn btn-warning" href="{{url_for('employees')}}">Employees</a>
+        </div>
+        </div>
+      </header>
+      <div class="content row">
+        {% block content %}
+
+        {% endblock %}
+      </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="../static/jquery-3.4.1.min.js"></script>
+    <script src="../static/js/bootstrap.min.js"></script>
+  </body>
+</html>
