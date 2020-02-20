@@ -897,3 +897,77 @@
 2020-02-19 20:46:12,388 - app - DEBUG - Departments page was displayed with list of departments
 2020-02-19 20:46:22,968 - app - DEBUG - Departments page was displayed with list of departments
 2020-02-19 20:46:42,950 - app - DEBUG - Departments page was displayed with list of departments
+2020-02-20 09:28:22,130 - app - INFO - Web-app started
+2020-02-20 09:28:23,350 - app - INFO - Web-app started
+2020-02-20 09:28:26,031 - app - DEBUG - Employees page was displayed
+2020-02-20 09:29:08,380 - app - DEBUG - Employees page was displayed
+2020-02-20 09:31:23,236 - app - DEBUG - Employees page was displayed
+2020-02-20 09:31:34,187 - app - DEBUG - Employees page was displayed
+2020-02-20 09:31:38,656 - app - DEBUG - Employees page was displayed
+2020-02-20 09:32:23,200 - app - DEBUG - Employees page was displayed
+2020-02-20 09:32:47,614 - app - DEBUG - Employees page was displayed
+2020-02-20 09:32:59,398 - app - DEBUG - Employees page was displayed
+2020-02-20 09:33:00,804 - app - DEBUG - Employees page was displayed
+2020-02-20 09:33:06,461 - app - DEBUG - Employees page was displayed
+2020-02-20 09:34:10,027 - app - DEBUG - Employees page was displayed
+2020-02-20 09:34:19,674 - app - DEBUG - Employees page was displayed
+2020-02-20 09:35:23,306 - app - DEBUG - Employees page was displayed
+2020-02-20 09:36:23,303 - app - DEBUG - Employees page was displayed
+2020-02-20 09:37:46,040 - app - DEBUG - Employees page was displayed
+2020-02-20 09:37:55,771 - app - DEBUG - Employees page was displayed
+2020-02-20 09:38:31,445 - app - DEBUG - Employees page was displayed
+2020-02-20 09:39:53,528 - app - DEBUG - Employees page was displayed
+2020-02-20 09:40:59,081 - app - DEBUG - Employees page was displayed
+2020-02-20 09:41:38,165 - app - DEBUG - Employees page was displayed
+2020-02-20 09:41:40,800 - app - DEBUG - Employees page was displayed
+2020-02-20 09:41:51,279 - app - DEBUG - Employees page was displayed
+2020-02-20 09:41:52,639 - app - DEBUG - Employees page was displayed
+2020-02-20 09:42:53,731 - app - DEBUG - Employees page was displayed
+2020-02-20 09:44:02,187 - app - DEBUG - Employees page was displayed
+2020-02-20 09:44:02,575 - app - DEBUG - Employees page was displayed
+2020-02-20 09:44:10,816 - app - DEBUG - Employees page was displayed
+2020-02-20 09:44:17,252 - app - DEBUG - Employees page was displayed
+2020-02-20 09:47:54,042 - app - DEBUG - Employees page was displayed
+2020-02-20 09:48:19,835 - app - DEBUG - Departments page was displayed with list of departments
+2020-02-20 09:48:26,196 - app - DEBUG - Employees page was displayed
+2020-02-20 09:49:41,189 - app - DEBUG - Departments page was displayed with list of departments
+2020-02-20 09:51:46,421 - app - DEBUG - Employees page was displayed
+2020-02-20 09:52:05,782 - app - DEBUG - Employees page was displayed
+2020-02-20 09:52:08,948 - app - DEBUG - Employees page was displayed
+2020-02-20 09:52:26,977 - app - DEBUG - Employees page was displayed
+2020-02-20 09:52:34,926 - app - DEBUG - Employees page was displayed
+2020-02-20 09:52:47,318 - app - DEBUG - Employees page was displayed
+2020-02-20 09:53:17,432 - app - DEBUG - Departments page was displayed with list of departments
+2020-02-20 09:54:36,422 - app - DEBUG - Departments page was displayed with list of departments
+2020-02-20 09:55:32,697 - app - DEBUG - Departments page was displayed with list of departments
+2020-02-20 09:56:06,400 - app - DEBUG - Departments page was displayed with list of departments
+2020-02-20 09:56:25,817 - app - DEBUG - Departments page was displayed with list of departments
+2020-02-20 09:56:26,601 - app - DEBUG - Departments page was displayed with list of departments
+2020-02-20 09:57:19,410 - app - DEBUG - Departments page was displayed with list of departments
+2020-02-20 09:59:25,282 - app - DEBUG - Departments page was displayed with list of departments
+2020-02-20 09:59:26,597 - app - DEBUG - Departments page was displayed with list of departments
+2020-02-20 10:00:18,182 - app - DEBUG - Departments page was displayed with list of departments
+2020-02-20 10:01:06,705 - app - DEBUG - Departments page was displayed with list of departments
+2020-02-20 10:01:15,787 - app - DEBUG - Departments page was displayed with list of departments
+2020-02-20 10:01:42,566 - app - DEBUG - Employees page was displayed
+2020-02-20 10:02:17,077 - app - DEBUG - Employees page was displayed
+2020-02-20 10:02:22,496 - app - DEBUG - Employees page was displayed
+2020-02-20 10:03:29,387 - app - DEBUG - Employees page was displayed
+2020-02-20 10:03:45,111 - app - DEBUG - Employees page was displayed
+2020-02-20 10:04:29,325 - app - DEBUG - Employees page was displayed
+2020-02-20 10:05:20,126 - app - DEBUG - Employees page was displayed
+2020-02-20 10:06:10,346 - app - DEBUG - Employees page was displayed
+2020-02-20 10:06:39,004 - app - DEBUG - Employees page was displayed
+2020-02-20 10:06:52,097 - app - DEBUG - Employees page was displayed
+2020-02-20 10:08:46,330 - app - DEBUG - Employees page was displayed
+2020-02-20 10:10:13,080 - app - DEBUG - Employees page was displayed
+2020-02-20 10:10:16,513 - app - DEBUG - Departments page was displayed with list of departments
+2020-02-20 10:10:33,182 - app - DEBUG - Departments page was displayed with list of departments
+2020-02-20 10:11:28,477 - app - DEBUG - Departments page was displayed with list of departments
+2020-02-20 10:11:40,491 - app - DEBUG - Employees page was displayed
+2020-02-20 10:12:01,627 - app - DEBUG - Employees page was displayed
+2020-02-20 10:13:53,286 - app - DEBUG - Employees page was displayed
+2020-02-20 10:17:05,297 - app - DEBUG - Employees page was displayed
+2020-02-20 10:17:24,304 - app - DEBUG - Departments page was displayed with list of departments
+2020-02-20 10:17:27,540 - app - DEBUG - Employees page was displayed
+2020-02-20 10:17:29,851 - app - DEBUG - Departments page was displayed with list of departments
