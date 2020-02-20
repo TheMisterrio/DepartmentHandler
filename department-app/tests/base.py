@@ -13,7 +13,7 @@ class BaseTestCase(unittest.TestCase):
         app.config.from_object(TestConfiguration)
         self.app = app.test_client()
         db.create_all()
-        db.session.add(Department(id=10001))
+        db.session.add(Department(id=10001, name='Test Department'))
         db.session.add(
             Employee(name='Steven Gray', department_id=10001, date_of_birthday=date(1997, 10, 1),
                      salary=Decimal(1000)))

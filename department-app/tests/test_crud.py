@@ -12,7 +12,7 @@ class TestDepartments(BaseTestCase):
     """Tests for Departments class from service.crud"""
     def test_get_all(self):
 
-        self.assertEqual(crud.Departments.get_all(), ([Department(id=10001, employees=[
+        self.assertEqual(crud.Departments.get_all(), ([Department(id=10001, name='Test Department', employees=[
             Employee(id=1, name='Steven Gray', department_id=10001,
                      date_of_birthday=date(1997, 10, 1),
                      salary=Decimal(1000)),
@@ -21,7 +21,7 @@ class TestDepartments(BaseTestCase):
                      salary=Decimal(3000))])], [(Decimal(2000), 10001)]))
 
     def test_get(self):
-        self.assertEqual(crud.Departments.get(10001), Department(id=10001, employees=[
+        self.assertEqual(crud.Departments.get(10001), Department(id=10001, name='Test Department', employees=[
             Employee(id=1, name='Steven Gray', department_id=10001,
                      date_of_birthday=date(1997, 10, 1),
                      salary=Decimal(1000)),
@@ -30,10 +30,10 @@ class TestDepartments(BaseTestCase):
                      salary=Decimal(3000))]))
 
     def test_add(self):
-        self.assertEqual(crud.Departments.add(10002), Department(id=10002, employees=[]))
+        self.assertEqual(crud.Departments.add(10002, 'NewDepartment'), Department(id=10002, name='NewDepartment', employees=[]))
 
     def test_update(self):
-        self.assertEqual(crud.Departments.update(10001, 10002), Department(id=10002, employees=[
+        self.assertEqual(crud.Departments.update(10001, 10002, 'UpdatedDepartment'), Department(id=10002, name='UpdatedDepartment', employees=[
             Employee(id=1, name='Steven Gray', department_id=10002,
                      date_of_birthday=date(1997, 10, 1),
                      salary=Decimal(1000)),

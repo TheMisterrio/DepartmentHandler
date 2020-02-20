@@ -1,0 +1,513 @@
+2020-02-20 10:55:36,343 - rest.api - INFO - Web-service started
+2020-02-20 10:55:45,489 - rest.api - ERROR - Exception on /api/departments [GET]
+Traceback (most recent call last):
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1245, in _execute_context
+    self.dialect.do_execute(
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\default.py", line 581, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.OperationalError: no such table: department
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "E:\GraduationWork\DepartmentHandler\department-app\rest\api.py", line 49, in get
+    data = crud.Departments.get_all()
+  File "E:\GraduationWork\DepartmentHandler\department-app\service\crud.py", line 32, in get_all
+    departments = Department.query.all()
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\query.py", line 3211, in all
+    return list(self)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\query.py", line 3367, in __iter__
+    return self._execute_and_instances(context)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\query.py", line 3392, in _execute_and_instances
+    result = conn.execute(querycontext.statement, self._params)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 982, in execute
+    return meth(self, multiparams, params)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\sql\elements.py", line 287, in _execute_on_connection
+    return connection._execute_clauseelement(self, multiparams, params)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1095, in _execute_clauseelement
+    ret = self._execute_context(
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1249, in _execute_context
+    self._handle_dbapi_exception(
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1476, in _handle_dbapi_exception
+    util.raise_from_cause(sqlalchemy_exception, exc_info)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\util\compat.py", line 398, in raise_from_cause
+    reraise(type(exception), exception, tb=exc_tb, cause=cause)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\util\compat.py", line 152, in reraise
+    raise value.with_traceback(tb)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1245, in _execute_context
+    self.dialect.do_execute(
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\default.py", line 581, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) no such table: department
+[SQL: SELECT department.id AS department_id, department.name AS department_name 
+FROM department]
+(Background on this error at: http://sqlalche.me/e/e3q8)
+2020-02-20 10:55:47,307 - service.crud - DEBUG - List of employees was returned
+2020-02-20 10:55:47,312 - rest.api - ERROR - Exception on /api/employees [GET]
+Traceback (most recent call last):
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1245, in _execute_context
+    self.dialect.do_execute(
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\default.py", line 581, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.OperationalError: no such table: employee
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "E:\GraduationWork\DepartmentHandler\department-app\rest\api.py", line 179, in get
+    employees = crud.Employees.get_all()
+  File "E:\GraduationWork\DepartmentHandler\department-app\service\crud.py", line 125, in get_all
+    return Employee.query.all()
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\query.py", line 3211, in all
+    return list(self)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\query.py", line 3367, in __iter__
+    return self._execute_and_instances(context)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\query.py", line 3392, in _execute_and_instances
+    result = conn.execute(querycontext.statement, self._params)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 982, in execute
+    return meth(self, multiparams, params)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\sql\elements.py", line 287, in _execute_on_connection
+    return connection._execute_clauseelement(self, multiparams, params)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1095, in _execute_clauseelement
+    ret = self._execute_context(
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1249, in _execute_context
+    self._handle_dbapi_exception(
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1476, in _handle_dbapi_exception
+    util.raise_from_cause(sqlalchemy_exception, exc_info)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\util\compat.py", line 398, in raise_from_cause
+    reraise(type(exception), exception, tb=exc_tb, cause=cause)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\util\compat.py", line 152, in reraise
+    raise value.with_traceback(tb)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1245, in _execute_context
+    self.dialect.do_execute(
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\default.py", line 581, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) no such table: employee
+[SQL: SELECT employee.id AS employee_id, employee.name AS employee_name, employee.department_id AS employee_department_id, employee.date_of_birthday AS employee_date_of_birthday, employee.salary AS employee_salary 
+FROM employee]
+(Background on this error at: http://sqlalche.me/e/e3q8)
+2020-02-20 10:55:48,580 - rest.api - ERROR - Exception on /api/departments [GET]
+Traceback (most recent call last):
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1245, in _execute_context
+    self.dialect.do_execute(
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\default.py", line 581, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.OperationalError: no such table: department
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "E:\GraduationWork\DepartmentHandler\department-app\rest\api.py", line 49, in get
+    data = crud.Departments.get_all()
+  File "E:\GraduationWork\DepartmentHandler\department-app\service\crud.py", line 32, in get_all
+    departments = Department.query.all()
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\query.py", line 3211, in all
+    return list(self)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\query.py", line 3367, in __iter__
+    return self._execute_and_instances(context)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\query.py", line 3392, in _execute_and_instances
+    result = conn.execute(querycontext.statement, self._params)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 982, in execute
+    return meth(self, multiparams, params)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\sql\elements.py", line 287, in _execute_on_connection
+    return connection._execute_clauseelement(self, multiparams, params)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1095, in _execute_clauseelement
+    ret = self._execute_context(
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1249, in _execute_context
+    self._handle_dbapi_exception(
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1476, in _handle_dbapi_exception
+    util.raise_from_cause(sqlalchemy_exception, exc_info)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\util\compat.py", line 398, in raise_from_cause
+    reraise(type(exception), exception, tb=exc_tb, cause=cause)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\util\compat.py", line 152, in reraise
+    raise value.with_traceback(tb)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1245, in _execute_context
+    self.dialect.do_execute(
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\default.py", line 581, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) no such table: department
+[SQL: SELECT department.id AS department_id, department.name AS department_name 
+FROM department]
+(Background on this error at: http://sqlalche.me/e/e3q8)
+2020-02-20 11:10:36,062 - rest.api - ERROR - Exception on /api/departments [GET]
+Traceback (most recent call last):
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1245, in _execute_context
+    self.dialect.do_execute(
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\default.py", line 581, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.OperationalError: no such table: department
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "E:\GraduationWork\DepartmentHandler\department-app\rest\api.py", line 49, in get
+    data = crud.Departments.get_all()
+  File "E:\GraduationWork\DepartmentHandler\department-app\service\crud.py", line 32, in get_all
+    departments = Department.query.all()
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\query.py", line 3211, in all
+    return list(self)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\query.py", line 3367, in __iter__
+    return self._execute_and_instances(context)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\query.py", line 3392, in _execute_and_instances
+    result = conn.execute(querycontext.statement, self._params)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 982, in execute
+    return meth(self, multiparams, params)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\sql\elements.py", line 287, in _execute_on_connection
+    return connection._execute_clauseelement(self, multiparams, params)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1095, in _execute_clauseelement
+    ret = self._execute_context(
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1249, in _execute_context
+    self._handle_dbapi_exception(
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1476, in _handle_dbapi_exception
+    util.raise_from_cause(sqlalchemy_exception, exc_info)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\util\compat.py", line 398, in raise_from_cause
+    reraise(type(exception), exception, tb=exc_tb, cause=cause)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\util\compat.py", line 152, in reraise
+    raise value.with_traceback(tb)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1245, in _execute_context
+    self.dialect.do_execute(
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\default.py", line 581, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) no such table: department
+[SQL: SELECT department.id AS department_id, department.name AS department_name 
+FROM department]
+(Background on this error at: http://sqlalche.me/e/e3q8)
+2020-02-20 12:32:06,248 - rest.api - INFO - Web-service started
+2020-02-20 12:33:37,243 - rest.api - INFO - Web-service started
+2020-02-20 12:33:42,828 - service.crud - DEBUG - Department 10001 was returned
+2020-02-20 12:37:05,388 - rest.api - INFO - Web-service started
+2020-02-20 12:37:12,988 - service.crud - DEBUG - Department 10001 was returned
+2020-02-20 12:41:59,709 - rest.api - INFO - Web-service started
+2020-02-20 12:42:12,699 - service.crud - DEBUG - Department 10001 was deleted
+2020-02-20 12:42:12,879 - service.crud - DEBUG - Department 10001 is not exist
+2020-02-20 12:42:16,494 - service.crud - DEBUG - Department 10001 was returned
+2020-02-20 12:42:20,928 - service.crud - DEBUG - List of department was returned
+2020-02-20 12:43:23,829 - rest.api - INFO - Web-service started
+2020-02-20 12:43:28,969 - service.crud - DEBUG - Department 10002 was added
+2020-02-20 12:44:18,579 - rest.api - INFO - Web-service started
+2020-02-20 12:44:18,638 - service.crud - DEBUG - Department 10002 was added
+2020-02-20 12:52:25,009 - rest.api - INFO - Web-service started
+2020-02-20 12:52:25,069 - service.crud - DEBUG - Department 10002 was added
+2020-02-20 12:52:25,084 - service.crud - DEBUG - Department 10001 was deleted
+2020-02-20 12:52:25,084 - service.crud - DEBUG - Department 10001 is not exist
+2020-02-20 12:52:25,089 - service.crud - DEBUG - Department 10001 was returned
+2020-02-20 12:52:25,104 - service.crud - DEBUG - List of department was returned
+2020-02-20 12:52:25,222 - service.crud - DEBUG - Department 10001 was updated
+2020-02-20 12:54:00,569 - rest.api - INFO - Web-service started
+2020-02-20 12:54:00,627 - service.crud - DEBUG - Department 10001 was updated
+2020-02-20 12:56:23,715 - rest.api - INFO - Web-service started
+2020-02-20 12:56:23,769 - service.crud - DEBUG - Department 10001 was updated
+2020-02-20 12:56:39,616 - rest.api - INFO - Web-service started
+2020-02-20 12:56:39,669 - service.crud - DEBUG - Department 10001 was updated
+2020-02-20 12:57:28,029 - rest.api - INFO - Web-service started
+2020-02-20 12:57:28,089 - service.crud - DEBUG - Department 10001 was updated
+2020-02-20 12:58:11,039 - rest.api - INFO - Web-service started
+2020-02-20 12:58:11,089 - service.crud - DEBUG - Department 10001 was returned
+2020-02-20 12:58:24,059 - rest.api - INFO - Web-service started
+2020-02-20 12:58:24,109 - service.crud - DEBUG - Department 10001 was updated
+2020-02-20 12:58:37,199 - rest.api - INFO - Web-service started
+2020-02-20 12:58:37,259 - service.crud - DEBUG - Department 10001 was updated
+2020-02-20 12:59:41,519 - rest.api - INFO - Web-service started
+2020-02-20 12:59:41,589 - service.crud - DEBUG - Department 10001 was updated
+2020-02-20 13:01:45,529 - rest.api - INFO - Web-service started
+2020-02-20 13:01:45,589 - service.crud - DEBUG - Department 10001 was updated
+2020-02-20 13:01:45,589 - service.crud - DEBUG - []
+2020-02-20 13:02:52,879 - rest.api - INFO - Web-service started
+2020-02-20 13:02:52,929 - service.crud - DEBUG - <Department id=10001 + Test Department + [<Employee> name = Steven Gray, <Employee> name = John Spins]>
+2020-02-20 13:02:52,929 - service.crud - DEBUG - Department 10001 was updated
+2020-02-20 13:02:52,929 - service.crud - DEBUG - <Department id=10002 + UpdatedDepartment + [<Employee> name = Steven Gray, <Employee> name = John Spins]>
+2020-02-20 13:04:11,639 - rest.api - INFO - Web-service started
+2020-02-20 13:04:11,710 - service.crud - DEBUG - [<Employee> name = Steven Gray, <Employee> name = John Spins]
+2020-02-20 13:04:11,710 - service.crud - DEBUG - Department 10001 was updated
+2020-02-20 13:04:11,710 - service.crud - DEBUG - [<Employee> name = Steven Gray, <Employee> name = John Spins]
+2020-02-20 13:04:42,630 - rest.api - INFO - Web-service started
+2020-02-20 13:04:42,680 - service.crud - DEBUG - Department 10001 was updated
+2020-02-20 13:04:42,689 - service.crud - DEBUG - []
+2020-02-20 14:13:41,793 - rest.api - ERROR - Exception on /api/departments [GET]
+Traceback (most recent call last):
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1245, in _execute_context
+    self.dialect.do_execute(
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\default.py", line 581, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.OperationalError: no such table: department
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "E:\GraduationWork\DepartmentHandler\department-app\rest\api.py", line 49, in get
+    data = crud.Departments.get_all()
+  File "E:\GraduationWork\DepartmentHandler\department-app\service\crud.py", line 32, in get_all
+    departments = Department.query.all()
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\query.py", line 3211, in all
+    return list(self)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\query.py", line 3367, in __iter__
+    return self._execute_and_instances(context)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\query.py", line 3392, in _execute_and_instances
+    result = conn.execute(querycontext.statement, self._params)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 982, in execute
+    return meth(self, multiparams, params)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\sql\elements.py", line 287, in _execute_on_connection
+    return connection._execute_clauseelement(self, multiparams, params)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1095, in _execute_clauseelement
+    ret = self._execute_context(
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1249, in _execute_context
+    self._handle_dbapi_exception(
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1476, in _handle_dbapi_exception
+    util.raise_from_cause(sqlalchemy_exception, exc_info)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\util\compat.py", line 398, in raise_from_cause
+    reraise(type(exception), exception, tb=exc_tb, cause=cause)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\util\compat.py", line 152, in reraise
+    raise value.with_traceback(tb)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1245, in _execute_context
+    self.dialect.do_execute(
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\default.py", line 581, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) no such table: department
+[SQL: SELECT department.id AS department_id, department.name AS department_name 
+FROM department]
+(Background on this error at: http://sqlalche.me/e/e3q8)
+2020-02-20 14:13:48,929 - rest.api - ERROR - Exception on /api/departments [GET]
+Traceback (most recent call last):
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1245, in _execute_context
+    self.dialect.do_execute(
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\default.py", line 581, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.OperationalError: no such table: department
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "E:\GraduationWork\DepartmentHandler\department-app\rest\api.py", line 49, in get
+    data = crud.Departments.get_all()
+  File "E:\GraduationWork\DepartmentHandler\department-app\service\crud.py", line 32, in get_all
+    departments = Department.query.all()
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\query.py", line 3211, in all
+    return list(self)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\query.py", line 3367, in __iter__
+    return self._execute_and_instances(context)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\query.py", line 3392, in _execute_and_instances
+    result = conn.execute(querycontext.statement, self._params)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 982, in execute
+    return meth(self, multiparams, params)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\sql\elements.py", line 287, in _execute_on_connection
+    return connection._execute_clauseelement(self, multiparams, params)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1095, in _execute_clauseelement
+    ret = self._execute_context(
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1249, in _execute_context
+    self._handle_dbapi_exception(
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1476, in _handle_dbapi_exception
+    util.raise_from_cause(sqlalchemy_exception, exc_info)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\util\compat.py", line 398, in raise_from_cause
+    reraise(type(exception), exception, tb=exc_tb, cause=cause)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\util\compat.py", line 152, in reraise
+    raise value.with_traceback(tb)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1245, in _execute_context
+    self.dialect.do_execute(
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\default.py", line 581, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) no such table: department
+[SQL: SELECT department.id AS department_id, department.name AS department_name 
+FROM department]
+(Background on this error at: http://sqlalche.me/e/e3q8)
+2020-02-20 14:13:49,956 - service.crud - DEBUG - List of employees was returned
+2020-02-20 14:13:49,956 - rest.api - ERROR - Exception on /api/employees [GET]
+Traceback (most recent call last):
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1245, in _execute_context
+    self.dialect.do_execute(
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\default.py", line 581, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.OperationalError: no such table: employee
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "E:\GraduationWork\DepartmentHandler\department-app\rest\api.py", line 179, in get
+    employees = crud.Employees.get_all()
+  File "E:\GraduationWork\DepartmentHandler\department-app\service\crud.py", line 125, in get_all
+    :rtype: list
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\query.py", line 3211, in all
+    return list(self)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\query.py", line 3367, in __iter__
+    return self._execute_and_instances(context)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\query.py", line 3392, in _execute_and_instances
+    result = conn.execute(querycontext.statement, self._params)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 982, in execute
+    return meth(self, multiparams, params)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\sql\elements.py", line 287, in _execute_on_connection
+    return connection._execute_clauseelement(self, multiparams, params)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1095, in _execute_clauseelement
+    ret = self._execute_context(
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1249, in _execute_context
+    self._handle_dbapi_exception(
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1476, in _handle_dbapi_exception
+    util.raise_from_cause(sqlalchemy_exception, exc_info)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\util\compat.py", line 398, in raise_from_cause
+    reraise(type(exception), exception, tb=exc_tb, cause=cause)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\util\compat.py", line 152, in reraise
+    raise value.with_traceback(tb)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1245, in _execute_context
+    self.dialect.do_execute(
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\default.py", line 581, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) no such table: employee
+[SQL: SELECT employee.id AS employee_id, employee.name AS employee_name, employee.department_id AS employee_department_id, employee.date_of_birthday AS employee_date_of_birthday, employee.salary AS employee_salary 
+FROM employee]
+(Background on this error at: http://sqlalche.me/e/e3q8)
+2020-02-20 14:13:58,954 - rest.api - ERROR - Exception on /api/departments [GET]
+Traceback (most recent call last):
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1245, in _execute_context
+    self.dialect.do_execute(
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\default.py", line 581, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.OperationalError: no such table: department
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "E:\GraduationWork\DepartmentHandler\department-app\rest\api.py", line 49, in get
+    data = crud.Departments.get_all()
+  File "E:\GraduationWork\DepartmentHandler\department-app\service\crud.py", line 32, in get_all
+    departments = Department.query.all()
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\query.py", line 3211, in all
+    return list(self)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\query.py", line 3367, in __iter__
+    return self._execute_and_instances(context)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\query.py", line 3392, in _execute_and_instances
+    result = conn.execute(querycontext.statement, self._params)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 982, in execute
+    return meth(self, multiparams, params)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\sql\elements.py", line 287, in _execute_on_connection
+    return connection._execute_clauseelement(self, multiparams, params)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1095, in _execute_clauseelement
+    ret = self._execute_context(
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1249, in _execute_context
+    self._handle_dbapi_exception(
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1476, in _handle_dbapi_exception
+    util.raise_from_cause(sqlalchemy_exception, exc_info)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\util\compat.py", line 398, in raise_from_cause
+    reraise(type(exception), exception, tb=exc_tb, cause=cause)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\util\compat.py", line 152, in reraise
+    raise value.with_traceback(tb)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1245, in _execute_context
+    self.dialect.do_execute(
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\default.py", line 581, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) no such table: department
+[SQL: SELECT department.id AS department_id, department.name AS department_name 
+FROM department]
+(Background on this error at: http://sqlalche.me/e/e3q8)
+2020-02-20 14:22:06,904 - rest.api - INFO - Web-service started
+2020-02-20 14:22:20,249 - service.crud - DEBUG - Department 10001 was returned
+2020-02-20 14:28:06,199 - rest.api - INFO - Web-service started
+2020-02-20 14:28:33,404 - service.crud - DEBUG - List of department was returned
+2020-02-20 14:33:28,614 - rest.api - INFO - Web-service started
+2020-02-20 14:33:40,125 - service.crud - DEBUG - Employee was updated
+2020-02-20 14:36:53,194 - rest.api - INFO - Web-service started
+2020-02-20 14:37:11,584 - service.crud - DEBUG - List of department was returned
+2020-02-20 14:37:34,634 - rest.api - INFO - Web-service started
+2020-02-20 14:37:44,125 - service.crud - DEBUG - Department 10001 was updated
+2020-02-20 17:13:47,463 - rest.api - INFO - Web-service started
+2020-02-20 17:20:00,033 - rest.api - INFO - Web-service started
+2020-02-20 17:20:08,020 - rest.api - INFO - Web-service started
+2020-02-20 17:23:48,497 - rest.api - INFO - Web-service started
+2020-02-20 17:24:24,503 - rest.api - INFO - Web-service started
+2020-02-20 17:24:30,374 - service.crud - DEBUG - Department 10002 was added
+2020-02-20 17:28:01,143 - rest.api - INFO - Web-service started
+2020-02-20 17:29:34,283 - rest.api - INFO - Web-service started
+2020-02-20 17:30:19,644 - rest.api - INFO - Web-service started
+2020-02-20 17:30:22,627 - service.crud - DEBUG - Department 10001 was updated
+2020-02-20 17:30:30,344 - rest.api - INFO - Web-service started
+2020-02-20 17:30:33,354 - service.crud - DEBUG - Department 10002 was added
+2020-02-20 17:30:36,575 - service.crud - DEBUG - Department 10001 was deleted
+2020-02-20 17:30:36,714 - service.crud - DEBUG - Department 10001 is not exist
+2020-02-20 17:30:39,954 - service.crud - DEBUG - Department 10001 was returned
+2020-02-20 17:30:43,395 - service.crud - DEBUG - List of department was returned
+2020-02-20 17:30:46,534 - service.crud - DEBUG - Department 10001 was updated
+2020-02-20 17:32:03,767 - rest.api - INFO - Web-service started
+2020-02-20 17:32:10,735 - service.crud - DEBUG - Employee was added
+2020-02-20 17:32:17,106 - service.crud - DEBUG - Employee 1 is not exist
+2020-02-20 17:32:25,764 - service.crud - DEBUG - Employee 1 was returned
+2020-02-20 17:32:29,874 - service.crud - DEBUG - List of employees was returned
+2020-02-20 17:32:36,604 - service.crud - DEBUG - Filtered by dates list of employees was returned
+2020-02-20 17:32:36,903 - service.crud - DEBUG - Filtered by dates list of employees was returned
+2020-02-20 17:32:43,779 - service.crud - DEBUG - Employee was updated

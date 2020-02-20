@@ -15,7 +15,7 @@ class Department(db.Model):
         :return: result of comparing
         :rtype: bool
         """
-        if (self.id == other.id) and (self.employees == other.employees):
+        if (self.id == other.id) and (self.name == other.name) and (self.employees == other.employees):
             return True
         return False
 
@@ -23,4 +23,4 @@ class Department(db.Model):
         return self.id
 
     def __repr__(self):
-        return f'<Department id={self.id}>'
+        return f'<Department id={self.id} + {self.name} + {self.employees}>'

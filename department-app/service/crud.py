@@ -52,16 +52,17 @@ class Departments:
         return department
 
     @staticmethod
-    def add(dep_id):
+    def add(dep_id, name):
         """
         Adds new department
 
         :param dep_id: The unique number of department
+        :param name: Department`s name
         :return: New department that has been added
         :rtype: Department
         """
         try:
-            department = Department(id=dep_id)
+            department = Department(id=dep_id, name=name)
         except:
             logger.debug(f'Department {dep_id} is exist, it can`t be added')
             raise AttributeError
@@ -71,12 +72,13 @@ class Departments:
         return department
 
     @staticmethod
-    def update(dep_id, new_id):
+    def update(dep_id, new_id, new_name):
         """
         Updates the department
 
         :param int dep_id: The number of department which is changed
         :param int new_id: A new number of department
+        :param str new_name: A new department`s name
         :return: modified department
         """
         department = Department.query.filter_by(id=dep_id).first()
@@ -85,6 +87,7 @@ class Departments:
             raise AttributeError
         try:
             department.id = new_id
+            department.name = new_name
         except:
             logger.debug(f'Incorrect data. Department {dep_id} can`t be updated')
             raise ValueError
