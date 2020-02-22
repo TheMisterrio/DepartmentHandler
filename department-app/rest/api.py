@@ -14,6 +14,7 @@ db = SQLAlchemy(app)
 api = Api(app)
 parser_for_department = reqparse.RequestParser()
 parser_for_department.add_argument('dep_id')
+parser_for_department.add_argument('name')
 parser_for_employee = reqparse.RequestParser()
 parser_for_employee.add_argument('name')
 parser_for_employee.add_argument('department_id')
@@ -42,32 +43,32 @@ class Departments(Resource):
     def get(self):
         """
         GET method which returns list of departments
-        :return: department`s ids` list and employees` list
+        :return: department`s list
         :rtype: JSON
         """
         from service import crud
         data = crud.Departments.get_all()
         departments = data[0]
         avg_salaries = data[1]
-        ids = []
-        employees = []
-        salaries = []
+        departments_json = {'departments': []}
         for i in range(0, len(departments)):
-            ids.append(departments[i].id)
-            employees_list = []
+            departments_json['departments'].append({})
+            departments_json['departments'][i]['id'] = departments[i].id
+            departments_json['departments'][i]['name'] = departments[i].name
+            employees = []
             for employee in departments[i].employees:
-                employees_list.append(employee.name)
-            employees.append(employees_list)
+                employees.append(employee.name)
+            departments_json['departments'][i]['employees'] = employees
             for salary in avg_salaries:
                 # salary relates department
                 if departments[i].id == salary[1]:
-                    salaries.append(str(salary[0])[:-2])
+                    departments_json['departments'][i]['salary'] = str(salary[0])[:-2]
                     avg_salaries.remove(salary)
                     break
             else:
-                salaries.append('...')
+                departments_json['departments'][i]['salary'] = '...'
         logger.debug('GET method (/api/departments) was successful')
-        return {'ids': ids, 'employees': employees, 'salaries': salaries}
+        return departments_json
 
 
 class DepartmentsIds(Resource):
@@ -108,19 +109,19 @@ class Department(Resource):
         for employee in department.employees:
             employees.append(employee.name)
         logger.debug(f'GET method (/api/department/{dep_id}) was successful')
-        return {'id': department.id, 'employees': employees}
+        return {'id': department.id, 'name': department.name, 'employees': employees}
 
     def put(self, dep_id):
         """
         PUT method that receives new department`s id and updates it
         :param int dep_id: department`s id which is used to find department
-        :return: new department`s id
+        :return: changed department
         :rtype: JSON
         """
         from service import crud
         data = parser_for_department.parse_args()
         try:
-            crud.Departments.update(dep_id, data['dep_id'])
+            crud.Departments.update(dep_id, data['dep_id'], data['name'])
         except AttributeError:
             logger.debug(f'PUT method (/api/department/{dep_id}) was not successful (404)')
             return {'error': 'department not found'}, 404
@@ -128,7 +129,7 @@ class Department(Resource):
             logger.debug(f'PUT method (/api/department/{dep_id}) was not successful (400)')
             return {'error': 'data incorrect'}, 400
         logger.debug(f'PUT method (/api/department/{dep_id}) was successful')
-        return {'id': data['dep_id']}, 201
+        return {'id': data['dep_id'], 'name': data['name']}, 201
 
     def delete(self, dep_id):
         """
@@ -152,18 +153,18 @@ class AddDepartment(Resource):
     def post(self):
         """
         POST method that receives data and adds new department
-        :return: department`s id which has been added
+        :return: department`s id and name which have been added
         :rtype: JSON
         """
         from service import crud
         data = parser_for_department.parse_args()
         try:
-            crud.Departments.add(data['dep_id'])
+            crud.Departments.add(data['dep_id'], data['name'])
         except:
             logger.debug(f'POST method (/api/department) was not successful (400)')
             return {'error': 'incorrect data'}, 400
         logger.debug(f'POST method (/api/department) was successful')
-        return {'id': data['dep_id']}, 201
+        return {'id': data['dep_id'], 'name': data['name']}, 201
 
 
 class Employees(Resource):
@@ -177,20 +178,16 @@ class Employees(Resource):
         """
         from service import crud
         employees = crud.Employees.get_all()
-        ids = []
-        names = []
-        departments = []
-        dates_of_birthday = []
-        salaries = []
-        for employee in employees:
-            ids.append(employee.id)
-            names.append(employee.name)
-            departments.append(employee.department_id)
-            dates_of_birthday.append(str(employee.date_of_birthday))
-            salaries.append(str(employee.salary))
+        employees_json = {'employees': []}
+        for i in range(0, len(employees)):
+            employees_json['employees'].append({})
+            employees_json['employees'][i]['id'] = employees[i].id
+            employees_json['employees'][i]['name'] = employees[i].name
+            employees_json['employees'][i]['department'] = employees[i].department_id
+            employees_json['employees'][i]['date_of_birthday'] = str(employees[i].date_of_birthday)
+            employees_json['employees'][i]['salary'] = str(employees[i].salary)
         logger.debug(f'GET method (/api/employees) was successful')
-        return {'ids': ids, 'names': names, 'departments': departments,
-                'dates_of_birthday': dates_of_birthday, 'salaries': salaries}
+        return employees_json
 
     def post(self):
         """
@@ -206,20 +203,16 @@ class Employees(Resource):
         if data['date_from'] is None or data['date_by'] == '':
             data['date_from'] = ''
         employees = crud.Employees.get_by_date(data['date_from'], data['date_by'])
-        ids = []
-        names = []
-        departments = []
-        dates_of_birthday = []
-        salaries = []
-        for employee in employees:
-            ids.append(employee.id)
-            names.append(employee.name)
-            departments.append(employee.department_id)
-            dates_of_birthday.append(str(employee.date_of_birthday))
-            salaries.append(str(employee.salary))
+        employees_json = {'employees': []}
+        for i in range(0, len(employees)):
+            employees_json['employees'].append({})
+            employees_json['employees'][i]['id'] = employees[i].id
+            employees_json['employees'][i]['name'] = employees[i].name
+            employees_json['employees'][i]['department'] = employees[i].department_id
+            employees_json['employees'][i]['date_of_birthday'] = str(employees[i].date_of_birthday)
+            employees_json['employees'][i]['salary'] = str(employees[i].salary)
         logger.debug(f'POST method (/api/employees) was successful')
-        return {'ids': ids, 'names': names, 'departments': departments,
-                'dates_of_birthday': dates_of_birthday, 'salaries': salaries}
+        return employees_json
 
 
 class Employee(Resource):

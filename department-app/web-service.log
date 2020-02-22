@@ -511,3 +511,123 @@ FROM department]
 2020-02-20 17:32:36,604 - service.crud - DEBUG - Filtered by dates list of employees was returned
 2020-02-20 17:32:36,903 - service.crud - DEBUG - Filtered by dates list of employees was returned
 2020-02-20 17:32:43,779 - service.crud - DEBUG - Employee was updated
+2020-02-20 17:51:30,657 - rest.api - INFO - Web-service started
+2020-02-20 17:52:53,290 - rest.api - INFO - Web-service started
+2020-02-20 17:52:57,263 - rest.api - DEBUG - POST method (/api/department) was not successful (400)
+2020-02-20 17:53:38,835 - rest.api - INFO - Web-service started
+2020-02-20 17:54:03,081 - rest.api - INFO - Web-service started
+2020-02-20 17:54:06,975 - service.crud - DEBUG - List of employees was returned
+2020-02-20 17:54:07,144 - rest.api - DEBUG - GET method (/api/employees) was successful
+2020-02-20 17:54:19,718 - rest.api - INFO - Web-service started
+2020-02-20 17:54:35,409 - rest.api - INFO - Web-service started
+2020-02-20 17:54:39,528 - service.crud - DEBUG - List of department was returned
+2020-02-20 17:56:06,104 - rest.api - INFO - Web-service started
+2020-02-20 17:56:09,750 - service.crud - DEBUG - List of department was returned
+2020-02-20 17:56:09,911 - rest.api - DEBUG - GET method (/api/departments) was successful
+2020-02-20 17:57:59,331 - rest.api - INFO - Web-service started
+2020-02-20 17:58:05,141 - rest.api - INFO - Web-service started
+2020-02-20 17:58:13,890 - rest.api - INFO - Web-service started
+2020-02-20 17:58:25,088 - rest.api - INFO - Web-service started
+2020-02-20 17:58:30,001 - service.crud - DEBUG - List of department was returned
+2020-02-20 17:58:30,309 - rest.api - DEBUG - GET method (/api/departments) was successful
+2020-02-20 17:59:04,878 - rest.api - INFO - Web-service started
+2020-02-20 17:59:10,464 - rest.api - INFO - Web-service started
+2020-02-20 17:59:15,069 - rest.api - INFO - Web-service started
+2020-02-20 17:59:20,821 - service.crud - DEBUG - List of department was returned
+2020-02-20 17:59:20,985 - rest.api - DEBUG - GET method (/api/departments) was successful
+2020-02-20 18:09:55,196 - rest.api - INFO - Web-service started
+2020-02-20 18:09:58,793 - rest.api - DEBUG - POST method (/api/department) was not successful (400)
+2020-02-20 18:10:59,699 - rest.api - INFO - Web-service started
+2020-02-20 18:11:03,507 - service.crud - DEBUG - Department 10002 was added
+2020-02-20 18:11:03,507 - rest.api - DEBUG - POST method (/api/department) was successful
+2020-02-20 18:11:44,411 - rest.api - INFO - Web-service started
+2020-02-20 18:11:48,045 - service.crud - DEBUG - Department 10002 was added
+2020-02-20 18:11:48,045 - rest.api - DEBUG - POST method (/api/department) was successful
+2020-02-20 18:13:16,626 - rest.api - INFO - Web-service started
+2020-02-20 18:13:23,007 - service.crud - DEBUG - Department 10002 was added
+2020-02-20 18:13:23,008 - rest.api - DEBUG - POST method (/api/department) was successful
+2020-02-20 18:13:30,413 - rest.api - INFO - Web-service started
+2020-02-20 18:13:34,568 - rest.api - DEBUG - POST method (/api/department) was not successful (400)
+2020-02-20 18:13:34,979 - service.crud - DEBUG - Department some string was added
+2020-02-20 18:13:34,979 - rest.api - DEBUG - POST method (/api/department) was successful
+2020-02-20 18:24:11,507 - rest.api - INFO - Web-service started
+2020-02-20 18:24:30,154 - rest.api - INFO - Web-service started
+2020-02-20 18:24:34,741 - rest.api - INFO - Web-service started
+2020-02-20 18:24:51,800 - rest.api - INFO - Web-service started
+2020-02-20 18:24:56,257 - rest.api - INFO - Web-service started
+2020-02-20 18:25:02,411 - service.crud - DEBUG - Department 10001 was returned
+2020-02-20 18:25:02,574 - rest.api - DEBUG - GET method (/api/department/10001) was successful
+2020-02-20 18:25:15,535 - rest.api - INFO - Web-service started
+2020-02-20 18:25:18,426 - service.crud - DEBUG - Department 10005 is not exist
+2020-02-20 18:25:18,426 - rest.api - DEBUG - GET method (/api/department/10005) was not successful (404)
+2020-02-20 18:28:02,700 - rest.api - INFO - Web-service started
+2020-02-20 18:28:06,538 - service.crud - DEBUG - Department 10001 was updated
+2020-02-20 18:28:07,576 - rest.api - DEBUG - PUT method (/api/department/10001) was successful
+2020-02-20 18:29:11,920 - rest.api - INFO - Web-service started
+2020-02-20 18:29:16,379 - service.crud - DEBUG - Department 10005 is not exist, it can`t be updated
+2020-02-20 18:29:16,379 - rest.api - DEBUG - PUT method (/api/department/10005) was not successful (404)
+2020-02-20 22:02:12,309 - rest.api - INFO - Web-service started
+2020-02-20 22:02:16,325 - service.crud - DEBUG - List of employees was returned
+2020-02-20 22:02:16,506 - rest.api - DEBUG - GET method (/api/employees) was successful
+2020-02-20 22:07:53,284 - rest.api - INFO - Web-service started
+2020-02-20 22:07:56,629 - service.crud - DEBUG - Filtered by dates list of employees was returned
+2020-02-20 22:08:58,334 - rest.api - INFO - Web-service started
+2020-02-20 22:09:08,181 - rest.api - INFO - Web-service started
+2020-02-20 22:09:11,642 - service.crud - DEBUG - Filtered by dates list of employees was returned
+2020-02-20 22:09:31,216 - rest.api - INFO - Web-service started
+2020-02-20 22:09:36,654 - service.crud - DEBUG - Filtered by dates list of employees was returned
+2020-02-20 22:10:41,759 - rest.api - INFO - Web-service started
+2020-02-20 22:10:44,603 - service.crud - DEBUG - Filtered by dates list of employees was returned
+2020-02-20 22:10:44,746 - rest.api - DEBUG - POST method (/api/employees) was successful
+2020-02-20 22:10:44,798 - service.crud - DEBUG - Filtered by dates list of employees was returned
+2020-02-20 22:10:44,940 - rest.api - DEBUG - POST method (/api/employees) was successful
+2020-02-20 22:11:08,086 - rest.api - INFO - Web-service started
+2020-02-20 22:11:11,511 - service.crud - DEBUG - Filtered by dates list of employees was returned
+2020-02-20 22:11:11,800 - rest.api - DEBUG - POST method (/api/employees) was successful
+2020-02-20 22:11:11,860 - service.crud - DEBUG - Filtered by dates list of employees was returned
+2020-02-20 22:11:12,028 - rest.api - DEBUG - POST method (/api/employees) was successful
+2020-02-20 22:14:51,753 - rest.api - INFO - Web-service started
+2020-02-20 22:14:55,104 - service.crud - DEBUG - Filtered by dates list of employees was returned
+2020-02-20 22:14:55,273 - rest.api - DEBUG - POST method (/api/employees) was successful
+2020-02-20 22:14:55,327 - service.crud - DEBUG - Filtered by dates list of employees was returned
+2020-02-20 22:14:55,495 - rest.api - DEBUG - POST method (/api/employees) was successful
+2020-02-20 22:15:33,197 - rest.api - INFO - Web-service started
+2020-02-20 22:15:35,884 - service.crud - DEBUG - Filtered by dates list of employees was returned
+2020-02-20 22:15:36,019 - rest.api - DEBUG - POST method (/api/employees) was successful
+2020-02-20 22:15:36,069 - service.crud - DEBUG - Filtered by dates list of employees was returned
+2020-02-20 22:15:36,202 - rest.api - DEBUG - POST method (/api/employees) was successful
+2020-02-20 22:15:36,253 - service.crud - DEBUG - Filtered by dates list of employees was returned
+2020-02-20 22:15:36,390 - rest.api - DEBUG - POST method (/api/employees) was successful
+2020-02-20 22:17:19,764 - rest.api - INFO - Web-service started
+2020-02-20 22:17:24,421 - rest.api - INFO - Web-service started
+2020-02-20 22:17:29,561 - service.crud - DEBUG - Employee was added
+2020-02-20 22:17:29,716 - rest.api - DEBUG - POST method (/api/employee) was successful
+2020-02-20 22:17:32,497 - service.crud - DEBUG - Department isn`t exist. Employee can`t be added
+2020-02-20 22:17:32,497 - rest.api - DEBUG - POST method (/api/employee) was not successful (400)
+2020-02-20 22:17:59,157 - rest.api - INFO - Web-service started
+2020-02-20 22:18:04,601 - service.crud - DEBUG - Employee isn`t exist. It can`t be deleted
+2020-02-20 22:18:04,601 - rest.api - DEBUG - DELETE method (/api/employee/5) was not successful (404)
+2020-02-20 22:18:07,840 - service.crud - DEBUG - Employee 1 was returned
+2020-02-20 22:18:07,840 - rest.api - DEBUG - GET method (/api/employee/1) was successful
+2020-02-20 22:18:12,441 - service.crud - DEBUG - Employee 3 is not exist
+2020-02-20 22:18:12,442 - rest.api - DEBUG - GET method (/api/employee/3) was not successful (404)
+2020-02-20 22:18:17,490 - service.crud - DEBUG - Employee was updated
+2020-02-20 22:18:17,491 - rest.api - DEBUG - PUT method (/api/employee/1) was successful
+2020-02-20 22:18:21,565 - service.crud - DEBUG - Incorrect data. Employee can`t be updated
+2020-02-20 22:18:21,565 - rest.api - DEBUG - PUT method (/api/employee/1) was not successful (400)
+2020-02-20 22:18:21,791 - service.crud - DEBUG - Employee isn`t exist
+2020-02-20 22:18:21,792 - rest.api - DEBUG - PUT method (/api/employee/5) was not successful (404)
+2020-02-20 22:18:37,281 - rest.api - INFO - Web-service started
+2020-02-20 22:18:41,952 - rest.api - DEBUG - DELETE method (/api/employee/1) was successful
+2020-02-20 22:18:45,035 - service.crud - DEBUG - Employee isn`t exist. It can`t be deleted
+2020-02-20 22:18:45,036 - rest.api - DEBUG - DELETE method (/api/employee/5) was not successful (404)
+2020-02-20 22:18:48,641 - service.crud - DEBUG - Employee 1 was returned
+2020-02-20 22:18:48,641 - rest.api - DEBUG - GET method (/api/employee/1) was successful
+2020-02-20 22:18:52,187 - service.crud - DEBUG - Employee 3 is not exist
+2020-02-20 22:18:52,187 - rest.api - DEBUG - GET method (/api/employee/3) was not successful (404)
+2020-02-20 22:18:55,833 - service.crud - DEBUG - Employee was updated
+2020-02-20 22:18:55,833 - rest.api - DEBUG - PUT method (/api/employee/1) was successful
+2020-02-20 22:19:00,482 - service.crud - DEBUG - Incorrect data. Employee can`t be updated
+2020-02-20 22:19:00,483 - rest.api - DEBUG - PUT method (/api/employee/1) was not successful (400)
+2020-02-20 22:19:00,864 - service.crud - DEBUG - Employee isn`t exist
+2020-02-20 22:19:00,864 - rest.api - DEBUG - PUT method (/api/employee/5) was not successful (404)
