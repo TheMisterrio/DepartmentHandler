@@ -159,7 +159,8 @@ def add_employee():
                             'date_of_birthday': date_of_birthday, 'salary': salary})
         logger.debug('Employee`s data was sent to server (add)')
         return redirect('/employees')
-    ids = requests.get('http://127.0.0.1:5000/api/departments-ids').json()['ids']
+    #ids = requests.get('http://127.0.0.1:5000/api/departments-ids').json()
+    ids = [10001, 10002]
     logger.debug('Employee page was displayed')
     return render_template('add_employee.html', ids=ids)
 
