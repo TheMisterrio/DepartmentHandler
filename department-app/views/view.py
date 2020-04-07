@@ -2,6 +2,7 @@
 import requests
 from flask import render_template, request, redirect
 from app import app, logger
+from config import ip
 
 
 @app.route('/')
@@ -22,7 +23,7 @@ def departments():
 
     :return: HTML page ('departments.html') with departments list
     """
-    departments_list = requests.get('http://127.0.0.1:5000/api/departments').json()
+    departments_list = requests.get(ip + '/api/departments').json()
     logger.debug('Departments page was displayed with list of departments')
     return render_template('departments.html', departments_list=departments_list)
 
@@ -39,13 +40,15 @@ def department(dep_id):
     page after updating
     """
     if request.method == 'POST':
-        new_id = request.form.get('department_id', '')
-        url = 'http://127.0.0.1:5000/api/department/' + dep_id
-        requests.put(url, data={'dep_id': new_id})
+        new_id = request.form.get('dep_id', '')
+        new_name = request.form.get('name', '')
+        url = ip + '/api/department/' + dep_id
+        requests.put(url, data={'dep_id': new_id, 'name': new_name})
         logger.debug('Information about department was sent to server (update)')
         return redirect('/departments')
+    dep = requests.get(ip + '/api/department/' + dep_id).json()
     logger.debug('Department page was displayed')
-    return render_template('department.html', dep_id=dep_id)
+    return render_template('department.html', dep=dep)
 
 
 @app.route('/department', methods=['GET', 'POST'])
@@ -60,7 +63,7 @@ def add_department():
     """
     if request.method == 'POST':
         dep_id = request.form.get('department_id', '')
-        requests.post('http://127.0.0.1:5000/api/department', data={'dep_id': dep_id})
+        requests.post(ip + '/api/department', data={'dep_id': dep_id})
         logger.debug('Information about new department was sent to server (add)')
         return redirect('/departments')
     logger.debug('Department page was displayed')
@@ -75,7 +78,7 @@ def del_department(dep_id):
     :param str dep_id: department`s id which is used to find department
     :return: redirect to departments page (/departments)
     """
-    url = 'http://127.0.0.1:5000/api/department/' + dep_id
+    url = ip + '/api/department/' + dep_id
     requests.delete(url)
     logger.debug('Department`s id was sent to server (delete)')
     return redirect('/departments')
@@ -96,11 +99,11 @@ def employees():
         date_from = request.form.get('date_from', '')
         date_by = request.form.get('date_by', '')
         logger.debug('Dates was received and sent to server')
-        employees_list = requests.post('http://127.0.0.1:5000/api/employees',
+        employees_list = requests.post(ip + '/api/employees',
                                        data={'date_from': date_from, 'date_by': date_by}).json()
         dates = [date_from, date_by]
     else:
-        employees_list = requests.get('http://127.0.0.1:5000/api/employees').json()
+        employees_list = requests.get(ip + '/api/employees').json()
         dates = None
     logger.debug('Employees page was displayed')
     return render_template('employees.html', employees_list=employees_list, dates=dates)
@@ -120,10 +123,10 @@ def employee(employee_id):
     :return: GET: HTML page with information about employees that can be changed
     :return: POST: redirect to employees page after updating
     """
-    url = 'http://127.0.0.1:5000/api/employee/' + employee_id
+    url = ip + '/api/employee/' + employee_id
     if request.method == 'POST':
         name = request.form.get('name', '')
-        department_id = request.form.get('department_id', 'None')
+        department_id = request.form.get('department', 'None')
         date_of_birthday = request.form.get('date_of_birthday', '')
         salary = request.form.get('salary', '')
         requests.put(url, data={'name': name, 'department_id': int(department_id),
@@ -131,7 +134,7 @@ def employee(employee_id):
         logger.debug('Employee`s data was sent to server (update)')
         return redirect('/employees')
     employee_data = requests.get(url).json()
-    ids = requests.get('http://127.0.0.1:5000/api/departments-ids').json()['ids']
+    ids = requests.get(ip + '/api/departments-ids').json()['ids']
     logger.debug(employee_data)
     logger.debug('Employee page was displayed')
     return render_template('employee.html', employee_data=employee_data, ids=ids)
@@ -154,15 +157,14 @@ def add_employee():
         department_id = request.form.get('department_id', 'None')
         date_of_birthday = request.form.get('date_of_birthday', '')
         salary = request.form.get('salary', '')
-        requests.post('http://127.0.0.1:5000/api/employee',
+        requests.post(ip + '/api/employee',
                       data={'name': name, 'department_id': department_id,
                             'date_of_birthday': date_of_birthday, 'salary': salary})
         logger.debug('Employee`s data was sent to server (add)')
         return redirect('/employees')
-    #ids = requests.get('http://127.0.0.1:5000/api/departments-ids').json()
-    ids = [10001, 10002]
+    ids = requests.get(ip + '/api/departments-ids').json()
     logger.debug('Employee page was displayed')
-    return render_template('add_employee.html', ids=ids)
+    return render_template('add_employee.html', ids=ids['ids'])
 
 
 @app.route('/del-employee/<employee_id>')
@@ -173,7 +175,7 @@ def del_employee(employee_id):
     :param str employee_id: employee`s id which is used to find employee
     :return: redirect to employees page
     """
-    url = 'http://127.0.0.1:5000/api/employee/' + employee_id
+    url = ip + '/api/employee/' + employee_id
     requests.delete(url)
     logger.debug('Employee`s id was sent to server (delete)')
     return redirect('/employees')

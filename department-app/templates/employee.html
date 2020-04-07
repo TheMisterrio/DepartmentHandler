@@ -1,0 +1,47 @@
+{% extends 'index.html' %}
+{% block content %}
+<div class="col-sm-3"></div>
+<div class="text-center col-sm-6">
+<div class="card">
+  <div class="card-header">
+    Employee
+  </div>
+  <div class="card-body text-left">
+<form action="{{url_for('employee', employee_id=employee_data['id'])}}" method="post">
+  <div class="form-group">
+    <label for="name">Full name</label>
+    <input name="name" type="text" value="{{employee_data['name']}}" placeholder="Name Surname" class="form-control" id="name">
+  </div>
+    <div class="form-group">
+        <label for="department">Department</label>
+        <select name="department" class="custom-select" id="department">
+          {% for dep_id in ids %}
+            {% if dep_id == employee_data['department_id'] %}
+            <option selected="selected" value="{{dep_id}}">{{dep_id}}</option>
+          {% else %}
+            <option value="{{dep_id}}">{{dep_id}}</option>
+          {% endif %}
+          {% endfor %}
+        </select>
+  </div>
+    <div class="form-group">
+    <label for="birthday">Date of birthday</label>
+    <input name="date_of_birthday" type="date" value="{{employee_data['date_of_birthday']}}" class="form-control" id="date_of_birthday">
+  </div>
+  <div class="form-group">
+    <label for="salary">Salary</label>
+    <input type="number" name="salary" value="{{employee_data['salary']}}" class="form-control" id="salary">
+  </div>
+    <div class="text-center">
+  <input type="submit" value="Submit" class="btn btn-primary">
+    <a href="{{url_for('employees')}}" class="btn btn-danger">Cancel</a>
+    </div>
+</form>
+  </div>
+  <div class="card-footer text-muted">
+    2 days ago
+  </div>
+</div>
+</div>
+<div class="col-sm-3"></div>
+{% endblock %}

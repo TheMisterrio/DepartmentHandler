@@ -3,14 +3,14 @@
 <div class="title_block col-md-12 h3 text-center mt-2 mb-3">Employees</div>
 <div class="col-md-12 mb-3 row">
     <div class="col-md-2"></div>
-    <form action="" class="form-inline col-md-7 row">
+    <form action="{{url_for('employees')}}" method="post" class="form-inline col-md-7 row">
             <div class="col-md-12 col-sm-12 col-lg-6 col-xl-5 row">
                 <label for="date_from" class="col-sm-5">date from:</label>
-                <input id="date_from" type="date" class="date col-sm-7">
+                <input name="date_from" id="date_from" type="date" class="date col-sm-7">
             </div>
             <div class="col-md-12 col-sm-12 col-lg-6 col-xl-5 row">
                 <label for="date_by" class="col-sm-5">date from:</label>
-                <input id="date_by" type="date" class="date col-sm-7">
+                <input id="date_by" name="date_by" type="date" class="date col-sm-7">
             </div>
         <button type="submit" class="btn btn-outline-success ml-2 mt-lg-0 mb-lg-0 mt-sm-2 mb-sm-2" style="padding: 0">
             <svg class="bi bi-arrow-clockwise" width="1.9em" height="1.9em" viewBox="0 0 20 20"
@@ -24,11 +24,6 @@
             </svg>
         </button>
     </form>
-    <form class="form-inline col-md-3">
-        <input class="form-control mr-sm-2 form-control-sm" type="search" placeholder="Search"
-               aria-label="Search">
-        <button class="btn btn-outline-success btn-sm my-2 my-sm-0" type="submit">Search</button>
-    </form>
 </div>
 <table class="table text table-bordered text-center table-responsive-md" style="table-layout: fixed">
     <thead>
@@ -37,17 +32,18 @@
         <th class="">Department</th>
         <th class="">Date of birthday</th>
         <th class="">Salary</th>
-        <th class="">Options</th>
+        <th class="">Options <a class="btn btn-outline-warning ml-2" href="{{url_for('add_employee')}}">ADD</a></th>
     </tr>
     </thead>
     <tbody>
+    {% for employee in employees_list['employees'] %}
     <tr>
-        <td>Lorem</td>
-        <td>Lorem</td>
-        <td>Lorem</td>
-        <td>Lorem</td>
+        <td>{{employee['name']}}</td>
+        <td>{{employee['department']}}</td>
+        <td>{{employee['date_of_birthday']}}</td>
+        <td>{{employee['salary']}}</td>
         <td>
-            <a href="{{url_for('add_employee')}}" class="btn btn-outline-warning btn-sm">
+            <a href="{{url_for('employee', employee_id=employee['id'])}}" class="btn btn-outline-warning btn-sm">
                 <svg class="bi bi-pencil" width="2em" height="2em" viewBox="0 0 20 20"
                      fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd"
@@ -58,7 +54,7 @@
                           clip-rule="evenodd"></path>
                 </svg>
             </a>
-            <a href="#" class="btn btn-outline-warning btn-sm">
+            <a href="{{url_for('del_employee', employee_id=employee['id'])}}" class="btn btn-outline-warning btn-sm">
                 <svg class="bi bi-trash" width="2em" height="2em" viewBox="0 0 20 20"
                      fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                     <path d="M7.5 7.5A.5.5 0 018 8v6a.5.5 0 01-1 0V8a.5.5 0 01.5-.5zm2.5 0a.5.5 0 01.5.5v6a.5.5 0 01-1 0V8a.5.5 0 01.5-.5zm3 .5a.5.5 0 00-1 0v6a.5.5 0 001 0V8z"></path>
@@ -69,6 +65,7 @@
             </a>
         </td>
     </tr>
+    {% endfor %}
     </tbody>
 </table>
 {% endblock %}

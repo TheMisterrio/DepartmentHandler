@@ -2261,3 +2261,2023 @@ sqlalchemy.exc.ProgrammingError: (mysql.connector.errors.ProgrammingError) 1146 
 [SQL: SELECT department.id AS department_id, department.name AS department_name 
 FROM department]
 (Background on this error at: http://sqlalche.me/e/f405)
+2020-02-23 11:44:50,012 - rest.api - INFO - Web-service started
+2020-02-23 11:45:43,411 - rest.api - INFO - Web-service started
+2020-02-23 11:47:06,811 - rest.api - INFO - Web-service started
+2020-02-23 11:49:40,645 - rest.api - INFO - Web-service started
+2020-02-23 11:51:24,794 - rest.api - INFO - Web-service started
+2020-02-23 11:51:46,607 - service.crud - DEBUG - List of department was returned
+2020-02-23 11:51:46,907 - rest.api - DEBUG - GET method (/api/departments) was successful
+2020-02-23 11:51:51,343 - service.crud - DEBUG - List of employees was returned
+2020-02-23 11:51:51,478 - rest.api - DEBUG - GET method (/api/employees) was successful
+2020-02-23 11:51:53,710 - service.crud - DEBUG - List of department was returned
+2020-02-23 11:51:53,710 - rest.api - DEBUG - GET method (/api/departments-ids) was successful
+2020-02-23 11:52:53,089 - service.crud - DEBUG - List of department was returned
+2020-02-23 11:52:53,092 - rest.api - DEBUG - GET method (/api/departments-ids) was successful
+2020-02-23 11:53:51,301 - service.crud - DEBUG - List of department was returned
+2020-02-23 11:53:51,305 - rest.api - DEBUG - GET method (/api/departments-ids) was successful
+2020-02-23 11:53:53,088 - service.crud - DEBUG - List of department was returned
+2020-02-23 11:53:53,088 - rest.api - DEBUG - GET method (/api/departments-ids) was successful
+2020-02-23 11:54:24,481 - service.crud - DEBUG - List of department was returned
+2020-02-23 11:54:24,481 - rest.api - DEBUG - GET method (/api/departments-ids) was successful
+2020-02-23 11:54:32,274 - service.crud - DEBUG - List of department was returned
+2020-02-23 11:54:32,568 - rest.api - DEBUG - GET method (/api/departments) was successful
+2020-02-23 11:58:09,312 - rest.api - INFO - Web-service started
+2020-02-23 11:58:15,890 - service.crud - DEBUG - List of department was returned
+2020-02-23 11:58:16,188 - rest.api - DEBUG - GET method (/api/departments) was successful
+2020-02-23 11:58:17,916 - service.crud - DEBUG - List of employees was returned
+2020-02-23 11:58:18,060 - rest.api - DEBUG - GET method (/api/employees) was successful
+2020-02-23 11:58:20,693 - service.crud - DEBUG - List of department was returned
+2020-02-23 11:58:20,693 - rest.api - DEBUG - GET method (/api/departments-ids) was successful
+2020-02-23 13:35:22,781 - rest.api - INFO - Web-service started
+2020-02-23 13:35:30,140 - service.crud - DEBUG - List of department was returned
+2020-02-23 13:35:30,453 - rest.api - DEBUG - GET method (/api/departments) was successful
+2020-02-23 13:40:31,549 - service.crud - DEBUG - List of department was returned
+2020-02-23 13:40:31,845 - rest.api - DEBUG - GET method (/api/departments) was successful
+2020-02-23 13:40:33,546 - service.crud - DEBUG - List of department was returned
+2020-02-23 13:40:33,873 - rest.api - DEBUG - GET method (/api/departments) was successful
+2020-02-23 13:40:39,561 - rest.api - INFO - Web-service started
+2020-02-23 13:40:44,118 - service.crud - DEBUG - List of department was returned
+2020-02-23 13:40:44,408 - rest.api - DEBUG - GET method (/api/departments) was successful
+2020-02-23 13:48:24,421 - rest.api - INFO - Web-service started
+2020-02-23 13:48:29,661 - service.crud - DEBUG - List of department was returned
+2020-02-23 13:48:29,947 - rest.api - DEBUG - GET method (/api/departments) was successful
+2020-02-23 13:49:35,686 - service.crud - DEBUG - List of department was returned
+2020-02-23 13:49:35,977 - rest.api - DEBUG - GET method (/api/departments) was successful
+2020-02-23 13:49:55,956 - service.crud - DEBUG - List of department was returned
+2020-02-23 13:49:56,252 - rest.api - DEBUG - GET method (/api/departments) was successful
+2020-02-23 13:50:08,222 - service.crud - DEBUG - List of department was returned
+2020-02-23 13:50:08,512 - rest.api - DEBUG - GET method (/api/departments) was successful
+2020-02-23 13:50:35,732 - service.crud - DEBUG - List of department was returned
+2020-02-23 13:50:36,033 - rest.api - DEBUG - GET method (/api/departments) was successful
+2020-02-23 13:50:48,957 - service.crud - DEBUG - List of department was returned
+2020-02-23 13:50:49,257 - rest.api - DEBUG - GET method (/api/departments) was successful
+2020-02-23 13:50:57,036 - service.crud - DEBUG - List of department was returned
+2020-02-23 13:50:57,324 - rest.api - DEBUG - GET method (/api/departments) was successful
+2020-02-23 13:58:28,628 - service.crud - DEBUG - List of department was returned
+2020-02-23 13:58:28,920 - rest.api - DEBUG - GET method (/api/departments) was successful
+2020-02-23 13:59:21,164 - rest.api - INFO - Web-service started
+2020-02-23 13:59:29,079 - service.crud - DEBUG - List of department was returned
+2020-02-23 13:59:29,366 - rest.api - DEBUG - GET method (/api/departments) was successful
+2020-02-23 13:59:31,480 - service.crud - DEBUG - List of department was returned
+2020-02-23 13:59:31,765 - rest.api - DEBUG - GET method (/api/departments) was successful
+2020-02-23 14:00:00,338 - service.crud - DEBUG - Department 10001 was returned
+2020-02-23 14:00:00,394 - rest.api - DEBUG - GET method (/api/department/10001) was successful
+2020-02-23 14:01:20,484 - service.crud - DEBUG - Department 10001 was returned
+2020-02-23 14:01:20,542 - rest.api - DEBUG - GET method (/api/department/10001) was successful
+2020-02-23 14:02:13,526 - service.crud - DEBUG - Department 10001 was returned
+2020-02-23 14:02:13,588 - rest.api - DEBUG - GET method (/api/department/10001) was successful
+2020-02-23 14:02:40,660 - service.crud - DEBUG - Department 10001 was returned
+2020-02-23 14:02:40,718 - rest.api - DEBUG - GET method (/api/department/10001) was successful
+2020-02-23 14:03:00,856 - service.crud - DEBUG - Department 10001 was returned
+2020-02-23 14:03:00,929 - rest.api - DEBUG - GET method (/api/department/10001) was successful
+2020-02-23 14:03:09,283 - service.crud - DEBUG - Department 10001 was returned
+2020-02-23 14:03:09,345 - rest.api - DEBUG - GET method (/api/department/10001) was successful
+2020-02-23 14:03:21,487 - service.crud - DEBUG - Department 10001 was returned
+2020-02-23 14:03:21,545 - rest.api - DEBUG - GET method (/api/department/10001) was successful
+2020-02-23 14:03:37,597 - service.crud - DEBUG - Department 10001 was returned
+2020-02-23 14:03:37,653 - rest.api - DEBUG - GET method (/api/department/10001) was successful
+2020-02-23 14:03:44,299 - service.crud - DEBUG - List of department was returned
+2020-02-23 14:03:44,590 - rest.api - DEBUG - GET method (/api/departments) was successful
+2020-02-23 14:03:47,519 - service.crud - DEBUG - List of department was returned
+2020-02-23 14:03:47,796 - rest.api - DEBUG - GET method (/api/departments) was successful
+2020-02-23 14:05:19,385 - service.crud - DEBUG - List of department was returned
+2020-02-23 14:05:19,662 - rest.api - DEBUG - GET method (/api/departments) was successful
+2020-02-23 14:05:21,292 - service.crud - DEBUG - Department 10001 was returned
+2020-02-23 14:05:21,356 - rest.api - DEBUG - GET method (/api/department/10001) was successful
+2020-02-23 14:05:24,408 - service.crud - DEBUG - Department 10001 was returned
+2020-02-23 14:05:24,463 - rest.api - DEBUG - GET method (/api/department/10001) was successful
+2020-02-23 14:07:54,671 - service.crud - DEBUG - Department 10001 was returned
+2020-02-23 14:07:54,727 - rest.api - DEBUG - GET method (/api/department/10001) was successful
+2020-02-23 14:07:59,587 - service.crud - DEBUG - Department 10001 was returned
+2020-02-23 14:07:59,675 - rest.api - DEBUG - GET method (/api/department/10001) was successful
+2020-02-23 14:09:10,010 - service.crud - DEBUG - Department 10001 was returned
+2020-02-23 14:09:10,068 - rest.api - DEBUG - GET method (/api/department/10001) was successful
+2020-02-23 14:09:15,415 - service.crud - DEBUG - Department 10001 was returned
+2020-02-23 14:09:15,471 - rest.api - DEBUG - GET method (/api/department/10001) was successful
+2020-02-23 14:09:44,663 - service.crud - DEBUG - Department 10001 was returned
+2020-02-23 14:09:44,722 - rest.api - DEBUG - GET method (/api/department/10001) was successful
+2020-02-23 14:09:47,437 - service.crud - DEBUG - Department 10001 was returned
+2020-02-23 14:09:47,493 - rest.api - DEBUG - GET method (/api/department/10001) was successful
+2020-02-23 14:09:50,675 - service.crud - DEBUG - Department 10001 was returned
+2020-02-23 14:09:50,731 - rest.api - DEBUG - GET method (/api/department/10001) was successful
+2020-02-23 14:10:39,443 - service.crud - DEBUG - Department 10001 was returned
+2020-02-23 14:10:39,609 - rest.api - DEBUG - GET method (/api/department/10001) was successful
+2020-02-23 14:10:43,206 - service.crud - DEBUG - Department 10001 was returned
+2020-02-23 14:10:43,262 - rest.api - DEBUG - GET method (/api/department/10001) was successful
+2020-02-23 14:11:59,223 - service.crud - DEBUG - Department 10001 was returned
+2020-02-23 14:11:59,278 - rest.api - DEBUG - GET method (/api/department/10001) was successful
+2020-02-23 14:13:28,156 - service.crud - DEBUG - List of department was returned
+2020-02-23 14:13:28,434 - rest.api - DEBUG - GET method (/api/departments) was successful
+2020-02-23 14:13:31,243 - service.crud - DEBUG - Department 10001 was returned
+2020-02-23 14:13:31,299 - rest.api - DEBUG - GET method (/api/department/10001) was successful
+2020-02-23 14:13:34,839 - service.crud - DEBUG - Department 10001 was updated
+2020-02-23 14:13:34,973 - rest.api - ERROR - Exception on /api/department/10001 [PUT]
+Traceback (most recent call last):
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1245, in _execute_context
+    self.dialect.do_execute(
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\default.py", line 581, in do_execute
+    cursor.execute(statement, parameters)
+psycopg2.errors.InvalidTextRepresentation: invalid input syntax for type integer: ""
+LINE 1: UPDATE department SET id='', name='' WHERE department.id = 1...
+                                 ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "E:\GraduationWork\DepartmentHandler\department-app\rest\api.py", line 124, in put
+    crud.Departments.update(dep_id, data['dep_id'], data['name'])
+  File "E:\GraduationWork\DepartmentHandler\department-app\service\crud.py", line 95, in update
+    db.session.commit()
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\scoping.py", line 162, in do
+    return getattr(self.registry(), name)(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\session.py", line 1027, in commit
+    self.transaction.commit()
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\session.py", line 494, in commit
+    self._prepare_impl()
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\session.py", line 473, in _prepare_impl
+    self.session.flush()
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\session.py", line 2470, in flush
+    self._flush(objects)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\session.py", line 2608, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\util\langhelpers.py", line 68, in __exit__
+    compat.reraise(exc_type, exc_value, exc_tb)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\util\compat.py", line 153, in reraise
+    raise value
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\session.py", line 2568, in _flush
+    flush_context.execute()
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 422, in execute
+    rec.execute(self)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 586, in execute
+    persistence.save_obj(
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\persistence.py", line 230, in save_obj
+    _emit_update_statements(
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\persistence.py", line 995, in _emit_update_statements
+    c = cached_connections[connection].execute(
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 982, in execute
+    return meth(self, multiparams, params)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\sql\elements.py", line 287, in _execute_on_connection
+    return connection._execute_clauseelement(self, multiparams, params)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1095, in _execute_clauseelement
+    ret = self._execute_context(
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1249, in _execute_context
+    self._handle_dbapi_exception(
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1476, in _handle_dbapi_exception
+    util.raise_from_cause(sqlalchemy_exception, exc_info)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\util\compat.py", line 398, in raise_from_cause
+    reraise(type(exception), exception, tb=exc_tb, cause=cause)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\util\compat.py", line 152, in reraise
+    raise value.with_traceback(tb)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1245, in _execute_context
+    self.dialect.do_execute(
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\default.py", line 581, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.DataError: (psycopg2.errors.InvalidTextRepresentation) invalid input syntax for type integer: ""
+LINE 1: UPDATE department SET id='', name='' WHERE department.id = 1...
+                                 ^
+
+[SQL: UPDATE department SET id=%(id)s, name=%(name)s WHERE department.id = %(department_id)s]
+[parameters: {'id': '', 'name': '', 'department_id': 10001}]
+(Background on this error at: http://sqlalche.me/e/9h9h)
+2020-02-23 14:13:35,338 - service.crud - DEBUG - List of department was returned
+2020-02-23 14:13:35,649 - rest.api - DEBUG - GET method (/api/departments) was successful
+2020-02-23 14:13:38,014 - service.crud - DEBUG - List of department was returned
+2020-02-23 14:13:38,300 - rest.api - DEBUG - GET method (/api/departments) was successful
+2020-02-23 14:13:41,607 - service.crud - DEBUG - Department 10005 was returned
+2020-02-23 14:13:41,663 - rest.api - DEBUG - GET method (/api/department/10005) was successful
+2020-02-23 14:13:45,339 - service.crud - DEBUG - Department 10005 was updated
+2020-02-23 14:13:45,467 - rest.api - ERROR - Exception on /api/department/10005 [PUT]
+Traceback (most recent call last):
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1245, in _execute_context
+    self.dialect.do_execute(
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\default.py", line 581, in do_execute
+    cursor.execute(statement, parameters)
+psycopg2.errors.InvalidTextRepresentation: invalid input syntax for type integer: ""
+LINE 1: UPDATE department SET id='', name='' WHERE department.id = 1...
+                                 ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "E:\GraduationWork\DepartmentHandler\department-app\rest\api.py", line 124, in put
+    crud.Departments.update(dep_id, data['dep_id'], data['name'])
+  File "E:\GraduationWork\DepartmentHandler\department-app\service\crud.py", line 95, in update
+    db.session.commit()
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\scoping.py", line 162, in do
+    return getattr(self.registry(), name)(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\session.py", line 1027, in commit
+    self.transaction.commit()
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\session.py", line 494, in commit
+    self._prepare_impl()
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\session.py", line 473, in _prepare_impl
+    self.session.flush()
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\session.py", line 2470, in flush
+    self._flush(objects)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\session.py", line 2608, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\util\langhelpers.py", line 68, in __exit__
+    compat.reraise(exc_type, exc_value, exc_tb)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\util\compat.py", line 153, in reraise
+    raise value
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\session.py", line 2568, in _flush
+    flush_context.execute()
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 422, in execute
+    rec.execute(self)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 586, in execute
+    persistence.save_obj(
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\persistence.py", line 230, in save_obj
+    _emit_update_statements(
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\persistence.py", line 995, in _emit_update_statements
+    c = cached_connections[connection].execute(
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 982, in execute
+    return meth(self, multiparams, params)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\sql\elements.py", line 287, in _execute_on_connection
+    return connection._execute_clauseelement(self, multiparams, params)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1095, in _execute_clauseelement
+    ret = self._execute_context(
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1249, in _execute_context
+    self._handle_dbapi_exception(
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1476, in _handle_dbapi_exception
+    util.raise_from_cause(sqlalchemy_exception, exc_info)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\util\compat.py", line 398, in raise_from_cause
+    reraise(type(exception), exception, tb=exc_tb, cause=cause)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\util\compat.py", line 152, in reraise
+    raise value.with_traceback(tb)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1245, in _execute_context
+    self.dialect.do_execute(
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\default.py", line 581, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.DataError: (psycopg2.errors.InvalidTextRepresentation) invalid input syntax for type integer: ""
+LINE 1: UPDATE department SET id='', name='' WHERE department.id = 1...
+                                 ^
+
+[SQL: UPDATE department SET id=%(id)s, name=%(name)s WHERE department.id = %(department_id)s]
+[parameters: {'id': '', 'name': '', 'department_id': 10005}]
+(Background on this error at: http://sqlalche.me/e/9h9h)
+2020-02-23 14:13:45,684 - service.crud - DEBUG - List of department was returned
+2020-02-23 14:13:45,971 - rest.api - DEBUG - GET method (/api/departments) was successful
+2020-02-23 14:13:48,066 - service.crud - DEBUG - List of department was returned
+2020-02-23 14:13:48,341 - rest.api - DEBUG - GET method (/api/departments) was successful
+2020-02-23 14:16:27,171 - service.crud - DEBUG - List of department was returned
+2020-02-23 14:16:27,472 - rest.api - DEBUG - GET method (/api/departments) was successful
+2020-02-23 14:16:30,112 - service.crud - DEBUG - Department 10001 was returned
+2020-02-23 14:16:30,169 - rest.api - DEBUG - GET method (/api/department/10001) was successful
+2020-02-23 14:16:33,279 - service.crud - DEBUG - Department 10001 was updated
+2020-02-23 14:16:33,404 - rest.api - ERROR - Exception on /api/department/10001 [PUT]
+Traceback (most recent call last):
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1245, in _execute_context
+    self.dialect.do_execute(
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\default.py", line 581, in do_execute
+    cursor.execute(statement, parameters)
+psycopg2.errors.InvalidTextRepresentation: invalid input syntax for type integer: ""
+LINE 1: UPDATE department SET id='', name='Department 1' WHERE depar...
+                                 ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "E:\GraduationWork\DepartmentHandler\department-app\rest\api.py", line 124, in put
+    crud.Departments.update(dep_id, data['dep_id'], data['name'])
+  File "E:\GraduationWork\DepartmentHandler\department-app\service\crud.py", line 95, in update
+    db.session.commit()
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\scoping.py", line 162, in do
+    return getattr(self.registry(), name)(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\session.py", line 1027, in commit
+    self.transaction.commit()
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\session.py", line 494, in commit
+    self._prepare_impl()
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\session.py", line 473, in _prepare_impl
+    self.session.flush()
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\session.py", line 2470, in flush
+    self._flush(objects)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\session.py", line 2608, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\util\langhelpers.py", line 68, in __exit__
+    compat.reraise(exc_type, exc_value, exc_tb)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\util\compat.py", line 153, in reraise
+    raise value
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\session.py", line 2568, in _flush
+    flush_context.execute()
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 422, in execute
+    rec.execute(self)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 586, in execute
+    persistence.save_obj(
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\persistence.py", line 230, in save_obj
+    _emit_update_statements(
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\persistence.py", line 995, in _emit_update_statements
+    c = cached_connections[connection].execute(
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 982, in execute
+    return meth(self, multiparams, params)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\sql\elements.py", line 287, in _execute_on_connection
+    return connection._execute_clauseelement(self, multiparams, params)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1095, in _execute_clauseelement
+    ret = self._execute_context(
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1249, in _execute_context
+    self._handle_dbapi_exception(
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1476, in _handle_dbapi_exception
+    util.raise_from_cause(sqlalchemy_exception, exc_info)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\util\compat.py", line 398, in raise_from_cause
+    reraise(type(exception), exception, tb=exc_tb, cause=cause)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\util\compat.py", line 152, in reraise
+    raise value.with_traceback(tb)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1245, in _execute_context
+    self.dialect.do_execute(
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\default.py", line 581, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.DataError: (psycopg2.errors.InvalidTextRepresentation) invalid input syntax for type integer: ""
+LINE 1: UPDATE department SET id='', name='Department 1' WHERE depar...
+                                 ^
+
+[SQL: UPDATE department SET id=%(id)s, name=%(name)s WHERE department.id = %(department_id)s]
+[parameters: {'id': '', 'name': 'Department 1', 'department_id': 10001}]
+(Background on this error at: http://sqlalche.me/e/9h9h)
+2020-02-23 14:16:33,603 - service.crud - DEBUG - List of department was returned
+2020-02-23 14:16:33,882 - rest.api - DEBUG - GET method (/api/departments) was successful
+2020-02-23 14:16:36,464 - service.crud - DEBUG - List of department was returned
+2020-02-23 14:16:36,741 - rest.api - DEBUG - GET method (/api/departments) was successful
+2020-02-23 14:18:43,315 - service.crud - DEBUG - List of department was returned
+2020-02-23 14:18:43,592 - rest.api - DEBUG - GET method (/api/departments) was successful
+2020-02-23 14:18:45,244 - service.crud - DEBUG - Department 10001 was returned
+2020-02-23 14:18:45,300 - rest.api - DEBUG - GET method (/api/department/10001) was successful
+2020-02-23 14:18:48,505 - service.crud - DEBUG - Department 10001 was updated
+2020-02-23 14:18:48,615 - rest.api - DEBUG - PUT method (/api/department/10001) was successful
+2020-02-23 14:18:48,814 - service.crud - DEBUG - List of department was returned
+2020-02-23 14:18:49,091 - rest.api - DEBUG - GET method (/api/departments) was successful
+2020-02-23 14:19:04,791 - rest.api - INFO - Web-service started
+2020-02-23 14:19:09,114 - service.crud - DEBUG - List of department was returned
+2020-02-23 14:19:09,436 - rest.api - DEBUG - GET method (/api/departments) was successful
+2020-02-23 14:19:17,609 - service.crud - DEBUG - Department 10001 was returned
+2020-02-23 14:19:17,668 - rest.api - DEBUG - GET method (/api/department/10001) was successful
+2020-02-23 14:19:27,732 - service.crud - DEBUG - Department 10001 was updated
+2020-02-23 14:19:28,140 - rest.api - WARNING - Department First
+2020-02-23 14:19:28,141 - rest.api - DEBUG - PUT method (/api/department/10001) was successful
+2020-02-23 14:19:28,347 - service.crud - DEBUG - List of department was returned
+2020-02-23 14:19:28,653 - rest.api - DEBUG - GET method (/api/departments) was successful
+2020-02-23 14:19:31,511 - service.crud - DEBUG - List of department was returned
+2020-02-23 14:19:31,799 - rest.api - DEBUG - GET method (/api/departments) was successful
+2020-02-23 14:19:59,130 - service.crud - DEBUG - Department 10003 was returned
+2020-02-23 14:19:59,195 - rest.api - DEBUG - GET method (/api/department/10003) was successful
+2020-02-23 14:20:03,396 - service.crud - DEBUG - Department 10003 was updated
+2020-02-23 14:20:03,515 - rest.api - WARNING - Department
+2020-02-23 14:20:03,517 - rest.api - DEBUG - PUT method (/api/department/10003) was successful
+2020-02-23 14:20:03,747 - service.crud - DEBUG - List of department was returned
+2020-02-23 14:20:04,045 - rest.api - DEBUG - GET method (/api/departments) was successful
+2020-02-23 14:20:40,678 - service.crud - DEBUG - List of department was returned
+2020-02-23 14:20:41,094 - rest.api - DEBUG - GET method (/api/departments) was successful
+2020-02-23 14:21:04,674 - service.crud - DEBUG - Department 10005 was deleted
+2020-02-23 14:21:04,675 - rest.api - DEBUG - DELETE method (/api/department/10005) was successful
+2020-02-23 14:21:04,876 - service.crud - DEBUG - List of department was returned
+2020-02-23 14:21:05,112 - rest.api - DEBUG - GET method (/api/departments) was successful
+2020-02-23 14:21:13,624 - service.crud - DEBUG - Department 10006 was returned
+2020-02-23 14:21:13,682 - rest.api - DEBUG - GET method (/api/department/10006) was successful
+2020-02-23 14:21:21,019 - service.crud - DEBUG - Department 10006 was updated
+2020-02-23 14:21:21,134 - rest.api - WARNING - Department Cybernetic
+2020-02-23 14:21:21,134 - rest.api - DEBUG - PUT method (/api/department/10006) was successful
+2020-02-23 14:21:21,357 - service.crud - DEBUG - List of department was returned
+2020-02-23 14:21:21,589 - rest.api - DEBUG - GET method (/api/departments) was successful
+2020-02-23 14:21:26,820 - service.crud - DEBUG - List of employees was returned
+2020-02-23 14:21:26,940 - rest.api - DEBUG - GET method (/api/employees) was successful
+2020-02-23 14:21:28,878 - service.crud - DEBUG - List of department was returned
+2020-02-23 14:21:29,108 - rest.api - DEBUG - GET method (/api/departments) was successful
+2020-02-23 14:23:26,381 - rest.api - INFO - Web-service started
+2020-02-23 14:23:32,710 - service.crud - DEBUG - List of department was returned
+2020-02-23 14:23:32,958 - rest.api - DEBUG - GET method (/api/departments) was successful
+2020-02-23 14:23:40,345 - service.crud - DEBUG - Department 10001 was returned
+2020-02-23 14:23:40,404 - rest.api - DEBUG - GET method (/api/department/10001) was successful
+2020-02-23 14:23:54,675 - service.crud - DEBUG - Department 10001 was updated
+2020-02-23 14:23:54,796 - rest.api - DEBUG - PUT method (/api/department/10001) was successful
+2020-02-23 14:23:55,021 - service.crud - DEBUG - List of department was returned
+2020-02-23 14:23:55,256 - rest.api - DEBUG - GET method (/api/departments) was successful
+2020-02-23 14:23:58,845 - service.crud - DEBUG - List of employees was returned
+2020-02-23 14:23:58,978 - rest.api - DEBUG - GET method (/api/employees) was successful
+2020-02-23 17:42:26,337 - rest.api - INFO - Web-service started
+2020-02-23 17:42:36,443 - service.crud - DEBUG - List of department was returned
+2020-02-23 17:42:36,696 - rest.api - DEBUG - GET method (/api/departments) was successful
+2020-02-23 17:42:40,199 - service.crud - DEBUG - Employee 1 was returned
+2020-02-23 17:42:40,203 - rest.api - DEBUG - GET method (/api/employee/1) was successful
+2020-02-23 17:42:40,548 - service.crud - DEBUG - List of department was returned
+2020-02-23 17:42:40,548 - rest.api - DEBUG - GET method (/api/departments-ids) was successful
+2020-02-23 17:42:45,885 - service.crud - DEBUG - List of employees was returned
+2020-02-23 17:42:46,021 - rest.api - DEBUG - GET method (/api/employees) was successful
+2020-02-23 17:43:50,365 - service.crud - DEBUG - List of employees was returned
+2020-02-23 17:43:50,492 - rest.api - DEBUG - GET method (/api/employees) was successful
+2020-02-23 17:45:06,545 - service.crud - DEBUG - List of employees was returned
+2020-02-23 17:45:06,681 - rest.api - DEBUG - GET method (/api/employees) was successful
+2020-02-23 17:45:30,469 - service.crud - DEBUG - List of employees was returned
+2020-02-23 17:45:30,597 - rest.api - DEBUG - GET method (/api/employees) was successful
+2020-02-23 17:46:09,112 - service.crud - DEBUG - List of employees was returned
+2020-02-23 17:46:09,236 - rest.api - DEBUG - GET method (/api/employees) was successful
+2020-02-23 17:46:30,723 - service.crud - DEBUG - List of employees was returned
+2020-02-23 17:46:30,849 - rest.api - DEBUG - GET method (/api/employees) was successful
+2020-02-23 17:46:34,292 - service.crud - DEBUG - Employee 1 was returned
+2020-02-23 17:46:34,292 - rest.api - DEBUG - GET method (/api/employee/1) was successful
+2020-02-23 17:46:34,565 - service.crud - DEBUG - List of department was returned
+2020-02-23 17:46:34,565 - rest.api - DEBUG - GET method (/api/departments-ids) was successful
+2020-02-23 17:46:45,557 - service.crud - DEBUG - List of employees was returned
+2020-02-23 17:46:45,683 - rest.api - DEBUG - GET method (/api/employees) was successful
+2020-02-23 17:46:47,946 - service.crud - DEBUG - List of employees was returned
+2020-02-23 17:46:48,078 - rest.api - DEBUG - GET method (/api/employees) was successful
+2020-02-23 17:50:17,067 - service.crud - DEBUG - List of employees was returned
+2020-02-23 17:50:17,231 - rest.api - DEBUG - GET method (/api/employees) was successful
+2020-02-23 17:50:19,299 - service.crud - DEBUG - Employee 1 was returned
+2020-02-23 17:50:19,303 - rest.api - DEBUG - GET method (/api/employee/1) was successful
+2020-02-23 17:50:19,580 - service.crud - DEBUG - List of department was returned
+2020-02-23 17:50:19,580 - rest.api - DEBUG - GET method (/api/departments-ids) was successful
+2020-02-23 17:52:16,214 - service.crud - DEBUG - Employee 1 was returned
+2020-02-23 17:52:16,214 - rest.api - DEBUG - GET method (/api/employee/1) was successful
+2020-02-23 17:52:16,473 - service.crud - DEBUG - List of department was returned
+2020-02-23 17:52:16,473 - rest.api - DEBUG - GET method (/api/departments-ids) was successful
+2020-02-23 17:52:23,504 - service.crud - DEBUG - Employee 1 was returned
+2020-02-23 17:52:23,504 - rest.api - DEBUG - GET method (/api/employee/1) was successful
+2020-02-23 17:52:23,768 - service.crud - DEBUG - List of department was returned
+2020-02-23 17:52:23,768 - rest.api - DEBUG - GET method (/api/departments-ids) was successful
+2020-02-23 17:52:48,802 - service.crud - DEBUG - Employee 1 was returned
+2020-02-23 17:52:48,802 - rest.api - DEBUG - GET method (/api/employee/1) was successful
+2020-02-23 17:52:49,072 - service.crud - DEBUG - List of department was returned
+2020-02-23 17:52:49,076 - rest.api - DEBUG - GET method (/api/departments-ids) was successful
+2020-02-23 17:53:13,379 - service.crud - DEBUG - Employee 1 was returned
+2020-02-23 17:53:13,379 - rest.api - DEBUG - GET method (/api/employee/1) was successful
+2020-02-23 17:53:13,657 - service.crud - DEBUG - List of department was returned
+2020-02-23 17:53:13,657 - rest.api - DEBUG - GET method (/api/departments-ids) was successful
+2020-02-23 17:53:17,130 - service.crud - DEBUG - List of employees was returned
+2020-02-23 17:53:17,273 - rest.api - DEBUG - GET method (/api/employees) was successful
+2020-02-23 17:53:20,865 - service.crud - DEBUG - Employee 12 was returned
+2020-02-23 17:53:20,865 - rest.api - DEBUG - GET method (/api/employee/12) was successful
+2020-02-23 17:53:21,149 - service.crud - DEBUG - List of department was returned
+2020-02-23 17:53:21,149 - rest.api - DEBUG - GET method (/api/departments-ids) was successful
+2020-02-23 17:53:48,917 - service.crud - DEBUG - Employee 12 was returned
+2020-02-23 17:53:48,921 - rest.api - DEBUG - GET method (/api/employee/12) was successful
+2020-02-23 17:53:49,181 - service.crud - DEBUG - List of department was returned
+2020-02-23 17:53:49,185 - rest.api - DEBUG - GET method (/api/departments-ids) was successful
+2020-02-23 17:54:26,666 - service.crud - DEBUG - Employee 12 was returned
+2020-02-23 17:54:26,666 - rest.api - DEBUG - GET method (/api/employee/12) was successful
+2020-02-23 17:54:26,926 - service.crud - DEBUG - List of department was returned
+2020-02-23 17:54:26,926 - rest.api - DEBUG - GET method (/api/departments-ids) was successful
+2020-02-23 17:54:29,168 - service.crud - DEBUG - List of employees was returned
+2020-02-23 17:54:29,297 - rest.api - DEBUG - GET method (/api/employees) was successful
+2020-02-23 17:54:32,421 - service.crud - DEBUG - Employee 6 was returned
+2020-02-23 17:54:32,421 - rest.api - DEBUG - GET method (/api/employee/6) was successful
+2020-02-23 17:54:32,704 - service.crud - DEBUG - List of department was returned
+2020-02-23 17:54:32,704 - rest.api - DEBUG - GET method (/api/departments-ids) was successful
+2020-02-23 17:55:21,252 - service.crud - DEBUG - Employee 6 was returned
+2020-02-23 17:55:21,252 - rest.api - DEBUG - GET method (/api/employee/6) was successful
+2020-02-23 17:55:21,526 - service.crud - DEBUG - List of department was returned
+2020-02-23 17:55:21,530 - rest.api - DEBUG - GET method (/api/departments-ids) was successful
+2020-02-23 17:56:13,353 - service.crud - DEBUG - Employee 6 was returned
+2020-02-23 17:56:13,353 - rest.api - DEBUG - GET method (/api/employee/6) was successful
+2020-02-23 17:56:13,625 - service.crud - DEBUG - List of department was returned
+2020-02-23 17:56:13,625 - rest.api - DEBUG - GET method (/api/departments-ids) was successful
+2020-02-23 17:56:37,329 - service.crud - DEBUG - Employee 6 was returned
+2020-02-23 17:56:37,329 - rest.api - DEBUG - GET method (/api/employee/6) was successful
+2020-02-23 17:56:37,594 - service.crud - DEBUG - List of department was returned
+2020-02-23 17:56:37,598 - rest.api - DEBUG - GET method (/api/departments-ids) was successful
+2020-02-23 17:56:40,338 - service.crud - DEBUG - List of employees was returned
+2020-02-23 17:56:40,486 - rest.api - DEBUG - GET method (/api/employees) was successful
+2020-02-23 17:56:49,029 - rest.api - DEBUG - DELETE method (/api/employee/16) was successful
+2020-02-23 17:56:49,085 - service.crud - DEBUG - List of employees was returned
+2020-02-23 17:56:49,223 - rest.api - DEBUG - GET method (/api/employees) was successful
+2020-02-23 17:57:09,525 - service.crud - DEBUG - List of employees was returned
+2020-02-23 17:57:09,656 - rest.api - DEBUG - GET method (/api/employees) was successful
+2020-02-23 17:57:52,320 - service.crud - DEBUG - List of employees was returned
+2020-02-23 17:57:52,456 - rest.api - DEBUG - GET method (/api/employees) was successful
+2020-02-23 17:58:00,920 - service.crud - DEBUG - List of employees was returned
+2020-02-23 17:58:01,049 - rest.api - DEBUG - GET method (/api/employees) was successful
+2020-02-23 17:58:06,203 - service.crud - DEBUG - List of employees was returned
+2020-02-23 17:58:06,327 - rest.api - DEBUG - GET method (/api/employees) was successful
+2020-02-23 17:58:06,391 - service.crud - DEBUG - List of employees was returned
+2020-02-23 17:58:06,528 - rest.api - DEBUG - GET method (/api/employees) was successful
+2020-02-23 17:58:08,584 - service.crud - DEBUG - List of employees was returned
+2020-02-23 17:58:08,716 - rest.api - DEBUG - GET method (/api/employees) was successful
+2020-02-23 17:58:22,026 - service.crud - DEBUG - List of employees was returned
+2020-02-23 17:58:22,150 - rest.api - DEBUG - GET method (/api/employees) was successful
+2020-02-23 17:58:31,694 - service.crud - DEBUG - Filtered by dates list of employees was returned
+2020-02-23 17:58:31,829 - rest.api - ERROR - Exception on /api/employees [POST]
+Traceback (most recent call last):
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1245, in _execute_context
+    self.dialect.do_execute(
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\default.py", line 581, in do_execute
+    cursor.execute(statement, parameters)
+psycopg2.errors.InvalidDatetimeFormat: invalid input syntax for type date: ""
+LINE 3: WHERE employee.date_of_birthday >= '' AND employee.date_of_b...
+                                           ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "E:\GraduationWork\DepartmentHandler\department-app\rest\api.py", line 205, in post
+    employees = crud.Employees.get_by_date(data['date_from'], data['date_by'])
+  File "E:\GraduationWork\DepartmentHandler\department-app\service\crud.py", line 140, in get_by_date
+    return Employee.query.filter(date_from <= Employee.date_of_birthday, Employee.date_of_birthday <= date_by).all()
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\query.py", line 3211, in all
+    return list(self)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\query.py", line 3367, in __iter__
+    return self._execute_and_instances(context)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\query.py", line 3392, in _execute_and_instances
+    result = conn.execute(querycontext.statement, self._params)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 982, in execute
+    return meth(self, multiparams, params)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\sql\elements.py", line 287, in _execute_on_connection
+    return connection._execute_clauseelement(self, multiparams, params)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1095, in _execute_clauseelement
+    ret = self._execute_context(
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1249, in _execute_context
+    self._handle_dbapi_exception(
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1476, in _handle_dbapi_exception
+    util.raise_from_cause(sqlalchemy_exception, exc_info)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\util\compat.py", line 398, in raise_from_cause
+    reraise(type(exception), exception, tb=exc_tb, cause=cause)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\util\compat.py", line 152, in reraise
+    raise value.with_traceback(tb)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1245, in _execute_context
+    self.dialect.do_execute(
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\default.py", line 581, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.DataError: (psycopg2.errors.InvalidDatetimeFormat) invalid input syntax for type date: ""
+LINE 3: WHERE employee.date_of_birthday >= '' AND employee.date_of_b...
+                                           ^
+
+[SQL: SELECT employee.id AS employee_id, employee.name AS employee_name, employee.department_id AS employee_department_id, employee.date_of_birthday AS employee_date_of_birthday, employee.salary AS employee_salary 
+FROM employee 
+WHERE employee.date_of_birthday >= %(date_of_birthday_1)s AND employee.date_of_birthday <= %(date_of_birthday_2)s]
+[parameters: {'date_of_birthday_1': '', 'date_of_birthday_2': datetime.date(2020, 2, 23)}]
+(Background on this error at: http://sqlalche.me/e/9h9h)
+2020-02-23 18:00:07,711 - service.crud - DEBUG - Filtered by dates list of employees was returned
+2020-02-23 18:00:07,871 - rest.api - ERROR - Exception on /api/employees [POST]
+Traceback (most recent call last):
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1245, in _execute_context
+    self.dialect.do_execute(
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\default.py", line 581, in do_execute
+    cursor.execute(statement, parameters)
+psycopg2.errors.InvalidDatetimeFormat: invalid input syntax for type date: ""
+LINE 3: WHERE employee.date_of_birthday >= '' AND employee.date_of_b...
+                                           ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "E:\GraduationWork\DepartmentHandler\department-app\rest\api.py", line 205, in post
+    employees = crud.Employees.get_by_date(data['date_from'], data['date_by'])
+  File "E:\GraduationWork\DepartmentHandler\department-app\service\crud.py", line 140, in get_by_date
+    return Employee.query.filter(date_from <= Employee.date_of_birthday, Employee.date_of_birthday <= date_by).all()
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\query.py", line 3211, in all
+    return list(self)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\query.py", line 3367, in __iter__
+    return self._execute_and_instances(context)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\query.py", line 3392, in _execute_and_instances
+    result = conn.execute(querycontext.statement, self._params)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 982, in execute
+    return meth(self, multiparams, params)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\sql\elements.py", line 287, in _execute_on_connection
+    return connection._execute_clauseelement(self, multiparams, params)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1095, in _execute_clauseelement
+    ret = self._execute_context(
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1249, in _execute_context
+    self._handle_dbapi_exception(
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1476, in _handle_dbapi_exception
+    util.raise_from_cause(sqlalchemy_exception, exc_info)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\util\compat.py", line 398, in raise_from_cause
+    reraise(type(exception), exception, tb=exc_tb, cause=cause)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\util\compat.py", line 152, in reraise
+    raise value.with_traceback(tb)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1245, in _execute_context
+    self.dialect.do_execute(
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\default.py", line 581, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.DataError: (psycopg2.errors.InvalidDatetimeFormat) invalid input syntax for type date: ""
+LINE 3: WHERE employee.date_of_birthday >= '' AND employee.date_of_b...
+                                           ^
+
+[SQL: SELECT employee.id AS employee_id, employee.name AS employee_name, employee.department_id AS employee_department_id, employee.date_of_birthday AS employee_date_of_birthday, employee.salary AS employee_salary 
+FROM employee 
+WHERE employee.date_of_birthday >= %(date_of_birthday_1)s AND employee.date_of_birthday <= %(date_of_birthday_2)s]
+[parameters: {'date_of_birthday_1': '', 'date_of_birthday_2': datetime.date(2020, 2, 23)}]
+(Background on this error at: http://sqlalche.me/e/9h9h)
+2020-02-23 18:00:10,572 - service.crud - DEBUG - List of employees was returned
+2020-02-23 18:00:10,708 - rest.api - DEBUG - GET method (/api/employees) was successful
+2020-02-23 18:00:20,695 - service.crud - DEBUG - Filtered by dates list of employees was returned
+2020-02-23 18:00:20,819 - rest.api - DEBUG - POST method (/api/employees) was successful
+2020-02-23 18:01:17,128 - rest.api - INFO - Web-service started
+2020-02-23 18:01:20,887 - service.crud - DEBUG - Filtered by dates list of employees was returned
+2020-02-23 18:01:21,058 - rest.api - DEBUG - POST method (/api/employees) was successful
+2020-02-23 18:01:21,137 - service.crud - DEBUG - Filtered by dates list of employees was returned
+2020-02-23 18:01:21,332 - rest.api - DEBUG - POST method (/api/employees) was successful
+2020-02-23 18:01:21,383 - service.crud - DEBUG - Filtered by dates list of employees was returned
+2020-02-23 18:01:21,547 - rest.api - DEBUG - POST method (/api/employees) was successful
+2020-02-23 18:04:45,431 - rest.api - INFO - Web-service started
+2020-02-23 18:04:54,519 - service.crud - DEBUG - Filtered by dates list of employees was returned
+2020-02-23 18:04:55,892 - rest.api - ERROR - Exception on /api/employees [POST]
+Traceback (most recent call last):
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "E:\GraduationWork\DepartmentHandler\department-app\rest\api.py", line 206, in post
+    logger.warning(employees[0].name)
+IndexError: list index out of range
+2020-02-23 18:04:59,283 - service.crud - DEBUG - List of employees was returned
+2020-02-23 18:04:59,411 - rest.api - DEBUG - GET method (/api/employees) was successful
+2020-02-23 18:07:00,347 - rest.api - INFO - Web-service started
+2020-02-23 18:07:10,433 - service.crud - DEBUG - Filtered by dates list of employees was returned
+2020-02-23 18:07:11,716 - rest.api - ERROR - Exception on /api/employees [POST]
+Traceback (most recent call last):
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "E:\GraduationWork\DepartmentHandler\department-app\rest\api.py", line 207, in post
+    logger.warning(employees[0].name)
+IndexError: list index out of range
+2020-02-23 18:09:22,117 - rest.api - INFO - Web-service started
+2020-02-23 18:09:23,910 - service.crud - DEBUG - Filtered by dates list of employees was returned
+2020-02-23 18:09:25,347 - service.crud - WARNING - []
+2020-02-23 18:09:25,411 - rest.api - ERROR - Exception on /api/employees [POST]
+Traceback (most recent call last):
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "E:\GraduationWork\DepartmentHandler\department-app\rest\api.py", line 206, in post
+    logger.warning(employees[0].name)
+IndexError: list index out of range
+2020-02-23 18:12:15,477 - service.crud - DEBUG - List of department was returned
+2020-02-23 18:12:15,722 - rest.api - DEBUG - GET method (/api/departments) was successful
+2020-02-23 18:12:16,574 - service.crud - DEBUG - List of employees was returned
+2020-02-23 18:12:16,706 - rest.api - DEBUG - GET method (/api/employees) was successful
+2020-02-23 18:12:19,553 - service.crud - DEBUG - Filtered by dates list of employees was returned
+2020-02-23 18:12:19,697 - rest.api - ERROR - Exception on /api/employees [POST]
+Traceback (most recent call last):
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1245, in _execute_context
+    self.dialect.do_execute(
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\default.py", line 581, in do_execute
+    cursor.execute(statement, parameters)
+psycopg2.errors.InvalidDatetimeFormat: invalid input syntax for type date: ""
+LINE 3: WHERE employee.date_of_birthday >= '' AND employee.date_of_b...
+                                           ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "E:\GraduationWork\DepartmentHandler\department-app\rest\api.py", line 205, in post
+    employees = crud.Employees.get_by_date(data['date_from'], data['date_by'])
+  File "E:\GraduationWork\DepartmentHandler\department-app\service\crud.py", line 140, in get_by_date
+    logger.warning(Employee.query.filter_by(date_from <= Employee.date_of_birthday,
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\query.py", line 3211, in all
+    return list(self)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\query.py", line 3367, in __iter__
+    return self._execute_and_instances(context)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\query.py", line 3392, in _execute_and_instances
+    result = conn.execute(querycontext.statement, self._params)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 982, in execute
+    return meth(self, multiparams, params)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\sql\elements.py", line 287, in _execute_on_connection
+    return connection._execute_clauseelement(self, multiparams, params)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1095, in _execute_clauseelement
+    ret = self._execute_context(
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1249, in _execute_context
+    self._handle_dbapi_exception(
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1476, in _handle_dbapi_exception
+    util.raise_from_cause(sqlalchemy_exception, exc_info)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\util\compat.py", line 398, in raise_from_cause
+    reraise(type(exception), exception, tb=exc_tb, cause=cause)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\util\compat.py", line 152, in reraise
+    raise value.with_traceback(tb)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1245, in _execute_context
+    self.dialect.do_execute(
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\default.py", line 581, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.DataError: (psycopg2.errors.InvalidDatetimeFormat) invalid input syntax for type date: ""
+LINE 3: WHERE employee.date_of_birthday >= '' AND employee.date_of_b...
+                                           ^
+
+[SQL: SELECT employee.id AS employee_id, employee.name AS employee_name, employee.department_id AS employee_department_id, employee.date_of_birthday AS employee_date_of_birthday, employee.salary AS employee_salary 
+FROM employee 
+WHERE employee.date_of_birthday >= %(date_of_birthday_1)s AND employee.date_of_birthday <= %(date_of_birthday_2)s]
+[parameters: {'date_of_birthday_1': '', 'date_of_birthday_2': datetime.date(2020, 2, 23)}]
+(Background on this error at: http://sqlalche.me/e/9h9h)
+2020-02-23 18:12:56,073 - rest.api - INFO - Web-service started
+2020-02-23 18:13:00,199 - service.crud - DEBUG - Filtered by dates list of employees was returned
+2020-02-23 18:13:00,267 - rest.api - ERROR - Exception on /api/employees [POST]
+Traceback (most recent call last):
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "E:\GraduationWork\DepartmentHandler\department-app\rest\api.py", line 205, in post
+    employees = crud.Employees.get_by_date(data['date_from'], data['date_by'])
+  File "E:\GraduationWork\DepartmentHandler\department-app\service\crud.py", line 140, in get_by_date
+    logger.warning(Employee.query.filter_by(date_from <= Employee.date_of_birthday).all())
+TypeError: filter_by() takes 1 positional argument but 2 were given
+2020-02-23 18:13:02,793 - service.crud - DEBUG - List of employees was returned
+2020-02-23 18:13:04,033 - rest.api - DEBUG - GET method (/api/employees) was successful
+2020-02-23 18:13:08,294 - service.crud - DEBUG - Filtered by dates list of employees was returned
+2020-02-23 18:13:08,298 - rest.api - ERROR - Exception on /api/employees [POST]
+Traceback (most recent call last):
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "E:\GraduationWork\DepartmentHandler\department-app\rest\api.py", line 205, in post
+    employees = crud.Employees.get_by_date(data['date_from'], data['date_by'])
+  File "E:\GraduationWork\DepartmentHandler\department-app\service\crud.py", line 140, in get_by_date
+    logger.warning(Employee.query.filter_by(date_from <= Employee.date_of_birthday).all())
+TypeError: filter_by() takes 1 positional argument but 2 were given
+2020-02-23 18:13:54,936 - service.crud - DEBUG - Filtered by dates list of employees was returned
+2020-02-23 18:13:54,940 - rest.api - ERROR - Exception on /api/employees [POST]
+Traceback (most recent call last):
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "E:\GraduationWork\DepartmentHandler\department-app\rest\api.py", line 205, in post
+    employees = crud.Employees.get_by_date(data['date_from'], data['date_by'])
+  File "E:\GraduationWork\DepartmentHandler\department-app\service\crud.py", line 140, in get_by_date
+    logger.warning(Employee.query.filter_by(date_from <= Employee.date_of_birthday,
+TypeError: filter_by() takes 1 positional argument but 2 were given
+2020-02-23 18:13:56,826 - service.crud - DEBUG - Filtered by dates list of employees was returned
+2020-02-23 18:13:56,826 - rest.api - ERROR - Exception on /api/employees [POST]
+Traceback (most recent call last):
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "E:\GraduationWork\DepartmentHandler\department-app\rest\api.py", line 205, in post
+    employees = crud.Employees.get_by_date(data['date_from'], data['date_by'])
+  File "E:\GraduationWork\DepartmentHandler\department-app\service\crud.py", line 140, in get_by_date
+    logger.warning(Employee.query.filter_by(date_from <= Employee.date_of_birthday,
+TypeError: filter_by() takes 1 positional argument but 2 were given
+2020-02-23 18:15:22,969 - service.crud - DEBUG - List of employees was returned
+2020-02-23 18:15:23,099 - rest.api - DEBUG - GET method (/api/employees) was successful
+2020-02-23 18:15:41,665 - service.crud - DEBUG - List of employees was returned
+2020-02-23 18:15:41,790 - rest.api - DEBUG - GET method (/api/employees) was successful
+2020-02-23 18:15:44,944 - service.crud - DEBUG - Filtered by dates list of employees was returned
+2020-02-23 18:15:44,947 - rest.api - ERROR - Exception on /api/employees [POST]
+Traceback (most recent call last):
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "E:\GraduationWork\DepartmentHandler\department-app\rest\api.py", line 205, in post
+    employees = crud.Employees.get_by_date(data['date_from'], data['date_by'])
+  File "E:\GraduationWork\DepartmentHandler\department-app\service\crud.py", line 140, in get_by_date
+    logger.warning(Employee.query.filter_by(Employee.name == 'Jo Tester1').all())
+TypeError: filter_by() takes 1 positional argument but 2 were given
+2020-02-23 18:15:54,567 - rest.api - INFO - Web-service started
+2020-02-23 18:15:57,640 - service.crud - DEBUG - Filtered by dates list of employees was returned
+2020-02-23 18:15:57,732 - rest.api - ERROR - Exception on /api/employees [POST]
+Traceback (most recent call last):
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "E:\GraduationWork\DepartmentHandler\department-app\rest\api.py", line 205, in post
+    employees = crud.Employees.get_by_date(data['date_from'], data['date_by'])
+  File "E:\GraduationWork\DepartmentHandler\department-app\service\crud.py", line 140, in get_by_date
+    logger.warning(Employee.query.filter_by(Employee.name == 'Jo Tester1').all())
+TypeError: filter_by() takes 1 positional argument but 2 were given
+2020-02-23 18:16:29,238 - rest.api - INFO - Web-service started
+2020-02-23 18:16:31,828 - service.crud - DEBUG - Filtered by dates list of employees was returned
+2020-02-23 18:16:33,254 - service.crud - WARNING - [<Employee> name = Jo Tester1, <Employee> name = Jo Tester1]
+2020-02-23 18:16:33,331 - rest.api - ERROR - Exception on /api/employees [POST]
+Traceback (most recent call last):
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1245, in _execute_context
+    self.dialect.do_execute(
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\default.py", line 581, in do_execute
+    cursor.execute(statement, parameters)
+psycopg2.errors.InvalidDatetimeFormat: invalid input syntax for type date: ""
+LINE 3: WHERE employee.date_of_birthday >= '' AND employee.date_of_b...
+                                           ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "E:\GraduationWork\DepartmentHandler\department-app\rest\api.py", line 205, in post
+    employees = crud.Employees.get_by_date(data['date_from'], data['date_by'])
+  File "E:\GraduationWork\DepartmentHandler\department-app\service\crud.py", line 141, in get_by_date
+    return Employee.query.filter(date_from <= Employee.date_of_birthday, Employee.date_of_birthday <= date_by).all()
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\query.py", line 3211, in all
+    return list(self)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\query.py", line 3367, in __iter__
+    return self._execute_and_instances(context)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\query.py", line 3392, in _execute_and_instances
+    result = conn.execute(querycontext.statement, self._params)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 982, in execute
+    return meth(self, multiparams, params)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\sql\elements.py", line 287, in _execute_on_connection
+    return connection._execute_clauseelement(self, multiparams, params)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1095, in _execute_clauseelement
+    ret = self._execute_context(
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1249, in _execute_context
+    self._handle_dbapi_exception(
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1476, in _handle_dbapi_exception
+    util.raise_from_cause(sqlalchemy_exception, exc_info)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\util\compat.py", line 398, in raise_from_cause
+    reraise(type(exception), exception, tb=exc_tb, cause=cause)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\util\compat.py", line 152, in reraise
+    raise value.with_traceback(tb)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1245, in _execute_context
+    self.dialect.do_execute(
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\default.py", line 581, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.DataError: (psycopg2.errors.InvalidDatetimeFormat) invalid input syntax for type date: ""
+LINE 3: WHERE employee.date_of_birthday >= '' AND employee.date_of_b...
+                                           ^
+
+[SQL: SELECT employee.id AS employee_id, employee.name AS employee_name, employee.department_id AS employee_department_id, employee.date_of_birthday AS employee_date_of_birthday, employee.salary AS employee_salary 
+FROM employee 
+WHERE employee.date_of_birthday >= %(date_of_birthday_1)s AND employee.date_of_birthday <= %(date_of_birthday_2)s]
+[parameters: {'date_of_birthday_1': '', 'date_of_birthday_2': datetime.date(2020, 2, 23)}]
+(Background on this error at: http://sqlalche.me/e/9h9h)
+2020-02-23 18:17:16,468 - rest.api - INFO - Web-service started
+2020-02-23 18:17:18,888 - service.crud - DEBUG - List of employees was returned
+2020-02-23 18:17:20,184 - rest.api - DEBUG - GET method (/api/employees) was successful
+2020-02-23 18:17:23,523 - service.crud - DEBUG - Filtered by dates list of employees was returned
+2020-02-23 18:17:23,660 - service.crud - WARNING - [<Employee> name = Jo Tester1, <Employee> name = Jo Tester1]
+2020-02-23 18:17:23,744 - rest.api - ERROR - Exception on /api/employees [POST]
+Traceback (most recent call last):
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1245, in _execute_context
+    self.dialect.do_execute(
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\default.py", line 581, in do_execute
+    cursor.execute(statement, parameters)
+psycopg2.errors.InvalidDatetimeFormat: invalid input syntax for type date: ""
+LINE 3: WHERE employee.date_of_birthday >= '' AND employee.date_of_b...
+                                           ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "E:\GraduationWork\DepartmentHandler\department-app\rest\api.py", line 205, in post
+    employees = crud.Employees.get_by_date(data['date_from'], data['date_by'])
+  File "E:\GraduationWork\DepartmentHandler\department-app\service\crud.py", line 141, in get_by_date
+    return Employee.query.filter(date_from <= Employee.date_of_birthday, Employee.date_of_birthday <= date_by).all()
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\query.py", line 3211, in all
+    return list(self)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\query.py", line 3367, in __iter__
+    return self._execute_and_instances(context)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\query.py", line 3392, in _execute_and_instances
+    result = conn.execute(querycontext.statement, self._params)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 982, in execute
+    return meth(self, multiparams, params)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\sql\elements.py", line 287, in _execute_on_connection
+    return connection._execute_clauseelement(self, multiparams, params)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1095, in _execute_clauseelement
+    ret = self._execute_context(
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1249, in _execute_context
+    self._handle_dbapi_exception(
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1476, in _handle_dbapi_exception
+    util.raise_from_cause(sqlalchemy_exception, exc_info)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\util\compat.py", line 398, in raise_from_cause
+    reraise(type(exception), exception, tb=exc_tb, cause=cause)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\util\compat.py", line 152, in reraise
+    raise value.with_traceback(tb)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1245, in _execute_context
+    self.dialect.do_execute(
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\default.py", line 581, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.DataError: (psycopg2.errors.InvalidDatetimeFormat) invalid input syntax for type date: ""
+LINE 3: WHERE employee.date_of_birthday >= '' AND employee.date_of_b...
+                                           ^
+
+[SQL: SELECT employee.id AS employee_id, employee.name AS employee_name, employee.department_id AS employee_department_id, employee.date_of_birthday AS employee_date_of_birthday, employee.salary AS employee_salary 
+FROM employee 
+WHERE employee.date_of_birthday >= %(date_of_birthday_1)s AND employee.date_of_birthday <= %(date_of_birthday_2)s]
+[parameters: {'date_of_birthday_1': '', 'date_of_birthday_2': datetime.date(2020, 2, 23)}]
+(Background on this error at: http://sqlalche.me/e/9h9h)
+2020-02-23 18:18:24,241 - service.crud - DEBUG - Filtered by dates list of employees was returned
+2020-02-23 18:18:24,365 - service.crud - WARNING - [<Employee> name = Jo Tester1, <Employee> name = Jo Tester1]
+2020-02-23 18:18:24,439 - rest.api - ERROR - Exception on /api/employees [POST]
+Traceback (most recent call last):
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1245, in _execute_context
+    self.dialect.do_execute(
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\default.py", line 581, in do_execute
+    cursor.execute(statement, parameters)
+psycopg2.errors.InvalidDatetimeFormat: invalid input syntax for type date: ""
+LINE 3: WHERE employee.date_of_birthday >= '' AND employee.date_of_b...
+                                           ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "E:\GraduationWork\DepartmentHandler\department-app\rest\api.py", line 205, in post
+    employees = crud.Employees.get_by_date(data['date_from'], data['date_by'])
+  File "E:\GraduationWork\DepartmentHandler\department-app\service\crud.py", line 141, in get_by_date
+    return Employee.query.all()
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\query.py", line 3211, in all
+    return list(self)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\query.py", line 3367, in __iter__
+    return self._execute_and_instances(context)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\query.py", line 3392, in _execute_and_instances
+    result = conn.execute(querycontext.statement, self._params)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 982, in execute
+    return meth(self, multiparams, params)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\sql\elements.py", line 287, in _execute_on_connection
+    return connection._execute_clauseelement(self, multiparams, params)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1095, in _execute_clauseelement
+    ret = self._execute_context(
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1249, in _execute_context
+    self._handle_dbapi_exception(
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1476, in _handle_dbapi_exception
+    util.raise_from_cause(sqlalchemy_exception, exc_info)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\util\compat.py", line 398, in raise_from_cause
+    reraise(type(exception), exception, tb=exc_tb, cause=cause)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\util\compat.py", line 152, in reraise
+    raise value.with_traceback(tb)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1245, in _execute_context
+    self.dialect.do_execute(
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\default.py", line 581, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.DataError: (psycopg2.errors.InvalidDatetimeFormat) invalid input syntax for type date: ""
+LINE 3: WHERE employee.date_of_birthday >= '' AND employee.date_of_b...
+                                           ^
+
+[SQL: SELECT employee.id AS employee_id, employee.name AS employee_name, employee.department_id AS employee_department_id, employee.date_of_birthday AS employee_date_of_birthday, employee.salary AS employee_salary 
+FROM employee 
+WHERE employee.date_of_birthday >= %(date_of_birthday_1)s AND employee.date_of_birthday <= %(date_of_birthday_2)s]
+[parameters: {'date_of_birthday_1': '', 'date_of_birthday_2': datetime.date(2020, 2, 23)}]
+(Background on this error at: http://sqlalche.me/e/9h9h)
+2020-02-23 18:18:31,368 - rest.api - INFO - Web-service started
+2020-02-23 18:18:34,990 - rest.api - ERROR - Exception on /api/employees [POST]
+Traceback (most recent call last):
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "E:\GraduationWork\DepartmentHandler\department-app\rest\api.py", line 199, in post
+    from service import crud
+  File "E:\GraduationWork\DepartmentHandler\department-app\service\crud.py", line 141
+    return Employee.query.all()
+    ^
+SyntaxError: invalid syntax
+2020-02-23 18:19:15,028 - rest.api - INFO - Web-service started
+2020-02-23 18:19:17,845 - rest.api - ERROR - Exception on /api/employees [GET]
+Traceback (most recent call last):
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "E:\GraduationWork\DepartmentHandler\department-app\rest\api.py", line 179, in get
+    from service import crud
+  File "E:\GraduationWork\DepartmentHandler\department-app\service\crud.py", line 141
+    return Employee.query.all()
+    ^
+SyntaxError: invalid syntax
+2020-02-23 18:19:20,315 - rest.api - ERROR - Exception on /api/employees [GET]
+Traceback (most recent call last):
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "E:\GraduationWork\DepartmentHandler\department-app\rest\api.py", line 179, in get
+    from service import crud
+  File "E:\GraduationWork\DepartmentHandler\department-app\service\crud.py", line 141
+    return Employee.query.all()
+    ^
+SyntaxError: invalid syntax
+2020-02-23 18:19:36,776 - service.crud - DEBUG - List of employees was returned
+2020-02-23 18:19:38,032 - rest.api - DEBUG - GET method (/api/employees) was successful
+2020-02-23 18:19:40,177 - service.crud - DEBUG - List of employees was returned
+2020-02-23 18:19:40,300 - rest.api - DEBUG - GET method (/api/employees) was successful
+2020-02-23 18:19:43,496 - service.crud - DEBUG - Filtered by dates list of employees was returned
+2020-02-23 18:19:43,500 - rest.api - ERROR - Exception on /api/employees [POST]
+Traceback (most recent call last):
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\sql\elements.py", line 717, in __getattr__
+    return getattr(self.comparator, key)
+AttributeError: 'Comparator' object has no attribute 'all'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\attributes.py", line 227, in __getattr__
+    return getattr(self.comparator, key)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\util\langhelpers.py", line 949, in __getattr__
+    return self._fallback_getattr(key)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\properties.py", line 312, in _fallback_getattr
+    return getattr(self.__clause_element__(), key)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\sql\elements.py", line 719, in __getattr__
+    raise AttributeError(
+AttributeError: Neither 'AnnotatedColumn' object nor 'Comparator' object has an attribute 'all'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "E:\GraduationWork\DepartmentHandler\department-app\rest\api.py", line 205, in post
+    employees = crud.Employees.get_by_date(data['date_from'], data['date_by'])
+  File "E:\GraduationWork\DepartmentHandler\department-app\service\crud.py", line 140, in get_by_date
+    logger.warning(Employee.query.filter(date_from <= Employee.date_of_birthday.all()))
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\attributes.py", line 229, in __getattr__
+    raise AttributeError(
+AttributeError: Neither 'InstrumentedAttribute' object nor 'Comparator' object associated with Employee.date_of_birthday has an attribute 'all'
+2020-02-23 18:19:52,347 - rest.api - INFO - Web-service started
+2020-02-23 18:19:54,424 - service.crud - DEBUG - Filtered by dates list of employees was returned
+2020-02-23 18:19:54,629 - rest.api - ERROR - Exception on /api/employees [POST]
+Traceback (most recent call last):
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\sql\elements.py", line 717, in __getattr__
+    return getattr(self.comparator, key)
+AttributeError: 'Comparator' object has no attribute 'all'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\attributes.py", line 227, in __getattr__
+    return getattr(self.comparator, key)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\util\langhelpers.py", line 949, in __getattr__
+    return self._fallback_getattr(key)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\properties.py", line 312, in _fallback_getattr
+    return getattr(self.__clause_element__(), key)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\sql\elements.py", line 719, in __getattr__
+    raise AttributeError(
+AttributeError: Neither 'AnnotatedColumn' object nor 'Comparator' object has an attribute 'all'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "E:\GraduationWork\DepartmentHandler\department-app\rest\api.py", line 205, in post
+    employees = crud.Employees.get_by_date(data['date_from'], data['date_by'])
+  File "E:\GraduationWork\DepartmentHandler\department-app\service\crud.py", line 140, in get_by_date
+    logger.warning(Employee.query.filter(date_from <= Employee.date_of_birthday.all()))
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\attributes.py", line 229, in __getattr__
+    raise AttributeError(
+AttributeError: Neither 'InstrumentedAttribute' object nor 'Comparator' object associated with Employee.date_of_birthday has an attribute 'all'
+2020-02-23 18:20:18,118 - rest.api - INFO - Web-service started
+2020-02-23 18:20:19,703 - service.crud - DEBUG - Filtered by dates list of employees was returned
+2020-02-23 18:20:21,114 - rest.api - ERROR - Exception on /api/employees [POST]
+Traceback (most recent call last):
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1245, in _execute_context
+    self.dialect.do_execute(
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\default.py", line 581, in do_execute
+    cursor.execute(statement, parameters)
+psycopg2.errors.InvalidDatetimeFormat: invalid input syntax for type date: ""
+LINE 3: WHERE employee.date_of_birthday >= ''
+                                           ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "E:\GraduationWork\DepartmentHandler\department-app\rest\api.py", line 205, in post
+    employees = crud.Employees.get_by_date(data['date_from'], data['date_by'])
+  File "E:\GraduationWork\DepartmentHandler\department-app\service\crud.py", line 140, in get_by_date
+    logger.warning(Employee.query.filter(date_from <= Employee.date_of_birthday).all())
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\query.py", line 3211, in all
+    return list(self)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\query.py", line 3367, in __iter__
+    return self._execute_and_instances(context)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\query.py", line 3392, in _execute_and_instances
+    result = conn.execute(querycontext.statement, self._params)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 982, in execute
+    return meth(self, multiparams, params)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\sql\elements.py", line 287, in _execute_on_connection
+    return connection._execute_clauseelement(self, multiparams, params)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1095, in _execute_clauseelement
+    ret = self._execute_context(
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1249, in _execute_context
+    self._handle_dbapi_exception(
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1476, in _handle_dbapi_exception
+    util.raise_from_cause(sqlalchemy_exception, exc_info)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\util\compat.py", line 398, in raise_from_cause
+    reraise(type(exception), exception, tb=exc_tb, cause=cause)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\util\compat.py", line 152, in reraise
+    raise value.with_traceback(tb)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1245, in _execute_context
+    self.dialect.do_execute(
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\default.py", line 581, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.DataError: (psycopg2.errors.InvalidDatetimeFormat) invalid input syntax for type date: ""
+LINE 3: WHERE employee.date_of_birthday >= ''
+                                           ^
+
+[SQL: SELECT employee.id AS employee_id, employee.name AS employee_name, employee.department_id AS employee_department_id, employee.date_of_birthday AS employee_date_of_birthday, employee.salary AS employee_salary 
+FROM employee 
+WHERE employee.date_of_birthday >= %(date_of_birthday_1)s]
+[parameters: {'date_of_birthday_1': ''}]
+(Background on this error at: http://sqlalche.me/e/9h9h)
+2020-02-23 18:21:34,935 - rest.api - INFO - Web-service started
+2020-02-23 18:21:37,117 - service.crud - DEBUG - Filtered by dates list of employees was returned
+2020-02-23 18:21:38,407 - rest.api - ERROR - Exception on /api/employees [POST]
+Traceback (most recent call last):
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1245, in _execute_context
+    self.dialect.do_execute(
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\default.py", line 581, in do_execute
+    cursor.execute(statement, parameters)
+psycopg2.errors.InvalidDatetimeFormat: invalid input syntax for type date: ""
+LINE 3: WHERE employee.date_of_birthday >= ''
+                                           ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "E:\GraduationWork\DepartmentHandler\department-app\rest\api.py", line 205, in post
+    employees = crud.Employees.get_by_date(data['date_from'], data['date_by'])
+  File "E:\GraduationWork\DepartmentHandler\department-app\service\crud.py", line 141, in get_by_date
+    logger.warning(Employee.query.filter(date_from <= Employee.date_of_birthday).all())
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\query.py", line 3211, in all
+    return list(self)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\query.py", line 3367, in __iter__
+    return self._execute_and_instances(context)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\query.py", line 3392, in _execute_and_instances
+    result = conn.execute(querycontext.statement, self._params)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 982, in execute
+    return meth(self, multiparams, params)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\sql\elements.py", line 287, in _execute_on_connection
+    return connection._execute_clauseelement(self, multiparams, params)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1095, in _execute_clauseelement
+    ret = self._execute_context(
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1249, in _execute_context
+    self._handle_dbapi_exception(
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1476, in _handle_dbapi_exception
+    util.raise_from_cause(sqlalchemy_exception, exc_info)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\util\compat.py", line 398, in raise_from_cause
+    reraise(type(exception), exception, tb=exc_tb, cause=cause)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\util\compat.py", line 152, in reraise
+    raise value.with_traceback(tb)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1245, in _execute_context
+    self.dialect.do_execute(
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\default.py", line 581, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.DataError: (psycopg2.errors.InvalidDatetimeFormat) invalid input syntax for type date: ""
+LINE 3: WHERE employee.date_of_birthday >= ''
+                                           ^
+
+[SQL: SELECT employee.id AS employee_id, employee.name AS employee_name, employee.department_id AS employee_department_id, employee.date_of_birthday AS employee_date_of_birthday, employee.salary AS employee_salary 
+FROM employee 
+WHERE employee.date_of_birthday >= %(date_of_birthday_1)s]
+[parameters: {'date_of_birthday_1': ''}]
+(Background on this error at: http://sqlalche.me/e/9h9h)
+2020-02-23 18:22:27,027 - rest.api - INFO - Web-service started
+2020-02-23 18:22:28,371 - service.crud - DEBUG - Filtered by dates list of employees was returned
+2020-02-23 18:22:28,371 - service.crud - WARNING - DATE HERE
+2020-02-23 18:22:28,374 - service.crud - WARNING - 
+2020-02-23 18:22:29,630 - rest.api - ERROR - Exception on /api/employees [POST]
+Traceback (most recent call last):
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1245, in _execute_context
+    self.dialect.do_execute(
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\default.py", line 581, in do_execute
+    cursor.execute(statement, parameters)
+psycopg2.errors.InvalidDatetimeFormat: invalid input syntax for type date: ""
+LINE 3: WHERE employee.date_of_birthday >= ''
+                                           ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "E:\GraduationWork\DepartmentHandler\department-app\rest\api.py", line 205, in post
+    employees = crud.Employees.get_by_date(data['date_from'], data['date_by'])
+  File "E:\GraduationWork\DepartmentHandler\department-app\service\crud.py", line 142, in get_by_date
+    logger.warning(Employee.query.filter(date_from <= Employee.date_of_birthday).all())
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\query.py", line 3211, in all
+    return list(self)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\query.py", line 3367, in __iter__
+    return self._execute_and_instances(context)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\query.py", line 3392, in _execute_and_instances
+    result = conn.execute(querycontext.statement, self._params)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 982, in execute
+    return meth(self, multiparams, params)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\sql\elements.py", line 287, in _execute_on_connection
+    return connection._execute_clauseelement(self, multiparams, params)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1095, in _execute_clauseelement
+    ret = self._execute_context(
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1249, in _execute_context
+    self._handle_dbapi_exception(
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1476, in _handle_dbapi_exception
+    util.raise_from_cause(sqlalchemy_exception, exc_info)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\util\compat.py", line 398, in raise_from_cause
+    reraise(type(exception), exception, tb=exc_tb, cause=cause)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\util\compat.py", line 152, in reraise
+    raise value.with_traceback(tb)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1245, in _execute_context
+    self.dialect.do_execute(
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\default.py", line 581, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.DataError: (psycopg2.errors.InvalidDatetimeFormat) invalid input syntax for type date: ""
+LINE 3: WHERE employee.date_of_birthday >= ''
+                                           ^
+
+[SQL: SELECT employee.id AS employee_id, employee.name AS employee_name, employee.department_id AS employee_department_id, employee.date_of_birthday AS employee_date_of_birthday, employee.salary AS employee_salary 
+FROM employee 
+WHERE employee.date_of_birthday >= %(date_of_birthday_1)s]
+[parameters: {'date_of_birthday_1': ''}]
+(Background on this error at: http://sqlalche.me/e/9h9h)
+2020-02-23 18:23:43,717 - rest.api - INFO - Web-service started
+2020-02-23 18:23:46,654 - service.crud - DEBUG - Filtered by dates list of employees was returned
+2020-02-23 18:23:46,662 - service.crud - WARNING - DATE HERE
+2020-02-23 18:23:46,662 - service.crud - WARNING - 1900-01-01
+2020-02-23 18:23:47,988 - service.crud - WARNING - [<Employee> name = Jo Tester1, <Employee> name = Jo Tester2, <Employee> name = Jo Tester3, <Employee> name = Jo Tester4, <Employee> name = Jo Tester5, <Employee> name = Mike Tester1, <Employee> name = Mike Tester2, <Employee> name = Mike Tester3, <Employee> name = Mike Tester4, <Employee> name = Mike Tester5, <Employee> name = Mike Tester6, <Employee> name = Mike Tester7, <Employee> name = Mike Tester8, <Employee> name = Mike Tester9, <Employee> name = Sam Tester1, <Employee> name = Sam Tester2, <Employee> name = Sam Tester3, <Employee> name = Sam Tester4, <Employee> name = Jo Tester1, <Employee> name = Jo Tester2, <Employee> name = Nik Tester1, <Employee> name = Nik Tester3]
+2020-02-23 18:23:48,051 - rest.api - DEBUG - POST method (/api/employees) was successful
+2020-02-23 18:24:55,150 - rest.api - INFO - Web-service started
+2020-02-23 18:24:58,505 - service.crud - DEBUG - Filtered by dates list of employees was returned
+2020-02-23 18:24:59,920 - service.crud - WARNING - [<Employee> name = Jo Tester1, <Employee> name = Jo Tester2, <Employee> name = Jo Tester3, <Employee> name = Jo Tester4, <Employee> name = Jo Tester5, <Employee> name = Mike Tester1, <Employee> name = Mike Tester2, <Employee> name = Mike Tester3, <Employee> name = Mike Tester4, <Employee> name = Mike Tester5, <Employee> name = Mike Tester6, <Employee> name = Mike Tester7, <Employee> name = Mike Tester8, <Employee> name = Mike Tester9, <Employee> name = Sam Tester1, <Employee> name = Sam Tester2, <Employee> name = Sam Tester3, <Employee> name = Sam Tester4, <Employee> name = Jo Tester1, <Employee> name = Jo Tester2, <Employee> name = Nik Tester1, <Employee> name = Nik Tester3]
+2020-02-23 18:24:59,984 - rest.api - DEBUG - POST method (/api/employees) was successful
+2020-02-23 18:25:49,478 - rest.api - INFO - Web-service started
+2020-02-23 18:25:53,446 - service.crud - DEBUG - List of employees was returned
+2020-02-23 18:25:54,737 - rest.api - DEBUG - GET method (/api/employees) was successful
+2020-02-23 18:26:02,125 - service.crud - DEBUG - Filtered by dates list of employees was returned
+2020-02-23 18:26:02,511 - service.crud - WARNING - [<Employee> name = Jo Tester1, <Employee> name = Jo Tester2, <Employee> name = Jo Tester3, <Employee> name = Jo Tester4, <Employee> name = Jo Tester5, <Employee> name = Sam Tester1, <Employee> name = Sam Tester2, <Employee> name = Sam Tester3, <Employee> name = Sam Tester4, <Employee> name = Nik Tester1, <Employee> name = Nik Tester3]
+2020-02-23 18:26:02,577 - rest.api - DEBUG - POST method (/api/employees) was successful
+2020-02-23 18:26:16,315 - service.crud - DEBUG - Filtered by dates list of employees was returned
+2020-02-23 18:26:16,449 - service.crud - WARNING - [<Employee> name = Jo Tester1, <Employee> name = Jo Tester2, <Employee> name = Jo Tester3, <Employee> name = Jo Tester4, <Employee> name = Jo Tester5, <Employee> name = Sam Tester1, <Employee> name = Sam Tester2, <Employee> name = Sam Tester3, <Employee> name = Sam Tester4, <Employee> name = Nik Tester1, <Employee> name = Nik Tester3]
+2020-02-23 18:26:16,514 - rest.api - DEBUG - POST method (/api/employees) was successful
+2020-02-23 18:26:30,002 - service.crud - DEBUG - List of employees was returned
+2020-02-23 18:26:30,130 - rest.api - DEBUG - GET method (/api/employees) was successful
+2020-02-23 18:26:46,590 - service.crud - DEBUG - Filtered by dates list of employees was returned
+2020-02-23 18:26:46,717 - service.crud - WARNING - [<Employee> name = Jo Tester1, <Employee> name = Jo Tester2, <Employee> name = Jo Tester3, <Employee> name = Jo Tester4, <Employee> name = Jo Tester5, <Employee> name = Nik Tester1, <Employee> name = Nik Tester3]
+2020-02-23 18:26:46,782 - rest.api - DEBUG - POST method (/api/employees) was successful
+2020-02-23 18:26:50,315 - service.crud - DEBUG - List of department was returned
+2020-02-23 18:26:50,555 - rest.api - DEBUG - GET method (/api/departments) was successful
+2020-02-23 18:30:41,278 - rest.api - INFO - Web-service started
+2020-02-23 18:30:49,848 - service.crud - DEBUG - List of department was returned
+2020-02-23 18:30:50,098 - rest.api - DEBUG - GET method (/api/departments) was successful
+2020-02-23 18:30:50,461 - service.crud - DEBUG - List of department was returned
+2020-02-23 18:30:50,714 - rest.api - DEBUG - GET method (/api/departments) was successful
+2020-02-23 18:31:13,332 - service.crud - DEBUG - List of employees was returned
+2020-02-23 18:31:13,462 - rest.api - DEBUG - GET method (/api/employees) was successful
+2020-02-23 18:31:39,704 - service.crud - DEBUG - List of department was returned
+2020-02-23 18:31:39,950 - rest.api - DEBUG - GET method (/api/departments) was successful
+2020-02-23 18:32:01,472 - service.crud - DEBUG - List of employees was returned
+2020-02-23 18:32:01,604 - rest.api - DEBUG - GET method (/api/employees) was successful
+2020-02-23 18:32:13,680 - service.crud - DEBUG - Employee 1 was returned
+2020-02-23 18:32:13,684 - rest.api - DEBUG - GET method (/api/employee/1) was successful
+2020-02-23 18:32:13,972 - service.crud - DEBUG - List of department was returned
+2020-02-23 18:32:13,976 - rest.api - DEBUG - GET method (/api/departments-ids) was successful
+2020-02-23 18:32:25,501 - service.crud - DEBUG - List of employees was returned
+2020-02-23 18:32:25,637 - rest.api - DEBUG - GET method (/api/employees) was successful
+2020-02-23 18:33:00,346 - service.crud - DEBUG - List of department was returned
+2020-02-23 18:33:00,605 - rest.api - DEBUG - GET method (/api/departments) was successful
+2020-02-25 17:31:10,645 - rest.api - INFO - Web-service started
+2020-02-25 17:31:21,910 - service.crud - DEBUG - List of department was returned
+2020-02-25 17:31:22,153 - rest.api - DEBUG - GET method (/api/departments) was successful
+2020-02-25 17:31:32,176 - service.crud - DEBUG - List of employees was returned
+2020-02-25 17:31:32,306 - rest.api - DEBUG - GET method (/api/employees) was successful
+2020-02-25 17:31:37,231 - service.crud - DEBUG - List of department was returned
+2020-02-25 17:31:37,485 - rest.api - DEBUG - GET method (/api/departments) was successful
+2020-02-25 17:31:56,044 - service.crud - DEBUG - Employee 17 was returned
+2020-02-25 17:31:56,044 - rest.api - DEBUG - GET method (/api/employee/17) was successful
+2020-02-25 17:31:56,299 - service.crud - DEBUG - List of department was returned
+2020-02-25 17:31:56,301 - rest.api - DEBUG - GET method (/api/departments-ids) was successful
+2020-02-25 17:32:16,977 - service.crud - DEBUG - List of employees was returned
+2020-02-25 17:32:17,103 - rest.api - DEBUG - GET method (/api/employees) was successful
+2020-02-25 17:32:21,344 - service.crud - DEBUG - List of employees was returned
+2020-02-25 17:32:21,485 - rest.api - DEBUG - GET method (/api/employees) was successful
+2020-02-25 17:32:31,228 - service.crud - DEBUG - Filtered by dates list of employees was returned
+2020-02-25 17:32:31,358 - rest.api - DEBUG - POST method (/api/employees) was successful
+2020-02-25 17:32:42,533 - service.crud - DEBUG - List of department was returned
+2020-02-25 17:32:42,772 - rest.api - DEBUG - GET method (/api/departments) was successful
+2020-02-27 10:40:44,323 - rest.api - INFO - Web-service started
+2020-02-27 10:40:55,757 - rest.api - ERROR - Exception on /api/departments [GET]
+Traceback (most recent call last):
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 2276, in _wrap_pool_connect
+    return fn()
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\pool\base.py", line 363, in connect
+    return _ConnectionFairy._checkout(self)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\pool\base.py", line 760, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\pool\base.py", line 492, in checkout
+    rec = pool._do_get()
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\pool\impl.py", line 139, in _do_get
+    self._dec_overflow()
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\util\langhelpers.py", line 68, in __exit__
+    compat.reraise(exc_type, exc_value, exc_tb)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\util\compat.py", line 153, in reraise
+    raise value
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\pool\impl.py", line 136, in _do_get
+    return self._create_connection()
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\pool\base.py", line 308, in _create_connection
+    return _ConnectionRecord(self)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\pool\base.py", line 437, in __init__
+    self.__connect(first_connect_check=True)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\pool\base.py", line 639, in __connect
+    connection = pool._invoke_creator(self)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\strategies.py", line 114, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\default.py", line 482, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "E:\GraduationWork\ENV\lib\site-packages\psycopg2\__init__.py", line 126, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: could not translate host name "ec2-46-137-177-160.eu-west-1.compute.amazonaws.com" to address: Unknown host
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "E:\GraduationWork\DepartmentHandler\department-app\rest\api.py", line 50, in get
+    data = crud.Departments.get_all()
+  File "E:\GraduationWork\DepartmentHandler\department-app\service\crud.py", line 32, in get_all
+    departments = Department.query.order_by(Department.id).all()
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\query.py", line 3211, in all
+    return list(self)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\query.py", line 3367, in __iter__
+    return self._execute_and_instances(context)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\query.py", line 3388, in _execute_and_instances
+    conn = self._get_bind_args(
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\query.py", line 3403, in _get_bind_args
+    return fn(
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\query.py", line 3382, in _connection_from_session
+    conn = self.session.connection(**kw)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\session.py", line 1121, in connection
+    return self._connection_for_bind(
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\session.py", line 1129, in _connection_for_bind
+    return self.transaction._connection_for_bind(
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\session.py", line 431, in _connection_for_bind
+    conn = bind._contextual_connect()
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 2242, in _contextual_connect
+    self._wrap_pool_connect(self.pool.connect, None),
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 2279, in _wrap_pool_connect
+    Connection._handle_dbapi_exception_noconnection(
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1547, in _handle_dbapi_exception_noconnection
+    util.raise_from_cause(sqlalchemy_exception, exc_info)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\util\compat.py", line 398, in raise_from_cause
+    reraise(type(exception), exception, tb=exc_tb, cause=cause)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\util\compat.py", line 152, in reraise
+    raise value.with_traceback(tb)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 2276, in _wrap_pool_connect
+    return fn()
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\pool\base.py", line 363, in connect
+    return _ConnectionFairy._checkout(self)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\pool\base.py", line 760, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\pool\base.py", line 492, in checkout
+    rec = pool._do_get()
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\pool\impl.py", line 139, in _do_get
+    self._dec_overflow()
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\util\langhelpers.py", line 68, in __exit__
+    compat.reraise(exc_type, exc_value, exc_tb)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\util\compat.py", line 153, in reraise
+    raise value
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\pool\impl.py", line 136, in _do_get
+    return self._create_connection()
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\pool\base.py", line 308, in _create_connection
+    return _ConnectionRecord(self)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\pool\base.py", line 437, in __init__
+    self.__connect(first_connect_check=True)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\pool\base.py", line 639, in __connect
+    connection = pool._invoke_creator(self)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\strategies.py", line 114, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\default.py", line 482, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "E:\GraduationWork\ENV\lib\site-packages\psycopg2\__init__.py", line 126, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+sqlalchemy.exc.OperationalError: (psycopg2.OperationalError) could not translate host name "ec2-46-137-177-160.eu-west-1.compute.amazonaws.com" to address: Unknown host
+
+(Background on this error at: http://sqlalche.me/e/e3q8)
+2020-02-27 10:40:59,536 - rest.api - ERROR - Exception on /api/departments [GET]
+Traceback (most recent call last):
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 2276, in _wrap_pool_connect
+    return fn()
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\pool\base.py", line 363, in connect
+    return _ConnectionFairy._checkout(self)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\pool\base.py", line 760, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\pool\base.py", line 492, in checkout
+    rec = pool._do_get()
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\pool\impl.py", line 139, in _do_get
+    self._dec_overflow()
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\util\langhelpers.py", line 68, in __exit__
+    compat.reraise(exc_type, exc_value, exc_tb)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\util\compat.py", line 153, in reraise
+    raise value
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\pool\impl.py", line 136, in _do_get
+    return self._create_connection()
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\pool\base.py", line 308, in _create_connection
+    return _ConnectionRecord(self)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\pool\base.py", line 437, in __init__
+    self.__connect(first_connect_check=True)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\pool\base.py", line 639, in __connect
+    connection = pool._invoke_creator(self)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\strategies.py", line 114, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\default.py", line 482, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "E:\GraduationWork\ENV\lib\site-packages\psycopg2\__init__.py", line 126, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: could not translate host name "ec2-46-137-177-160.eu-west-1.compute.amazonaws.com" to address: Unknown host
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "E:\GraduationWork\DepartmentHandler\department-app\rest\api.py", line 50, in get
+    data = crud.Departments.get_all()
+  File "E:\GraduationWork\DepartmentHandler\department-app\service\crud.py", line 32, in get_all
+    departments = Department.query.order_by(Department.id).all()
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\query.py", line 3211, in all
+    return list(self)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\query.py", line 3367, in __iter__
+    return self._execute_and_instances(context)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\query.py", line 3388, in _execute_and_instances
+    conn = self._get_bind_args(
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\query.py", line 3403, in _get_bind_args
+    return fn(
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\query.py", line 3382, in _connection_from_session
+    conn = self.session.connection(**kw)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\session.py", line 1121, in connection
+    return self._connection_for_bind(
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\session.py", line 1129, in _connection_for_bind
+    return self.transaction._connection_for_bind(
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\session.py", line 431, in _connection_for_bind
+    conn = bind._contextual_connect()
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 2242, in _contextual_connect
+    self._wrap_pool_connect(self.pool.connect, None),
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 2279, in _wrap_pool_connect
+    Connection._handle_dbapi_exception_noconnection(
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1547, in _handle_dbapi_exception_noconnection
+    util.raise_from_cause(sqlalchemy_exception, exc_info)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\util\compat.py", line 398, in raise_from_cause
+    reraise(type(exception), exception, tb=exc_tb, cause=cause)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\util\compat.py", line 152, in reraise
+    raise value.with_traceback(tb)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 2276, in _wrap_pool_connect
+    return fn()
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\pool\base.py", line 363, in connect
+    return _ConnectionFairy._checkout(self)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\pool\base.py", line 760, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\pool\base.py", line 492, in checkout
+    rec = pool._do_get()
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\pool\impl.py", line 139, in _do_get
+    self._dec_overflow()
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\util\langhelpers.py", line 68, in __exit__
+    compat.reraise(exc_type, exc_value, exc_tb)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\util\compat.py", line 153, in reraise
+    raise value
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\pool\impl.py", line 136, in _do_get
+    return self._create_connection()
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\pool\base.py", line 308, in _create_connection
+    return _ConnectionRecord(self)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\pool\base.py", line 437, in __init__
+    self.__connect(first_connect_check=True)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\pool\base.py", line 639, in __connect
+    connection = pool._invoke_creator(self)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\strategies.py", line 114, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\default.py", line 482, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "E:\GraduationWork\ENV\lib\site-packages\psycopg2\__init__.py", line 126, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+sqlalchemy.exc.OperationalError: (psycopg2.OperationalError) could not translate host name "ec2-46-137-177-160.eu-west-1.compute.amazonaws.com" to address: Unknown host
+
+(Background on this error at: http://sqlalche.me/e/e3q8)
+2020-02-27 10:41:37,120 - service.crud - DEBUG - List of department was returned
+2020-02-27 10:41:39,857 - rest.api - DEBUG - GET method (/api/departments) was successful
+2020-02-27 10:41:49,886 - service.crud - DEBUG - List of employees was returned
+2020-02-27 10:41:50,306 - rest.api - DEBUG - GET method (/api/employees) was successful
+2020-02-27 10:41:59,064 - service.crud - DEBUG - List of employees was returned
+2020-02-27 10:42:00,110 - rest.api - DEBUG - GET method (/api/employees) was successful
+2020-02-27 10:42:05,000 - service.crud - DEBUG - List of department was returned
+2020-02-27 10:42:07,251 - rest.api - DEBUG - GET method (/api/departments) was successful
+2020-02-27 10:42:11,053 - service.crud - DEBUG - Employee 5 was returned
+2020-02-27 10:42:11,057 - rest.api - DEBUG - GET method (/api/employee/5) was successful
+2020-02-27 10:42:13,307 - service.crud - DEBUG - List of department was returned
+2020-02-27 10:42:13,307 - rest.api - DEBUG - GET method (/api/departments-ids) was successful
+2020-02-27 10:43:49,032 - service.crud - DEBUG - List of employees was returned
+2020-02-27 10:44:05,209 - rest.api - DEBUG - GET method (/api/employees) was successful
+2020-02-27 10:44:15,272 - service.crud - DEBUG - Employee 1 was returned
+2020-02-27 10:44:15,272 - rest.api - DEBUG - GET method (/api/employee/1) was successful
+2020-02-27 10:44:30,727 - service.crud - DEBUG - List of department was returned
+2020-02-27 10:44:30,727 - rest.api - DEBUG - GET method (/api/departments-ids) was successful
+2020-02-27 10:46:06,868 - rest.api - INFO - Web-service started
+2020-02-27 10:46:19,302 - service.crud - DEBUG - Employee was updated
+2020-02-27 10:46:19,302 - rest.api - DEBUG - PUT method (/api/employee/1) was successful
+2020-02-27 10:50:24,397 - rest.api - INFO - Web-service started
+2020-02-27 10:50:37,212 - service.crud - DEBUG - Employee 1 was returned
+2020-02-27 10:50:37,216 - rest.api - DEBUG - GET method (/api/employee/1) was successful
+2020-02-27 10:50:37,980 - service.crud - DEBUG - List of department was returned
+2020-02-27 10:50:37,980 - rest.api - DEBUG - GET method (/api/departments-ids) was successful
+2020-02-27 10:52:24,206 - service.crud - DEBUG - List of department was returned
+2020-02-27 10:52:24,776 - rest.api - DEBUG - GET method (/api/departments) was successful
+2020-02-27 10:53:25,770 - service.crud - DEBUG - List of department was returned
+2020-02-27 10:53:26,169 - rest.api - DEBUG - GET method (/api/departments) was successful
+2020-02-27 10:53:28,798 - service.crud - DEBUG - Department 10002 was returned
+2020-02-27 10:53:28,892 - rest.api - DEBUG - GET method (/api/department/10002) was successful
+2020-02-27 10:53:33,288 - service.crud - DEBUG - Department 10002 was updated
+2020-02-27 10:53:33,693 - rest.api - DEBUG - PUT method (/api/department/10002) was successful
+2020-02-27 10:53:34,010 - service.crud - DEBUG - List of department was returned
+2020-02-27 10:53:34,384 - rest.api - DEBUG - GET method (/api/departments) was successful
+2020-02-27 10:53:52,307 - service.crud - DEBUG - List of employees was returned
+2020-02-27 10:53:52,499 - rest.api - DEBUG - GET method (/api/employees) was successful
+2020-02-27 10:54:30,884 - rest.api - ERROR - Exception on /api/employee/add [GET]
+Traceback (most recent call last):
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1245, in _execute_context
+    self.dialect.do_execute(
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\default.py", line 581, in do_execute
+    cursor.execute(statement, parameters)
+psycopg2.errors.InvalidTextRepresentation: invalid input syntax for type integer: "add"
+LINE 3: WHERE employee.id = 'add' 
+                            ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "E:\GraduationWork\DepartmentHandler\department-app\rest\api.py", line 231, in get
+    employee = crud.Employees.get(employee_id)
+  File "E:\GraduationWork\DepartmentHandler\department-app\service\crud.py", line 152, in get
+    employee = Employee.query.filter_by(id=employee_id).first()
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\query.py", line 3265, in first
+    ret = list(self[0:1])
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\query.py", line 3043, in __getitem__
+    return list(res)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\query.py", line 3367, in __iter__
+    return self._execute_and_instances(context)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\query.py", line 3392, in _execute_and_instances
+    result = conn.execute(querycontext.statement, self._params)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 982, in execute
+    return meth(self, multiparams, params)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\sql\elements.py", line 287, in _execute_on_connection
+    return connection._execute_clauseelement(self, multiparams, params)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1095, in _execute_clauseelement
+    ret = self._execute_context(
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1249, in _execute_context
+    self._handle_dbapi_exception(
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1476, in _handle_dbapi_exception
+    util.raise_from_cause(sqlalchemy_exception, exc_info)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\util\compat.py", line 398, in raise_from_cause
+    reraise(type(exception), exception, tb=exc_tb, cause=cause)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\util\compat.py", line 152, in reraise
+    raise value.with_traceback(tb)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1245, in _execute_context
+    self.dialect.do_execute(
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\default.py", line 581, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.DataError: (psycopg2.errors.InvalidTextRepresentation) invalid input syntax for type integer: "add"
+LINE 3: WHERE employee.id = 'add' 
+                            ^
+
+[SQL: SELECT employee.id AS employee_id, employee.name AS employee_name, employee.department_id AS employee_department_id, employee.date_of_birthday AS employee_date_of_birthday, employee.salary AS employee_salary 
+FROM employee 
+WHERE employee.id = %(id_1)s 
+ LIMIT %(param_1)s]
+[parameters: {'id_1': 'add', 'param_1': 1}]
+(Background on this error at: http://sqlalche.me/e/9h9h)
+2020-02-27 10:54:31,795 - service.crud - DEBUG - List of department was returned
+2020-02-27 10:54:31,798 - rest.api - DEBUG - GET method (/api/departments-ids) was successful
+2020-02-27 10:55:07,455 - service.crud - DEBUG - List of department was returned
+2020-02-27 10:55:08,102 - rest.api - DEBUG - GET method (/api/departments) was successful
+2020-02-27 10:56:26,434 - service.crud - DEBUG - List of department was returned
+2020-02-27 10:56:27,127 - rest.api - DEBUG - GET method (/api/departments) was successful
+2020-02-27 10:56:31,277 - service.crud - DEBUG - List of employees was returned
+2020-02-27 10:56:31,473 - rest.api - DEBUG - GET method (/api/employees) was successful
+2020-02-27 10:56:33,402 - service.crud - DEBUG - Employee 1 was returned
+2020-02-27 10:56:33,402 - rest.api - DEBUG - GET method (/api/employee/1) was successful
+2020-02-27 10:56:33,838 - service.crud - DEBUG - List of department was returned
+2020-02-27 10:56:33,842 - rest.api - DEBUG - GET method (/api/departments-ids) was successful
+2020-02-27 10:59:01,802 - rest.api - INFO - Web-service started
+2020-02-27 10:59:30,046 - rest.api - ERROR - Exception on /api/employee/1 [GET]
+Traceback (most recent call last):
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 2276, in _wrap_pool_connect
+    return fn()
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\pool\base.py", line 363, in connect
+    return _ConnectionFairy._checkout(self)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\pool\base.py", line 760, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\pool\base.py", line 492, in checkout
+    rec = pool._do_get()
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\pool\impl.py", line 139, in _do_get
+    self._dec_overflow()
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\util\langhelpers.py", line 68, in __exit__
+    compat.reraise(exc_type, exc_value, exc_tb)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\util\compat.py", line 153, in reraise
+    raise value
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\pool\impl.py", line 136, in _do_get
+    return self._create_connection()
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\pool\base.py", line 308, in _create_connection
+    return _ConnectionRecord(self)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\pool\base.py", line 437, in __init__
+    self.__connect(first_connect_check=True)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\pool\base.py", line 639, in __connect
+    connection = pool._invoke_creator(self)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\strategies.py", line 114, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\default.py", line 482, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "E:\GraduationWork\ENV\lib\site-packages\psycopg2\__init__.py", line 126, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: could not connect to server: Connection timed out (0x0000274C/10060)
+	Is the server running on host "ec2-46-137-177-160.eu-west-1.compute.amazonaws.com" (46.137.177.160) and accepting
+	TCP/IP connections on port 5432?
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask\views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "E:\GraduationWork\ENV\lib\site-packages\flask_restful\__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "E:\GraduationWork\DepartmentHandler\department-app\rest\api.py", line 231, in get
+    employee = crud.Employees.get(employee_id)
+  File "E:\GraduationWork\DepartmentHandler\department-app\service\crud.py", line 152, in get
+    employee = Employee.query.filter_by(id=employee_id).first()
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\query.py", line 3265, in first
+    ret = list(self[0:1])
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\query.py", line 3043, in __getitem__
+    return list(res)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\query.py", line 3367, in __iter__
+    return self._execute_and_instances(context)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\query.py", line 3388, in _execute_and_instances
+    conn = self._get_bind_args(
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\query.py", line 3403, in _get_bind_args
+    return fn(
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\query.py", line 3382, in _connection_from_session
+    conn = self.session.connection(**kw)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\session.py", line 1121, in connection
+    return self._connection_for_bind(
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\session.py", line 1129, in _connection_for_bind
+    return self.transaction._connection_for_bind(
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\orm\session.py", line 431, in _connection_for_bind
+    conn = bind._contextual_connect()
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 2242, in _contextual_connect
+    self._wrap_pool_connect(self.pool.connect, None),
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 2279, in _wrap_pool_connect
+    Connection._handle_dbapi_exception_noconnection(
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 1547, in _handle_dbapi_exception_noconnection
+    util.raise_from_cause(sqlalchemy_exception, exc_info)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\util\compat.py", line 398, in raise_from_cause
+    reraise(type(exception), exception, tb=exc_tb, cause=cause)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\util\compat.py", line 152, in reraise
+    raise value.with_traceback(tb)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\base.py", line 2276, in _wrap_pool_connect
+    return fn()
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\pool\base.py", line 363, in connect
+    return _ConnectionFairy._checkout(self)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\pool\base.py", line 760, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\pool\base.py", line 492, in checkout
+    rec = pool._do_get()
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\pool\impl.py", line 139, in _do_get
+    self._dec_overflow()
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\util\langhelpers.py", line 68, in __exit__
+    compat.reraise(exc_type, exc_value, exc_tb)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\util\compat.py", line 153, in reraise
+    raise value
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\pool\impl.py", line 136, in _do_get
+    return self._create_connection()
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\pool\base.py", line 308, in _create_connection
+    return _ConnectionRecord(self)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\pool\base.py", line 437, in __init__
+    self.__connect(first_connect_check=True)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\pool\base.py", line 639, in __connect
+    connection = pool._invoke_creator(self)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\strategies.py", line 114, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "E:\GraduationWork\ENV\lib\site-packages\sqlalchemy\engine\default.py", line 482, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "E:\GraduationWork\ENV\lib\site-packages\psycopg2\__init__.py", line 126, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+sqlalchemy.exc.OperationalError: (psycopg2.OperationalError) could not connect to server: Connection timed out (0x0000274C/10060)
+	Is the server running on host "ec2-46-137-177-160.eu-west-1.compute.amazonaws.com" (46.137.177.160) and accepting
+	TCP/IP connections on port 5432?
+
+(Background on this error at: http://sqlalche.me/e/e3q8)
+2020-02-27 10:59:48,307 - service.crud - DEBUG - List of department was returned
+2020-02-27 10:59:48,307 - rest.api - DEBUG - GET method (/api/departments-ids) was successful
+2020-02-27 11:00:36,190 - service.crud - DEBUG - Employee 1 was returned
+2020-02-27 11:00:36,190 - rest.api - DEBUG - GET method (/api/employee/1) was successful
+2020-02-27 11:00:36,667 - service.crud - DEBUG - List of department was returned
+2020-02-27 11:00:36,667 - rest.api - DEBUG - GET method (/api/departments-ids) was successful
+2020-02-27 11:00:38,035 - service.crud - DEBUG - Employee 1 was returned
+2020-02-27 11:00:38,035 - rest.api - DEBUG - GET method (/api/employee/1) was successful
+2020-02-27 11:00:38,451 - service.crud - DEBUG - List of department was returned
+2020-02-27 11:00:38,451 - rest.api - DEBUG - GET method (/api/departments-ids) was successful
+2020-02-27 11:00:51,571 - service.crud - DEBUG - Employee 1 was returned
+2020-02-27 11:00:51,575 - rest.api - DEBUG - GET method (/api/employee/1) was successful
+2020-02-27 11:00:52,260 - service.crud - DEBUG - List of department was returned
+2020-02-27 11:00:52,264 - rest.api - DEBUG - GET method (/api/departments-ids) was successful
+2020-02-27 11:01:37,674 - service.crud - DEBUG - Employee 1 was returned
+2020-02-27 11:01:37,674 - rest.api - DEBUG - GET method (/api/employee/1) was successful
+2020-02-27 11:01:38,077 - service.crud - DEBUG - List of department was returned
+2020-02-27 11:01:38,077 - rest.api - DEBUG - GET method (/api/departments-ids) was successful
+2020-02-27 11:03:07,340 - service.crud - DEBUG - Employee 1 was returned
+2020-02-27 11:03:07,340 - rest.api - DEBUG - GET method (/api/employee/1) was successful
+2020-02-27 11:03:07,695 - service.crud - DEBUG - List of department was returned
+2020-02-27 11:03:07,695 - rest.api - DEBUG - GET method (/api/departments-ids) was successful
+2020-02-27 11:03:25,518 - service.crud - DEBUG - Employee 1 was returned
+2020-02-27 11:03:25,522 - rest.api - DEBUG - GET method (/api/employee/1) was successful
+2020-02-27 11:03:26,762 - service.crud - DEBUG - List of department was returned
+2020-02-27 11:03:26,762 - rest.api - DEBUG - GET method (/api/departments-ids) was successful
+2020-02-27 11:03:29,966 - service.crud - DEBUG - Employee was updated
+2020-02-27 11:03:29,966 - rest.api - DEBUG - PUT method (/api/employee/1) was successful
+2020-02-27 11:03:30,022 - service.crud - DEBUG - List of employees was returned
+2020-02-27 11:03:30,296 - rest.api - DEBUG - GET method (/api/employees) was successful
+2020-02-27 12:16:13,595 - rest.api - INFO - Web-service started
+2020-02-27 12:16:32,766 - service.crud - DEBUG - List of department was returned
+2020-02-27 12:16:33,206 - rest.api - DEBUG - GET method (/api/departments) was successful
+2020-02-27 12:16:57,276 - service.crud - DEBUG - Employee 2 was returned
+2020-02-27 12:16:57,280 - rest.api - DEBUG - GET method (/api/employee/2) was successful
+2020-02-27 12:16:58,331 - service.crud - DEBUG - List of department was returned
+2020-02-27 12:16:58,335 - rest.api - DEBUG - GET method (/api/departments-ids) was successful
+2020-02-27 12:17:03,651 - service.crud - DEBUG - Employee was updated
+2020-02-27 12:17:03,651 - rest.api - DEBUG - PUT method (/api/employee/2) was successful
+2020-02-27 12:17:03,703 - service.crud - DEBUG - List of employees was returned
+2020-02-27 12:17:03,891 - rest.api - DEBUG - GET method (/api/employees) was successful
+2020-02-27 12:17:14,899 - service.crud - DEBUG - List of employees was returned
+2020-02-27 12:17:15,147 - rest.api - DEBUG - GET method (/api/employees) was successful
+2020-02-27 12:17:20,221 - service.crud - DEBUG - List of department was returned
+2020-02-27 12:17:21,619 - rest.api - DEBUG - GET method (/api/departments) was successful
+2020-02-27 12:17:32,556 - service.crud - DEBUG - Department 10005 was returned
+2020-02-27 12:17:32,620 - rest.api - DEBUG - GET method (/api/department/10005) was successful
+2020-02-27 12:17:36,089 - service.crud - DEBUG - List of employees was returned
+2020-02-27 12:17:36,229 - rest.api - DEBUG - GET method (/api/employees) was successful
+2020-02-27 12:17:44,873 - service.crud - DEBUG - Filtered by dates list of employees was returned
+2020-02-27 12:17:45,026 - rest.api - DEBUG - POST method (/api/employees) was successful
+2020-04-07 15:34:26,177 - rest.api - INFO - Web-service started
+2020-04-07 15:34:55,581 - service.crud - DEBUG - List of department was returned
+2020-04-07 15:34:55,817 - rest.api - DEBUG - GET method (/api/departments) was successful
+2020-04-07 15:35:01,585 - service.crud - DEBUG - List of employees was returned
+2020-04-07 15:35:01,705 - rest.api - DEBUG - GET method (/api/employees) was successful
+2020-04-07 15:35:08,403 - service.crud - DEBUG - List of department was returned
+2020-04-07 15:35:08,627 - rest.api - DEBUG - GET method (/api/departments) was successful
+2020-04-07 15:36:04,853 - service.crud - DEBUG - List of employees was returned
+2020-04-07 15:36:04,985 - rest.api - DEBUG - GET method (/api/employees) was successful
+2020-04-07 15:36:12,454 - service.crud - DEBUG - List of department was returned
+2020-04-07 15:36:12,685 - rest.api - DEBUG - GET method (/api/departments) was successful
+2020-04-07 15:37:02,973 - service.crud - DEBUG - List of department was returned
+2020-04-07 15:37:03,213 - rest.api - DEBUG - GET method (/api/departments) was successful
+2020-04-07 15:37:04,761 - service.crud - DEBUG - List of employees was returned
+2020-04-07 15:37:04,902 - rest.api - DEBUG - GET method (/api/employees) was successful
+2020-04-07 15:38:39,029 - service.crud - DEBUG - List of employees was returned
+2020-04-07 15:38:39,151 - rest.api - DEBUG - GET method (/api/employees) was successful
+2020-04-07 15:39:06,325 - service.crud - DEBUG - List of employees was returned
+2020-04-07 15:39:06,445 - rest.api - DEBUG - GET method (/api/employees) was successful
+2020-04-07 15:39:57,800 - service.crud - DEBUG - List of employees was returned
+2020-04-07 15:39:57,917 - rest.api - DEBUG - GET method (/api/employees) was successful
+2020-04-07 15:40:08,779 - service.crud - DEBUG - List of department was returned
+2020-04-07 15:40:08,779 - rest.api - DEBUG - GET method (/api/departments-ids) was successful
+2020-04-07 15:40:12,168 - service.crud - DEBUG - List of department was returned
+2020-04-07 15:40:12,396 - rest.api - DEBUG - GET method (/api/departments) was successful
+2020-04-07 15:41:24,447 - service.crud - DEBUG - List of department was returned
+2020-04-07 15:41:24,673 - rest.api - DEBUG - GET method (/api/departments) was successful
+2020-04-07 15:41:48,318 - service.crud - DEBUG - List of department was returned
+2020-04-07 15:41:48,586 - rest.api - DEBUG - GET method (/api/departments) was successful
+2020-04-07 15:41:55,403 - service.crud - DEBUG - List of employees was returned
+2020-04-07 15:41:55,525 - rest.api - DEBUG - GET method (/api/employees) was successful
+2020-04-07 15:42:00,882 - service.crud - DEBUG - List of department was returned
+2020-04-07 15:42:01,108 - rest.api - DEBUG - GET method (/api/departments) was successful
+2020-04-07 15:42:12,706 - service.crud - DEBUG - List of department was returned
+2020-04-07 15:42:12,930 - rest.api - DEBUG - GET method (/api/departments) was successful
+2020-04-07 15:42:16,515 - service.crud - DEBUG - List of department was returned
+2020-04-07 15:42:16,743 - rest.api - DEBUG - GET method (/api/departments) was successful
+2020-04-07 15:42:23,733 - service.crud - DEBUG - List of employees was returned
+2020-04-07 15:42:23,861 - rest.api - DEBUG - GET method (/api/employees) was successful
+2020-04-07 15:43:00,053 - service.crud - DEBUG - List of employees was returned
+2020-04-07 15:43:00,167 - rest.api - DEBUG - GET method (/api/employees) was successful
+2020-04-07 15:43:03,447 - service.crud - DEBUG - List of department was returned
+2020-04-07 15:43:03,676 - rest.api - DEBUG - GET method (/api/departments) was successful

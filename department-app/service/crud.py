@@ -29,7 +29,7 @@ class Departments:
         :return: List of departments and average salaries
         :rtype: tuple (list<departments>, list<tuple(salary)>
         """
-        departments = Department.query.all()
+        departments = Department.query.order_by(Department.id).all()
         salaries = db.session.query(func.avg(Employee.salary).label('average'),
                                     Employee.department_id).group_by(Employee.department_id).all()
         logger.debug('List of department was returned')
@@ -137,7 +137,8 @@ class Employees:
         :rtype: list
         """
         logger.debug('Filtered by dates list of employees was returned')
-        return Employee.query.filter(date_from <= Employee.date_of_birthday, Employee.date_of_birthday <= date_by).all()
+        return Employee.query.filter(date_from <= Employee.date_of_birthday,
+                                     date_by >= Employee.date_of_birthday).all()
 
     @staticmethod
     def get(employee_id):

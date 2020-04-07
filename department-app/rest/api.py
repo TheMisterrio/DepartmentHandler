@@ -57,12 +57,12 @@ class Departments(Resource):
             departments_json['departments'][i]['name'] = departments[i].name
             employees = []
             for employee in departments[i].employees:
-                employees.append(employee.name)
+                employees.append({'id': employee.id, 'name': employee.name})
             departments_json['departments'][i]['employees'] = employees
             for salary in avg_salaries:
                 # salary relates department
                 if departments[i].id == salary[1]:
-                    departments_json['departments'][i]['salary'] = str(salary[0])[:-2]
+                    departments_json['departments'][i]['salary'] = str(round(salary[0], 2))
                     avg_salaries.remove(salary)
                     break
             else:
@@ -200,8 +200,8 @@ class Employees(Resource):
         data = parser_for_employees.parse_args()
         if data['date_by'] is None or data['date_by'] == '':
             data['date_by'] = date.today()
-        if data['date_from'] is None or data['date_by'] == '':
-            data['date_from'] = ''
+        if data['date_from'] is None or data['date_from'] == '':
+            data['date_from'] = date(1900, 1, 1)
         employees = crud.Employees.get_by_date(data['date_from'], data['date_by'])
         employees_json = {'employees': []}
         for i in range(0, len(employees)):

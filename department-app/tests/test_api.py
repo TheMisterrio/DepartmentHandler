@@ -9,8 +9,10 @@ class TestDepartments(BaseTestCase):
         request = self.app.get('/api/departments')
         self.assertEqual(request.json, {'departments': [{'id': 10001,
                                                          'name': 'Test Department',
-                                                         'employees': ['Steven Gray', 'John Spins'],
-                                                         'salary':'2000.00'}]})
+                                                         'employees': [
+                                                             {'id': '1', 'name': 'Steven Gray'},
+                                                             {'id': '2', 'name': 'John Spins'}],
+                                                         'salary': '2000.00'}]})
         self.assertEqual(request.status_code, 200)
 
 

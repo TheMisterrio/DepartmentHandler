@@ -1064,3 +1064,357 @@
 2020-02-22 23:31:45,787 - app - DEBUG - Employee page was displayed
 2020-02-22 23:32:38,308 - app - DEBUG - Employee page was displayed
 2020-02-22 23:32:46,189 - app - DEBUG - Departments page was displayed with list of departments
+2020-02-23 11:51:30,907 - app - INFO - Web-app started
+2020-02-23 11:51:32,099 - app - INFO - Web-app started
+2020-02-23 11:51:46,979 - app - DEBUG - Departments page was displayed with list of departments
+2020-02-23 11:51:49,268 - app - DEBUG - Department page was displayed
+2020-02-23 11:51:51,547 - app - DEBUG - Employees page was displayed
+2020-02-23 11:51:53,799 - app - DEBUG - Employee page was displayed
+2020-02-23 11:52:50,491 - app - INFO - Web-app started
+2020-02-23 11:53:49,762 - app - INFO - Web-app started
+2020-02-23 11:54:23,905 - app - INFO - Web-app started
+2020-02-23 11:54:24,550 - app - DEBUG - Employee page was displayed
+2020-02-23 11:54:32,628 - app - DEBUG - Departments page was displayed with list of departments
+2020-02-23 11:58:11,512 - app - INFO - Web-app started
+2020-02-23 11:58:12,521 - app - INFO - Web-app started
+2020-02-23 11:58:16,256 - app - DEBUG - Departments page was displayed with list of departments
+2020-02-23 11:58:18,128 - app - DEBUG - Employees page was displayed
+2020-02-23 11:58:20,761 - app - DEBUG - Employee page was displayed
+2020-02-23 13:35:25,709 - app - INFO - Web-app started
+2020-02-23 13:35:26,671 - app - INFO - Web-app started
+2020-02-23 13:35:30,520 - app - DEBUG - Departments page was displayed with list of departments
+2020-02-23 13:40:31,905 - app - DEBUG - Departments page was displayed with list of departments
+2020-02-23 13:40:33,937 - app - DEBUG - Departments page was displayed with list of departments
+2020-02-23 13:40:44,472 - app - DEBUG - Departments page was displayed with list of departments
+2020-02-23 13:48:30,006 - app - DEBUG - Departments page was displayed with list of departments
+2020-02-23 13:49:36,038 - app - DEBUG - Departments page was displayed with list of departments
+2020-02-23 13:49:56,316 - app - DEBUG - Departments page was displayed with list of departments
+2020-02-23 13:50:08,570 - app - DEBUG - Departments page was displayed with list of departments
+2020-02-23 13:50:36,097 - app - DEBUG - Departments page was displayed with list of departments
+2020-02-23 13:50:49,315 - app - DEBUG - Departments page was displayed with list of departments
+2020-02-23 13:50:57,389 - app - DEBUG - Departments page was displayed with list of departments
+2020-02-23 13:56:43,851 - app - INFO - Web-app started
+2020-02-23 13:57:17,346 - app - INFO - Web-app started
+2020-02-23 13:57:36,393 - app - INFO - Web-app started
+2020-02-23 13:58:28,983 - app - DEBUG - Departments page was displayed with list of departments
+2020-02-23 13:59:23,741 - app - INFO - Web-app started
+2020-02-23 13:59:24,731 - app - INFO - Web-app started
+2020-02-23 13:59:29,426 - app - DEBUG - Departments page was displayed with list of departments
+2020-02-23 13:59:31,827 - app - DEBUG - Departments page was displayed with list of departments
+2020-02-23 13:59:59,736 - app - INFO - Web-app started
+2020-02-23 14:00:00,453 - app - DEBUG - Department page was displayed
+2020-02-23 14:01:18,981 - app - INFO - Web-app started
+2020-02-23 14:02:13,002 - app - INFO - Web-app started
+2020-02-23 14:02:13,646 - app - DEBUG - Department page was displayed
+2020-02-23 14:02:40,794 - app - DEBUG - Department page was displayed
+2020-02-23 14:03:01,013 - app - DEBUG - Department page was displayed
+2020-02-23 14:03:09,402 - app - DEBUG - Department page was displayed
+2020-02-23 14:03:21,607 - app - DEBUG - Department page was displayed
+2020-02-23 14:03:37,710 - app - DEBUG - Department page was displayed
+2020-02-23 14:03:44,654 - app - DEBUG - Departments page was displayed with list of departments
+2020-02-23 14:03:47,853 - app - DEBUG - Departments page was displayed with list of departments
+2020-02-23 14:05:19,720 - app - DEBUG - Departments page was displayed with list of departments
+2020-02-23 14:05:21,414 - app - DEBUG - Department page was displayed
+2020-02-23 14:05:24,521 - app - DEBUG - Department page was displayed
+2020-02-23 14:06:35,531 - app - INFO - Web-app started
+2020-02-23 14:07:52,971 - app - INFO - Web-app started
+2020-02-23 14:07:54,783 - app - DEBUG - Department page was displayed
+2020-02-23 14:07:59,754 - app - DEBUG - Department page was displayed
+2020-02-23 14:09:10,132 - app - DEBUG - Department page was displayed
+2020-02-23 14:09:15,527 - app - DEBUG - Department page was displayed
+2020-02-23 14:09:44,785 - app - DEBUG - Department page was displayed
+2020-02-23 14:09:47,552 - app - DEBUG - Department page was displayed
+2020-02-23 14:09:50,793 - app - DEBUG - Department page was displayed
+2020-02-23 14:10:39,756 - app - DEBUG - Department page was displayed
+2020-02-23 14:10:43,321 - app - DEBUG - Department page was displayed
+2020-02-23 14:11:59,336 - app - DEBUG - Department page was displayed
+2020-02-23 14:13:28,492 - app - DEBUG - Departments page was displayed with list of departments
+2020-02-23 14:13:31,359 - app - DEBUG - Department page was displayed
+2020-02-23 14:13:35,111 - app - DEBUG - Information about department was sent to server (update)
+2020-02-23 14:13:35,708 - app - DEBUG - Departments page was displayed with list of departments
+2020-02-23 14:13:38,362 - app - DEBUG - Departments page was displayed with list of departments
+2020-02-23 14:13:41,726 - app - DEBUG - Department page was displayed
+2020-02-23 14:13:45,479 - app - DEBUG - Information about department was sent to server (update)
+2020-02-23 14:13:46,039 - app - DEBUG - Departments page was displayed with list of departments
+2020-02-23 14:13:48,398 - app - DEBUG - Departments page was displayed with list of departments
+2020-02-23 14:16:27,532 - app - DEBUG - Departments page was displayed with list of departments
+2020-02-23 14:16:30,228 - app - DEBUG - Department page was displayed
+2020-02-23 14:16:33,411 - app - DEBUG - Information about department was sent to server (update)
+2020-02-23 14:16:33,940 - app - DEBUG - Departments page was displayed with list of departments
+2020-02-23 14:16:36,799 - app - DEBUG - Departments page was displayed with list of departments
+2020-02-23 14:18:40,491 - app - INFO - Web-app started
+2020-02-23 14:18:43,653 - app - DEBUG - Departments page was displayed with list of departments
+2020-02-23 14:18:45,356 - app - DEBUG - Department page was displayed
+2020-02-23 14:18:48,618 - app - DEBUG - Information about department was sent to server (update)
+2020-02-23 14:18:49,148 - app - DEBUG - Departments page was displayed with list of departments
+2020-02-23 14:19:09,506 - app - DEBUG - Departments page was displayed with list of departments
+2020-02-23 14:19:17,727 - app - DEBUG - Department page was displayed
+2020-02-23 14:19:28,143 - app - DEBUG - Information about department was sent to server (update)
+2020-02-23 14:19:28,714 - app - DEBUG - Departments page was displayed with list of departments
+2020-02-23 14:19:31,863 - app - DEBUG - Departments page was displayed with list of departments
+2020-02-23 14:19:59,258 - app - DEBUG - Department page was displayed
+2020-02-23 14:20:03,521 - app - DEBUG - Information about department was sent to server (update)
+2020-02-23 14:20:04,115 - app - DEBUG - Departments page was displayed with list of departments
+2020-02-23 14:20:41,155 - app - DEBUG - Departments page was displayed with list of departments
+2020-02-23 14:21:04,678 - app - DEBUG - Department`s id was sent to server (delete)
+2020-02-23 14:21:05,172 - app - DEBUG - Departments page was displayed with list of departments
+2020-02-23 14:21:13,754 - app - DEBUG - Department page was displayed
+2020-02-23 14:21:21,137 - app - DEBUG - Information about department was sent to server (update)
+2020-02-23 14:21:21,650 - app - DEBUG - Departments page was displayed with list of departments
+2020-02-23 14:21:27,001 - app - DEBUG - Employees page was displayed
+2020-02-23 14:21:29,163 - app - DEBUG - Departments page was displayed with list of departments
+2020-02-23 14:23:33,018 - app - DEBUG - Departments page was displayed with list of departments
+2020-02-23 14:23:40,472 - app - DEBUG - Department page was displayed
+2020-02-23 14:23:54,803 - app - DEBUG - Information about department was sent to server (update)
+2020-02-23 14:23:55,318 - app - DEBUG - Departments page was displayed with list of departments
+2020-02-23 14:23:59,040 - app - DEBUG - Employees page was displayed
+2020-02-23 17:42:29,037 - app - INFO - Web-app started
+2020-02-23 17:42:30,229 - app - INFO - Web-app started
+2020-02-23 17:42:36,772 - app - DEBUG - Departments page was displayed with list of departments
+2020-02-23 17:42:40,618 - app - DEBUG - {'id': 1, 'name': 'Jo Tester1', 'department_id': 10001, 'date_of_birthday': '1997-01-04', 'salary': '1000'}
+2020-02-23 17:42:40,618 - app - DEBUG - Employee page was displayed
+2020-02-23 17:42:46,093 - app - DEBUG - Employees page was displayed
+2020-02-23 17:43:50,572 - app - DEBUG - Employees page was displayed
+2020-02-23 17:45:06,745 - app - DEBUG - Employees page was displayed
+2020-02-23 17:45:30,661 - app - DEBUG - Employees page was displayed
+2020-02-23 17:46:09,298 - app - DEBUG - Employees page was displayed
+2020-02-23 17:46:30,909 - app - DEBUG - Employees page was displayed
+2020-02-23 17:46:34,627 - app - DEBUG - {'id': 1, 'name': 'Jo Tester1', 'department_id': 10001, 'date_of_birthday': '1997-01-04', 'salary': '1000'}
+2020-02-23 17:46:34,631 - app - DEBUG - Employee page was displayed
+2020-02-23 17:46:45,751 - app - DEBUG - Employees page was displayed
+2020-02-23 17:46:48,138 - app - DEBUG - Employees page was displayed
+2020-02-23 17:50:17,294 - app - DEBUG - Employees page was displayed
+2020-02-23 17:50:19,648 - app - DEBUG - {'id': 1, 'name': 'Jo Tester1', 'department_id': 10001, 'date_of_birthday': '1997-01-04', 'salary': '1000'}
+2020-02-23 17:50:19,652 - app - DEBUG - Employee page was displayed
+2020-02-23 17:52:16,534 - app - DEBUG - {'id': 1, 'name': 'Jo Tester1', 'department_id': 10001, 'date_of_birthday': '1997-01-04', 'salary': '1000'}
+2020-02-23 17:52:16,534 - app - DEBUG - Employee page was displayed
+2020-02-23 17:52:23,832 - app - DEBUG - {'id': 1, 'name': 'Jo Tester1', 'department_id': 10001, 'date_of_birthday': '1997-01-04', 'salary': '1000'}
+2020-02-23 17:52:23,832 - app - DEBUG - Employee page was displayed
+2020-02-23 17:52:49,142 - app - DEBUG - {'id': 1, 'name': 'Jo Tester1', 'department_id': 10001, 'date_of_birthday': '1997-01-04', 'salary': '1000'}
+2020-02-23 17:52:49,142 - app - DEBUG - Employee page was displayed
+2020-02-23 17:53:13,723 - app - DEBUG - {'id': 1, 'name': 'Jo Tester1', 'department_id': 10001, 'date_of_birthday': '1997-01-04', 'salary': '1000'}
+2020-02-23 17:53:13,723 - app - DEBUG - Employee page was displayed
+2020-02-23 17:53:17,349 - app - DEBUG - Employees page was displayed
+2020-02-23 17:53:21,213 - app - DEBUG - {'id': 12, 'name': 'Mike Tester7', 'department_id': 10002, 'date_of_birthday': '1996-07-07', 'salary': '5600'}
+2020-02-23 17:53:21,213 - app - DEBUG - Employee page was displayed
+2020-02-23 17:53:49,245 - app - DEBUG - {'id': 12, 'name': 'Mike Tester7', 'department_id': 10002, 'date_of_birthday': '1996-07-07', 'salary': '5600'}
+2020-02-23 17:53:49,249 - app - DEBUG - Employee page was displayed
+2020-02-23 17:54:26,984 - app - DEBUG - {'id': 12, 'name': 'Mike Tester7', 'department_id': 10002, 'date_of_birthday': '1996-07-07', 'salary': '5600'}
+2020-02-23 17:54:26,984 - app - DEBUG - Employee page was displayed
+2020-02-23 17:54:29,364 - app - DEBUG - Employees page was displayed
+2020-02-23 17:54:32,772 - app - DEBUG - {'id': 6, 'name': 'Mike Tester1', 'department_id': 10002, 'date_of_birthday': '1996-01-01', 'salary': '800'}
+2020-02-23 17:54:32,772 - app - DEBUG - Employee page was displayed
+2020-02-23 17:55:21,594 - app - DEBUG - {'id': 6, 'name': 'Mike Tester1', 'department_id': 10002, 'date_of_birthday': '1996-01-01', 'salary': '800'}
+2020-02-23 17:55:21,598 - app - DEBUG - Employee page was displayed
+2020-02-23 17:56:13,693 - app - DEBUG - {'id': 6, 'name': 'Mike Tester1', 'department_id': 10002, 'date_of_birthday': '1996-01-01', 'salary': '800'}
+2020-02-23 17:56:13,693 - app - DEBUG - Employee page was displayed
+2020-02-23 17:56:37,662 - app - DEBUG - {'id': 6, 'name': 'Mike Tester1', 'department_id': 10002, 'date_of_birthday': '1996-01-01', 'salary': '800'}
+2020-02-23 17:56:37,662 - app - DEBUG - Employee page was displayed
+2020-02-23 17:56:40,554 - app - DEBUG - Employees page was displayed
+2020-02-23 17:56:49,045 - app - DEBUG - Employee`s id was sent to server (delete)
+2020-02-23 17:56:49,294 - app - DEBUG - Employees page was displayed
+2020-02-23 17:57:09,713 - app - DEBUG - Employees page was displayed
+2020-02-23 17:57:52,516 - app - DEBUG - Employees page was displayed
+2020-02-23 17:58:01,112 - app - DEBUG - Employees page was displayed
+2020-02-23 17:58:06,391 - app - DEBUG - Employees page was displayed
+2020-02-23 17:58:06,588 - app - DEBUG - Employees page was displayed
+2020-02-23 17:58:08,776 - app - DEBUG - Employees page was displayed
+2020-02-23 17:58:22,210 - app - DEBUG - Employees page was displayed
+2020-02-23 17:58:31,686 - app - DEBUG - Dates was received and sent to server
+2020-02-23 17:58:31,973 - app - DEBUG - Employees page was displayed
+2020-02-23 18:00:07,679 - app - DEBUG - Dates was received and sent to server
+2020-02-23 18:00:07,950 - app - DEBUG - Employees page was displayed
+2020-02-23 18:00:10,776 - app - DEBUG - Employees page was displayed
+2020-02-23 18:00:20,676 - app - DEBUG - Dates was received and sent to server
+2020-02-23 18:00:20,883 - app - DEBUG - Employees page was displayed
+2020-02-23 18:04:49,074 - app - INFO - Web-app started
+2020-02-23 18:04:50,298 - app - INFO - Web-app started
+2020-02-23 18:04:54,431 - app - DEBUG - Dates was received and sent to server
+2020-02-23 18:04:55,965 - app - DEBUG - Employees page was displayed
+2020-02-23 18:04:59,479 - app - DEBUG - Employees page was displayed
+2020-02-23 18:07:10,413 - app - DEBUG - Dates was received and sent to server
+2020-02-23 18:07:11,792 - app - DEBUG - Employees page was displayed
+2020-02-23 18:09:23,844 - app - DEBUG - Dates was received and sent to server
+2020-02-23 18:09:25,491 - app - DEBUG - Employees page was displayed
+2020-02-23 18:12:15,794 - app - DEBUG - Departments page was displayed with list of departments
+2020-02-23 18:12:16,770 - app - DEBUG - Employees page was displayed
+2020-02-23 18:12:19,545 - app - DEBUG - Dates was received and sent to server
+2020-02-23 18:12:19,798 - app - DEBUG - Employees page was displayed
+2020-02-23 18:13:00,171 - app - DEBUG - Dates was received and sent to server
+2020-02-23 18:13:00,271 - app - DEBUG - Employees page was displayed
+2020-02-23 18:13:04,109 - app - DEBUG - Employees page was displayed
+2020-02-23 18:13:08,286 - app - DEBUG - Dates was received and sent to server
+2020-02-23 18:13:08,302 - app - DEBUG - Employees page was displayed
+2020-02-23 18:13:54,914 - app - DEBUG - Dates was received and sent to server
+2020-02-23 18:13:54,952 - app - DEBUG - Employees page was displayed
+2020-02-23 18:13:56,814 - app - DEBUG - Dates was received and sent to server
+2020-02-23 18:13:56,830 - app - DEBUG - Employees page was displayed
+2020-02-23 18:15:23,182 - app - DEBUG - Employees page was displayed
+2020-02-23 18:15:41,851 - app - DEBUG - Employees page was displayed
+2020-02-23 18:15:44,918 - app - DEBUG - Dates was received and sent to server
+2020-02-23 18:15:44,951 - app - DEBUG - Employees page was displayed
+2020-02-23 18:15:57,535 - app - DEBUG - Dates was received and sent to server
+2020-02-23 18:15:57,736 - app - DEBUG - Employees page was displayed
+2020-02-23 18:16:31,764 - app - DEBUG - Dates was received and sent to server
+2020-02-23 18:16:33,423 - app - DEBUG - Employees page was displayed
+2020-02-23 18:17:20,248 - app - DEBUG - Employees page was displayed
+2020-02-23 18:17:23,511 - app - DEBUG - Dates was received and sent to server
+2020-02-23 18:17:23,836 - app - DEBUG - Employees page was displayed
+2020-02-23 18:18:24,221 - app - DEBUG - Dates was received and sent to server
+2020-02-23 18:18:24,515 - app - DEBUG - Employees page was displayed
+2020-02-23 18:18:34,974 - app - DEBUG - Dates was received and sent to server
+2020-02-23 18:18:34,994 - app - DEBUG - Employees page was displayed
+2020-02-23 18:19:17,853 - app - DEBUG - Employees page was displayed
+2020-02-23 18:19:20,319 - app - DEBUG - Employees page was displayed
+2020-02-23 18:19:38,102 - app - DEBUG - Employees page was displayed
+2020-02-23 18:19:40,364 - app - DEBUG - Employees page was displayed
+2020-02-23 18:19:43,484 - app - DEBUG - Dates was received and sent to server
+2020-02-23 18:19:43,564 - app - DEBUG - Employees page was displayed
+2020-02-23 18:19:54,354 - app - DEBUG - Dates was received and sent to server
+2020-02-23 18:19:54,649 - app - DEBUG - Employees page was displayed
+2020-02-23 18:20:19,642 - app - DEBUG - Dates was received and sent to server
+2020-02-23 18:20:21,190 - app - DEBUG - Employees page was displayed
+2020-02-23 18:21:37,088 - app - DEBUG - Dates was received and sent to server
+2020-02-23 18:21:38,502 - app - DEBUG - Employees page was displayed
+2020-02-23 18:22:28,347 - app - DEBUG - Dates was received and sent to server
+2020-02-23 18:22:29,734 - app - DEBUG - Employees page was displayed
+2020-02-23 18:23:46,609 - app - DEBUG - Dates was received and sent to server
+2020-02-23 18:23:48,112 - app - DEBUG - Employees page was displayed
+2020-02-23 18:24:58,441 - app - DEBUG - Dates was received and sent to server
+2020-02-23 18:25:00,074 - app - DEBUG - Employees page was displayed
+2020-02-23 18:25:54,805 - app - DEBUG - Employees page was displayed
+2020-02-23 18:26:02,117 - app - DEBUG - Dates was received and sent to server
+2020-02-23 18:26:02,645 - app - DEBUG - Employees page was displayed
+2020-02-23 18:26:16,299 - app - DEBUG - Dates was received and sent to server
+2020-02-23 18:26:16,578 - app - DEBUG - Employees page was displayed
+2020-02-23 18:26:30,190 - app - DEBUG - Employees page was displayed
+2020-02-23 18:26:46,574 - app - DEBUG - Dates was received and sent to server
+2020-02-23 18:26:46,846 - app - DEBUG - Employees page was displayed
+2020-02-23 18:26:50,619 - app - DEBUG - Departments page was displayed with list of departments
+2020-02-23 18:30:43,487 - app - INFO - Web-app started
+2020-02-23 18:30:44,948 - app - INFO - Web-app started
+2020-02-23 18:30:50,183 - app - DEBUG - Departments page was displayed with list of departments
+2020-02-23 18:30:50,778 - app - DEBUG - Departments page was displayed with list of departments
+2020-02-23 18:31:13,522 - app - DEBUG - Employees page was displayed
+2020-02-23 18:31:40,021 - app - DEBUG - Departments page was displayed with list of departments
+2020-02-23 18:32:01,672 - app - DEBUG - Employees page was displayed
+2020-02-23 18:32:14,050 - app - DEBUG - {'id': 1, 'name': 'Jo Tester1', 'department_id': 10001, 'date_of_birthday': '1997-01-04', 'salary': '1000'}
+2020-02-23 18:32:14,050 - app - DEBUG - Employee page was displayed
+2020-02-23 18:32:25,717 - app - DEBUG - Employees page was displayed
+2020-02-23 18:33:00,681 - app - DEBUG - Departments page was displayed with list of departments
+2020-02-25 17:31:15,625 - app - INFO - Web-app started
+2020-02-25 17:31:17,219 - app - INFO - Web-app started
+2020-02-25 17:31:22,219 - app - DEBUG - Departments page was displayed with list of departments
+2020-02-25 17:31:32,370 - app - DEBUG - Employees page was displayed
+2020-02-25 17:31:37,556 - app - DEBUG - Departments page was displayed with list of departments
+2020-02-25 17:31:56,365 - app - DEBUG - {'id': 17, 'name': 'Nik Tester3', 'department_id': 10003, 'date_of_birthday': '1997-05-06', 'salary': '3600'}
+2020-02-25 17:31:56,366 - app - DEBUG - Employee page was displayed
+2020-02-25 17:32:17,172 - app - DEBUG - Employees page was displayed
+2020-02-25 17:32:21,545 - app - DEBUG - Employees page was displayed
+2020-02-25 17:32:31,218 - app - DEBUG - Dates was received and sent to server
+2020-02-25 17:32:31,416 - app - DEBUG - Employees page was displayed
+2020-02-25 17:32:42,833 - app - DEBUG - Departments page was displayed with list of departments
+2020-02-27 10:40:48,495 - app - INFO - Web-app started
+2020-02-27 10:40:49,620 - app - INFO - Web-app started
+2020-02-27 10:40:55,989 - app - DEBUG - Departments page was displayed with list of departments
+2020-02-27 10:40:59,548 - app - DEBUG - Departments page was displayed with list of departments
+2020-02-27 10:41:40,538 - app - DEBUG - Departments page was displayed with list of departments
+2020-02-27 10:41:51,132 - app - DEBUG - Employees page was displayed
+2020-02-27 10:42:00,594 - app - DEBUG - Employees page was displayed
+2020-02-27 10:42:07,439 - app - DEBUG - Departments page was displayed with list of departments
+2020-02-27 10:42:13,423 - app - DEBUG - {'id': 5, 'name': 'Jo Tester5', 'department_id': 10001, 'date_of_birthday': '1997-05-08', 'salary': '5000'}
+2020-02-27 10:42:13,427 - app - DEBUG - Employee page was displayed
+2020-02-27 10:44:06,897 - app - DEBUG - Employees page was displayed
+2020-02-27 10:44:33,394 - app - DEBUG - {'id': 1, 'name': 'Jo Tester1', 'department_id': 10001, 'date_of_birthday': '1997-01-04', 'salary': '1000'}
+2020-02-27 10:44:33,436 - app - DEBUG - Employee page was displayed
+2020-02-27 10:50:27,463 - app - INFO - Web-app started
+2020-02-27 10:50:28,536 - app - INFO - Web-app started
+2020-02-27 10:50:38,235 - app - DEBUG - {'id': 1, 'name': 'Jo Tester1', 'department_id': 10001, 'date_of_birthday': '1997-01-04', 'salary': '1000'}
+2020-02-27 10:50:38,239 - app - DEBUG - Employee page was displayed
+2020-02-27 10:52:21,442 - app - INFO - Web-app started
+2020-02-27 10:52:24,868 - app - DEBUG - Departments page was displayed with list of departments
+2020-02-27 10:52:27,849 - app - WARNING - 10000
+2020-02-27 10:52:31,864 - app - WARNING - 10000
+2020-02-27 10:53:26,265 - app - DEBUG - Departments page was displayed with list of departments
+2020-02-27 10:53:28,964 - app - DEBUG - Department page was displayed
+2020-02-27 10:53:33,701 - app - DEBUG - Information about department was sent to server (update)
+2020-02-27 10:53:34,479 - app - DEBUG - Departments page was displayed with list of departments
+2020-02-27 10:53:52,603 - app - DEBUG - Employees page was displayed
+2020-02-27 10:54:31,891 - app - DEBUG - {'message': 'Internal Server Error'}
+2020-02-27 10:54:31,891 - app - DEBUG - Employee page was displayed
+2020-02-27 10:55:08,210 - app - DEBUG - Departments page was displayed with list of departments
+2020-02-27 10:56:27,560 - app - DEBUG - Departments page was displayed with list of departments
+2020-02-27 10:56:31,574 - app - DEBUG - Employees page was displayed
+2020-02-27 10:56:33,942 - app - DEBUG - {'id': 1, 'name': 'Jo Tester1', 'department_id': 10001, 'date_of_birthday': '1997-01-04', 'salary': '1000'}
+2020-02-27 10:56:33,942 - app - DEBUG - Employee page was displayed
+2020-02-27 10:56:37,086 - app - WARNING - 10000
+2020-02-27 10:58:51,268 - app - WARNING - 10000
+2020-02-27 10:59:04,934 - app - INFO - Web-app started
+2020-02-27 10:59:06,080 - app - INFO - Web-app started
+2020-02-27 10:59:19,196 - app - WARNING - 100000
+2020-02-27 10:59:48,457 - app - DEBUG - {'message': 'Internal Server Error'}
+2020-02-27 10:59:48,457 - app - DEBUG - Employee page was displayed
+2020-02-27 11:00:36,784 - app - DEBUG - {'id': 1, 'name': 'Jo Tester1', 'department_id': 10001, 'date_of_birthday': '1997-01-04', 'salary': '1000'}
+2020-02-27 11:00:36,784 - app - DEBUG - Employee page was displayed
+2020-02-27 11:00:38,579 - app - DEBUG - {'id': 1, 'name': 'Jo Tester1', 'department_id': 10001, 'date_of_birthday': '1997-01-04', 'salary': '1000'}
+2020-02-27 11:00:38,583 - app - DEBUG - Employee page was displayed
+2020-02-27 11:00:39,516 - app - WARNING - 1000
+2020-02-27 11:00:48,746 - app - INFO - Web-app started
+2020-02-27 11:00:49,792 - app - INFO - Web-app started
+2020-02-27 11:00:52,396 - app - DEBUG - {'id': 1, 'name': 'Jo Tester1', 'department_id': 10001, 'date_of_birthday': '1997-01-04', 'salary': '1000'}
+2020-02-27 11:00:52,404 - app - DEBUG - Employee page was displayed
+2020-02-27 11:00:57,435 - app - WARNING - 10000
+2020-02-27 11:01:02,583 - app - WARNING - 10000
+2020-02-27 11:01:38,181 - app - DEBUG - {'id': 1, 'name': 'Jo Tester1', 'department_id': 10001, 'date_of_birthday': '1997-01-04', 'salary': '1000'}
+2020-02-27 11:01:38,185 - app - DEBUG - Employee page was displayed
+2020-02-27 11:01:41,115 - app - WARNING - 1000
+2020-02-27 11:03:03,950 - app - INFO - Web-app started
+2020-02-27 11:03:07,791 - app - DEBUG - {'id': 1, 'name': 'Jo Tester1', 'department_id': 10001, 'date_of_birthday': '1997-01-04', 'salary': '1000'}
+2020-02-27 11:03:07,795 - app - DEBUG - Employee page was displayed
+2020-02-27 11:03:11,853 - app - WARNING - 10000
+2020-02-27 11:03:24,989 - app - INFO - Web-app started
+2020-02-27 11:03:26,848 - app - DEBUG - {'id': 1, 'name': 'Jo Tester1', 'department_id': 10001, 'date_of_birthday': '1997-01-04', 'salary': '1000'}
+2020-02-27 11:03:26,852 - app - DEBUG - Employee page was displayed
+2020-02-27 11:03:29,613 - app - WARNING - 1000
+2020-02-27 11:03:29,974 - app - DEBUG - Employee`s data was sent to server (update)
+2020-02-27 11:03:30,422 - app - DEBUG - Employees page was displayed
+2020-02-27 11:03:38,578 - app - INFO - Web-app started
+2020-02-27 11:06:20,669 - app - INFO - Web-app started
+2020-02-27 12:16:19,229 - app - INFO - Web-app started
+2020-02-27 12:16:20,282 - app - INFO - Web-app started
+2020-02-27 12:16:33,306 - app - DEBUG - Departments page was displayed with list of departments
+2020-02-27 12:16:58,487 - app - DEBUG - {'id': 2, 'name': 'Jo Tester2', 'department_id': 10001, 'date_of_birthday': '1997-02-05', 'salary': '2000'}
+2020-02-27 12:16:58,491 - app - DEBUG - Employee page was displayed
+2020-02-27 12:17:03,659 - app - DEBUG - Employee`s data was sent to server (update)
+2020-02-27 12:17:03,967 - app - DEBUG - Employees page was displayed
+2020-02-27 12:17:15,269 - app - DEBUG - Employees page was displayed
+2020-02-27 12:17:21,742 - app - DEBUG - Departments page was displayed with list of departments
+2020-02-27 12:17:32,696 - app - DEBUG - Department page was displayed
+2020-02-27 12:17:36,289 - app - DEBUG - Employees page was displayed
+2020-02-27 12:17:44,862 - app - DEBUG - Dates was received and sent to server
+2020-02-27 12:17:45,102 - app - DEBUG - Employees page was displayed
+2020-04-07 15:34:32,441 - __main__ - INFO - Web-app started
+2020-04-07 15:34:33,437 - __main__ - INFO - Web-app started
+2020-04-07 15:34:49,730 - app - INFO - Web-app started
+2020-04-07 15:34:50,999 - app - INFO - Web-app started
+2020-04-07 15:34:55,890 - app - DEBUG - Departments page was displayed with list of departments
+2020-04-07 15:35:01,765 - app - DEBUG - Employees page was displayed
+2020-04-07 15:35:08,691 - app - DEBUG - Departments page was displayed with list of departments
+2020-04-07 15:36:05,045 - app - DEBUG - Employees page was displayed
+2020-04-07 15:36:12,757 - app - DEBUG - Departments page was displayed with list of departments
+2020-04-07 15:37:03,280 - app - DEBUG - Departments page was displayed with list of departments
+2020-04-07 15:37:04,958 - app - DEBUG - Employees page was displayed
+2020-04-07 15:38:39,218 - app - DEBUG - Employees page was displayed
+2020-04-07 15:39:06,509 - app - DEBUG - Employees page was displayed
+2020-04-07 15:39:57,973 - app - DEBUG - Employees page was displayed
+2020-04-07 15:40:08,839 - app - DEBUG - Employee page was displayed
+2020-04-07 15:40:12,456 - app - DEBUG - Departments page was displayed with list of departments
+2020-04-07 15:41:24,733 - app - DEBUG - Departments page was displayed with list of departments
+2020-04-07 15:41:48,650 - app - DEBUG - Departments page was displayed with list of departments
+2020-04-07 15:41:55,579 - app - DEBUG - Employees page was displayed
+2020-04-07 15:42:01,168 - app - DEBUG - Departments page was displayed with list of departments
+2020-04-07 15:42:12,990 - app - DEBUG - Departments page was displayed with list of departments
+2020-04-07 15:42:16,804 - app - DEBUG - Departments page was displayed with list of departments
+2020-04-07 15:42:23,917 - app - DEBUG - Employees page was displayed
+2020-04-07 15:43:00,223 - app - DEBUG - Employees page was displayed
+2020-04-07 15:43:03,743 - app - DEBUG - Departments page was displayed with list of departments
