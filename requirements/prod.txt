@@ -1,7 +1,7 @@
 # Flask
 Flask==1.1.1
 Flask-RESTful==0.3.7
-requests==2.22.0
+requests==2.31.0
 
 #DB
 Flask-SQLAlchemy==2.4.1
